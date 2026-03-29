@@ -12,5 +12,12 @@
     "description": "AI一键生成部署网站",
     "category": "AI工具",
     "saveTime": "2026-03-29"
+  },
+  {
+    "title": "RelayPulse",
+    "url": "https://relaypulse.top/",
+    "description": "API中转服务监测平台",
+    "category": "开发工具",
+    "saveTime": "2026-03-29"
   }
 ]
