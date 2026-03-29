@@ -5,5 +5,12 @@
     "description": "Claude Code快捷键速查表",
     "category": "开发工具",
     "saveTime": "2026-03-29"
+  },
+  {
+    "title": "Ship0",
+    "url": "https://ship0.ai/",
+    "description": "AI一键生成部署网站",
+    "category": "AI工具",
+    "saveTime": "2026-03-29"
   }
 ]
