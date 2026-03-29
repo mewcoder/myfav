@@ -32,5 +32,16 @@
     ],
     "stars": 0,
     "saveTime": "2026-03-29"
+  },
+  {
+    "name": "CopilotKit/shadify",
+    "url": "https://github.com/CopilotKit/shadify",
+    "description": "AI生成Shadcn组件",
+    "tags": [
+      "AI",
+      "前端"
+    ],
+    "stars": 208,
+    "saveTime": "2026-03-29"
   }
 ]
