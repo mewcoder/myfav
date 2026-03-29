@@ -26,5 +26,12 @@
     "description": "成功人士推荐书单",
     "category": "阅读",
     "saveTime": "2026-03-29"
+  },
+  {
+    "title": "Aiberm",
+    "url": "https://aiberm.com/",
+    "description": "折扣AI API服务",
+    "category": "AI工具",
+    "saveTime": "2026-03-29"
   }
 ]
