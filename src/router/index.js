@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import SitesView from '../views/SitesView.vue'
 import ReposView from '../views/ReposView.vue'
 
@@ -9,7 +9,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/myfav/'),
+  history: createWebHashHistory('/myfav/'),
   routes
 })
 

@@ -7,7 +7,7 @@ export function useSites() {
   async function loadSites() {
     if (loaded.value) return
     try {
-      const res = await fetch('/myfav/data/sites.json')
+      const res = await fetch(`/myfav/data/sites.json?t=${Date.now()}`)
       if (!res.ok) throw new Error('Failed to load sites')
       sites.value = await res.json()
       loaded.value = true

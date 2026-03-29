@@ -7,7 +7,7 @@ export function useRepos() {
   async function loadRepos() {
     if (loaded.value) return
     try {
-      const res = await fetch('/myfav/data/repos.json')
+      const res = await fetch(`/myfav/data/repos.json?t=${Date.now()}`)
       if (!res.ok) throw new Error('Failed to load repos')
       repos.value = await res.json()
       loaded.value = true
