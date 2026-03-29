@@ -19,5 +19,12 @@
     "description": "API中转服务监测平台",
     "category": "开发工具",
     "saveTime": "2026-03-29"
+  },
+  {
+    "title": "Goodbooks",
+    "url": "https://goodbooks.io/",
+    "description": "成功人士推荐书单",
+    "category": "阅读",
+    "saveTime": "2026-03-29"
   }
 ]
