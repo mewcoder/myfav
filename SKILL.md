@@ -1,11 +1,12 @@
 ---
 name: fav
-description: Use when user runs /fav command to add a bookmark. Triggered by "/fav <url>" - fetches site info, generates category/tags, then adds via script.
+description: 网站收藏助手。使用 /f 指令触发，自动获取网站信息，生成分类，保存到本地 JSON 文件，并自动提交到 GitHub 仓库。
+
 ---
 
 # MyFav 收藏管理
 
-触发命令: `/fav <url>`
+触发命令: `/f <url>`
 
 ## 数据结构
 
@@ -64,6 +65,8 @@ node public/fav.js add <url> --name "owner/repo" --description "描述" --tags "
 ```bash
 git add public/data/ && git commit -m "feat: add <名称>" && git push
 ```
+
+操作成功后附上网站地址 https://mewcoder.github.io/myfav
 
 ## 命令
 
