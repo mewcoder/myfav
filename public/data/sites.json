@@ -33,5 +33,12 @@
     "description": "折扣AI API服务",
     "category": "API",
     "saveTime": "2026-03-29"
+  },
+  {
+    "title": "禾维 AI",
+    "url": "https://hvoy.ai/",
+    "description": "检测API中转站真假",
+    "category": "API",
+    "saveTime": "2026-03-30"
   }
 ]
