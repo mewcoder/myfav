@@ -3,7 +3,9 @@
     "name": "eze-is/web-access",
     "url": "https://github.com/eze-is/web-access",
     "description": "Claude Code联网skill",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 2076,
     "saveTime": "2026-03-29"
   },
@@ -11,7 +13,10 @@
     "name": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "description": "AI前端设计语言skill",
-    "tags": ["skills", "前端"],
+    "tags": [
+      "skills",
+      "前端"
+    ],
     "stars": 0,
     "saveTime": "2026-03-29"
   },
@@ -19,7 +24,10 @@
     "name": "dontbesilent2025/dbskill",
     "url": "https://github.com/dontbesilent2025/dbskill",
     "description": "商业诊断Claude技能",
-    "tags": ["skills", "商业"],
+    "tags": [
+      "skills",
+      "商业"
+    ],
     "stars": 0,
     "saveTime": "2026-03-29"
   },
@@ -27,7 +35,10 @@
     "name": "CopilotKit/shadify",
     "url": "https://github.com/CopilotKit/shadify",
     "description": "AI生成Shadcn组件",
-    "tags": ["AI", "前端"],
+    "tags": [
+      "AI",
+      "前端"
+    ],
     "stars": 208,
     "saveTime": "2026-03-29"
   },
@@ -35,7 +46,9 @@
     "name": "ArtemXTech/personal-os-skills",
     "url": "https://github.com/ArtemXTech/personal-os-skills",
     "description": "Claude Code Obsidian技能",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 321,
     "saveTime": "2026-03-29"
   },
@@ -43,8 +56,22 @@
     "name": "Panniantong/Agent-Reach",
     "url": "https://github.com/Panniantong/Agent-Reach",
     "description": "Agent互联网能力工具",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 13078,
+    "saveTime": "2026-03-30"
+  },
+  {
+    "name": "agrinman/tunnelto",
+    "url": "https://github.com/agrinman/tunnelto",
+    "description": "Rust隧道工具，暴露本地服务到公网",
+    "tags": [
+      "Rust",
+      "工具",
+      "网络"
+    ],
+    "stars": 1900,
     "saveTime": "2026-03-30"
   }
 ]
