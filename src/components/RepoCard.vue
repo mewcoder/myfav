@@ -89,4 +89,24 @@ function formatStars(num) {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+@media (max-width: 700px) {
+  .repo-card {
+    padding: 10px 12px;
+    min-height: 60px;
+  }
+
+  .repo-name {
+    font-size: 12px;
+  }
+
+  .repo-stars {
+    font-size: 11px;
+  }
+
+  .repo-desc {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+}
 </style>

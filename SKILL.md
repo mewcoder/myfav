@@ -45,7 +45,7 @@ WebFetch url: "<url>" prompt: "提取标题和简短描述"
 
 **命名规范：**
 - 分类/标签优先用中文（如：设计工具）
-- 技术术语、框架名称保留英文（如：vue、react、typescript）
+- 技术术语、框架名称保留英文（如：vue、react、typescript、skills）
 
 **限制：**
 - 描述 ≤ 20 字
