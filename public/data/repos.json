@@ -85,5 +85,17 @@
     ],
     "stars": 8400,
     "saveTime": "2026-03-30"
+  },
+  {
+    "name": "shanraisshan/claude-code-best-practice",
+    "url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "description": "Claude Code最佳实践指南",
+    "tags": [
+      "AI",
+      "skills",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-03-31"
   }
 ]
