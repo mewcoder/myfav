@@ -97,5 +97,16 @@
     ],
     "stars": 0,
     "saveTime": "2026-03-31"
+  },
+  {
+    "name": "6551Team/claude-code-design-guide",
+    "url": "https://github.com/6551Team/claude-code-design-guide",
+    "description": "Claude Code设计指南",
+    "tags": [
+      "AI",
+      "skills"
+    ],
+    "stars": 47,
+    "saveTime": "2026-03-31"
   }
 ]
