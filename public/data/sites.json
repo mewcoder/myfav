@@ -47,5 +47,12 @@
     "description": "AI导航中转评测比价",
     "category": "AI",
     "saveTime": "2026-03-31"
+  },
+  {
+    "title": "微信 Markdown 编辑器",
+    "url": "https://md.doocs.org/",
+    "description": "微信公众号排版工具",
+    "category": "工具",
+    "saveTime": "2026-03-31"
   }
 ]
