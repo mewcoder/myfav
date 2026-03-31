@@ -40,5 +40,12 @@
     "description": "检测API中转站真假",
     "category": "API",
     "saveTime": "2026-03-30"
+  },
+  {
+    "title": "Help AIO",
+    "url": "https://www.helpaio.com/",
+    "description": "AI导航中转评测比价",
+    "category": "AI",
+    "saveTime": "2026-03-31"
   }
 ]
