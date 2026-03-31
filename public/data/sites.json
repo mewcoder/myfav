@@ -54,5 +54,12 @@
     "description": "微信公众号排版工具",
     "category": "工具",
     "saveTime": "2026-03-31"
+  },
+  {
+    "title": "Cubence",
+    "url": "https://cubence.com/",
+    "description": "Claude Code/Codex网关服务",
+    "category": "API",
+    "saveTime": "2026-03-31"
   }
 ]
