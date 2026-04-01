@@ -103,5 +103,12 @@
     "description": "AI API Gateway中转服务",
     "category": "API",
     "saveTime": "2026-04-01"
+  },
+  {
+    "title": "Claude Code Unpacked",
+    "url": "https://ccunpacked.dev/",
+    "description": "Claude Code源码交互式解析",
+    "category": "AI",
+    "saveTime": "2026-04-01"
   }
 ]
