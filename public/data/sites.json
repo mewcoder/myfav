@@ -89,5 +89,12 @@
     "description": "资源搜索大全，各类杂志",
     "category": "工具",
     "saveTime": "2026-04-01"
+  },
+  {
+    "title": "ZLibrary镜像",
+    "url": "https://zh.chl101.ru/",
+    "description": "免费电子书下载网站",
+    "category": "阅读",
+    "saveTime": "2026-04-01"
   }
 ]
