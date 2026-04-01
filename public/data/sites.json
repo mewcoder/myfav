@@ -75,5 +75,12 @@
     "description": "书籍速读，精选内容速览",
     "category": "阅读",
     "saveTime": "2026-03-31"
+  },
+  {
+    "title": "Dragon",
+    "url": "https://dragoncode.codes/",
+    "description": "企业级API中转服务",
+    "category": "API",
+    "saveTime": "2026-04-01"
   }
 ]
