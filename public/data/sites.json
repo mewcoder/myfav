@@ -96,5 +96,12 @@
     "description": "免费电子书下载网站",
     "category": "阅读",
     "saveTime": "2026-04-01"
+  },
+  {
+    "title": "DDS Hub",
+    "url": "https://www.ddshub.cc/home",
+    "description": "AI API Gateway中转服务",
+    "category": "API",
+    "saveTime": "2026-04-01"
   }
 ]
