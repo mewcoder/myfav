@@ -119,5 +119,16 @@
     ],
     "stars": 488,
     "saveTime": "2026-04-01"
+  },
+  {
+    "name": "helloianneo/claude-code-handbook",
+    "url": "https://github.com/helloianneo/claude-code-handbook",
+    "description": "Claude Code高阶指南，8章+3附录",
+    "tags": [
+      "AI",
+      "skills"
+    ],
+    "stars": 74,
+    "saveTime": "2026-04-01"
   }
 ]
