@@ -130,5 +130,17 @@
     ],
     "stars": 74,
     "saveTime": "2026-04-01"
+  },
+  {
+    "name": "tvytlx/ai-agent-deep-dive",
+    "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+    "description": "Claude Code源码深度研究报告",
+    "tags": [
+      "AI",
+      "skills",
+      "源码分析"
+    ],
+    "stars": 2247,
+    "saveTime": "2026-04-01"
   }
 ]
