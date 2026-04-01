@@ -108,5 +108,16 @@
     ],
     "stars": 47,
     "saveTime": "2026-03-31"
+  },
+  {
+    "name": "multica-ai/multica",
+    "url": "https://github.com/multica-ai/multica",
+    "description": "AI原生项目管理，Agent即队友",
+    "tags": [
+      "AI",
+      "工具"
+    ],
+    "stars": 488,
+    "saveTime": "2026-04-01"
   }
 ]
