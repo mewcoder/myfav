@@ -82,5 +82,12 @@
     "description": "企业级API中转服务",
     "category": "API",
     "saveTime": "2026-04-01"
+  },
+  {
+    "title": "众创网络",
+    "url": "https://www.zhongchuangwl.com/",
+    "description": "资源搜索大全，各类杂志",
+    "category": "工具",
+    "saveTime": "2026-04-01"
   }
 ]
