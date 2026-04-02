@@ -138,5 +138,12 @@
     "description": "Jack谈AI重塑组织设计",
     "category": "AI",
     "saveTime": "2026-04-02"
+  },
+  {
+    "title": "Ai Go Code",
+    "url": "https://www.aigocode.com",
+    "description": "AI编程工作台",
+    "category": "工具",
+    "saveTime": "2026-04-02"
   }
 ]
