@@ -124,5 +124,12 @@
     "description": "AI 应用构建平台",
     "category": "工具",
     "saveTime": "2026-04-02"
+  },
+  {
+    "title": "ZenMux",
+    "url": "https://zenmux.ai/",
+    "description": "AI API 统一网关平台",
+    "category": "API中转",
+    "saveTime": "2026-04-02"
   }
 ]
