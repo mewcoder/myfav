@@ -3,7 +3,7 @@
     "title": "Claude Code Cheat Sheet",
     "url": "https://cc.storyfox.cz/",
     "description": "Claude Code快捷键速查表",
-    "category": "AI",
+    "category": "Claude Code",
     "saveTime": "2026-03-29"
   },
   {
@@ -17,7 +17,7 @@
     "title": "RelayPulse",
     "url": "https://relaypulse.top/",
     "description": "API中转服务监测平台",
-    "category": "API",
+    "category": "API中转",
     "saveTime": "2026-03-29"
   },
   {
@@ -31,21 +31,21 @@
     "title": "Aiberm",
     "url": "https://aiberm.com/",
     "description": "折扣AI API服务",
-    "category": "API",
+    "category": "API中转",
     "saveTime": "2026-03-29"
   },
   {
     "title": "禾维 AI",
     "url": "https://hvoy.ai/",
     "description": "检测API中转站真假",
-    "category": "API",
+    "category": "API中转",
     "saveTime": "2026-03-30"
   },
   {
     "title": "Help AIO",
     "url": "https://www.helpaio.com/",
     "description": "AI导航中转评测比价",
-    "category": "AI",
+    "category": "API中转",
     "saveTime": "2026-03-31"
   },
   {
@@ -59,14 +59,14 @@
     "title": "Cubence",
     "url": "https://cubence.com/",
     "description": "Claude Code/Codex网关服务",
-    "category": "API",
+    "category": "API中转",
     "saveTime": "2026-03-31"
   },
   {
     "title": "Learn Claude Code",
     "url": "https://claude.nagdy.me/",
     "description": "Claude Code互动学习教程",
-    "category": "AI",
+    "category": "Claude Code",
     "saveTime": "2026-03-31"
   },
   {
@@ -80,7 +80,7 @@
     "title": "Dragon",
     "url": "https://dragoncode.codes/",
     "description": "企业级API中转服务",
-    "category": "API",
+    "category": "API中转",
     "saveTime": "2026-04-01"
   },
   {
@@ -108,14 +108,14 @@
     "title": "Claude Code Unpacked",
     "url": "https://ccunpacked.dev/",
     "description": "Claude Code源码交互式解析",
-    "category": "AI",
+    "category": "Claude Code",
     "saveTime": "2026-04-01"
   },
   {
     "title": "驾驭工程 — AI 编码技术栈",
     "url": "https://zhanghandong.github.io/harness-engineering-from-cc-to-ai-coding/part1/ch01.html",
     "description": "Claude Code 架构深度解析",
-    "category": "AI",
+    "category": "Claude Code",
     "saveTime": "2026-04-02"
   }
 ]
