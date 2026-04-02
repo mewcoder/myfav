@@ -148,5 +148,17 @@
     ],
     "stars": 0,
     "saveTime": "2026-04-02"
+  },
+  {
+    "name": "walkinglabs/learn-harness-engineering",
+    "url": "https://github.com/walkinglabs/learn-harness-engineering",
+    "description": "Harness工程实践课程",
+    "tags": [
+      "AI",
+      "Claude Code",
+      "harness"
+    ],
+    "stars": 34,
+    "saveTime": "2026-04-02"
   }
 ]
