@@ -145,5 +145,12 @@
     "description": "AI编程工作台",
     "category": "工具",
     "saveTime": "2026-04-02"
+  },
+  {
+    "title": "PackyAPI",
+    "url": "https://www.packyapi.com",
+    "description": "AI API聚合平台",
+    "category": "API中转",
+    "saveTime": "2026-04-02"
   }
 ]
