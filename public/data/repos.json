@@ -172,5 +172,17 @@
     ],
     "stars": 3,
     "saveTime": "2026-04-02"
+  },
+  {
+    "name": "jgraph/drawio-mcp",
+    "url": "https://github.com/jgraph/drawio-mcp",
+    "description": "draw.io MCP服务器",
+    "tags": [
+      "MCP",
+      "skills",
+      "工具"
+    ],
+    "stars": 2036,
+    "saveTime": "2026-04-02"
   }
 ]
