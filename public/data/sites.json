@@ -110,5 +110,12 @@
     "description": "Claude Code源码交互式解析",
     "category": "AI",
     "saveTime": "2026-04-01"
+  },
+  {
+    "title": "驾驭工程 — AI 编码技术栈",
+    "url": "https://zhanghandong.github.io/harness-engineering-from-cc-to-ai-coding/part1/ch01.html",
+    "description": "Claude Code 架构深度解析",
+    "category": "AI",
+    "saveTime": "2026-04-02"
   }
 ]
