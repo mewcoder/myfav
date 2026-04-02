@@ -117,5 +117,12 @@
     "description": "Claude Code 架构深度解析",
     "category": "Claude Code",
     "saveTime": "2026-04-02"
+  },
+  {
+    "title": "Lovable",
+    "url": "https://lovable.dev",
+    "description": "AI 应用构建平台",
+    "category": "工具",
+    "saveTime": "2026-04-02"
   }
 ]
