@@ -160,5 +160,17 @@
     ],
     "stars": 34,
     "saveTime": "2026-04-02"
+  },
+  {
+    "name": "sugarforever/understanding-fantastic-coding-agents",
+    "url": "https://github.com/sugarforever/understanding-fantastic-coding-agents",
+    "description": "AI编程Agent深度分析",
+    "tags": [
+      "AI",
+      "Claude Code",
+      "编程"
+    ],
+    "stars": 3,
+    "saveTime": "2026-04-02"
   }
 ]
