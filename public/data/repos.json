@@ -3,7 +3,9 @@
     "name": "eze-is/web-access",
     "url": "https://github.com/eze-is/web-access",
     "description": "Claude Code联网skill",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 2076,
     "saveTime": "2026-03-29"
   },
@@ -11,7 +13,10 @@
     "name": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "description": "AI前端设计语言skill",
-    "tags": ["skills", "前端"],
+    "tags": [
+      "skills",
+      "前端"
+    ],
     "stars": 0,
     "saveTime": "2026-03-29"
   },
@@ -19,7 +24,10 @@
     "name": "dontbesilent2025/dbskill",
     "url": "https://github.com/dontbesilent2025/dbskill",
     "description": "商业诊断Claude技能",
-    "tags": ["skills", "商业"],
+    "tags": [
+      "skills",
+      "商业"
+    ],
     "stars": 0,
     "saveTime": "2026-03-29"
   },
@@ -27,7 +35,10 @@
     "name": "CopilotKit/shadify",
     "url": "https://github.com/CopilotKit/shadify",
     "description": "AI生成Shadcn组件",
-    "tags": ["AI", "前端"],
+    "tags": [
+      "AI",
+      "前端"
+    ],
     "stars": 208,
     "saveTime": "2026-03-29"
   },
@@ -35,7 +46,9 @@
     "name": "ArtemXTech/personal-os-skills",
     "url": "https://github.com/ArtemXTech/personal-os-skills",
     "description": "Claude Code Obsidian技能",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 321,
     "saveTime": "2026-03-29"
   },
@@ -43,7 +56,9 @@
     "name": "Panniantong/Agent-Reach",
     "url": "https://github.com/Panniantong/Agent-Reach",
     "description": "Agent互联网能力工具",
-    "tags": ["skills"],
+    "tags": [
+      "skills"
+    ],
     "stars": 13078,
     "saveTime": "2026-03-30"
   },
@@ -51,7 +66,11 @@
     "name": "agrinman/tunnelto",
     "url": "https://github.com/agrinman/tunnelto",
     "description": "Rust隧道工具，暴露本地服务到公网",
-    "tags": ["Rust", "工具", "网络"],
+    "tags": [
+      "Rust",
+      "工具",
+      "网络"
+    ],
     "stars": 1900,
     "saveTime": "2026-03-30"
   },
@@ -59,7 +78,11 @@
     "name": "phuryn/pm-skills",
     "url": "https://github.com/phuryn/pm-skills",
     "description": "产品经理AI技能库",
-    "tags": ["skills", "AI", "产品管理"],
+    "tags": [
+      "skills",
+      "AI",
+      "产品管理"
+    ],
     "stars": 8400,
     "saveTime": "2026-03-30"
   },
@@ -67,7 +90,9 @@
     "name": "shanraisshan/claude-code-best-practice",
     "url": "https://github.com/shanraisshan/claude-code-best-practice",
     "description": "Claude Code最佳实践指南",
-    "tags": ["Claude Code"],
+    "tags": [
+      "Claude Code"
+    ],
     "stars": 0,
     "saveTime": "2026-03-31"
   },
@@ -75,7 +100,9 @@
     "name": "6551Team/claude-code-design-guide",
     "url": "https://github.com/6551Team/claude-code-design-guide",
     "description": "Claude Code设计指南",
-    "tags": ["Claude Code"],
+    "tags": [
+      "Claude Code"
+    ],
     "stars": 47,
     "saveTime": "2026-03-31"
   },
@@ -83,7 +110,10 @@
     "name": "multica-ai/multica",
     "url": "https://github.com/multica-ai/multica",
     "description": "AI原生项目管理，Agent即队友",
-    "tags": ["AI", "工具"],
+    "tags": [
+      "AI",
+      "工具"
+    ],
     "stars": 488,
     "saveTime": "2026-04-01"
   },
@@ -91,7 +121,9 @@
     "name": "helloianneo/claude-code-handbook",
     "url": "https://github.com/helloianneo/claude-code-handbook",
     "description": "Claude Code高阶指南，8章+3附录",
-    "tags": ["Claude Code"],
+    "tags": [
+      "Claude Code"
+    ],
     "stars": 74,
     "saveTime": "2026-04-01"
   },
@@ -99,8 +131,22 @@
     "name": "tvytlx/ai-agent-deep-dive",
     "url": "https://github.com/tvytlx/ai-agent-deep-dive",
     "description": "Claude Code源码深度研究报告",
-    "tags": ["Claude Code"],
+    "tags": [
+      "Claude Code"
+    ],
     "stars": 2247,
     "saveTime": "2026-04-01"
+  },
+  {
+    "name": "wquguru/harness-books",
+    "url": "https://github.com/wquguru/harness-books",
+    "description": "Harness Engineering 系列书籍",
+    "tags": [
+      "AI",
+      "Claude Code",
+      "skills"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-02"
   }
 ]
