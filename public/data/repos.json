@@ -208,5 +208,17 @@
     ],
     "stars": 1200,
     "saveTime": "2026-04-03"
+  },
+  {
+    "name": "skillsgate/skillsgate",
+    "url": "https://github.com/skillsgate/skillsgate",
+    "description": "管理 91k+ AI Agent Skills",
+    "tags": [
+      "skills",
+      "Agent",
+      "开源"
+    ],
+    "stars": 188,
+    "saveTime": "2026-04-03"
   }
 ]
