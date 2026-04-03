@@ -99,7 +99,7 @@
   },
   {
     "title": "DDS Hub",
-    "url": "https://www.ddshub.cc/home",
+    "url": "https://www.ddshub.cc/",
     "description": "AI API Gateway中转服务",
     "category": "API中转",
     "saveTime": "2026-04-01"
@@ -113,7 +113,7 @@
   },
   {
     "title": "驾驭工程 — AI 编码技术栈",
-    "url": "https://zhanghandong.github.io/harness-engineering-from-cc-to-ai-coding/part1/ch01.html",
+    "url": "https://zhanghandong.github.io/harness-engineering-from-cc-to-ai-coding/",
     "description": "Claude Code 架构深度解析",
     "category": "Claude Code",
     "saveTime": "2026-04-02"
@@ -133,17 +133,10 @@
     "saveTime": "2026-04-02"
   },
   {
-    "title": "From Hierarchy to Intelligence",
-    "url": "https://x.com/jack/status/2039003879841362278",
-    "description": "Jack谈AI重塑组织设计",
-    "category": "AI",
-    "saveTime": "2026-04-02"
-  },
-  {
     "title": "Ai Go Code",
     "url": "https://www.aigocode.com",
     "description": "AI编程工作台",
-    "category": "工具",
+    "category": "API中转",
     "saveTime": "2026-04-02"
   },
   {
