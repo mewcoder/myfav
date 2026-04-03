@@ -196,5 +196,17 @@
     ],
     "stars": 1500,
     "saveTime": "2026-04-03"
+  },
+  {
+    "name": "lintsinghua/claude-code-book",
+    "url": "https://github.com/lintsinghua/claude-code-book",
+    "description": "Claude Code架构深度剖析",
+    "tags": [
+      "Claude Code",
+      "Agent",
+      "书籍"
+    ],
+    "stars": 1200,
+    "saveTime": "2026-04-03"
   }
 ]
