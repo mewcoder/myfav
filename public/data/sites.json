@@ -159,5 +159,12 @@
     "description": "用LLM构建个人知识库工作流",
     "category": "知识管理",
     "saveTime": "2026-04-03"
+  },
+  {
+    "title": "XueDingToken",
+    "url": "https://xuedingtoken.com/home",
+    "description": "AI API 网关服务",
+    "category": "API中转",
+    "saveTime": "2026-04-03"
   }
 ]
