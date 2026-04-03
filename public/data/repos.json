@@ -184,5 +184,17 @@
     ],
     "stars": 2036,
     "saveTime": "2026-04-02"
+  },
+  {
+    "name": "iflytek/skillhub",
+    "url": "https://github.com/iflytek/skillhub",
+    "description": "企业级开源Agent技能注册中心",
+    "tags": [
+      "skills",
+      "Agent",
+      "开源"
+    ],
+    "stars": 1500,
+    "saveTime": "2026-04-03"
   }
 ]
