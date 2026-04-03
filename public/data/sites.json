@@ -145,5 +145,12 @@
     "description": "AI API聚合平台",
     "category": "API中转",
     "saveTime": "2026-04-02"
+  },
+  {
+    "title": "Duomi",
+    "url": "https://ai.duomi.uk",
+    "description": "AI API网关服务",
+    "category": "API中转",
+    "saveTime": "2026-04-03"
   }
 ]
