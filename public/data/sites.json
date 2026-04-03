@@ -166,5 +166,12 @@
     "description": "AI API 网关服务",
     "category": "API中转",
     "saveTime": "2026-04-03"
+  },
+  {
+    "title": "Claude Code 全面解析",
+    "url": "https://jocular-treacle-8737c3.netlify.app",
+    "description": "Agent循环、50+工具交互式解析",
+    "category": "Claude Code",
+    "saveTime": "2026-04-03"
   }
 ]
