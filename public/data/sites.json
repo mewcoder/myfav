@@ -173,5 +173,12 @@
     "description": "Agent循环、50+工具交互式解析",
     "category": "Claude Code",
     "saveTime": "2026-04-03"
+  },
+  {
+    "title": "Learn Anything",
+    "url": "https://learn-anything.xyz",
+    "description": "知识地图，发现学习路径",
+    "category": "知识管理",
+    "saveTime": "2026-04-04"
   }
 ]
