@@ -208,5 +208,12 @@
     "description": "100个产品设计框架，产品全链路工具集",
     "category": "工具",
     "saveTime": "2026-04-04"
+  },
+  {
+    "title": "MockAddress",
+    "url": "https://mockaddress.com/",
+    "description": "美国免税州地址生成器",
+    "category": "工具",
+    "saveTime": "2026-04-04"
   }
 ]
