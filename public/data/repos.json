@@ -244,5 +244,17 @@
     ],
     "stars": 0,
     "saveTime": "2026-04-04"
+  },
+  {
+    "name": "keenthemes/reui",
+    "url": "https://github.com/keenthemes/reui",
+    "description": "1000+shadcn组件库，68类别",
+    "tags": [
+      "前端",
+      "React",
+      "shadcn"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
   }
 ]
