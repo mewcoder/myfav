@@ -180,5 +180,12 @@
     "description": "知识地图，发现学习路径",
     "category": "知识管理",
     "saveTime": "2026-04-04"
+  },
+  {
+    "title": "AI SDK Agents",
+    "url": "https://www.aisdkagents.com/",
+    "description": "108个Agent模式，Vercel AI SDK v6",
+    "category": "AI工具",
+    "saveTime": "2026-04-04"
   }
 ]
