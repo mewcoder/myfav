@@ -220,5 +220,17 @@
     ],
     "stars": 188,
     "saveTime": "2026-04-03"
+  },
+  {
+    "name": "10xChengTu/harness-engineering",
+    "url": "https://github.com/10xChengTu/harness-engineering",
+    "description": "Harness工程Agent Skill",
+    "tags": [
+      "skills",
+      "Claude Code",
+      "harness"
+    ],
+    "stars": 2,
+    "saveTime": "2026-04-04"
   }
 ]
