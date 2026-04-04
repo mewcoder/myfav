@@ -256,5 +256,17 @@
     ],
     "stars": 0,
     "saveTime": "2026-04-04"
+  },
+  {
+    "name": "SaladDay/cc-switch-cli",
+    "url": "https://github.com/SaladDay/cc-switch-cli",
+    "description": "Claude Code/Codex技能管理CLI",
+    "tags": [
+      "Claude Code",
+      "skills",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
   }
 ]
