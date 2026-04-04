@@ -268,5 +268,17 @@
     ],
     "stars": 0,
     "saveTime": "2026-04-04"
+  },
+  {
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/nousresearch/hermes-agent",
+    "description": "随你成长的Agent框架",
+    "tags": [
+      "AI",
+      "Agent",
+      "Claude Code"
+    ],
+    "stars": 17500,
+    "saveTime": "2026-04-04"
   }
 ]
