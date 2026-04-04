@@ -194,5 +194,12 @@
     "description": "终端动画组件，shadcn/ui风格",
     "category": "工具",
     "saveTime": "2026-04-04"
+  },
+  {
+    "title": "魔方简历",
+    "url": "https://magicv.art/zh",
+    "description": "AI驱动简历编辑器",
+    "category": "工具",
+    "saveTime": "2026-04-04"
   }
 ]
