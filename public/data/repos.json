@@ -280,5 +280,17 @@
     ],
     "stars": 17500,
     "saveTime": "2026-04-04"
+  },
+  {
+    "name": "shareAI-lab/learn-claude-code",
+    "url": "https://github.com/shareAI-lab/learn-claude-code",
+    "description": "从0到1学习Agent harness",
+    "tags": [
+      "Claude Code",
+      "Agent",
+      "教程"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
   }
 ]
