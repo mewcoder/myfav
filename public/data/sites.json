@@ -187,5 +187,12 @@
     "description": "108个Agent模式，Vercel AI SDK v6",
     "category": "AI工具",
     "saveTime": "2026-04-04"
+  },
+  {
+    "title": "Cult UI - Terminal Animation",
+    "url": "https://www.cult-ui.com/docs/components/terminal-animation",
+    "description": "终端动画组件，shadcn/ui风格",
+    "category": "工具",
+    "saveTime": "2026-04-04"
   }
 ]
