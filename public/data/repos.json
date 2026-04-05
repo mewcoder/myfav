@@ -351,5 +351,17 @@
     ],
     "stars": 115,
     "saveTime": "2026-04-05"
+  },
+  {
+    "name": "jonnonz1/adaptive-browser",
+    "url": "https://github.com/jonnonz1/adaptive-browser",
+    "description": "从 API 规范和用户偏好构建 UI 的自适应浏览器",
+    "tags": [
+      "Tauri",
+      "React",
+      "浏览器"
+    ],
+    "stars": 65,
+    "saveTime": "2026-04-06"
   }
 ]
