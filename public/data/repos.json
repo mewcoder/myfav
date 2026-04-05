@@ -292,5 +292,16 @@
     ],
     "stars": 0,
     "saveTime": "2026-04-04"
+  },
+  {
+    "name": "jinchenma94/bazi-skill",
+    "url": "https://github.com/jinchenma94/bazi-skill",
+    "description": "四柱八字命理分析 Skill",
+    "tags": [
+      "skills",
+      "命理"
+    ],
+    "stars": 83,
+    "saveTime": "2026-04-05"
   }
 ]
