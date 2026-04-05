@@ -327,5 +327,17 @@
     ],
     "stars": 2886,
     "saveTime": "2026-04-05"
+  },
+  {
+    "name": "jarrodwatts/claude-hud",
+    "url": "https://github.com/jarrodwatts/claude-hud",
+    "description": "Claude Code 插件，显示上下文、工具、Agent 状态",
+    "tags": [
+      "Claude Code",
+      "工具",
+      "插件"
+    ],
+    "stars": 16865,
+    "saveTime": "2026-04-05"
   }
 ]
