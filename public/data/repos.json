@@ -339,5 +339,17 @@
     ],
     "stars": 16865,
     "saveTime": "2026-04-05"
+  },
+  {
+    "name": "mahonzhan/awesome-coding-plan",
+    "url": "https://github.com/mahonzhan/awesome-coding-plan",
+    "description": "各厂家 Coding Plan 实际价值对比",
+    "tags": [
+      "Claude Code",
+      "对比",
+      "订阅"
+    ],
+    "stars": 115,
+    "saveTime": "2026-04-05"
   }
 ]
