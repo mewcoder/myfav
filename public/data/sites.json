@@ -208,5 +208,12 @@
     "description": "美国免税州地址生成器",
     "category": "工具",
     "saveTime": "2026-04-04"
+  },
+  {
+    "title": "IPPure",
+    "url": "https://ippure.com/",
+    "description": "IP地址纯净度检测",
+    "category": "工具",
+    "saveTime": "2026-04-05"
   }
 ]
