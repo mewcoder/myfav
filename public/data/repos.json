@@ -315,5 +315,17 @@
     ],
     "stars": 3729,
     "saveTime": "2026-04-05"
+  },
+  {
+    "name": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "description": "Production-grade engineering skills for AI coding agents",
+    "tags": [
+      "skills",
+      "Agent",
+      "Claude Code"
+    ],
+    "stars": 2886,
+    "saveTime": "2026-04-05"
   }
 ]
