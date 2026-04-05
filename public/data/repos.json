@@ -303,5 +303,17 @@
     ],
     "stars": 83,
     "saveTime": "2026-04-05"
+  },
+  {
+    "name": "HKUDS/OpenHarness",
+    "url": "https://github.com/HKUDS/OpenHarness",
+    "description": "OpenHarness: Open Agent Harness",
+    "tags": [
+      "Agent",
+      "harness",
+      "开源"
+    ],
+    "stars": 3729,
+    "saveTime": "2026-04-05"
   }
 ]
