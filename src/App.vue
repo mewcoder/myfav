@@ -244,11 +244,6 @@ body {
   border: 1px solid var(--border-weak);
   border-radius: var(--radius-sm);
   background: var(--nav-pill-bg);
-  transition: border-color 0.15s ease, background 0.15s ease;
-}
-
-.search-wrapper:focus-within {
-  box-shadow: 0 0 0 2px var(--accent);
 }
 
 .search-icon {
@@ -267,10 +262,6 @@ body {
 
 .search-input::placeholder {
   color: var(--fg-muted);
-}
-
-.search-input:focus::placeholder {
-  opacity: 0.5;
 }
 
 .nav-pills {
