@@ -215,5 +215,12 @@
     "description": "IP地址纯净度检测",
     "category": "工具",
     "saveTime": "2026-04-05"
+  },
+  {
+    "title": "cchistory",
+    "url": "https://cchistory.mariozechner.at/",
+    "description": "Claude Code版本历史",
+    "category": "Claude Code",
+    "saveTime": "2026-04-06"
   }
 ]
