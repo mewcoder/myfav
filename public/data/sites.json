@@ -222,5 +222,12 @@
     "description": "Claude Code版本历史",
     "category": "Claude Code",
     "saveTime": "2026-04-06"
+  },
+  {
+    "title": "What Can I Run",
+    "url": "https://www.whatcani.run/",
+    "description": "根据硬件推荐本地可运行的AI模型",
+    "category": "AI工具",
+    "saveTime": "2026-04-06"
   }
 ]
