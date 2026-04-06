@@ -397,5 +397,16 @@
     ],
     "stars": 690,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "jimliu/baoyu-skills",
+    "url": "https://github.com/jimliu/baoyu-skills",
+    "description": "Agent Skills合集",
+    "tags": [
+      "skills",
+      "Agent"
+    ],
+    "stars": 13305,
+    "saveTime": "2026-04-06"
   }
 ]
