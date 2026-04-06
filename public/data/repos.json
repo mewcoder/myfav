@@ -375,5 +375,16 @@
     ],
     "stars": 4362,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "drona23/claude-token-efficient",
+    "url": "https://github.com/drona23/claude-token-efficient",
+    "description": "Claude Token效率优化",
+    "tags": [
+      "Claude Code",
+      "效率"
+    ],
+    "stars": 3334,
+    "saveTime": "2026-04-06"
   }
 ]
