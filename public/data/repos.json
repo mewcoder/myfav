@@ -478,5 +478,17 @@
     ],
     "stars": 13247,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "garrytan/gstack",
+    "url": "https://github.com/garrytan/gstack",
+    "description": "Garry Tan的Claude Code配置，23个工具",
+    "tags": [
+      "skills",
+      "Claude Code",
+      "YC"
+    ],
+    "stars": 65057,
+    "saveTime": "2026-04-06"
   }
 ]
