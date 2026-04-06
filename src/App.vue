@@ -258,6 +258,12 @@ body {
   font-size: 13px;
   width: 120px;
   outline: none;
+  box-shadow: none;
+}
+
+.search-input:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 .search-input::placeholder {
