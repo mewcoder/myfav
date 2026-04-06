@@ -133,17 +133,18 @@ onUnmounted(() => {
 .sites-view {
   display: flex;
   gap: 24px;
-  padding-left: 164px;
 }
 
 .category-sidebar {
   width: 140px;
-  position: fixed;
-  top: 104px;
-  left: 24px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  position: sticky;
+  top: 72px;
+  max-height: calc(100vh - 92px);
+  overflow-y: auto;
 }
 
 .category-btn {
@@ -235,7 +236,6 @@ onUnmounted(() => {
   .sites-view {
     flex-direction: column;
     gap: 16px;
-    padding-left: 0;
   }
 
   .category-sidebar {
@@ -244,6 +244,7 @@ onUnmounted(() => {
     flex-wrap: wrap;
     gap: 6px;
     position: static;
+    max-height: none;
   }
 
   .category-btn {
