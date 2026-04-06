@@ -408,5 +408,16 @@
     ],
     "stars": 13305,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "zarazhangrui/codebase-to-course",
+    "url": "https://github.com/zarazhangrui/codebase-to-course",
+    "description": "代码库转交互教程",
+    "tags": [
+      "skills",
+      "教程"
+    ],
+    "stars": 3123,
+    "saveTime": "2026-04-06"
   }
 ]
