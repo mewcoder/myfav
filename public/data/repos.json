@@ -441,5 +441,17 @@
     ],
     "stars": 9330,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "wxtsky/CodeIsland",
+    "url": "https://github.com/wxtsky/CodeIsland",
+    "description": "macOS刘海AI Agent状态面板",
+    "tags": [
+      "Claude Code",
+      "macOS",
+      "工具"
+    ],
+    "stars": 51,
+    "saveTime": "2026-04-06"
   }
 ]
