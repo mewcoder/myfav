@@ -8,6 +8,12 @@ description: 网站收藏助手。使用 /f 指令触发，自动获取网站信
 
 触发命令: `/f <url>`
 
+**仓库路径**: `~/.openclaw/workspace/skills/myfav`
+
+## ⚠️ 重要注意事项
+
+- **必须用 `node public/fav.js add` 命令追加** — 脚本会自动处理
+
 ## 数据结构
 
 **网站 (sites.json)**
