@@ -453,5 +453,18 @@
     ],
     "stars": 51,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "description": "AI编码Agent工作流框架，137k stars",
+    "tags": [
+      "skills",
+      "Claude Code",
+      "Cursor",
+      "Codex"
+    ],
+    "stars": 136890,
+    "saveTime": "2026-04-06"
   }
 ]
