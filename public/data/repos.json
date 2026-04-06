@@ -1,5 +1,16 @@
 [
   {
+    "name": "tw93/Waza",
+    "url": "https://github.com/tw93/Waza",
+    "description": "工程师习惯技能",
+    "tags": [
+      "skills",
+      "Claude Code"
+    ],
+    "stars": 1048,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "eze-is/web-access",
     "url": "https://github.com/eze-is/web-access",
     "description": "Claude Code联网skill",
