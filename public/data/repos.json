@@ -386,5 +386,16 @@
     ],
     "stars": 3334,
     "saveTime": "2026-04-06"
+  },
+  {
+    "name": "lidangzzz/goal-driven",
+    "url": "https://github.com/lidangzzz/goal-driven",
+    "description": "运行100小时的多Agent系统",
+    "tags": [
+      "Agent",
+      "AI"
+    ],
+    "stars": 690,
+    "saveTime": "2026-04-06"
   }
 ]
