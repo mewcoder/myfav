@@ -64,10 +64,8 @@ function formatStars(num) {
   font-size: 13px;
   font-weight: 600;
   color: var(--fg);
-  line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.4;
+  word-break: break-word;
 }
 
 .repo-stars {
@@ -82,12 +80,8 @@ function formatStars(num) {
 .repo-desc {
   font-size: 12px;
   color: var(--fg-muted);
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 6px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 @media (max-width: 700px) {

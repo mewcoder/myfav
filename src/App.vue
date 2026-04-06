@@ -19,6 +19,19 @@
         </a>
       </div>
       <div class="nav-right">
+        <div class="search-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            v-model="searchQuery"
+            :placeholder="currentTab === 'repos' ? '搜索仓库...' : '搜索网站...'"
+            class="search-input"
+            :aria-label="currentTab === 'repos' ? '搜索仓库' : '搜索网站'"
+          />
+        </div>
         <nav class="nav-pills" role="navigation">
           <router-link to="/sites" class="nav-pill" custom v-slot="{ navigate, isActive }">
             <button @click="navigate" :class="{ active: isActive }">网站</button>
@@ -57,9 +70,27 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useGlobalSearch } from './composables/useGlobalSearch'
 
+const route = useRoute()
+const { searchQuery, clearSearch } = useGlobalSearch()
 const isDark = ref(false)
+
+const currentTab = computed(() => {
+  if (route.path.startsWith('/repos')) return 'repos'
+  return 'sites'
+})
+
+// Clear search when switching tabs
+const prevTab = ref(currentTab.value)
+watch(currentTab, (newTab) => {
+  if (newTab !== prevTab.value) {
+    clearSearch()
+    prevTab.value = newTab
+  }
+})
 
 onMounted(() => {
   const saved = localStorage.getItem('theme')
@@ -205,6 +236,44 @@ body {
   gap: 12px;
 }
 
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-weak);
+  border-radius: var(--radius-sm);
+  background: var(--nav-pill-bg);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.search-wrapper:focus-within {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.search-icon {
+  color: var(--fg-muted);
+  flex-shrink: 0;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  color: var(--fg);
+  font-size: 13px;
+  width: 120px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--fg-muted);
+}
+
+.search-input:focus::placeholder {
+  opacity: 0.5;
+}
+
 .nav-pills {
   display: flex;
   gap: 3px;
@@ -315,6 +384,15 @@ body {
 
   .logo-text {
     font-size: 16px;
+  }
+
+  .search-wrapper {
+    padding: 5px 8px;
+  }
+
+  .search-input {
+    font-size: 12px;
+    width: 80px;
   }
 
   .nav-pills {

@@ -2,7 +2,7 @@
   <div class="sites-view">
     <aside class="category-sidebar">
       <button
-        v-for="cat in categories"
+        v-for="cat in filteredCategories"
         :key="cat"
         class="category-btn"
         :class="{ active: activeCategory === cat }"
@@ -14,13 +14,13 @@
     </aside>
 
     <div class="sites-content" ref="contentRef">
-      <div v-if="categories.length === 0" class="empty-state">
+      <div v-if="filteredCategories.length === 0" class="empty-state">
         <div class="empty-state-icon">📭</div>
         <div class="empty-state-text">暂无收藏的网站</div>
       </div>
 
       <div
-        v-for="cat in categories"
+        v-for="cat in filteredCategories"
         :key="cat"
         class="category-section"
         :id="'category-' + cat"
@@ -28,7 +28,7 @@
       >
         <h2 class="category-title">{{ cat }}</h2>
         <div class="sites-grid">
-          <SiteCard v-for="site in groupedByCategory[cat]" :key="site.url" :site="site" />
+          <SiteCard v-for="site in groupedByFilteredCategory[cat]" :key="site.url" :site="site" />
         </div>
       </div>
     </div>
@@ -36,29 +36,60 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useSites } from '../composables/useSites'
+import { useGlobalSearch } from '../composables/useGlobalSearch'
 import SiteCard from '../components/SiteCard.vue'
 
-const { loadSites, groupedByCategory } = useSites()
+const { sites, loadSites } = useSites()
+const { searchQuery } = useGlobalSearch()
 const activeCategory = ref('')
 const contentRef = ref(null)
 const sectionRefs = ref([])
 
 onMounted(() => {
   loadSites()
-  // Set initial active category to first one
-  if (categories.value.length > 0) {
-    activeCategory.value = categories.value[0]
-  }
 })
 
-const categories = computed(() => {
-  return Object.keys(groupedByCategory.value).sort()
+const filteredSites = computed(() => {
+  let result = sites.value
+
+  if (searchQuery.value) {
+    const query = searchQuery.value.toLowerCase()
+    result = result.filter(site =>
+      site.title.toLowerCase().includes(query) ||
+      site.description.toLowerCase().includes(query) ||
+      site.category.toLowerCase().includes(query)
+    )
+  }
+
+  return result
 })
+
+const groupedByFilteredCategory = computed(() => {
+  const groups = {}
+  for (const site of filteredSites.value) {
+    if (!groups[site.category]) {
+      groups[site.category] = []
+    }
+    groups[site.category].push(site)
+  }
+  return groups
+})
+
+const filteredCategories = computed(() => {
+  return Object.keys(groupedByFilteredCategory.value).sort()
+})
+
+// Set initial active category when data loads
+watch(filteredCategories, (cats) => {
+  if (cats.length > 0 && !activeCategory.value) {
+    activeCategory.value = cats[0]
+  }
+}, { immediate: true })
 
 function getCategoryCount(cat) {
-  return groupedByCategory.value[cat]?.length || 0
+  return groupedByFilteredCategory.value[cat]?.length || 0
 }
 
 function scrollToCategory(cat) {
@@ -74,30 +105,37 @@ function scrollToCategory(cat) {
 }
 
 // Update active category on scroll
-watch([contentRef, categories], () => {
+const handleScroll = () => {
   if (!contentRef.value) return
+  const scrollTop = contentRef.value.scrollTop + 100
+  for (const cat of filteredCategories.value) {
+    const section = document.getElementById('category-' + cat)
+    if (section) {
+      const offsetTop = section.offsetTop - contentRef.value.offsetTop
+      const nextSection = filteredCategories.value.indexOf(cat) < filteredCategories.value.length - 1
+        ? document.getElementById('category-' + filteredCategories.value[filteredCategories.value.indexOf(cat) + 1])
+        : null
+      const nextOffsetTop = nextSection ? nextSection.offsetTop - contentRef.value.offsetTop : Infinity
 
-  const handleScroll = () => {
-    const scrollTop = contentRef.value.scrollTop + 100
-    for (const cat of categories.value) {
-      const section = document.getElementById('category-' + cat)
-      if (section) {
-        const offsetTop = section.offsetTop - contentRef.value.offsetTop
-        const nextSection = categories.value.indexOf(cat) < categories.value.length - 1
-          ? document.getElementById('category-' + categories.value[categories.value.indexOf(cat) + 1])
-          : null
-        const nextOffsetTop = nextSection ? nextSection.offsetTop - contentRef.value.offsetTop : Infinity
-
-        if (scrollTop >= offsetTop && scrollTop < nextOffsetTop) {
-          activeCategory.value = cat
-          break
-        }
+      if (scrollTop >= offsetTop && scrollTop < nextOffsetTop) {
+        activeCategory.value = cat
+        break
       }
     }
   }
+}
 
-  contentRef.value.addEventListener('scroll', handleScroll)
+watch(contentRef, (el) => {
+  if (el) {
+    el.addEventListener('scroll', handleScroll)
+  }
 }, { immediate: true })
+
+onUnmounted(() => {
+  if (contentRef.value) {
+    contentRef.value.removeEventListener('scroll', handleScroll)
+  }
+})
 </script>
 
 <style scoped>

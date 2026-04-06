@@ -35,14 +35,32 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRepos } from '../composables/useRepos'
+import { useGlobalSearch } from '../composables/useGlobalSearch'
 import RepoCard from '../components/RepoCard.vue'
 
 const { repos, loadRepos, allTags } = useRepos()
+const { searchQuery } = useGlobalSearch()
 const selectedTag = ref('')
 
 const filteredRepos = computed(() => {
-  if (!selectedTag.value) return repos.value
-  return repos.value.filter(repo => repo.tags.includes(selectedTag.value))
+  let result = repos.value
+
+  // 搜索过滤
+  if (searchQuery.value) {
+    const query = searchQuery.value.toLowerCase()
+    result = result.filter(repo =>
+      repo.name.toLowerCase().includes(query) ||
+      repo.description.toLowerCase().includes(query) ||
+      repo.tags.some(tag => tag.toLowerCase().includes(query))
+    )
+  }
+
+  // 标签过滤
+  if (selectedTag.value) {
+    result = result.filter(repo => repo.tags.includes(selectedTag.value))
+  }
+
+  return result
 })
 
 function onTagSelect(tag) {
@@ -111,8 +129,8 @@ onMounted(() => {
 
 .repos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   width: 100%;
 }
 
@@ -139,14 +157,8 @@ onMounted(() => {
   }
 
   .repos-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-  }
-}
-
-@media (max-width: 400px) {
-  .repos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }
 </style>
