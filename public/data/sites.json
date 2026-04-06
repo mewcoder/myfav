@@ -229,5 +229,12 @@
     "description": "根据硬件推荐本地可运行的AI模型",
     "category": "AI工具",
     "saveTime": "2026-04-06"
+  },
+  {
+    "title": "Can I Run AI",
+    "url": "https://www.canirun.ai/",
+    "description": "AI模型硬件兼容性检查",
+    "category": "AI工具",
+    "saveTime": "2026-04-06"
   }
 ]
