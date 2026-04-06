@@ -10,6 +10,9 @@
       </span>
     </div>
     <div class="repo-desc">{{ repo.description }}</div>
+    <div v-if="repo.tags?.length" class="repo-tags">
+      <span v-for="tag in repo.tags" :key="tag" class="tag">{{ tag }}</span>
+    </div>
   </a>
 </template>
 
@@ -82,6 +85,22 @@ function formatStars(num) {
   color: var(--fg-muted);
   line-height: 1.5;
   margin-top: 6px;
+}
+
+.repo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 2px 6px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
 }
 
 @media (max-width: 700px) {

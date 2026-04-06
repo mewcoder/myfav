@@ -42,6 +42,10 @@ const { repos, loadRepos, allTags } = useRepos()
 const { searchQuery } = useGlobalSearch()
 const selectedTag = ref('')
 
+onMounted(() => {
+  loadRepos()
+})
+
 const filteredRepos = computed(() => {
   let result = repos.value
 
@@ -70,10 +74,6 @@ function onTagSelect(tag) {
 function getTagCount(tag) {
   return repos.value.filter(repo => repo.tags.includes(tag)).length
 }
-
-onMounted(() => {
-  loadRepos()
-})
 </script>
 
 <style scoped>
@@ -129,7 +129,7 @@ onMounted(() => {
 
 .repos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   width: 100%;
 }
@@ -157,7 +157,7 @@ onMounted(() => {
   }
 
   .repos-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 }

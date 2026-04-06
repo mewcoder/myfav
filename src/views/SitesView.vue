@@ -13,7 +13,7 @@
       </button>
     </aside>
 
-    <div class="sites-content" ref="contentRef">
+    <div class="sites-content">
       <div v-if="filteredCategories.length === 0" class="empty-state">
         <div class="empty-state-icon">📭</div>
         <div class="empty-state-text">暂无收藏的网站</div>
@@ -24,7 +24,6 @@
         :key="cat"
         class="category-section"
         :id="'category-' + cat"
-        ref="sectionRefs"
       >
         <h2 class="category-title">{{ cat }}</h2>
         <div class="sites-grid">
@@ -44,12 +43,6 @@ import SiteCard from '../components/SiteCard.vue'
 const { sites, loadSites } = useSites()
 const { searchQuery } = useGlobalSearch()
 const activeCategory = ref('')
-const contentRef = ref(null)
-const sectionRefs = ref([])
-
-onMounted(() => {
-  loadSites()
-})
 
 const filteredSites = computed(() => {
   let result = sites.value
@@ -95,9 +88,10 @@ function getCategoryCount(cat) {
 function scrollToCategory(cat) {
   activeCategory.value = cat
   const section = document.getElementById('category-' + cat)
-  if (section && contentRef.value) {
-    const offsetTop = section.offsetTop - contentRef.value.offsetTop - 16
-    contentRef.value.scrollTo({
+  if (section) {
+    const headerHeight = 60
+    const offsetTop = section.offsetTop - headerHeight - 16
+    window.scrollTo({
       top: offsetTop,
       behavior: 'smooth'
     })
@@ -106,16 +100,16 @@ function scrollToCategory(cat) {
 
 // Update active category on scroll
 const handleScroll = () => {
-  if (!contentRef.value) return
-  const scrollTop = contentRef.value.scrollTop + 100
+  const headerHeight = 60
+  const scrollTop = window.scrollY + headerHeight + 100
   for (const cat of filteredCategories.value) {
     const section = document.getElementById('category-' + cat)
     if (section) {
-      const offsetTop = section.offsetTop - contentRef.value.offsetTop
+      const offsetTop = section.offsetTop
       const nextSection = filteredCategories.value.indexOf(cat) < filteredCategories.value.length - 1
         ? document.getElementById('category-' + filteredCategories.value[filteredCategories.value.indexOf(cat) + 1])
         : null
-      const nextOffsetTop = nextSection ? nextSection.offsetTop - contentRef.value.offsetTop : Infinity
+      const nextOffsetTop = nextSection ? nextSection.offsetTop : Infinity
 
       if (scrollTop >= offsetTop && scrollTop < nextOffsetTop) {
         activeCategory.value = cat
@@ -125,16 +119,13 @@ const handleScroll = () => {
   }
 }
 
-watch(contentRef, (el) => {
-  if (el) {
-    el.addEventListener('scroll', handleScroll)
-  }
-}, { immediate: true })
+onMounted(() => {
+  loadSites()
+  window.addEventListener('scroll', handleScroll)
+})
 
 onUnmounted(() => {
-  if (contentRef.value) {
-    contentRef.value.removeEventListener('scroll', handleScroll)
-  }
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -142,16 +133,17 @@ onUnmounted(() => {
 .sites-view {
   display: flex;
   gap: 24px;
+  padding-left: 164px;
 }
 
 .category-sidebar {
   width: 140px;
-  flex-shrink: 0;
+  position: fixed;
+  top: 104px;
+  left: 24px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  position: sticky;
-  top: 0;
 }
 
 .category-btn {
@@ -243,7 +235,7 @@ onUnmounted(() => {
   .sites-view {
     flex-direction: column;
     gap: 16px;
-    height: auto;
+    padding-left: 0;
   }
 
   .category-sidebar {
@@ -257,11 +249,6 @@ onUnmounted(() => {
   .category-btn {
     padding: 8px 10px;
     font-size: 12px;
-  }
-
-  .sites-content {
-    overflow-y: visible;
-    padding-right: 0;
   }
 
   .sites-grid {
