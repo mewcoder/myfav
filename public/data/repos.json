@@ -1,5 +1,17 @@
 [
   {
+    "name": "afar1/fieldtheory-cli",
+    "url": "https://github.com/afar1/fieldtheory-cli",
+    "description": "X/Twitter书签同步CLI",
+    "tags": [
+      "工具",
+      "CLI",
+      "Twitter"
+    ],
+    "stars": 1000,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "tw93/Waza",
     "url": "https://github.com/tw93/Waza",
     "description": "工程师习惯技能",
