@@ -248,8 +248,7 @@ body {
 }
 
 .search-wrapper:focus-within {
-  border-color: var(--accent);
-  background: var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
 }
 
 .search-icon {
