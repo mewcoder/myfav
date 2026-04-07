@@ -1,5 +1,17 @@
 [
   {
+    "name": "Ataraxy-Labs/opensessions",
+    "url": "https://github.com/ataraxy-labs/opensessions",
+    "description": "终端会话管理器",
+    "tags": [
+      "工具",
+      "终端",
+      "TypeScript"
+    ],
+    "stars": 524,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "yologdev/karpathy-llm-wiki",
     "url": "https://github.com/yologdev/karpathy-llm-wiki",
     "description": "Karpathy LLM Wiki",
