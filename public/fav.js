@@ -58,7 +58,7 @@ async function add(url, options = {}) {
       stars: parseInt(options.stars) || 0,
       saveTime: getToday()
     }
-    data.push(item)
+    data.unshift(item)
     writeJSON(file, data)
     console.log(JSON.stringify({ success: true, type: 'repo', item }))
   } else {
@@ -70,7 +70,7 @@ async function add(url, options = {}) {
       category: options.category || '其他',
       saveTime: getToday()
     }
-    data.push(item)
+    data.unshift(item)
     writeJSON(file, data)
     console.log(JSON.stringify({ success: true, type: 'site', item }))
   }
