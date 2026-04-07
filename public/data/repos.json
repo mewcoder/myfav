@@ -1,5 +1,17 @@
 [
   {
+    "name": "collaborator-ai/collab-public",
+    "url": "https://github.com/collaborator-ai/collab-public",
+    "description": "Agent协作创作平台",
+    "tags": [
+      "Agent",
+      "AI",
+      "TypeScript"
+    ],
+    "stars": 2212,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "cmliu/edgetunnel",
     "url": "https://github.com/cmliu/edgetunnel",
     "description": "VLESS/Trojan多功能面板",
