@@ -1,5 +1,17 @@
 [
   {
+    "name": "yologdev/karpathy-llm-wiki",
+    "url": "https://github.com/yologdev/karpathy-llm-wiki",
+    "description": "Karpathy LLM Wiki",
+    "tags": [
+      "AI",
+      "LLM",
+      "Wiki"
+    ],
+    "stars": 10,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "milla-jovovich/mempalace",
     "url": "https://github.com/milla-jovovich/mempalace",
     "description": "AI记忆系统，评分最高",
