@@ -1,5 +1,17 @@
 [
   {
+    "name": "JuliusBrussee/caveman",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "description": "穴居人Token效率skill",
+    "tags": [
+      "skills",
+      "Claude Code",
+      "效率"
+    ],
+    "stars": 4319,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "DeadWaveWave/opencove",
     "url": "https://github.com/DeadWaveWave/opencove",
     "description": "Agent 无限画布工作空间",
