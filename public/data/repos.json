@@ -1,5 +1,17 @@
 [
   {
+    "name": "deusyu/harness-engineering",
+    "url": "https://github.com/deusyu/harness-engineering",
+    "description": "Harness Engineering学习指南",
+    "tags": [
+      "harness",
+      "Claude Code",
+      "教程"
+    ],
+    "stars": 447,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "JuliusBrussee/caveman",
     "url": "https://github.com/JuliusBrussee/caveman",
     "description": "穴居人Token效率skill",
