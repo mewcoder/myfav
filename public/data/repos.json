@@ -1,5 +1,17 @@
 [
   {
+    "name": "cmliu/edgetunnel",
+    "url": "https://github.com/cmliu/edgetunnel",
+    "description": "VLESS/Trojan多功能面板",
+    "tags": [
+      "工具",
+      "网络",
+      "JavaScript"
+    ],
+    "stars": 28994,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "afar1/fieldtheory-cli",
     "url": "https://github.com/afar1/fieldtheory-cli",
     "description": "X/Twitter书签同步CLI",
