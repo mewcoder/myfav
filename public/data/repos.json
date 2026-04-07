@@ -1,5 +1,17 @@
 [
   {
+    "name": "DeadWaveWave/opencove",
+    "url": "https://github.com/DeadWaveWave/opencove",
+    "description": "Agent无限画布工作空间",
+    "tags": [
+      "工具",
+      "Claude Code",
+      "TypeScript"
+    ],
+    "stars": 985,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "collaborator-ai/collab-public",
     "url": "https://github.com/collaborator-ai/collab-public",
     "description": "Agent协作创作平台",
