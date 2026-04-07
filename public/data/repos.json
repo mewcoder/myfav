@@ -280,14 +280,6 @@
     "saveTime": "2026-04-05"
   },
   {
-    "name": "mahonzhan/awesome-coding-plan",
-    "url": "https://github.com/mahonzhan/awesome-coding-plan",
-    "description": "各厂家 Coding Plan 实际价值对比",
-    "tags": ["doc", "claude-code"],
-    "stars": 115,
-    "saveTime": "2026-04-05"
-  },
-  {
     "name": "jonnonz1/adaptive-browser",
     "url": "https://github.com/jonnonz1/adaptive-browser",
     "description": "从 API 规范和用户偏好构建 UI 的自适应浏览器",
