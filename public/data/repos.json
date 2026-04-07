@@ -1,5 +1,17 @@
 [
   {
+    "name": "engels74/claude-island",
+    "url": "https://github.com/engels74/claude-island",
+    "description": "Claude Code macOS会话管理器",
+    "tags": [
+      "工具",
+      "Claude Code",
+      "macOS"
+    ],
+    "stars": 129,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "deusyu/harness-engineering",
     "url": "https://github.com/deusyu/harness-engineering",
     "description": "Harness Engineering学习指南",
