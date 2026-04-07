@@ -1,5 +1,17 @@
 [
   {
+    "name": "milla-jovovich/mempalace",
+    "url": "https://github.com/milla-jovovich/mempalace",
+    "description": "AI记忆系统，评分最高",
+    "tags": [
+      "AI",
+      "Agent",
+      "Python"
+    ],
+    "stars": 5633,
+    "saveTime": "2026-04-07"
+  },
+  {
     "name": "engels74/claude-island",
     "url": "https://github.com/engels74/claude-island",
     "description": "Claude Code macOS会话管理器",
