@@ -1,5 +1,17 @@
 [
   {
+    "name": "leonxlnx/taste-skill",
+    "url": "https://github.com/leonxlnx/taste-skill",
+    "description": "AI前端设计skills",
+    "tags": [
+      "前端",
+      "设计",
+      "skill"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-08"
+  },
+  {
     "name": "siddharthvaddem/openscreen",
     "url": "https://github.com/siddharthvaddem/openscreen",
     "description": "开源录屏演示工具",
