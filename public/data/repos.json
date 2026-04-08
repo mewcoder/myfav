@@ -6,5 +6,594 @@
     "tags": ["录屏工具", "视频制作", "开源"],
     "stars": 0,
     "saveTime": "2026-04-08"
+  },
+  {
+    "name": "Ataraxy-Labs/opensessions",
+    "url": "https://github.com/ataraxy-labs/opensessions",
+    "description": "终端会话管理器",
+    "tags": [
+      "工具",
+      "终端",
+      "TypeScript"
+    ],
+    "stars": 524,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "yologdev/karpathy-llm-wiki",
+    "url": "https://github.com/yologdev/karpathy-llm-wiki",
+    "description": "Karpathy LLM Wiki",
+    "tags": [
+      "AI",
+      "LLM",
+      "Wiki"
+    ],
+    "stars": 10,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "milla-jovovich/mempalace",
+    "url": "https://github.com/milla-jovovich/mempalace",
+    "description": "AI记忆系统，评分最高",
+    "tags": [
+      "AI",
+      "Agent",
+      "Python"
+    ],
+    "stars": 5633,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "engels74/claude-island",
+    "url": "https://github.com/engels74/claude-island",
+    "description": "Claude Code macOS会话管理器",
+    "tags": [
+      "工具",
+      "Claude Code",
+      "macOS"
+    ],
+    "stars": 129,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "deusyu/harness-engineering",
+    "url": "https://github.com/deusyu/harness-engineering",
+    "description": "Harness Engineering学习指南",
+    "tags": [
+      "harness",
+      "Claude Code",
+      "教程"
+    ],
+    "stars": 447,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "JuliusBrussee/caveman",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "description": "穴居人Token效率skill",
+    "tags": [
+      "skills",
+      "Claude Code",
+      "效率"
+    ],
+    "stars": 4319,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "DeadWaveWave/opencove",
+    "url": "https://github.com/DeadWaveWave/opencove",
+    "description": "Agent 无限画布工作空间",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 985,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "collaborator-ai/collab-public",
+    "url": "https://github.com/collaborator-ai/collab-public",
+    "description": "Agent 协作创作平台",
+    "tags": [
+      "tool",
+      "agent"
+    ],
+    "stars": 2212,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "cmliu/edgetunnel",
+    "url": "https://github.com/cmliu/edgetunnel",
+    "description": "VLESS/Trojan 多功能面板",
+    "tags": [
+      "tool",
+      "网络"
+    ],
+    "stars": 28994,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "afar1/fieldtheory-cli",
+    "url": "https://github.com/afar1/fieldtheory-cli",
+    "description": "X/Twitter 书签同步 CLI",
+    "tags": [
+      "tool",
+      "社交"
+    ],
+    "stars": 1000,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "tw93/Waza",
+    "url": "https://github.com/tw93/Waza",
+    "description": "工程师习惯技能",
+    "tags": [
+      "skill",
+      "开发"
+    ],
+    "stars": 1048,
+    "saveTime": "2026-04-07"
+  },
+  {
+    "name": "jonnonz1/adaptive-browser",
+    "url": "https://github.com/jonnonz1/adaptive-browser",
+    "description": "从 API 规范和用户偏好构建 UI 的自适应浏览器",
+    "tags": [
+      "tool",
+      "前端"
+    ],
+    "stars": 65,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "santifer/career-ops",
+    "url": "https://github.com/santifer/career-ops",
+    "description": "AI 求职搜索系统",
+    "tags": [
+      "tool",
+      "商业"
+    ],
+    "stars": 4362,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "drona23/claude-token-efficient",
+    "url": "https://github.com/drona23/claude-token-efficient",
+    "description": "Claude Token 效率优化",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 3334,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "lidangzzz/goal-driven",
+    "url": "https://github.com/lidangzzz/goal-driven",
+    "description": "运行 100 小时的多 Agent 系统",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 690,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "jimliu/baoyu-skills",
+    "url": "https://github.com/jimliu/baoyu-skills",
+    "description": "Agent Skills 合集",
+    "tags": [
+      "skill",
+      "agent"
+    ],
+    "stars": 13305,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "zarazhangrui/codebase-to-course",
+    "url": "https://github.com/zarazhangrui/codebase-to-course",
+    "description": "代码库转交互教程",
+    "tags": [
+      "skill",
+      "教学"
+    ],
+    "stars": 3123,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "slowmist/openclaw-security-practice-guide",
+    "url": "https://github.com/slowmist/openclaw-security-practice-guide",
+    "description": "OpenClaw 安全实践指南",
+    "tags": [
+      "doc",
+      "安全"
+    ],
+    "stars": 2694,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "MiniMax-AI/skills",
+    "url": "https://github.com/MiniMax-AI/skills",
+    "description": "MiniMax Agent Skills",
+    "tags": [
+      "skill",
+      "agent"
+    ],
+    "stars": 9330,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "wxtsky/CodeIsland",
+    "url": "https://github.com/wxtsky/CodeIsland",
+    "description": "macOS 刘海 AI Agent 状态面板",
+    "tags": [
+      "tool",
+      "claude-code"
+    ],
+    "stars": 51,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "description": "AI 编码 Agent 工作流框架，137k stars",
+    "tags": [
+      "framework",
+      "claude-code"
+    ],
+    "stars": 136890,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "EveryInc/compound-engineering-plugin",
+    "url": "https://github.com/EveryInc/compound-engineering-plugin",
+    "description": "Office Compound Engineering plugin",
+    "tags": [
+      "skill",
+      "开发"
+    ],
+    "stars": 13247,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "garrytan/gstack",
+    "url": "https://github.com/garrytan/gstack",
+    "description": "Garry Tan 的 Claude Code 配置，23 个工具",
+    "tags": [
+      "skill",
+      "效率"
+    ],
+    "stars": 65057,
+    "saveTime": "2026-04-06"
+  },
+  {
+    "name": "jinchenma94/bazi-skill",
+    "url": "https://github.com/jinchenma94/bazi-skill",
+    "description": "四柱八字命理分析 Skill",
+    "tags": [
+      "skill",
+      "分析"
+    ],
+    "stars": 83,
+    "saveTime": "2026-04-05"
+  },
+  {
+    "name": "HKUDS/OpenHarness",
+    "url": "https://github.com/HKUDS/OpenHarness",
+    "description": "OpenHarness: Open Agent Harness",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 3729,
+    "saveTime": "2026-04-05"
+  },
+  {
+    "name": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "description": "Production-grade engineering skills for AI coding agents",
+    "tags": [
+      "skill",
+      "开发"
+    ],
+    "stars": 4164,
+    "saveTime": "2026-04-05"
+  },
+  {
+    "name": "jarrodwatts/claude-hud",
+    "url": "https://github.com/jarrodwatts/claude-hud",
+    "description": "Claude Code 插件，显示上下文、工具、Agent 状态",
+    "tags": [
+      "tool",
+      "claude-code"
+    ],
+    "stars": 16865,
+    "saveTime": "2026-04-05"
+  },
+  {
+    "name": "10xChengTu/harness-engineering",
+    "url": "https://github.com/10xChengTu/harness-engineering",
+    "description": "Harness 工程 Agent Skill",
+    "tags": [
+      "skill",
+      "开发"
+    ],
+    "stars": 2,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "VoltAgent/awesome-design-md",
+    "url": "https://github.com/VoltAgent/awesome-design-md",
+    "description": "DESIGN.md 文件合集，AI 生成一致 UI",
+    "tags": [
+      "doc",
+      "前端"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "keenthemes/reui",
+    "url": "https://github.com/keenthemes/reui",
+    "description": "1000+shadcn 组件库，68 类别",
+    "tags": [
+      "tool",
+      "前端"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "SaladDay/cc-switch-cli",
+    "url": "https://github.com/SaladDay/cc-switch-cli",
+    "description": "Claude Code/Codex 技能管理 CLI",
+    "tags": [
+      "tool",
+      "claude-code"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/nousresearch/hermes-agent",
+    "description": "随你成长的 Agent 框架",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 17500,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "shareAI-lab/learn-claude-code",
+    "url": "https://github.com/shareAI-lab/learn-claude-code",
+    "description": "从 0 到 1 学习 Agent harness",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-04"
+  },
+  {
+    "name": "iflytek/skillhub",
+    "url": "https://github.com/iflytek/skillhub",
+    "description": "企业级开源 Agent 技能注册中心",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 1500,
+    "saveTime": "2026-04-03"
+  },
+  {
+    "name": "lintsinghua/claude-code-book",
+    "url": "https://github.com/lintsinghua/claude-code-book",
+    "description": "Claude Code 架构深度剖析",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 1200,
+    "saveTime": "2026-04-03"
+  },
+  {
+    "name": "skillsgate/skillsgate",
+    "url": "https://github.com/skillsgate/skillsgate",
+    "description": "管理 91k+ AI Agent Skills",
+    "tags": [
+      "framework",
+      "agent"
+    ],
+    "stars": 188,
+    "saveTime": "2026-04-03"
+  },
+  {
+    "name": "wquguru/harness-books",
+    "url": "https://github.com/wquguru/harness-books",
+    "description": "Harness Engineering 系列书籍",
+    "tags": [
+      "doc",
+      "agent"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-02"
+  },
+  {
+    "name": "walkinglabs/learn-harness-engineering",
+    "url": "https://github.com/walkinglabs/learn-harness-engineering",
+    "description": "Harness 工程实践课程",
+    "tags": [
+      "doc",
+      "agent"
+    ],
+    "stars": 34,
+    "saveTime": "2026-04-02"
+  },
+  {
+    "name": "sugarforever/understanding-fantastic-coding-agents",
+    "url": "https://github.com/sugarforever/understanding-fantastic-coding-agents",
+    "description": "AI 编程 Agent 深度分析",
+    "tags": [
+      "doc",
+      "agent"
+    ],
+    "stars": 3,
+    "saveTime": "2026-04-02"
+  },
+  {
+    "name": "jgraph/drawio-mcp",
+    "url": "https://github.com/jgraph/drawio-mcp",
+    "description": "draw.io MCP 服务器",
+    "tags": [
+      "MCP",
+      "画图"
+    ],
+    "stars": 2036,
+    "saveTime": "2026-04-02"
+  },
+  {
+    "name": "multica-ai/multica",
+    "url": "https://github.com/multica-ai/multica",
+    "description": "AI 原生项目管理，Agent 即队友",
+    "tags": [
+      "tool",
+      "agent"
+    ],
+    "stars": 488,
+    "saveTime": "2026-04-01"
+  },
+  {
+    "name": "helloianneo/claude-code-handbook",
+    "url": "https://github.com/helloianneo/claude-code-handbook",
+    "description": "Claude Code 高阶指南，8 章 +3 附录",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 74,
+    "saveTime": "2026-04-01"
+  },
+  {
+    "name": "tvytlx/ai-agent-deep-dive",
+    "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+    "description": "Claude Code 源码深度研究报告",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 2247,
+    "saveTime": "2026-04-01"
+  },
+  {
+    "name": "shanraisshan/claude-code-best-practice",
+    "url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "description": "Claude Code 最佳实践指南",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 0,
+    "saveTime": "2026-03-31"
+  },
+  {
+    "name": "6551Team/claude-code-design-guide",
+    "url": "https://github.com/6551Team/claude-code-design-guide",
+    "description": "Claude Code 设计指南",
+    "tags": [
+      "doc",
+      "claude-code"
+    ],
+    "stars": 47,
+    "saveTime": "2026-03-31"
+  },
+  {
+    "name": "Panniantong/Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "description": "Agent 互联网能力工具",
+    "tags": [
+      "skill",
+      "联网"
+    ],
+    "stars": 13078,
+    "saveTime": "2026-03-30"
+  },
+  {
+    "name": "agrinman/tunnelto",
+    "url": "https://github.com/agrinman/tunnelto",
+    "description": "Rust 隧道工具，暴露本地服务到公网",
+    "tags": [
+      "tool",
+      "网络"
+    ],
+    "stars": 1900,
+    "saveTime": "2026-03-30"
+  },
+  {
+    "name": "phuryn/pm-skills",
+    "url": "https://github.com/phuryn/pm-skills",
+    "description": "产品经理 AI 技能库",
+    "tags": [
+      "skill",
+      "管理"
+    ],
+    "stars": 8400,
+    "saveTime": "2026-03-30"
+  },
+  {
+    "name": "eze-is/web-access",
+    "url": "https://github.com/eze-is/web-access",
+    "description": "Claude Code 联网 skill",
+    "tags": [
+      "skill",
+      "联网"
+    ],
+    "stars": 2076,
+    "saveTime": "2026-03-29"
+  },
+  {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "description": "AI 前端设计语言 skill",
+    "tags": [
+      "skill",
+      "设计"
+    ],
+    "stars": 0,
+    "saveTime": "2026-03-29"
+  },
+  {
+    "name": "dontbesilent2025/dbskill",
+    "url": "https://github.com/dontbesilent2025/dbskill",
+    "description": "商业诊断 Claude 技能",
+    "tags": [
+      "skill",
+      "分析"
+    ],
+    "stars": 0,
+    "saveTime": "2026-03-29"
+  },
+  {
+    "name": "CopilotKit/shadify",
+    "url": "https://github.com/CopilotKit/shadify",
+    "description": "AI 生成 Shadcn 组件",
+    "tags": [
+      "tool",
+      "前端"
+    ],
+    "stars": 208,
+    "saveTime": "2026-03-29"
+  },
+  {
+    "name": "ArtemXTech/personal-os-skills",
+    "url": "https://github.com/ArtemXTech/personal-os-skills",
+    "description": "Claude Code Obsidian 技能",
+    "tags": [
+      "skill",
+      "管理"
+    ],
+    "stars": 321,
+    "saveTime": "2026-03-29"
   }
 ]
