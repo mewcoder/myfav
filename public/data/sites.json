@@ -1,5 +1,12 @@
 [
   {
+    "title": "Blueprinter",
+    "url": "https://skills.sh/yofine/skills/blueprinter",
+    "description": "技术风格图表生成Skill",
+    "category": "skill",
+    "saveTime": "2026-04-08"
+  },
+  {
     "title": "bestblogs.dev",
     "url": "https://www.bestblogs.dev/",
     "description": "技术文章聚合，AI摘要评分辅助阅读",
