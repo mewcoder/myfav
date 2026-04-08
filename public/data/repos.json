@@ -3,7 +3,11 @@
     "name": "siddharthvaddem/openscreen",
     "url": "https://github.com/siddharthvaddem/openscreen",
     "description": "开源录屏演示工具",
-    "tags": ["录屏工具", "视频制作", "开源"],
+    "tags": [
+      "录屏工具",
+      "视频制作",
+      "开源"
+    ],
     "stars": 0,
     "saveTime": "2026-04-08"
   },

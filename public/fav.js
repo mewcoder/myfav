@@ -11,8 +11,11 @@
 
 import fs from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 
-const DATA_DIR = path.join(process.cwd(), 'public', 'data')
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const DATA_DIR = path.join(__dirname, 'data')
 const SITES_FILE = path.join(DATA_DIR, 'sites.json')
 const REPOS_FILE = path.join(DATA_DIR, 'repos.json')
 
