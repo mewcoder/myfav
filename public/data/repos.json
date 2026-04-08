@@ -1,5 +1,17 @@
 [
   {
+    "name": "gunnargray-dev/unicode-animations",
+    "url": "https://github.com/gunnargray-dev/unicode-animations",
+    "description": "Unicode动画库",
+    "tags": [
+      "前端",
+      "动画",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-08"
+  },
+  {
     "name": "leonxlnx/taste-skill",
     "url": "https://github.com/leonxlnx/taste-skill",
     "description": "AI前端设计skills",
