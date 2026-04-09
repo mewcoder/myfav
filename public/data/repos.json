@@ -1,5 +1,17 @@
 [
   {
+    "name": "yanhua1010/zero-to-ai-fullstack",
+    "url": "https://github.com/yanhua1010/zero-to-ai-fullstack",
+    "description": "Java工程师AI全栈学习路径",
+    "tags": [
+      "RAG",
+      "教程",
+      "Python"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-09"
+  },
+  {
     "name": "gunnargray-dev/unicode-animations",
     "url": "https://github.com/gunnargray-dev/unicode-animations",
     "description": "Unicode动画库",
