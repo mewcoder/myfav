@@ -1,5 +1,17 @@
 [
   {
+    "name": "garrytan/gbrain",
+    "url": "https://github.com/garrytan/gbrain",
+    "description": "OpenClaw Brain知识系统",
+    "tags": [
+      "agent",
+      "skill",
+      "开源"
+    ],
+    "stars": 168,
+    "saveTime": "2026-04-10"
+  },
+  {
     "name": "CapSoftware/Cap",
     "url": "https://github.com/CapSoftware/Cap",
     "description": "开源录屏，Loom替代",
