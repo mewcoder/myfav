@@ -1,5 +1,12 @@
 [
   {
+    "title": "Claude Code from Source",
+    "url": "https://claude-code-from-source.com/",
+    "description": "深入解析架构与设计模式",
+    "category": "Claude Code",
+    "saveTime": "2026-04-10"
+  },
+  {
     "title": "Blueprinter",
     "url": "https://skills.sh/yofine/skills/blueprinter",
     "description": "技术风格图表生成Skill",
