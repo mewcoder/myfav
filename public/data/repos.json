@@ -1,5 +1,17 @@
 [
   {
+    "name": "alexpate/awesome-design-systems",
+    "url": "https://github.com/alexpate/awesome-design-systems",
+    "description": "设计系统资源大全",
+    "tags": [
+      "设计",
+      "前端",
+      "开源"
+    ],
+    "stars": 19000,
+    "saveTime": "2026-04-10"
+  },
+  {
     "name": "garrytan/gbrain",
     "url": "https://github.com/garrytan/gbrain",
     "description": "OpenClaw Brain知识系统",
