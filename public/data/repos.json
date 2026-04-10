@@ -1,5 +1,17 @@
 [
   {
+    "name": "CapSoftware/Cap",
+    "url": "https://github.com/CapSoftware/Cap",
+    "description": "开源录屏，Loom替代",
+    "tags": [
+      "录屏工具",
+      "开源",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-10"
+  },
+  {
     "name": "yanhua1010/zero-to-ai-fullstack",
     "url": "https://github.com/yanhua1010/zero-to-ai-fullstack",
     "description": "Java工程师AI全栈学习路径",
