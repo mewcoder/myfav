@@ -1,5 +1,12 @@
 [
   {
+    "title": "Best of JS",
+    "url": "https://bestofjs.org/",
+    "description": "Web开源项目趋势发现",
+    "category": "知识管理",
+    "saveTime": "2026-04-11"
+  },
+  {
     "title": "Coolify",
     "url": "https://coolify.io/",
     "description": "开源自托管部署平台",
