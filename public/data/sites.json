@@ -1,5 +1,12 @@
 [
   {
+    "title": "Coolify",
+    "url": "https://coolify.io/",
+    "description": "开源自托管部署平台",
+    "category": "开发工具",
+    "saveTime": "2026-04-11"
+  },
+  {
     "title": "Dokploy",
     "url": "https://dokploy.com/",
     "description": "开源应用部署平台",
