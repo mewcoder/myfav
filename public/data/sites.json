@@ -1,5 +1,12 @@
 [
   {
+    "title": "Dokploy",
+    "url": "https://dokploy.com/",
+    "description": "开源应用部署平台",
+    "category": "开发工具",
+    "saveTime": "2026-04-11"
+  },
+  {
     "title": "App Store 全球最低价",
     "url": "http://appstoreprice.org/zh",
     "description": "全球各区价格对比省钱",
