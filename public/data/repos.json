@@ -1,5 +1,13 @@
 [
   {
+    "name": "lzhgus/Capso",
+    "url": "https://github.com/lzhgus/Capso",
+    "description": "macOS截图录屏，CleanShot X开源替代",
+    "tags": ["录屏工具", "macOS", "开源"],
+    "stars": 55,
+    "saveTime": "2026-04-11"
+  },
+  {
     "name": "alexpate/awesome-design-systems",
     "url": "https://github.com/alexpate/awesome-design-systems",
     "description": "设计系统资源大全",
