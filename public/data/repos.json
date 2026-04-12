@@ -1,5 +1,17 @@
 [
   {
+    "name": "ZeroZ-lab/gmdiagram",
+    "url": "https://github.com/ZeroZ-lab/gmdiagram",
+    "description": "Claude Code/Codex图表生成插件",
+    "tags": [
+      "skill",
+      "画图",
+      "Claude Code"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-12"
+  },
+  {
     "name": "haydenbleasel/ultracite",
     "url": "https://github.com/haydenbleasel/ultracite",
     "description": "零配置ESLint/Biome/Oxlint预设",
