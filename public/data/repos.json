@@ -1,5 +1,17 @@
 [
   {
+    "name": "haydenbleasel/ultracite",
+    "url": "https://github.com/haydenbleasel/ultracite",
+    "description": "零配置ESLint/Biome/Oxlint预设",
+    "tags": [
+      "开发",
+      "skill",
+      "AI"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-12"
+  },
+  {
     "name": "MinsiAI/ai-website-cloner-template",
     "url": "https://github.com/MinsiAI/ai-website-cloner-template",
     "description": "AI一键克隆网站到Next.js",
