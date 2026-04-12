@@ -1,5 +1,17 @@
 [
   {
+    "name": "hexiecs/talk-normal",
+    "url": "https://github.com/hexiecs/talk-normal",
+    "description": "对话规范化Skill，让AI更自然",
+    "tags": [
+      "skill",
+      "AI",
+      "教学"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-12"
+  },
+  {
     "name": "ZeroZ-lab/gmdiagram",
     "url": "https://github.com/ZeroZ-lab/gmdiagram",
     "description": "Claude Code/Codex图表生成插件",
