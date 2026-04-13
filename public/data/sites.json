@@ -1,5 +1,12 @@
 [
   {
+    "title": "Claude IP检测",
+    "url": "https://ip.net.coffee/claude/",
+    "description": "Claude AI IP风险检测",
+    "category": "Claude Code",
+    "saveTime": "2026-04-13"
+  },
+  {
     "title": "Spell",
     "url": "https://spell.sh/",
     "description": "高质量React组件库",
