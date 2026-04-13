@@ -1,5 +1,12 @@
 [
   {
+    "title": "CCTest",
+    "url": "https://cctest.ai/",
+    "description": "Claude API Key安全检测",
+    "category": "Claude Code",
+    "saveTime": "2026-04-13"
+  },
+  {
     "title": "AI Ping",
     "url": "https://www.aiping.cn",
     "description": "AI相关工具网站",
