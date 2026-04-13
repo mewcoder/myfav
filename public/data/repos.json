@@ -1,5 +1,16 @@
 [
   {
+    "name": "eternityspring/article-tools",
+    "url": "https://github.com/eternityspring/article-tools",
+    "description": "文章处理工具集",
+    "tags": [
+      "工具",
+      "效率"
+    ],
+    "stars": 79,
+    "saveTime": "2026-04-13"
+  },
+  {
     "name": "hexiecs/talk-normal",
     "url": "https://github.com/hexiecs/talk-normal",
     "description": "对话规范化Skill，让AI更自然",
