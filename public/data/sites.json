@@ -1,5 +1,12 @@
 [
   {
+    "title": "Spell",
+    "url": "https://spell.sh/",
+    "description": "高质量React组件库",
+    "category": "开发工具",
+    "saveTime": "2026-04-13"
+  },
+  {
     "title": "CCTest",
     "url": "https://cctest.ai/",
     "description": "Claude API Key安全检测",
