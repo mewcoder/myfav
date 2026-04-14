@@ -1,5 +1,17 @@
 [
   {
+    "name": "stevibe/BenchLocal",
+    "url": "https://github.com/stevibe/BenchLocal",
+    "description": "LLM基准测试桌面应用",
+    "tags": [
+      "LLM",
+      "工具",
+      "测试"
+    ],
+    "stars": 44,
+    "saveTime": "2026-04-14"
+  },
+  {
     "name": "eternityspring/article-tools",
     "url": "https://github.com/eternityspring/article-tools",
     "description": "文章处理工具集",
