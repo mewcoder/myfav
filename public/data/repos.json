@@ -1,5 +1,17 @@
 [
   {
+    "name": "Cocoon-AI/architecture-diagram-generator",
+    "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
+    "description": "生成架构图的Claude技能",
+    "tags": [
+      "skill",
+      "画图",
+      "Claude Code"
+    ],
+    "stars": 221,
+    "saveTime": "2026-04-14"
+  },
+  {
     "name": "stevibe/BenchLocal",
     "url": "https://github.com/stevibe/BenchLocal",
     "description": "LLM基准测试桌面应用",
