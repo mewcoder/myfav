@@ -1,5 +1,17 @@
 [
   {
+    "name": "lukilabs/craft-agents-oss",
+    "url": "https://github.com/lukilabs/craft-agents-oss",
+    "description": "Agent框架，支持多模型",
+    "tags": [
+      "agent",
+      "framework",
+      "MCP"
+    ],
+    "stars": 3777,
+    "saveTime": "2026-04-15"
+  },
+  {
     "name": "firecrawl/open-lovable",
     "url": "https://github.com/mendableai/open-lovable",
     "description": "克隆网站转React应用",
