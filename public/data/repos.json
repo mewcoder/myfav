@@ -1,5 +1,17 @@
 [
   {
+    "name": "firecrawl/open-lovable",
+    "url": "https://github.com/mendableai/open-lovable",
+    "description": "克隆网站转React应用",
+    "tags": [
+      "AI",
+      "前端",
+      "React"
+    ],
+    "stars": 24855,
+    "saveTime": "2026-04-15"
+  },
+  {
     "name": "Cocoon-AI/architecture-diagram-generator",
     "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
     "description": "生成架构图的Claude技能",
