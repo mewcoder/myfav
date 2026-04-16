@@ -1,5 +1,12 @@
 [
   {
+    "title": "小云搜索",
+    "url": "https://dash.yunso.net/",
+    "description": "网盘搜索引擎",
+    "category": "工具",
+    "saveTime": "2026-04-16"
+  },
+  {
     "title": "Diode",
     "url": "https://www.withdiode.com/",
     "description": "浏览器硬件模拟工具",
