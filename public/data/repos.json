@@ -1,5 +1,17 @@
 [
   {
+    "name": "davebcn87/pi-autoresearch",
+    "url": "https://github.com/davebcn87/pi-autoresearch",
+    "description": "pi自主实验循环扩展",
+    "tags": [
+      "Agent",
+      "效率",
+      "测试"
+    ],
+    "stars": 4549,
+    "saveTime": "2026-04-16"
+  },
+  {
     "name": "lukilabs/craft-agents-oss",
     "url": "https://github.com/lukilabs/craft-agents-oss",
     "description": "Agent框架，支持多模型",
