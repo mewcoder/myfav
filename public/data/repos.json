@@ -12,7 +12,17 @@
     "saveTime": "2026-04-17"
   },
   {
-    "name": "davebcn87/pi-autoresearch",
+    "name": "loks666/get_jobs",
+    "url": "https://github.com/loks666/get_jobs",
+    "description": "AI找工作自动投简历脚本",
+    "tags": [
+      "求职",
+      "工具",
+      "自动化"
+    ],
+    "stars": 5000,
+    "saveTime": "2026-04-17"
+  },
     "url": "https://github.com/davebcn87/pi-autoresearch",
     "description": "pi自主实验循环扩展",
     "tags": [
