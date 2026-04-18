@@ -1,5 +1,17 @@
 [
   {
+    "name": "f/textream",
+    "url": "https://github.com/f/textream",
+    "description": "macOS免费提词器，实时语音追踪",
+    "tags": [
+      "录屏工具",
+      "macOS",
+      "开源"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-18"
+  },
+  {
     "name": "langchain-ai/agents-from-scratch",
     "url": "https://github.com/langchain-ai/agents-from-scratch",
     "description": "从零构建Agent教程",
@@ -23,6 +35,8 @@
     "stars": 5000,
     "saveTime": "2026-04-17"
   },
+  {
+    "name": "davebcn87/pi-autoresearch",
     "url": "https://github.com/davebcn87/pi-autoresearch",
     "description": "pi自主实验循环扩展",
     "tags": [
