@@ -109,14 +109,14 @@
   },
   {
     "name": "firecrawl/open-lovable",
-    "url": "https://github.com/mendableai/open-lovable",
+    "url": "https://github.com/firecrawl/open-lovable",
     "description": "克隆网站转React应用",
     "tags": [
       "AI",
       "前端",
       "React"
     ],
-    "stars": 0,
+    "stars": 25600,
     "saveTime": "2026-04-15"
   },
   {
@@ -323,15 +323,15 @@
     "saveTime": "2026-04-07"
   },
   {
-    "name": "milla-jovovich/mempalace",
-    "url": "https://github.com/milla-jovovich/mempalace",
+    "name": "MemPalace/mempalace",
+    "url": "https://github.com/MemPalace/mempalace",
     "description": "AI记忆系统，评分最高",
     "tags": [
       "AI",
       "Agent",
       "Python"
     ],
-    "stars": 0,
+    "stars": 47900,
     "saveTime": "2026-04-07"
   },
   {
@@ -697,7 +697,7 @@
       "framework",
       "agent"
     ],
-    "stars": 0,
+    "stars": 291,
     "saveTime": "2026-04-03"
   },
   {
@@ -818,7 +818,7 @@
       "tool",
       "网络"
     ],
-    "stars": 0,
+    "stars": 6600,
     "saveTime": "2026-03-30"
   },
   {
@@ -873,7 +873,7 @@
       "tool",
       "前端"
     ],
-    "stars": 0,
+    "stars": 234,
     "saveTime": "2026-03-29"
   },
   {
