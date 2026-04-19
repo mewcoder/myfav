@@ -1,5 +1,17 @@
 [
   {
+    "name": "ZeroZ-lab/cc-design",
+    "url": "https://github.com/ZeroZ-lab/cc-design",
+    "description": "Claude Code设计技能，创建HTML原型",
+    "tags": [
+      "skill",
+      "claude-code",
+      "设计"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-19"
+  },
+  {
     "name": "browser-use/video-use",
     "url": "https://github.com/browser-use/video-use",
     "description": "Claude Code视频编辑技能",
