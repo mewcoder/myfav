@@ -1,5 +1,17 @@
 [
   {
+    "name": "smallnest/autoresearch",
+    "url": "https://github.com/smallnest/autoresearch",
+    "description": "多Agent轮转审核全自动开发",
+    "tags": [
+      "自动化",
+      "Agent",
+      "开发"
+    ],
+    "stars": 10,
+    "saveTime": "2026-04-19"
+  },
+  {
     "name": "ZeroZ-lab/cc-design",
     "url": "https://github.com/ZeroZ-lab/cc-design",
     "description": "Claude Code设计技能，创建HTML原型",
