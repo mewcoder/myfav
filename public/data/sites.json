@@ -217,14 +217,14 @@
     "title": "Duomi",
     "url": "https://ai.duomi.uk",
     "description": "AI API网关服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-03"
   },
   {
     "title": "XueDingToken",
     "url": "https://xuedingtoken.com/home",
     "description": "AI API 网关服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-03"
   },
   {
@@ -252,28 +252,28 @@
     "title": "ZenMux",
     "url": "https://zenmux.ai/",
     "description": "AI API 统一网关平台",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-02"
   },
   {
     "title": "Ai Go Code",
     "url": "https://www.aigocode.com",
     "description": "AI编程工作台",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-02"
   },
   {
     "title": "PackyAPI",
     "url": "https://www.packyapi.com",
     "description": "AI API聚合平台",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-02"
   },
   {
     "title": "Dragon",
     "url": "https://dragoncode.codes/",
     "description": "企业级API中转服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-01"
   },
   {
@@ -294,7 +294,7 @@
     "title": "DDS Hub",
     "url": "https://www.ddshub.cc/",
     "description": "AI API Gateway中转服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-04-01"
   },
   {
@@ -308,7 +308,7 @@
     "title": "Help AIO",
     "url": "https://www.helpaio.com/",
     "description": "AI导航中转评测比价",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-03-31"
   },
   {
@@ -322,7 +322,7 @@
     "title": "Cubence",
     "url": "https://cubence.com/",
     "description": "Claude Code/Codex网关服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-03-31"
   },
   {
@@ -343,7 +343,7 @@
     "title": "禾维 AI",
     "url": "https://hvoy.ai/",
     "description": "检测API中转站真假",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-03-30"
   },
   {
@@ -364,7 +364,7 @@
     "title": "RelayPulse",
     "url": "https://relaypulse.top/",
     "description": "API中转服务监测平台",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-03-29"
   },
   {
@@ -378,7 +378,7 @@
     "title": "Aiberm",
     "url": "https://aiberm.com/",
     "description": "折扣AI API服务",
-    "category": "API中转",
+    "category": "AI服务",
     "saveTime": "2026-03-29"
   },
   {
@@ -399,21 +399,21 @@
     "title": "Loucer Storefront",
     "url": "https://shop.loucer.cn/",
     "description": "codex订阅卡、接码、邮箱账号",
-    "category": "虚拟商品",
+    "category": "AI服务",
     "saveTime": "2026-04-19"
   },
   {
     "title": "vSakuraStore (9.PLUS)",
     "url": "https://9.plus/shop/C0RVQEQD",
     "description": "GPT Plus/Pro订阅卡",
-    "category": "虚拟商品",
+    "category": "AI服务",
     "saveTime": "2026-04-19"
   },
   {
     "title": "ChatGPTai铺 (链动小铺)",
     "url": "https://pay.ldxp.cn/shop/DK1WNXMR",
     "description": "GPT Plus/Pro订阅卡",
-    "category": "虚拟商品",
+    "category": "AI服务",
     "saveTime": "2026-04-19"
   }
 ]
