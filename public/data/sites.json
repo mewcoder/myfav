@@ -401,5 +401,12 @@
     "description": "现代化全栈SaaS开发平台",
     "category": "开发工具",
     "saveTime": "2026-04-09"
+  },
+  {
+    "title": "Loucer Storefront",
+    "url": "https://shop.loucer.cn/",
+    "description": "codex订阅卡、接码、邮箱账号",
+    "category": "虚拟商品",
+    "saveTime": "2026-04-19"
   }
 ]
