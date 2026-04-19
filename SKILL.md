@@ -46,6 +46,15 @@ git pull
 - URL 含 `github.com` → 仓库
 - 否则 → 网站
 
+**⚠️ 文章拦截规则**
+如果 URL 是以下类型，**拒绝收藏并提示用户改用 `/a` 命令**：
+- X/Twitter 推文：`x.com` 或 `twitter.com` 且包含 `/status/`
+- 博客文章：`medium.com`、`substack.com`、`zhuanlan.zhihu.com` 等
+- 论文：`arxiv.org` 等
+- 新闻文章：明显是文章内容的 URL
+
+提示语："这是文章，请用 `/a <链接>` 收藏到飞书多维表格"
+
 **第2步：WebFetch 获取信息**
 ```
 WebFetch url: "<url>" prompt: "提取标题和简短描述"
