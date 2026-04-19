@@ -1,5 +1,17 @@
 [
   {
+    "name": "tmoroney/auto-subs",
+    "url": "https://github.com/tmoroney/auto-subs",
+    "description": "AI字幕生成工具",
+    "tags": [
+      "AI",
+      "视频制作",
+      "工具"
+    ],
+    "stars": 3151,
+    "saveTime": "2026-04-19"
+  },
+  {
     "name": "https://github.com/elder-plinius/",
     "url": "https://github.com/elder-plinius/",
     "description": "AI安全研究者",
