@@ -1,5 +1,17 @@
 [
   {
+    "name": "firecrawl/web-agent",
+    "url": "https://github.com/firecrawl/web-agent",
+    "description": "Web数据研究Agent框架",
+    "tags": [
+      "agent",
+      "framework",
+      "langchain"
+    ],
+    "stars": 189,
+    "saveTime": "2026-04-19"
+  },
+  {
     "name": "f/textream",
     "url": "https://github.com/f/textream",
     "description": "macOS免费提词器，实时语音追踪",
