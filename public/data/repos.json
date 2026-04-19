@@ -8,7 +8,7 @@
       "视频制作",
       "Claude Code"
     ],
-    "stars": 1300,
+    "stars": 1257,
     "saveTime": "2026-04-19"
   },
   {
@@ -20,7 +20,7 @@
       "AI",
       "开源"
     ],
-    "stars": 15200,
+    "stars": 15244,
     "saveTime": "2026-04-19"
   },
   {
@@ -32,10 +32,9 @@
       "视频制作",
       "工具"
     ],
-    "stars": 3151,
+    "stars": 3159,
     "saveTime": "2026-04-19"
   },
-
   {
     "name": "firecrawl/web-agent",
     "url": "https://github.com/firecrawl/web-agent",
@@ -45,7 +44,7 @@
       "framework",
       "langchain"
     ],
-    "stars": 189,
+    "stars": 205,
     "saveTime": "2026-04-19"
   },
   {
@@ -57,7 +56,7 @@
       "macOS",
       "开源"
     ],
-    "stars": 0,
+    "stars": 2839,
     "saveTime": "2026-04-18"
   },
   {
@@ -69,7 +68,7 @@
       "agent",
       "教程"
     ],
-    "stars": 5000,
+    "stars": 1729,
     "saveTime": "2026-04-17"
   },
   {
@@ -81,7 +80,7 @@
       "工具",
       "自动化"
     ],
-    "stars": 5000,
+    "stars": 6630,
     "saveTime": "2026-04-17"
   },
   {
@@ -93,7 +92,7 @@
       "效率",
       "测试"
     ],
-    "stars": 4549,
+    "stars": 5815,
     "saveTime": "2026-04-16"
   },
   {
@@ -105,7 +104,7 @@
       "framework",
       "MCP"
     ],
-    "stars": 3777,
+    "stars": 4376,
     "saveTime": "2026-04-15"
   },
   {
@@ -117,7 +116,7 @@
       "前端",
       "React"
     ],
-    "stars": 24855,
+    "stars": 0,
     "saveTime": "2026-04-15"
   },
   {
@@ -129,7 +128,7 @@
       "画图",
       "Claude Code"
     ],
-    "stars": 221,
+    "stars": 3641,
     "saveTime": "2026-04-14"
   },
   {
@@ -141,7 +140,7 @@
       "工具",
       "测试"
     ],
-    "stars": 44,
+    "stars": 132,
     "saveTime": "2026-04-14"
   },
   {
@@ -152,7 +151,7 @@
       "工具",
       "效率"
     ],
-    "stars": 79,
+    "stars": 122,
     "saveTime": "2026-04-13"
   },
   {
@@ -164,7 +163,7 @@
       "AI",
       "教学"
     ],
-    "stars": 0,
+    "stars": 1223,
     "saveTime": "2026-04-12"
   },
   {
@@ -176,7 +175,7 @@
       "画图",
       "Claude Code"
     ],
-    "stars": 0,
+    "stars": 9,
     "saveTime": "2026-04-12"
   },
   {
@@ -188,7 +187,7 @@
       "skill",
       "AI"
     ],
-    "stars": 0,
+    "stars": 2894,
     "saveTime": "2026-04-12"
   },
   {
@@ -212,7 +211,7 @@
       "macOS",
       "开源"
     ],
-    "stars": 55,
+    "stars": 491,
     "saveTime": "2026-04-11"
   },
   {
@@ -224,7 +223,7 @@
       "前端",
       "开源"
     ],
-    "stars": 19000,
+    "stars": 23628,
     "saveTime": "2026-04-10"
   },
   {
@@ -236,7 +235,7 @@
       "skill",
       "开源"
     ],
-    "stars": 168,
+    "stars": 9176,
     "saveTime": "2026-04-10"
   },
   {
@@ -248,7 +247,7 @@
       "开源",
       "工具"
     ],
-    "stars": 17900,
+    "stars": 18220,
     "saveTime": "2026-04-10"
   },
   {
@@ -260,7 +259,7 @@
       "教程",
       "Python"
     ],
-    "stars": 0,
+    "stars": 147,
     "saveTime": "2026-04-09"
   },
   {
@@ -272,7 +271,7 @@
       "动画",
       "工具"
     ],
-    "stars": 0,
+    "stars": 462,
     "saveTime": "2026-04-08"
   },
   {
@@ -284,7 +283,7 @@
       "设计",
       "skill"
     ],
-    "stars": 0,
+    "stars": 10005,
     "saveTime": "2026-04-08"
   },
   {
@@ -296,7 +295,7 @@
       "视频制作",
       "开源"
     ],
-    "stars": 0,
+    "stars": 31109,
     "saveTime": "2026-04-08"
   },
   {
@@ -308,7 +307,7 @@
       "终端",
       "TypeScript"
     ],
-    "stars": 524,
+    "stars": 948,
     "saveTime": "2026-04-07"
   },
   {
@@ -320,7 +319,7 @@
       "LLM",
       "Wiki"
     ],
-    "stars": 10,
+    "stars": 39,
     "saveTime": "2026-04-07"
   },
   {
@@ -332,7 +331,7 @@
       "Agent",
       "Python"
     ],
-    "stars": 5633,
+    "stars": 0,
     "saveTime": "2026-04-07"
   },
   {
@@ -344,7 +343,7 @@
       "Claude Code",
       "macOS"
     ],
-    "stars": 129,
+    "stars": 165,
     "saveTime": "2026-04-07"
   },
   {
@@ -356,7 +355,7 @@
       "Claude Code",
       "教程"
     ],
-    "stars": 447,
+    "stars": 1638,
     "saveTime": "2026-04-07"
   },
   {
@@ -368,7 +367,7 @@
       "Claude Code",
       "效率"
     ],
-    "stars": 4319,
+    "stars": 37928,
     "saveTime": "2026-04-07"
   },
   {
@@ -379,7 +378,7 @@
       "framework",
       "agent"
     ],
-    "stars": 985,
+    "stars": 1141,
     "saveTime": "2026-04-07"
   },
   {
@@ -390,7 +389,7 @@
       "tool",
       "agent"
     ],
-    "stars": 2212,
+    "stars": 2396,
     "saveTime": "2026-04-07"
   },
   {
@@ -401,7 +400,7 @@
       "tool",
       "网络"
     ],
-    "stars": 28994,
+    "stars": 31733,
     "saveTime": "2026-04-07"
   },
   {
@@ -412,7 +411,7 @@
       "tool",
       "社交"
     ],
-    "stars": 1000,
+    "stars": 1519,
     "saveTime": "2026-04-07"
   },
   {
@@ -423,7 +422,7 @@
       "skill",
       "开发"
     ],
-    "stars": 1048,
+    "stars": 3442,
     "saveTime": "2026-04-07"
   },
   {
@@ -434,7 +433,7 @@
       "tool",
       "前端"
     ],
-    "stars": 65,
+    "stars": 299,
     "saveTime": "2026-04-06"
   },
   {
@@ -445,7 +444,7 @@
       "tool",
       "商业"
     ],
-    "stars": 4362,
+    "stars": 36066,
     "saveTime": "2026-04-06"
   },
   {
@@ -456,7 +455,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 3334,
+    "stars": 4404,
     "saveTime": "2026-04-06"
   },
   {
@@ -467,7 +466,7 @@
       "framework",
       "agent"
     ],
-    "stars": 690,
+    "stars": 920,
     "saveTime": "2026-04-06"
   },
   {
@@ -478,7 +477,7 @@
       "skill",
       "agent"
     ],
-    "stars": 13305,
+    "stars": 15122,
     "saveTime": "2026-04-06"
   },
   {
@@ -489,7 +488,7 @@
       "skill",
       "教学"
     ],
-    "stars": 3123,
+    "stars": 3887,
     "saveTime": "2026-04-06"
   },
   {
@@ -500,7 +499,7 @@
       "doc",
       "安全"
     ],
-    "stars": 2694,
+    "stars": 2777,
     "saveTime": "2026-04-06"
   },
   {
@@ -511,7 +510,7 @@
       "skill",
       "agent"
     ],
-    "stars": 9330,
+    "stars": 10831,
     "saveTime": "2026-04-06"
   },
   {
@@ -522,7 +521,7 @@
       "tool",
       "claude-code"
     ],
-    "stars": 51,
+    "stars": 1054,
     "saveTime": "2026-04-06"
   },
   {
@@ -533,7 +532,7 @@
       "framework",
       "claude-code"
     ],
-    "stars": 136890,
+    "stars": 158934,
     "saveTime": "2026-04-06"
   },
   {
@@ -544,7 +543,7 @@
       "skill",
       "开发"
     ],
-    "stars": 13247,
+    "stars": 14721,
     "saveTime": "2026-04-06"
   },
   {
@@ -555,7 +554,7 @@
       "skill",
       "效率"
     ],
-    "stars": 65057,
+    "stars": 76458,
     "saveTime": "2026-04-06"
   },
   {
@@ -566,7 +565,7 @@
       "skill",
       "分析"
     ],
-    "stars": 83,
+    "stars": 988,
     "saveTime": "2026-04-05"
   },
   {
@@ -577,7 +576,7 @@
       "framework",
       "agent"
     ],
-    "stars": 3729,
+    "stars": 10349,
     "saveTime": "2026-04-05"
   },
   {
@@ -588,7 +587,7 @@
       "skill",
       "开发"
     ],
-    "stars": 4164,
+    "stars": 17553,
     "saveTime": "2026-04-05"
   },
   {
@@ -599,7 +598,7 @@
       "tool",
       "claude-code"
     ],
-    "stars": 16865,
+    "stars": 19902,
     "saveTime": "2026-04-05"
   },
   {
@@ -610,7 +609,7 @@
       "skill",
       "开发"
     ],
-    "stars": 2,
+    "stars": 69,
     "saveTime": "2026-04-04"
   },
   {
@@ -621,7 +620,7 @@
       "doc",
       "前端"
     ],
-    "stars": 0,
+    "stars": 59429,
     "saveTime": "2026-04-04"
   },
   {
@@ -632,7 +631,7 @@
       "tool",
       "前端"
     ],
-    "stars": 0,
+    "stars": 2824,
     "saveTime": "2026-04-04"
   },
   {
@@ -643,7 +642,7 @@
       "tool",
       "claude-code"
     ],
-    "stars": 0,
+    "stars": 1941,
     "saveTime": "2026-04-04"
   },
   {
@@ -654,7 +653,7 @@
       "framework",
       "agent"
     ],
-    "stars": 17500,
+    "stars": 99590,
     "saveTime": "2026-04-04"
   },
   {
@@ -665,7 +664,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 0,
+    "stars": 54641,
     "saveTime": "2026-04-04"
   },
   {
@@ -676,7 +675,7 @@
       "framework",
       "agent"
     ],
-    "stars": 1500,
+    "stars": 2668,
     "saveTime": "2026-04-03"
   },
   {
@@ -687,7 +686,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 1200,
+    "stars": 2815,
     "saveTime": "2026-04-03"
   },
   {
@@ -698,7 +697,7 @@
       "framework",
       "agent"
     ],
-    "stars": 188,
+    "stars": 0,
     "saveTime": "2026-04-03"
   },
   {
@@ -720,7 +719,7 @@
       "doc",
       "agent"
     ],
-    "stars": 34,
+    "stars": 0,
     "saveTime": "2026-04-02"
   },
   {
@@ -731,7 +730,7 @@
       "doc",
       "agent"
     ],
-    "stars": 3,
+    "stars": 0,
     "saveTime": "2026-04-02"
   },
   {
@@ -742,7 +741,7 @@
       "MCP",
       "画图"
     ],
-    "stars": 2036,
+    "stars": 0,
     "saveTime": "2026-04-02"
   },
   {
@@ -753,7 +752,7 @@
       "tool",
       "agent"
     ],
-    "stars": 488,
+    "stars": 0,
     "saveTime": "2026-04-01"
   },
   {
@@ -764,7 +763,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 74,
+    "stars": 0,
     "saveTime": "2026-04-01"
   },
   {
@@ -775,7 +774,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 2247,
+    "stars": 0,
     "saveTime": "2026-04-01"
   },
   {
@@ -797,7 +796,7 @@
       "doc",
       "claude-code"
     ],
-    "stars": 47,
+    "stars": 0,
     "saveTime": "2026-03-31"
   },
   {
@@ -808,7 +807,7 @@
       "skill",
       "联网"
     ],
-    "stars": 13078,
+    "stars": 0,
     "saveTime": "2026-03-30"
   },
   {
@@ -819,7 +818,7 @@
       "tool",
       "网络"
     ],
-    "stars": 1900,
+    "stars": 0,
     "saveTime": "2026-03-30"
   },
   {
@@ -830,7 +829,7 @@
       "skill",
       "管理"
     ],
-    "stars": 8400,
+    "stars": 0,
     "saveTime": "2026-03-30"
   },
   {
@@ -841,7 +840,7 @@
       "skill",
       "联网"
     ],
-    "stars": 2076,
+    "stars": 0,
     "saveTime": "2026-03-29"
   },
   {
@@ -874,7 +873,7 @@
       "tool",
       "前端"
     ],
-    "stars": 208,
+    "stars": 0,
     "saveTime": "2026-03-29"
   },
   {
@@ -885,7 +884,7 @@
       "skill",
       "管理"
     ],
-    "stars": 321,
+    "stars": 0,
     "saveTime": "2026-03-29"
   },
   {
