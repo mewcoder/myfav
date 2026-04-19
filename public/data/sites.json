@@ -1,5 +1,12 @@
 [
   {
+    "title": "Claude Code架构分析论文",
+    "url": "https://arxiv.org/abs/2604.14228",
+    "description": "研究Claude Code设计空间",
+    "category": "论文",
+    "saveTime": "2026-04-19"
+  },
+  {
     "title": "Datawhale",
     "url": "https://m.datawhale.cn/learn?learnPage=1",
     "description": "AI学习平台",
