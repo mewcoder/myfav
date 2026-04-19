@@ -1,5 +1,17 @@
 [
   {
+    "name": "browser-use/video-use",
+    "url": "https://github.com/browser-use/video-use",
+    "description": "Claude Code视频编辑技能",
+    "tags": [
+      "skill",
+      "视频制作",
+      "Claude Code"
+    ],
+    "stars": 1300,
+    "saveTime": "2026-04-19"
+  },
+  {
     "name": "elder-plinius/CL4R1T4S",
     "url": "https://github.com/elder-plinius/CL4R1T4S",
     "description": "AI系统提示词泄露合集",
