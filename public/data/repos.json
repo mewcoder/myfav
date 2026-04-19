@@ -897,5 +897,17 @@
     ],
     "stars": 3700,
     "saveTime": "2026-04-11"
+  },
+  {
+    "name": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "description": "HTML转视频，面向Agent",
+    "tags": [
+      "视频制作",
+      "agent",
+      "工具"
+    ],
+    "stars": 3400,
+    "saveTime": "2026-04-19"
   }
 ]
