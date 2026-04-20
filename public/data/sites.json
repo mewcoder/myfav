@@ -415,5 +415,12 @@
     "description": "GPT Plus/Pro订阅卡",
     "category": "AI服务",
     "saveTime": "2026-04-19"
+  },
+  {
+    "title": "XSCT.ai",
+    "url": "https://xsct.ai",
+    "description": "AI模型评测对比",
+    "category": "AI工具",
+    "saveTime": "2026-04-21"
   }
 ]
