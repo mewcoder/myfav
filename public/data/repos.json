@@ -1,5 +1,17 @@
 [
   {
+    "name": "any4ai/AnyCrawl",
+    "url": "https://github.com/any4ai/anycrawl",
+    "description": "网站爬虫转LLM数据，SERP提取",
+    "tags": [
+      "爬虫",
+      "网络",
+      "AI"
+    ],
+    "stars": 2800,
+    "saveTime": "2026-04-20"
+  },
+  {
     "name": "smallnest/autoresearch",
     "url": "https://github.com/smallnest/autoresearch",
     "description": "多Agent轮转审核全自动开发",
