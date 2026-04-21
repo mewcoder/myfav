@@ -1,5 +1,17 @@
 [
   {
+    "name": "Eronred/expo-agent-spinners",
+    "url": "https://github.com/Eronred/expo-agent-spinners",
+    "description": "54终端风格Agent Spinner组件",
+    "tags": [
+      "前端",
+      "agent",
+      "动画"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-21"
+  },
+  {
     "name": "any4ai/AnyCrawl",
     "url": "https://github.com/any4ai/anycrawl",
     "description": "网站爬虫转LLM数据，SERP提取",
