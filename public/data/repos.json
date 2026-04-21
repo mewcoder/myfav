@@ -1,5 +1,17 @@
 [
   {
+    "name": "nicejade/wealth-tracker",
+    "url": "https://github.com/nicejade/wealth-tracker",
+    "description": "AI个人资产分析应用",
+    "tags": [
+      "理财",
+      "AI",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-21"
+  },
+  {
     "name": "Eronred/expo-agent-spinners",
     "url": "https://github.com/Eronred/expo-agent-spinners",
     "description": "54终端风格Agent Spinner组件",
