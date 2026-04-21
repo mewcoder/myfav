@@ -1,5 +1,12 @@
 [
   {
+    "title": "XAI XAPI",
+    "url": "https://manage-xai.ainaibahub.com/",
+    "description": "xAI API管理平台",
+    "category": "AI服务",
+    "saveTime": "2026-04-21"
+  },
+  {
     "title": "海搜",
     "url": "https://haisou.cc/",
     "description": "搜索引擎",
