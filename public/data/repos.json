@@ -1,5 +1,17 @@
 [
   {
+    "name": "chatfire-AI/huobao-drama",
+    "url": "https://github.com/chatfire-AI/huobao-drama",
+    "description": "AI 短剧生成平台",
+    "tags": [
+      "AI",
+      "视频制作",
+      "自动化"
+    ],
+    "stars": 10484,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "rullerzhou-afk/clawd-on-desk",
     "url": "https://github.com/rullerzhou-afk/clawd-on-desk",
     "description": "AI coding agent 桌面宠物",
