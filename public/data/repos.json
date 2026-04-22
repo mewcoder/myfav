@@ -1,5 +1,17 @@
 [
   {
+    "name": "actionbook/ascent-research",
+    "url": "https://github.com/actionbook/ascent-research",
+    "description": "Agent 研究 CLI 工具",
+    "tags": [
+      "Agent",
+      "工具",
+      "Rust"
+    ],
+    "stars": 131,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "chatfire-AI/huobao-drama",
     "url": "https://github.com/chatfire-AI/huobao-drama",
     "description": "AI 短剧生成平台",
