@@ -1,5 +1,17 @@
 [
   {
+    "name": "Jason-uxui/gray-ui-csm",
+    "url": "https://github.com/Jason-uxui/gray-ui-csm",
+    "description": "CSM UI Dashboard模板",
+    "tags": [
+      "前端",
+      "设计",
+      "TypeScript"
+    ],
+    "stars": 90,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "h4ckf0r0day/obscura",
     "url": "https://github.com/h4ckf0r0day/obscura",
     "description": "AI Agent 无头浏览器",
