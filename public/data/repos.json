@@ -1,5 +1,17 @@
 [
   {
+    "name": "rullerzhou-afk/clawd-on-desk",
+    "url": "https://github.com/rullerzhou-afk/clawd-on-desk",
+    "description": "AI coding agent 桌面宠物",
+    "tags": [
+      "Agent",
+      "工具",
+      "macOS"
+    ],
+    "stars": 1547,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "Jason-uxui/gray-ui-csm",
     "url": "https://github.com/Jason-uxui/gray-ui-csm",
     "description": "CSM UI Dashboard模板",
