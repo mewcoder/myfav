@@ -1,5 +1,17 @@
 [
   {
+    "name": "riverscn/intro-agentic-ai",
+    "url": "https://github.com/riverscn/intro-agentic-ai",
+    "description": "Agentic AI 入门教程",
+    "tags": [
+      "AI",
+      "Agent",
+      "教程"
+    ],
+    "stars": 23,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "google-labs-code/design.md",
     "url": "https://github.com/google-labs-code/design.md",
     "description": "设计系统规范文件格式",
