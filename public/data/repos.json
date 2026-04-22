@@ -1,5 +1,17 @@
 [
   {
+    "name": "google-labs-code/design.md",
+    "url": "https://github.com/google-labs-code/design.md",
+    "description": "设计系统规范文件格式",
+    "tags": [
+      "Agent",
+      "前端",
+      "设计"
+    ],
+    "stars": 651,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "ln-dev7/square-ui",
     "url": "https://github.com/ln-dev7/square-ui",
     "description": "shadcn/ui 模板集合",
