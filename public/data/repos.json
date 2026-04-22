@@ -1,5 +1,17 @@
 [
   {
+    "name": "h4ckf0r0day/obscura",
+    "url": "https://github.com/h4ckf0r0day/obscura",
+    "description": "AI Agent 无头浏览器",
+    "tags": [
+      "Agent",
+      "爬虫",
+      "Rust"
+    ],
+    "stars": 760,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "riverscn/intro-agentic-ai",
     "url": "https://github.com/riverscn/intro-agentic-ai",
     "description": "Agentic AI 入门教程",
