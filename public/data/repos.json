@@ -1,5 +1,17 @@
 [
   {
+    "name": "ln-dev7/square-ui",
+    "url": "https://github.com/ln-dev7/square-ui",
+    "description": "shadcn/ui 模板集合",
+    "tags": [
+      "前端",
+      "TypeScript",
+      "设计"
+    ],
+    "stars": 5142,
+    "saveTime": "2026-04-22"
+  },
+  {
     "name": "nicejade/wealth-tracker",
     "url": "https://github.com/nicejade/wealth-tracker",
     "description": "AI个人资产分析应用",
