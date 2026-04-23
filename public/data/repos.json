@@ -1,5 +1,17 @@
 [
   {
+    "name": "refactoringhq/tolaria",
+    "url": "https://github.com/refactoringhq/tolaria",
+    "description": "MCP支持的桌面知识管理工具",
+    "tags": [
+      "知识管理",
+      "MCP",
+      "Tauri"
+    ],
+    "stars": 1146,
+    "saveTime": "2026-04-23"
+  },
+  {
     "name": "Alishahryar1/free-claude-code",
     "url": "https://github.com/Alishahryar1/free-claude-code",
     "description": "免费使用Claude Code的Python工具",
