@@ -1,5 +1,17 @@
 [
   {
+    "name": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "description": "免费使用Claude Code的Python工具",
+    "tags": [
+      "Claude Code",
+      "Python",
+      "工具"
+    ],
+    "stars": 4692,
+    "saveTime": "2026-04-23"
+  },
+  {
     "name": "origin-space/ui-experiments",
     "url": "https://github.com/origin-space/ui-experiments",
     "description": "Origin UI/shadcn布局设计案例集",
