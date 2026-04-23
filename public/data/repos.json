@@ -1,5 +1,17 @@
 [
   {
+    "name": "origin-space/ui-experiments",
+    "url": "https://github.com/origin-space/ui-experiments",
+    "description": "Origin UI/shadcn布局设计案例集",
+    "tags": [
+      "前端",
+      "设计",
+      "UI"
+    ],
+    "stars": 1375,
+    "saveTime": "2026-04-23"
+  },
+  {
     "name": "workany-ai/workany",
     "url": "https://github.com/workany-ai/workany",
     "description": "桌面AI Agent应用，支持MCP/Skills",
