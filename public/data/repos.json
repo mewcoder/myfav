@@ -42,7 +42,7 @@
     "tags": [
       "Agent",
       "MCP",
-      "skills"
+      "skill"
     ],
     "stars": 1447,
     "saveTime": "2026-04-23"
@@ -567,7 +567,7 @@
     "url": "https://github.com/JuliusBrussee/caveman",
     "description": "穴居人Token效率skill",
     "tags": [
-      "skills",
+      "skill",
       "Claude Code",
       "效率"
     ],
