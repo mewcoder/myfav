@@ -1,5 +1,17 @@
 [
   {
+    "name": "op7418/guizang-ppt-skill",
+    "url": "https://github.com/op7418/guizang-ppt-skill",
+    "description": "电子杂志风网页PPT模板",
+    "tags": [
+      "skill",
+      "设计",
+      "教程"
+    ],
+    "stars": 60,
+    "saveTime": "2026-04-26"
+  },
+  {
     "name": "Russell-cell/PPT-Design-Prompt",
     "url": "https://github.com/Russell-cell/PPT-Design-Prompt",
     "description": "PPT幻灯片图像设计提示词转换",
