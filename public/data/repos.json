@@ -1,5 +1,17 @@
 [
   {
+    "name": "Russell-cell/PPT-Design-Prompt",
+    "url": "https://github.com/Russell-cell/PPT-Design-Prompt",
+    "description": "PPT幻灯片图像设计提示词转换",
+    "tags": [
+      "设计",
+      "工具",
+      "开源"
+    ],
+    "stars": 668,
+    "saveTime": "2026-04-26"
+  },
+  {
     "name": "enetx/surf",
     "url": "https://github.com/enetx/surf",
     "description": "Go HTTP客户端，浏览器伪装反检测",
