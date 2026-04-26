@@ -1,5 +1,17 @@
 [
   {
+    "name": "enetx/surf",
+    "url": "https://github.com/enetx/surf",
+    "description": "Go HTTP客户端，浏览器伪装反检测",
+    "tags": [
+      "网络",
+      "爬虫",
+      "工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-04-26"
+  },
+  {
     "name": "refactoringhq/tolaria",
     "url": "https://github.com/refactoringhq/tolaria",
     "description": "MCP支持的桌面知识管理工具",
