@@ -1,5 +1,17 @@
 [
   {
+    "name": "ZToolsCenter/ZTools",
+    "url": "https://github.com/ZToolsCenter/ZTools",
+    "description": "uTools开源实现，效率工具",
+    "tags": [
+      "工具",
+      "效率",
+      "开源"
+    ],
+    "stars": 1995,
+    "saveTime": "2026-04-27"
+  },
+  {
     "name": "op7418/guizang-ppt-skill",
     "url": "https://github.com/op7418/guizang-ppt-skill",
     "description": "电子杂志风网页PPT模板",
