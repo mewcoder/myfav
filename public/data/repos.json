@@ -1,5 +1,17 @@
 [
   {
+    "name": "plait-board/drawnix",
+    "url": "https://github.com/plait-board/drawnix",
+    "description": "开源白板工具，一体化绘图",
+    "tags": [
+      "工具",
+      "开源",
+      "设计"
+    ],
+    "stars": 13481,
+    "saveTime": "2026-04-27"
+  },
+  {
     "name": "AlexsJones/llmfit",
     "url": "https://github.com/AlexsJones/llmfit",
     "description": "检查AI模型硬件兼容性",
