@@ -1,5 +1,17 @@
 [
   {
+    "name": "AlexsJones/llmfit",
+    "url": "https://github.com/AlexsJones/llmfit",
+    "description": "检查AI模型硬件兼容性",
+    "tags": [
+      "AI",
+      "工具",
+      "开源"
+    ],
+    "stars": 24725,
+    "saveTime": "2026-04-27"
+  },
+  {
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "description": "Mattpocock Skills 工具集",
