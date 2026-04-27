@@ -1,5 +1,17 @@
 [
   {
+    "name": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "description": "Mattpocock Skills 工具集",
+    "tags": [
+      "skill",
+      "开源",
+      "效率"
+    ],
+    "stars": 24956,
+    "saveTime": "2026-04-27"
+  },
+  {
     "name": "iamzhihuix/skills-manage",
     "url": "https://github.com/iamzhihuix/skills-manage",
     "description": "Skills 管理工具",
