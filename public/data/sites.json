@@ -1,5 +1,12 @@
 [
   {
+    "title": "CS146S: The Modern Software Developer",
+    "url": "https://themodernsoftware.dev/",
+    "description": "Stanford AI编码策略课程",
+    "category": "知识管理",
+    "saveTime": "2026-04-27"
+  },
+  {
     "title": "TokenNav",
     "url": "https://tokennav.cc/",
     "description": "AI API中转站导航",
