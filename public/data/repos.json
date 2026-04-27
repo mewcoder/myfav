@@ -1,5 +1,17 @@
 [
   {
+    "name": "iamzhihuix/skills-manage",
+    "url": "https://github.com/iamzhihuix/skills-manage",
+    "description": "Skills 管理工具",
+    "tags": [
+      "skill",
+      "Tauri",
+      "agent"
+    ],
+    "stars": 1190,
+    "saveTime": "2026-04-27"
+  },
+  {
     "name": "ZToolsCenter/ZTools",
     "url": "https://github.com/ZToolsCenter/ZTools",
     "description": "uTools开源实现，效率工具",
