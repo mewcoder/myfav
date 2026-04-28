@@ -1,5 +1,17 @@
 [
   {
+    "name": "nexu-io/open-design",
+    "url": "https://github.com/nexu-io/open-design",
+    "description": "Claude Design开源替代",
+    "tags": [
+      "skill",
+      "开源",
+      "设计"
+    ],
+    "stars": 76,
+    "saveTime": "2026-04-28"
+  },
+  {
     "name": "Justineo/working-with-ai",
     "url": "https://github.com/Justineo/working-with-ai",
     "description": "AI协作演示幻灯片",
