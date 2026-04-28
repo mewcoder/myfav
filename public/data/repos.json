@@ -1,5 +1,17 @@
 [
   {
+    "name": "Justineo/working-with-ai",
+    "url": "https://github.com/Justineo/working-with-ai",
+    "description": "AI协作演示幻灯片",
+    "tags": [
+      "AI",
+      "教学",
+      "前端"
+    ],
+    "stars": 313,
+    "saveTime": "2026-04-28"
+  },
+  {
     "name": "vercel-labs/portless",
     "url": "https://github.com/vercel-labs/portless",
     "description": "本地开发URL管理",
