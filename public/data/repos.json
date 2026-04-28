@@ -1,5 +1,17 @@
 [
   {
+    "name": "bailylu/ref-baily-life",
+    "url": "https://github.com/bailylu/ref-baily-life",
+    "description": "部署在 Cloudflare 的个人推荐导航站",
+    "tags": [
+      "工具",
+      "导航站",
+      "Cloudflare"
+    ],
+    "stars": 8,
+    "saveTime": "2026-04-28"
+  },
+  {
     "name": "nexu-io/open-design",
     "url": "https://github.com/nexu-io/open-design",
     "description": "Claude Design开源替代",
