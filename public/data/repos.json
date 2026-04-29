@@ -1,5 +1,17 @@
 [
   {
+    "name": "ka-pi-ba-la/AIbijia",
+    "url": "https://github.com/ka-pi-ba-la/AIbijia",
+    "description": "AI API 价格信息聚合",
+    "tags": [
+      "AI",
+      "工具",
+      "效率"
+    ],
+    "stars": 169,
+    "saveTime": "2026-04-29"
+  },
+  {
     "name": "browserbase/skills",
     "url": "https://github.com/browserbase/skills",
     "description": "Claude 浏览器自动化 skills",
