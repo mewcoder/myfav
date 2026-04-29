@@ -1,5 +1,17 @@
 [
   {
+    "name": "browserbase/skills",
+    "url": "https://github.com/browserbase/skills",
+    "description": "Claude 浏览器自动化 skills",
+    "tags": [
+      "skill",
+      "Claude Code",
+      "自动化"
+    ],
+    "stars": 621,
+    "saveTime": "2026-04-29"
+  },
+  {
     "name": "bailylu/ref-baily-life",
     "url": "https://github.com/bailylu/ref-baily-life",
     "description": "部署在 Cloudflare 的个人推荐导航站",
