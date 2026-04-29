@@ -1,5 +1,12 @@
 [
   {
+    "title": "Chat SDK",
+    "url": "https://chat-sdk.dev/",
+    "description": "跨平台聊天机器人 SDK",
+    "category": "开发工具",
+    "saveTime": "2026-04-29"
+  },
+  {
     "title": "GPTHub",
     "url": "https://gptllmhub.com/",
     "description": "GPT API 中转站与账号",
