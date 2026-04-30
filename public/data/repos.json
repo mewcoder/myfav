@@ -1,5 +1,17 @@
 [
   {
+    "name": "yaojingang/yao-open-skills",
+    "url": "https://github.com/yaojingang/yao-open-skills",
+    "description": "OpenYao 公开 Skill 合集",
+    "tags": [
+      "skill",
+      "教程",
+      "开源"
+    ],
+    "stars": 408,
+    "saveTime": "2026-04-30"
+  },
+  {
     "name": "ka-pi-ba-la/AIbijia",
     "url": "https://github.com/ka-pi-ba-la/AIbijia",
     "description": "AI API 价格信息聚合",
