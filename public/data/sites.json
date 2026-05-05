@@ -1,5 +1,12 @@
 [
   {
+    "title": "Refero Styles",
+    "url": "https://styles.refero.design/",
+    "description": "设计参考资源库",
+    "category": "设计",
+    "saveTime": "2026-05-05"
+  },
+  {
     "title": "Query.Domains",
     "url": "https://query.domains/zh-hans",
     "description": "批量域名可用性检查工具",
