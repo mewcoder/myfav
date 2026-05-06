@@ -1,5 +1,18 @@
 [
   {
+    "name": "zarazhangrui/frontend-slides",
+    "url": "https://github.com/zarazhangrui/frontend-slides",
+    "description": "Claude Code Skill，创建漂亮的HTML演示文稿",
+    "tags": [
+      "skill",
+      "claude-code",
+      "前端",
+      "设计"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-06"
+  },
+  {
     "name": "yaojingang/yao-open-skills",
     "url": "https://github.com/yaojingang/yao-open-skills",
     "description": "OpenYao 公开 Skill 合集",
