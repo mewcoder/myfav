@@ -1,5 +1,17 @@
 [
   {
+    "name": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills/",
+    "description": "TypeScript工程师的AI Agent Skills集合",
+    "tags": [
+      "skill",
+      "agent",
+      "claude-code"
+    ],
+    "stars": 63809,
+    "saveTime": "2026-05-07"
+  },
+  {
     "name": "zarazhangrui/frontend-slides",
     "url": "https://github.com/zarazhangrui/frontend-slides",
     "description": "Claude Code Skill，创建漂亮的HTML演示文稿",
