@@ -1,5 +1,29 @@
 [
   {
+    "name": "WenyuChiou/awesome-agentic-ai-zh",
+    "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+    "description": "AI智能体中文资源精选",
+    "tags": [
+      "AI Agent",
+      "中文资源",
+      "awesome"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-08"
+  },
+  {
+    "name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "description": "Cursor官方插件仓库，包含团队开发工具集",
+    "tags": [
+      "cursor",
+      "AI编辑器",
+      "开发工具"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-08"
+  },
+  {
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills/",
     "description": "TypeScript工程师的AI Agent Skills集合",
