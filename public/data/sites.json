@@ -1,5 +1,12 @@
 [
   {
+    "title": "FreeModel",
+    "url": "https://freemodel.dev/",
+    "description": "免费AI API服务，注册送额度，兼容OpenAI接口",
+    "category": "AI服务",
+    "saveTime": "2026-05-13"
+  },
+  {
     "title": "WiseETF",
     "url": "https://www.wise-etf.com/active",
     "description": "美股ETF/QDII基金追踪工具",
