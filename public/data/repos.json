@@ -1,5 +1,17 @@
 [
   {
+    "name": "InsForge/InsForge",
+    "url": "https://github.com/InsForge/InsForge",
+    "description": "AI编程后端平台，一站式DB认证存储托管",
+    "tags": [
+      "AI Agent",
+      "后端",
+      "开源"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-14"
+  },
+  {
     "name": "Li-Evan/Bloom",
     "url": "https://github.com/Li-Evan/Bloom",
     "description": "AI个人导师，2-Sigma教学法",
