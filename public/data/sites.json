@@ -1,5 +1,12 @@
 [
   {
+    "title": "MTCGAME",
+    "url": "https://www.mtcgame.com/",
+    "description": "全球数字游戏商店",
+    "category": "工具",
+    "saveTime": "2026-05-16"
+  },
+  {
     "title": "FreeModel",
     "url": "https://freemodel.dev/",
     "description": "免费AI API服务，注册送额度，兼容OpenAI接口",
