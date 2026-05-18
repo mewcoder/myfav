@@ -1,17 +1,5 @@
 [
   {
-    "name": "wechat-article/wechat-article-exporter",
-    "url": "https://github.com/wechat-article/wechat-article-exporter",
-    "description": "微信公众号文章批量下载工具",
-    "tags": [
-      "工具",
-      "爬虫",
-      "微信"
-    ],
-    "stars": 10100,
-    "saveTime": "2026-05-18"
-  },
-  {
     "name": "rulyone/Simple-ReAct-Agent",
     "url": "https://github.com/rulyone/Simple-ReAct-Agent",
     "description": "本地ReAct Agent，Ollama+Llama3.2零API Key",
