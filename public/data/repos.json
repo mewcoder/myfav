@@ -1,5 +1,17 @@
 [
   {
+    "name": "nexu-io/html-anything",
+    "url": "https://github.com/nexu-io/html-anything",
+    "description": "AI驱动的HTML编辑器，零API Key",
+    "tags": [
+      "AI",
+      "前端",
+      "工具"
+    ],
+    "stars": 3148,
+    "saveTime": "2026-05-18"
+  },
+  {
     "name": "multica-ai/andrej-karpathy-skills",
     "url": "https://github.com/forrestchang/andrej-karpathy-skills",
     "description": "Karpathy风格的Claude Code指南",
