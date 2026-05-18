@@ -1,5 +1,17 @@
 [
   {
+    "name": "multica-ai/andrej-karpathy-skills",
+    "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "description": "Karpathy风格的Claude Code指南",
+    "tags": [
+      "skill",
+      "claude-code",
+      "AI"
+    ],
+    "stars": 136000,
+    "saveTime": "2026-05-18"
+  },
+  {
     "name": "InsForge/InsForge",
     "url": "https://github.com/InsForge/InsForge",
     "description": "AI编程后端平台，一站式DB认证存储托管",
