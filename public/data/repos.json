@@ -1,5 +1,17 @@
 [
   {
+    "name": "rulyone/Simple-ReAct-Agent",
+    "url": "https://github.com/rulyone/Simple-ReAct-Agent",
+    "description": "本地ReAct Agent，Ollama+Llama3.2零API Key",
+    "tags": [
+      "AI Agent",
+      "Ollama",
+      "Python"
+    ],
+    "stars": 1,
+    "saveTime": "2026-05-18"
+  },
+  {
     "name": "nexu-io/html-anything",
     "url": "https://github.com/nexu-io/html-anything",
     "description": "AI驱动的HTML编辑器，零API Key",
