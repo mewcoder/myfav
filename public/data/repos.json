@@ -1,5 +1,17 @@
 [
   {
+    "name": "ciembor/agent-rules-books",
+    "url": "https://github.com/ciembor/agent-rules-books",
+    "description": "AI Agent规则书籍集合",
+    "tags": [
+      "AI Agent",
+      "skill",
+      "awesome"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-18"
+  },
+  {
     "name": "wechat-article/wechat-article-exporter",
     "url": "https://github.com/wechat-article/wechat-article-exporter",
     "description": "微信公众号文章批量下载工具",
