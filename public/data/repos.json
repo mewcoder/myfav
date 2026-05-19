@@ -1,5 +1,17 @@
 [
   {
+    "name": "humanlayer/12-factor-agents",
+    "url": "https://github.com/humanlayer/12-factor-agents",
+    "description": "构建生产级AI Agent的12因素原则指南",
+    "tags": [
+      "AI Agent",
+      "doc",
+      "agent"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-19"
+  },
+  {
     "name": "ciembor/agent-rules-books",
     "url": "https://github.com/ciembor/agent-rules-books",
     "description": "AI Agent规则书籍集合",
