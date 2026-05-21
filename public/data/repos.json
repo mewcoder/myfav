@@ -1,5 +1,17 @@
 [
   {
+    "name": "geekjourneyx/interactive-learning",
+    "url": "https://github.com/geekjourneyx/interactive-learning",
+    "description": "交互式学习路径生成与理解验证工具",
+    "tags": [
+      "skill",
+      "AI",
+      "教程"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-21"
+  },
+  {
     "name": "humanlayer/12-factor-agents",
     "url": "https://github.com/humanlayer/12-factor-agents",
     "description": "构建生产级AI Agent的12因素原则指南",
