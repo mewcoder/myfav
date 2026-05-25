@@ -1,5 +1,17 @@
 [
   {
+    "name": "gnurio/refactoring-ui-plugin",
+    "url": "https://github.com/gnurio/refactoring-ui-plugin",
+    "description": "Refactoring UI设计审查技能",
+    "tags": [
+      "UI",
+      "skill",
+      "设计"
+    ],
+    "stars": 94,
+    "saveTime": "2026-05-25"
+  },
+  {
     "name": "jaytel0/taste",
     "url": "https://github.com/jaytel0/taste",
     "description": "参考图生成SKILL.md的流水线",
