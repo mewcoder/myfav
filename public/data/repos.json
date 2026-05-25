@@ -1,5 +1,17 @@
 [
   {
+    "name": "jaytel0/taste",
+    "url": "https://github.com/jaytel0/taste",
+    "description": "参考图生成SKILL.md的流水线",
+    "tags": [
+      "AI",
+      "skill",
+      "开源"
+    ],
+    "stars": 100,
+    "saveTime": "2026-05-25"
+  },
+  {
     "name": "geekjourneyx/interactive-learning",
     "url": "https://github.com/geekjourneyx/interactive-learning",
     "description": "交互式学习路径生成与理解验证工具",
