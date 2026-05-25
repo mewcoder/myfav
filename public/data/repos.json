@@ -1,5 +1,17 @@
 [
   {
+    "name": "rohitg00/ai-engineering-from-scratch",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "description": "从零学AI工程",
+    "tags": [
+      "AI",
+      "LLM",
+      "教程"
+    ],
+    "stars": 18272,
+    "saveTime": "2026-05-25"
+  },
+  {
     "name": "gnurio/refactoring-ui-plugin",
     "url": "https://github.com/gnurio/refactoring-ui-plugin",
     "description": "Refactoring UI设计审查技能",
