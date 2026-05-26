@@ -1,5 +1,16 @@
 [
   {
+    "name": "CiferaTeam/awesome-agents-team",
+    "url": "https://github.com/CiferaTeam/awesome-agents-team",
+    "description": "多Agent团队协作资源",
+    "tags": [
+      "AI Agent",
+      "awesome"
+    ],
+    "stars": 9,
+    "saveTime": "2026-05-26"
+  },
+  {
     "name": "rohitg00/ai-engineering-from-scratch",
     "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
     "description": "从零学AI工程",
