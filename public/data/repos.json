@@ -1,5 +1,17 @@
 [
   {
+    "name": "steipete/agent-scripts",
+    "url": "https://github.com/steipete/agent-scripts/tree/main/skills/skill-cleaner",
+    "description": "Skill清理优化工具",
+    "tags": [
+      "skill",
+      "Claude Code",
+      "AI Agent"
+    ],
+    "stars": 3586,
+    "saveTime": "2026-05-26"
+  },
+  {
     "name": "TencentCloudBase/OpenVibeCoding",
     "url": "https://github.com/TencentCloudBase/OpenVibeCoding",
     "description": "腾讯云开发vibecoding模板",
