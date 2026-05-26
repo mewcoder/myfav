@@ -1,5 +1,16 @@
 [
   {
+    "name": "TencentCloudBase/OpenVibeCoding",
+    "url": "https://github.com/TencentCloudBase/OpenVibeCoding",
+    "description": "腾讯云开发vibecoding模板",
+    "tags": [
+      "AI",
+      "开发工具"
+    ],
+    "stars": 60,
+    "saveTime": "2026-05-26"
+  },
+  {
     "name": "CiferaTeam/awesome-agents-team",
     "url": "https://github.com/CiferaTeam/awesome-agents-team",
     "description": "多Agent团队协作资源",
