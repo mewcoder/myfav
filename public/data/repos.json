@@ -1,5 +1,17 @@
 [
   {
+    "name": "0xSero/codex-shim",
+    "url": "https://github.com/0xSero/codex-shim",
+    "description": "Codex Desktop BYOK模型本地路由代理",
+    "tags": [
+      "AI",
+      "工具",
+      "Agent"
+    ],
+    "stars": 0,
+    "saveTime": "2026-05-27"
+  },
+  {
     "name": "steipete/agent-scripts",
     "url": "https://github.com/steipete/agent-scripts/tree/main/skills/skill-cleaner",
     "description": "Skill清理优化工具",
