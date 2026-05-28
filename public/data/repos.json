@@ -1,5 +1,17 @@
 [
   {
+    "name": "ZhiYi-R/moon-bridge",
+    "url": "https://github.com/ZhiYi-R/moon-bridge",
+    "description": "Go多协议模型路由代理",
+    "tags": [
+      "AI",
+      "LLM",
+      "工具"
+    ],
+    "stars": 436,
+    "saveTime": "2026-05-28"
+  },
+  {
     "name": "0xSero/codex-shim",
     "url": "https://github.com/0xSero/codex-shim",
     "description": "Codex Desktop BYOK模型本地路由代理",
