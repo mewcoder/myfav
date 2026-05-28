@@ -1,5 +1,12 @@
 [
   {
+    "title": "Sandbank",
+    "url": "https://sandbank.dev/cloud",
+    "description": "AI Agent统一沙箱SDK",
+    "category": "AI工具",
+    "saveTime": "2026-05-28"
+  },
+  {
     "title": "Gamma",
     "url": "https://gamma.app",
     "description": "AI设计伙伴，轻松制作演示文稿和网站",
