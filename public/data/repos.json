@@ -1,5 +1,17 @@
 [
   {
+    "name": "iOfficeAI/AionUi",
+    "url": "https://github.com/iOfficeAI/AionUi",
+    "description": "多Agent协作桌面应用",
+    "tags": [
+      "AI Agent",
+      "Claude Code",
+      "agent"
+    ],
+    "stars": 27103,
+    "saveTime": "2026-05-29"
+  },
+  {
     "name": "ZhiYi-R/moon-bridge",
     "url": "https://github.com/ZhiYi-R/moon-bridge",
     "description": "Go多协议模型路由代理",
