@@ -1,5 +1,17 @@
 [
   {
+    "name": "stablyai/orca",
+    "url": "https://github.com/stablyai/orca",
+    "description": "下一代并行Agent IDE",
+    "tags": [
+      "AI Agent",
+      "开发工具",
+      "IDE"
+    ],
+    "stars": 4095,
+    "saveTime": "2026-06-03"
+  },
+  {
     "name": "iOfficeAI/AionUi",
     "url": "https://github.com/iOfficeAI/AionUi",
     "description": "多Agent协作桌面应用",
