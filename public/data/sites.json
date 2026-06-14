@@ -1,5 +1,12 @@
 [
   {
+    "title": "Phistory",
+    "url": "https://phistory.cc/",
+    "description": "Agent CLI System Prompt 变更历史查看",
+    "category": "AI工具",
+    "saveTime": "2026-06-14"
+  },
+  {
     "title": "Sandbank",
     "url": "https://sandbank.dev/cloud",
     "description": "AI Agent统一沙箱SDK",
