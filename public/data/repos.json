@@ -1,5 +1,17 @@
 [
   {
+    "name": "liaohch3/claude-tap",
+    "url": "https://github.com/liaohch3/claude-tap",
+    "description": "AI Coding Agent 本地流量抓取与查看",
+    "tags": [
+      "Claude Code",
+      "agent",
+      "tool"
+    ],
+    "stars": 1748,
+    "saveTime": "2026-06-14"
+  },
+  {
     "name": "stablyai/orca",
     "url": "https://github.com/stablyai/orca",
     "description": "下一代并行Agent IDE",
