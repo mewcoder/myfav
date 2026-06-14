@@ -1,5 +1,12 @@
 [
   {
+    "title": "Claude Code Prompt Observatory",
+    "url": "https://ccprompt.feitong.phd/",
+    "description": "Claude Code Prompt 观测站",
+    "category": "Claude Code",
+    "saveTime": "2026-06-14"
+  },
+  {
     "title": "Phistory",
     "url": "https://phistory.cc/",
     "description": "Agent CLI System Prompt 变更历史查看",
