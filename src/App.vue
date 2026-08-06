@@ -16,7 +16,7 @@
     <main id="main-content" class="page-shell"><RouterView /></main>
     <nav class="mobile-nav" aria-label="移动端主导航"><RouterLink to="/">首页</RouterLink><RouterLink to="/sites">网站</RouterLink><RouterLink to="/repos">GitHub</RouterLink><RouterLink to="/articles">文章</RouterLink></nav>
     <SearchOverlay :open="searchOpen" @close="searchOpen = false" />
-    <AISettingsModal :open="settingsOpen" @close="settingsOpen = false" @saved="settingsSaved" />
+    <AISettingsModal :open="settingsOpen" @close="settingsClosed" @saved="settingsSaved" />
   </div>
 </template>
 
@@ -57,6 +57,14 @@ function settingsSaved() {
     if (reopenSearch) searchOpen.value = true
     if (resume) resume()
   }, 0)
+}
+
+function settingsClosed() {
+  settingsOpen.value = false
+  const reopenSearch = reopenSearchAfterSettings.value
+  reopenSearchAfterSettings.value = false
+  resumeAfterSettings.value = null
+  if (reopenSearch) window.setTimeout(() => { searchOpen.value = true }, 0)
 }
 
 function globalShortcut(event) {

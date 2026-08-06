@@ -16,18 +16,20 @@ export function mapAIError(status) {
 export function createSSEParser(onDelta) {
   let buffer = ''
   const consume = (event) => {
-    for (const line of event.split('\n')) {
-      if (!line.startsWith('data:')) continue
-      const data = line.slice(5).trim()
-      if (!data || data === '[DONE]') continue
-      const parsed = JSON.parse(data)
-      const delta = parsed.choices?.[0]?.delta?.content
-      if (typeof delta === 'string') onDelta(delta)
-    }
+    const data = event.split('\n')
+      .filter((line) => line.startsWith('data:'))
+      .map((line) => line.slice(5).trimStart())
+      .join('\n')
+      .trim()
+    if (!data || data === '[DONE]') return
+    const parsed = JSON.parse(data)
+    const delta = parsed.choices?.[0]?.delta?.content
+    if (typeof delta === 'string') onDelta(delta)
   }
   return {
     push(chunk) {
-      buffer += chunk.replaceAll('\r\n', '\n')
+      buffer += chunk
+      buffer = buffer.replaceAll('\r\n', '\n')
       let boundary = buffer.indexOf('\n\n')
       while (boundary !== -1) {
         consume(buffer.slice(0, boundary))
@@ -36,13 +38,14 @@ export function createSSEParser(onDelta) {
       }
     },
     finish() {
+      buffer = buffer.replaceAll('\r\n', '\n').replaceAll('\r', '\n')
       if (buffer.trim()) consume(buffer)
       buffer = ''
     },
   }
 }
 
-export async function chatCompletion({ config, messages, onDelta = () => {}, signal, timeout = 20_000, fetchImpl = fetch }) {
+export async function chatCompletion({ config, messages, onDelta = () => {}, signal, timeout = 20_000, fetchImpl = fetch, stream = true, maxTokens }) {
   const controller = new AbortController()
   let didTimeout = false
   const abortFromCaller = () => controller.abort()
@@ -59,7 +62,7 @@ export async function chatCompletion({ config, messages, onDelta = () => {}, sig
         Authorization: `Bearer ${config.apiKey}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ model: config.model, messages, stream: true }),
+      body: JSON.stringify({ model: config.model, messages, stream, ...(Number.isInteger(maxTokens) ? { max_tokens: maxTokens } : {}) }),
       signal: controller.signal,
     })
     if (!response.ok) throw mapAIError(response.status)

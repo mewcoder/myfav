@@ -1,5 +1,6 @@
 const requiredString = (value) => typeof value === 'string' && value.trim().length > 0
 const validTags = (value) => Array.isArray(value) && value.every((tag) => requiredString(tag)) && new Set(value).size === value.length
+export const isSaveTimeDescending = (records) => records.every((record, index) => index === 0 || records[index - 1].saveTime.localeCompare(record.saveTime) >= 0)
 
 export function validateContent({ sites, repos, articles }) {
   const errors = []
@@ -13,6 +14,7 @@ export function validateContent({ sites, repos, articles }) {
         errors.push(`sites.json[${index}] 字段不完整`)
       }
     })
+    if (sites.every((site) => requiredString(site.saveTime)) && !isSaveTimeDescending(sites)) errors.push('sites.json 必须按 saveTime 倒序排列')
   }
 
   if (Array.isArray(repos)) {
@@ -21,6 +23,7 @@ export function validateContent({ sites, repos, articles }) {
         errors.push(`repos.json[${index}] 字段不完整`)
       }
     })
+    if (repos.every((repo) => requiredString(repo.saveTime)) && !isSaveTimeDescending(repos)) errors.push('repos.json 必须按 saveTime 倒序排列')
   }
 
   if (Array.isArray(articles)) {
@@ -29,6 +32,7 @@ export function validateContent({ sites, repos, articles }) {
         errors.push(`articles.json[${index}] 字段不完整`)
       }
     })
+    if (articles.every((article) => requiredString(article.saveTime)) && !isSaveTimeDescending(articles)) errors.push('articles.json 必须按 saveTime 倒序排列')
   }
 
   return errors

@@ -25,7 +25,8 @@ function readJSON(file) {
 }
 
 function writeJSON(file, data) {
-  fs.writeFileSync(file, JSON.stringify(data, null, 2))
+  data.sort((left, right) => right.saveTime.localeCompare(left.saveTime))
+  fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`)
 }
 
 function isGitHubRepo(url) {

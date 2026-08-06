@@ -779,6 +779,19 @@
     "category": "agent"
   },
   {
+    "name": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "description": "HTML转视频，面向Agent",
+    "tags": [
+      "视频制作",
+      "agent",
+      "工具"
+    ],
+    "stars": 3400,
+    "saveTime": "2026-04-19",
+    "category": "视频制作"
+  },
+  {
     "name": "f/textream",
     "url": "https://github.com/f/textream",
     "description": "macOS免费提词器，实时语音追踪",
@@ -958,6 +971,18 @@
     "stars": 491,
     "saveTime": "2026-04-11",
     "category": "录屏工具"
+  },
+  {
+    "name": "yizhiyanhua-ai/fireworks-tech-graph",
+    "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+    "description": "烟花技术图谱",
+    "tags": [
+      "图谱",
+      "知识"
+    ],
+    "stars": 3700,
+    "saveTime": "2026-04-11",
+    "category": "图谱"
   },
   {
     "name": "alexpate/awesome-design-systems",
@@ -1691,30 +1716,5 @@
     "stars": 424,
     "saveTime": "2026-03-29",
     "category": "skill"
-  },
-  {
-    "name": "yizhiyanhua-ai/fireworks-tech-graph",
-    "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
-    "description": "烟花技术图谱",
-    "tags": [
-      "图谱",
-      "知识"
-    ],
-    "stars": 3700,
-    "saveTime": "2026-04-11",
-    "category": "图谱"
-  },
-  {
-    "name": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes",
-    "description": "HTML转视频，面向Agent",
-    "tags": [
-      "视频制作",
-      "agent",
-      "工具"
-    ],
-    "stars": 3400,
-    "saveTime": "2026-04-19",
-    "category": "视频制作"
   }
 ]

@@ -16,7 +16,16 @@ export function loadAIConfig(local = window.localStorage, session = window.sessi
   }
 }
 
-export function saveAIConfig(config, local = window.localStorage, session = window.sessionStorage) {
+export function isAllowedAIBaseUrl(value) {
+  try {
+    const endpoint = new URL(String(value || '').trim())
+    return endpoint.protocol === 'https:' || (endpoint.protocol === 'http:' && endpoint.hostname === 'localhost')
+  } catch {
+    return false
+  }
+}
+
+export function normalizeAIConfig(config) {
   const clean = {
     baseUrl: String(config.baseUrl || '').trim().replace(/\/+$/, ''),
     apiKey: String(config.apiKey || '').trim(),
@@ -24,15 +33,14 @@ export function saveAIConfig(config, local = window.localStorage, session = wind
     rememberKey: Boolean(config.rememberKey),
   }
   if (!clean.baseUrl || !clean.apiKey || !clean.model) throw new Error('Base URL、API Key 和 Model 均为必填项')
-  let endpoint
-  try {
-    endpoint = new URL(clean.baseUrl)
-  } catch {
-    throw new Error('Base URL 不是有效 URL')
-  }
-  if (endpoint.protocol !== 'https:' && !(endpoint.protocol === 'http:' && endpoint.hostname === 'localhost')) {
+  if (!isAllowedAIBaseUrl(clean.baseUrl)) {
     throw new Error('Base URL 必须使用 HTTPS；本地开发仅允许 http://localhost')
   }
+  return clean
+}
+
+export function saveAIConfig(config, local = window.localStorage, session = window.sessionStorage) {
+  const clean = normalizeAIConfig(config)
   local.setItem(KEYS.baseUrl, clean.baseUrl)
   local.setItem(KEYS.model, clean.model)
   local.setItem(KEYS.rememberKey, String(clean.rememberKey))

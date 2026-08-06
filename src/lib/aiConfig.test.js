@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { clearAIConfig, loadAIConfig, saveAIConfig } from './aiConfig'
+import { clearAIConfig, isAllowedAIBaseUrl, loadAIConfig, saveAIConfig } from './aiConfig'
 
 class MemoryStorage {
   data = new Map()
@@ -11,6 +11,11 @@ class MemoryStorage {
 }
 
 describe('AI config storage', () => {
+  it('accepts HTTPS and localhost HTTP base URLs only', () => {
+    expect(isAllowedAIBaseUrl('https://api.example/v1')).toBe(true)
+    expect(isAllowedAIBaseUrl('http://localhost:8080/v1')).toBe(true)
+    expect(isAllowedAIBaseUrl('http://api.example/v1')).toBe(false)
+  })
   it('stores the key in session by default', () => {
     const local = new MemoryStorage()
     const session = new MemoryStorage()

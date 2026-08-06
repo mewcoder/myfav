@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import { describe, expect, it } from 'vitest'
-import { validateContent } from './content'
+import { isSaveTimeDescending, validateContent } from './content'
 
 describe('repository data files', () => {
   it('retain all records and satisfy the production contract', async () => {
@@ -8,6 +8,8 @@ describe('repository data files', () => {
     expect(sites).toHaveLength(82)
     expect(repos).toHaveLength(136)
     expect(articles).toEqual([])
+    expect(isSaveTimeDescending(sites)).toBe(true)
+    expect(isSaveTimeDescending(repos)).toBe(true)
     expect(validateContent({ sites, repos, articles })).toEqual([])
   })
 })

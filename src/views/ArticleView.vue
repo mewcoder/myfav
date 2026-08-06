@@ -1,5 +1,12 @@
 <template>
   <div class="article-page">
+    <nav class="article-reading-toolbar" aria-label="文章阅读工具">
+      <RouterLink to="/articles">← 文章</RouterLink>
+      <div>
+        <button ref="tocTrigger" type="button" :disabled="toc.length < 2" aria-haspopup="dialog" @click="openTocDrawer">目录</button>
+        <button type="button" :aria-label="theme === 'dark' ? '切换至浅色主题' : '切换至深色主题'" @click="toggleTheme">{{ theme === 'dark' ? '☀' : '◐' }}</button>
+      </div>
+    </nav>
     <RouterLink class="back-link" to="/articles">← 返回文章</RouterLink>
     <div v-if="loading" class="text-state">正在加载文章…</div>
     <div v-else-if="!article" class="text-state is-error">文章不存在或已移动。</div>
@@ -26,48 +33,83 @@
       <div v-else class="markdown-body" v-html="renderedHtml"></div>
       <UtterancesNotes :key="route.fullPath" :theme="theme" :pathname="route.path" />
     </article>
+
+    <dialog ref="tocDrawer" class="toc-drawer" aria-labelledby="toc-drawer-title" @cancel.prevent="closeTocDrawer" @close="restoreTocFocus">
+      <header><h2 id="toc-drawer-title">本文目录</h2><button type="button" aria-label="关闭目录" @click="closeTocDrawer">×</button></header>
+      <nav aria-label="文章目录">
+        <a v-for="entry in toc" :key="entry.id" :class="{ nested: entry.level === 3 }" :href="`#${entry.id}`" @click="closeTocDrawer">{{ entry.text }}</a>
+      </nav>
+    </dialog>
   </div>
 </template>
 
 <script setup>
-import { computed, inject, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useContent } from '../composables/useContent'
 import { articleRoute } from '../lib/content'
-import { renderMarkdown } from '../lib/markdown'
-import { withBase } from '../lib/url'
+import { createArticleLoader } from '../lib/articleLoader'
+import { useTheme } from '../composables/useTheme'
 import ArticleAssistant from '../components/ArticleAssistant.vue'
 import UtterancesNotes from '../components/UtterancesNotes.vue'
 
 const route = useRoute()
-const theme = inject('theme')
+const { theme, toggleTheme } = useTheme()
 const { articles, loading: contentLoading } = useContent()
 const rawMarkdown = ref('')
 const renderedHtml = ref('')
 const toc = ref([])
 const markdownError = ref('')
 const loadingMarkdown = ref(false)
+const tocDrawer = ref(null)
+const tocTrigger = ref(null)
+const articleLoader = createArticleLoader()
 const article = computed(() => articles.value.find((item) => articleRoute(item) === route.path))
 const loading = computed(() => contentLoading.value || loadingMarkdown.value)
 
 watch(article, async (nextArticle) => {
+  articleLoader.cancel()
+  closeTocDrawer()
   rawMarkdown.value = ''
   renderedHtml.value = ''
   toc.value = []
   markdownError.value = ''
-  if (!nextArticle) return
+  if (!nextArticle) {
+    loadingMarkdown.value = false
+    return
+  }
+  const expectedPath = nextArticle.path
   loadingMarkdown.value = true
   try {
-    const response = await fetch(withBase(nextArticle.path), { cache: 'no-cache' })
-    if (!response.ok) throw new Error(`本地正文缺失（${response.status}）`)
-    rawMarkdown.value = await response.text()
-    const rendered = renderMarkdown(rawMarkdown.value, nextArticle.path, import.meta.env.BASE_URL)
-    renderedHtml.value = rendered.html
-    toc.value = rendered.toc
+    const result = await articleLoader.load(nextArticle)
+    if (!result || article.value?.path !== expectedPath) return
+    rawMarkdown.value = result.markdown
+    renderedHtml.value = result.html
+    toc.value = result.toc
   } catch (error) {
-    markdownError.value = error.message
+    if (article.value?.path === expectedPath) markdownError.value = error.message
   } finally {
-    loadingMarkdown.value = false
+    if (article.value?.path === expectedPath) loadingMarkdown.value = false
   }
 }, { immediate: true })
+
+async function openTocDrawer() {
+  if (toc.value.length < 2 || tocDrawer.value?.open) return
+  tocDrawer.value.showModal()
+  await nextTick()
+  tocDrawer.value.querySelector('a')?.focus()
+}
+
+function closeTocDrawer() {
+  if (tocDrawer.value?.open) tocDrawer.value.close()
+}
+
+function restoreTocFocus() {
+  tocTrigger.value?.focus()
+}
+
+onBeforeUnmount(() => {
+  articleLoader.cancel()
+  if (tocDrawer.value?.open) tocDrawer.value.close()
+})
 </script>
