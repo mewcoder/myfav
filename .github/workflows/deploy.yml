@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy articles and history fallback
+        run: npm run prepare-pages
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

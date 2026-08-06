@@ -9,7 +9,8 @@
       "tool"
     ],
     "stars": 1748,
-    "saveTime": "2026-06-14"
+    "saveTime": "2026-06-14",
+    "category": "Claude Code"
   },
   {
     "name": "stablyai/orca",
@@ -21,7 +22,8 @@
       "IDE"
     ],
     "stars": 4095,
-    "saveTime": "2026-06-03"
+    "saveTime": "2026-06-03",
+    "category": "AI Agent"
   },
   {
     "name": "iOfficeAI/AionUi",
@@ -33,7 +35,8 @@
       "agent"
     ],
     "stars": 27103,
-    "saveTime": "2026-05-29"
+    "saveTime": "2026-05-29",
+    "category": "AI Agent"
   },
   {
     "name": "ZhiYi-R/moon-bridge",
@@ -45,7 +48,8 @@
       "工具"
     ],
     "stars": 436,
-    "saveTime": "2026-05-28"
+    "saveTime": "2026-05-28",
+    "category": "AI"
   },
   {
     "name": "0xSero/codex-shim",
@@ -57,7 +61,8 @@
       "Agent"
     ],
     "stars": 0,
-    "saveTime": "2026-05-27"
+    "saveTime": "2026-05-27",
+    "category": "AI"
   },
   {
     "name": "steipete/agent-scripts",
@@ -69,7 +74,8 @@
       "AI Agent"
     ],
     "stars": 3586,
-    "saveTime": "2026-05-26"
+    "saveTime": "2026-05-26",
+    "category": "skill"
   },
   {
     "name": "TencentCloudBase/OpenVibeCoding",
@@ -80,7 +86,8 @@
       "开发工具"
     ],
     "stars": 60,
-    "saveTime": "2026-05-26"
+    "saveTime": "2026-05-26",
+    "category": "AI"
   },
   {
     "name": "CiferaTeam/awesome-agents-team",
@@ -91,7 +98,8 @@
       "awesome"
     ],
     "stars": 9,
-    "saveTime": "2026-05-26"
+    "saveTime": "2026-05-26",
+    "category": "AI Agent"
   },
   {
     "name": "rohitg00/ai-engineering-from-scratch",
@@ -103,7 +111,8 @@
       "教程"
     ],
     "stars": 18272,
-    "saveTime": "2026-05-25"
+    "saveTime": "2026-05-25",
+    "category": "AI"
   },
   {
     "name": "gnurio/refactoring-ui-plugin",
@@ -115,7 +124,8 @@
       "设计"
     ],
     "stars": 94,
-    "saveTime": "2026-05-25"
+    "saveTime": "2026-05-25",
+    "category": "UI"
   },
   {
     "name": "jaytel0/taste",
@@ -127,7 +137,8 @@
       "开源"
     ],
     "stars": 100,
-    "saveTime": "2026-05-25"
+    "saveTime": "2026-05-25",
+    "category": "AI"
   },
   {
     "name": "geekjourneyx/interactive-learning",
@@ -139,7 +150,8 @@
       "教程"
     ],
     "stars": 0,
-    "saveTime": "2026-05-21"
+    "saveTime": "2026-05-21",
+    "category": "skill"
   },
   {
     "name": "humanlayer/12-factor-agents",
@@ -151,7 +163,8 @@
       "agent"
     ],
     "stars": 0,
-    "saveTime": "2026-05-19"
+    "saveTime": "2026-05-19",
+    "category": "AI Agent"
   },
   {
     "name": "ciembor/agent-rules-books",
@@ -163,7 +176,8 @@
       "awesome"
     ],
     "stars": 0,
-    "saveTime": "2026-05-18"
+    "saveTime": "2026-05-18",
+    "category": "AI Agent"
   },
   {
     "name": "wechat-article/wechat-article-exporter",
@@ -175,7 +189,8 @@
       "微信"
     ],
     "stars": 10100,
-    "saveTime": "2026-05-18"
+    "saveTime": "2026-05-18",
+    "category": "工具"
   },
   {
     "name": "rulyone/Simple-ReAct-Agent",
@@ -187,7 +202,8 @@
       "Python"
     ],
     "stars": 1,
-    "saveTime": "2026-05-18"
+    "saveTime": "2026-05-18",
+    "category": "AI Agent"
   },
   {
     "name": "nexu-io/html-anything",
@@ -199,7 +215,8 @@
       "工具"
     ],
     "stars": 3148,
-    "saveTime": "2026-05-18"
+    "saveTime": "2026-05-18",
+    "category": "AI"
   },
   {
     "name": "multica-ai/andrej-karpathy-skills",
@@ -211,7 +228,8 @@
       "AI"
     ],
     "stars": 136000,
-    "saveTime": "2026-05-18"
+    "saveTime": "2026-05-18",
+    "category": "skill"
   },
   {
     "name": "InsForge/InsForge",
@@ -223,7 +241,8 @@
       "开源"
     ],
     "stars": 0,
-    "saveTime": "2026-05-14"
+    "saveTime": "2026-05-14",
+    "category": "AI Agent"
   },
   {
     "name": "Li-Evan/Bloom",
@@ -235,7 +254,8 @@
       "教程"
     ],
     "stars": 115,
-    "saveTime": "2026-05-12"
+    "saveTime": "2026-05-12",
+    "category": "AI"
   },
   {
     "name": "WenyuChiou/awesome-agentic-ai-zh",
@@ -247,7 +267,8 @@
       "awesome"
     ],
     "stars": 0,
-    "saveTime": "2026-05-08"
+    "saveTime": "2026-05-08",
+    "category": "AI Agent"
   },
   {
     "name": "cursor/plugins",
@@ -259,7 +280,8 @@
       "开发工具"
     ],
     "stars": 0,
-    "saveTime": "2026-05-08"
+    "saveTime": "2026-05-08",
+    "category": "cursor"
   },
   {
     "name": "mattpocock/skills",
@@ -271,7 +293,8 @@
       "claude-code"
     ],
     "stars": 63809,
-    "saveTime": "2026-05-07"
+    "saveTime": "2026-05-07",
+    "category": "skill"
   },
   {
     "name": "zarazhangrui/frontend-slides",
@@ -284,7 +307,8 @@
       "设计"
     ],
     "stars": 0,
-    "saveTime": "2026-05-06"
+    "saveTime": "2026-05-06",
+    "category": "skill"
   },
   {
     "name": "yaojingang/yao-open-skills",
@@ -296,7 +320,8 @@
       "开源"
     ],
     "stars": 408,
-    "saveTime": "2026-04-30"
+    "saveTime": "2026-04-30",
+    "category": "skill"
   },
   {
     "name": "ka-pi-ba-la/AIbijia",
@@ -308,7 +333,8 @@
       "效率"
     ],
     "stars": 169,
-    "saveTime": "2026-04-29"
+    "saveTime": "2026-04-29",
+    "category": "AI"
   },
   {
     "name": "browserbase/skills",
@@ -320,7 +346,8 @@
       "自动化"
     ],
     "stars": 621,
-    "saveTime": "2026-04-29"
+    "saveTime": "2026-04-29",
+    "category": "skill"
   },
   {
     "name": "bailylu/ref-baily-life",
@@ -332,7 +359,8 @@
       "Cloudflare"
     ],
     "stars": 8,
-    "saveTime": "2026-04-28"
+    "saveTime": "2026-04-28",
+    "category": "工具"
   },
   {
     "name": "nexu-io/open-design",
@@ -344,7 +372,8 @@
       "设计"
     ],
     "stars": 76,
-    "saveTime": "2026-04-28"
+    "saveTime": "2026-04-28",
+    "category": "skill"
   },
   {
     "name": "Justineo/working-with-ai",
@@ -356,7 +385,8 @@
       "前端"
     ],
     "stars": 313,
-    "saveTime": "2026-04-28"
+    "saveTime": "2026-04-28",
+    "category": "AI"
   },
   {
     "name": "vercel-labs/portless",
@@ -368,7 +398,8 @@
       "自动化"
     ],
     "stars": 7631,
-    "saveTime": "2026-04-28"
+    "saveTime": "2026-04-28",
+    "category": "工具"
   },
   {
     "name": "plait-board/drawnix",
@@ -380,7 +411,8 @@
       "设计"
     ],
     "stars": 13481,
-    "saveTime": "2026-04-27"
+    "saveTime": "2026-04-27",
+    "category": "工具"
   },
   {
     "name": "AlexsJones/llmfit",
@@ -392,7 +424,8 @@
       "开源"
     ],
     "stars": 24725,
-    "saveTime": "2026-04-27"
+    "saveTime": "2026-04-27",
+    "category": "AI"
   },
   {
     "name": "mattpocock/skills",
@@ -404,7 +437,8 @@
       "效率"
     ],
     "stars": 24956,
-    "saveTime": "2026-04-27"
+    "saveTime": "2026-04-27",
+    "category": "skill"
   },
   {
     "name": "iamzhihuix/skills-manage",
@@ -416,7 +450,8 @@
       "agent"
     ],
     "stars": 1190,
-    "saveTime": "2026-04-27"
+    "saveTime": "2026-04-27",
+    "category": "skill"
   },
   {
     "name": "ZToolsCenter/ZTools",
@@ -428,7 +463,8 @@
       "开源"
     ],
     "stars": 1995,
-    "saveTime": "2026-04-27"
+    "saveTime": "2026-04-27",
+    "category": "工具"
   },
   {
     "name": "op7418/guizang-ppt-skill",
@@ -440,7 +476,8 @@
       "教程"
     ],
     "stars": 60,
-    "saveTime": "2026-04-26"
+    "saveTime": "2026-04-26",
+    "category": "skill"
   },
   {
     "name": "Russell-cell/PPT-Design-Prompt",
@@ -452,7 +489,8 @@
       "开源"
     ],
     "stars": 668,
-    "saveTime": "2026-04-26"
+    "saveTime": "2026-04-26",
+    "category": "设计"
   },
   {
     "name": "enetx/surf",
@@ -464,7 +502,8 @@
       "工具"
     ],
     "stars": 0,
-    "saveTime": "2026-04-26"
+    "saveTime": "2026-04-26",
+    "category": "网络"
   },
   {
     "name": "refactoringhq/tolaria",
@@ -476,7 +515,8 @@
       "Tauri"
     ],
     "stars": 1146,
-    "saveTime": "2026-04-23"
+    "saveTime": "2026-04-23",
+    "category": "知识管理"
   },
   {
     "name": "Alishahryar1/free-claude-code",
@@ -488,7 +528,8 @@
       "工具"
     ],
     "stars": 4692,
-    "saveTime": "2026-04-23"
+    "saveTime": "2026-04-23",
+    "category": "Claude Code"
   },
   {
     "name": "origin-space/ui-experiments",
@@ -500,7 +541,8 @@
       "UI"
     ],
     "stars": 1375,
-    "saveTime": "2026-04-23"
+    "saveTime": "2026-04-23",
+    "category": "前端"
   },
   {
     "name": "workany-ai/workany",
@@ -512,7 +554,8 @@
       "skill"
     ],
     "stars": 1447,
-    "saveTime": "2026-04-23"
+    "saveTime": "2026-04-23",
+    "category": "Agent"
   },
   {
     "name": "actionbook/ascent-research",
@@ -524,7 +567,8 @@
       "Rust"
     ],
     "stars": 131,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "Agent"
   },
   {
     "name": "chatfire-AI/huobao-drama",
@@ -536,7 +580,8 @@
       "自动化"
     ],
     "stars": 10484,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "AI"
   },
   {
     "name": "rullerzhou-afk/clawd-on-desk",
@@ -548,7 +593,8 @@
       "macOS"
     ],
     "stars": 1547,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "Agent"
   },
   {
     "name": "Jason-uxui/gray-ui-csm",
@@ -560,7 +606,8 @@
       "TypeScript"
     ],
     "stars": 90,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "前端"
   },
   {
     "name": "h4ckf0r0day/obscura",
@@ -572,7 +619,8 @@
       "Rust"
     ],
     "stars": 760,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "Agent"
   },
   {
     "name": "riverscn/intro-agentic-ai",
@@ -584,7 +632,8 @@
       "教程"
     ],
     "stars": 23,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "AI"
   },
   {
     "name": "google-labs-code/design.md",
@@ -596,7 +645,8 @@
       "设计"
     ],
     "stars": 651,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "Agent"
   },
   {
     "name": "ln-dev7/square-ui",
@@ -608,7 +658,8 @@
       "设计"
     ],
     "stars": 5142,
-    "saveTime": "2026-04-22"
+    "saveTime": "2026-04-22",
+    "category": "前端"
   },
   {
     "name": "nicejade/wealth-tracker",
@@ -620,7 +671,8 @@
       "工具"
     ],
     "stars": 0,
-    "saveTime": "2026-04-21"
+    "saveTime": "2026-04-21",
+    "category": "理财"
   },
   {
     "name": "Eronred/expo-agent-spinners",
@@ -632,7 +684,8 @@
       "动画"
     ],
     "stars": 0,
-    "saveTime": "2026-04-21"
+    "saveTime": "2026-04-21",
+    "category": "前端"
   },
   {
     "name": "any4ai/AnyCrawl",
@@ -644,7 +697,8 @@
       "AI"
     ],
     "stars": 2800,
-    "saveTime": "2026-04-20"
+    "saveTime": "2026-04-20",
+    "category": "爬虫"
   },
   {
     "name": "smallnest/autoresearch",
@@ -656,7 +710,8 @@
       "开发"
     ],
     "stars": 10,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "自动化"
   },
   {
     "name": "ZeroZ-lab/cc-design",
@@ -668,7 +723,8 @@
       "设计"
     ],
     "stars": 0,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "skill"
   },
   {
     "name": "browser-use/video-use",
@@ -680,7 +736,8 @@
       "Claude Code"
     ],
     "stars": 1257,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "skill"
   },
   {
     "name": "elder-plinius/CL4R1T4S",
@@ -692,7 +749,8 @@
       "开源"
     ],
     "stars": 15244,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "安全"
   },
   {
     "name": "tmoroney/auto-subs",
@@ -704,7 +762,8 @@
       "工具"
     ],
     "stars": 3159,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "AI"
   },
   {
     "name": "firecrawl/web-agent",
@@ -716,7 +775,8 @@
       "langchain"
     ],
     "stars": 205,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "agent"
   },
   {
     "name": "f/textream",
@@ -728,7 +788,8 @@
       "开源"
     ],
     "stars": 2839,
-    "saveTime": "2026-04-18"
+    "saveTime": "2026-04-18",
+    "category": "录屏工具"
   },
   {
     "name": "langchain-ai/agents-from-scratch",
@@ -740,7 +801,8 @@
       "教程"
     ],
     "stars": 1729,
-    "saveTime": "2026-04-17"
+    "saveTime": "2026-04-17",
+    "category": "langchain"
   },
   {
     "name": "loks666/get_jobs",
@@ -752,7 +814,8 @@
       "自动化"
     ],
     "stars": 6630,
-    "saveTime": "2026-04-17"
+    "saveTime": "2026-04-17",
+    "category": "求职"
   },
   {
     "name": "davebcn87/pi-autoresearch",
@@ -764,7 +827,8 @@
       "测试"
     ],
     "stars": 5815,
-    "saveTime": "2026-04-16"
+    "saveTime": "2026-04-16",
+    "category": "Agent"
   },
   {
     "name": "lukilabs/craft-agents-oss",
@@ -776,7 +840,8 @@
       "MCP"
     ],
     "stars": 4376,
-    "saveTime": "2026-04-15"
+    "saveTime": "2026-04-15",
+    "category": "agent"
   },
   {
     "name": "firecrawl/open-lovable",
@@ -788,7 +853,8 @@
       "React"
     ],
     "stars": 25600,
-    "saveTime": "2026-04-15"
+    "saveTime": "2026-04-15",
+    "category": "AI"
   },
   {
     "name": "Cocoon-AI/architecture-diagram-generator",
@@ -800,7 +866,8 @@
       "Claude Code"
     ],
     "stars": 3641,
-    "saveTime": "2026-04-14"
+    "saveTime": "2026-04-14",
+    "category": "skill"
   },
   {
     "name": "stevibe/BenchLocal",
@@ -812,7 +879,8 @@
       "测试"
     ],
     "stars": 132,
-    "saveTime": "2026-04-14"
+    "saveTime": "2026-04-14",
+    "category": "LLM"
   },
   {
     "name": "eternityspring/article-tools",
@@ -823,7 +891,8 @@
       "效率"
     ],
     "stars": 122,
-    "saveTime": "2026-04-13"
+    "saveTime": "2026-04-13",
+    "category": "工具"
   },
   {
     "name": "hexiecs/talk-normal",
@@ -835,7 +904,8 @@
       "教学"
     ],
     "stars": 1223,
-    "saveTime": "2026-04-12"
+    "saveTime": "2026-04-12",
+    "category": "skill"
   },
   {
     "name": "ZeroZ-lab/gmdiagram",
@@ -847,7 +917,8 @@
       "Claude Code"
     ],
     "stars": 9,
-    "saveTime": "2026-04-12"
+    "saveTime": "2026-04-12",
+    "category": "skill"
   },
   {
     "name": "haydenbleasel/ultracite",
@@ -859,7 +930,8 @@
       "AI"
     ],
     "stars": 2894,
-    "saveTime": "2026-04-12"
+    "saveTime": "2026-04-12",
+    "category": "开发"
   },
   {
     "name": "MinsiAI/ai-website-cloner-template",
@@ -871,7 +943,8 @@
       "Claude Code"
     ],
     "stars": 0,
-    "saveTime": "2026-04-12"
+    "saveTime": "2026-04-12",
+    "category": "前端"
   },
   {
     "name": "lzhgus/Capso",
@@ -883,7 +956,8 @@
       "开源"
     ],
     "stars": 491,
-    "saveTime": "2026-04-11"
+    "saveTime": "2026-04-11",
+    "category": "录屏工具"
   },
   {
     "name": "alexpate/awesome-design-systems",
@@ -895,7 +969,8 @@
       "开源"
     ],
     "stars": 23628,
-    "saveTime": "2026-04-10"
+    "saveTime": "2026-04-10",
+    "category": "设计"
   },
   {
     "name": "garrytan/gbrain",
@@ -907,7 +982,8 @@
       "开源"
     ],
     "stars": 9176,
-    "saveTime": "2026-04-10"
+    "saveTime": "2026-04-10",
+    "category": "agent"
   },
   {
     "name": "CapSoftware/Cap",
@@ -919,7 +995,8 @@
       "工具"
     ],
     "stars": 18220,
-    "saveTime": "2026-04-10"
+    "saveTime": "2026-04-10",
+    "category": "录屏工具"
   },
   {
     "name": "yanhua1010/zero-to-ai-fullstack",
@@ -931,7 +1008,8 @@
       "Python"
     ],
     "stars": 147,
-    "saveTime": "2026-04-09"
+    "saveTime": "2026-04-09",
+    "category": "RAG"
   },
   {
     "name": "gunnargray-dev/unicode-animations",
@@ -943,7 +1021,8 @@
       "工具"
     ],
     "stars": 462,
-    "saveTime": "2026-04-08"
+    "saveTime": "2026-04-08",
+    "category": "前端"
   },
   {
     "name": "leonxlnx/taste-skill",
@@ -955,7 +1034,8 @@
       "skill"
     ],
     "stars": 10005,
-    "saveTime": "2026-04-08"
+    "saveTime": "2026-04-08",
+    "category": "前端"
   },
   {
     "name": "siddharthvaddem/openscreen",
@@ -967,7 +1047,8 @@
       "开源"
     ],
     "stars": 31109,
-    "saveTime": "2026-04-08"
+    "saveTime": "2026-04-08",
+    "category": "录屏工具"
   },
   {
     "name": "Ataraxy-Labs/opensessions",
@@ -979,7 +1060,8 @@
       "TypeScript"
     ],
     "stars": 948,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "工具"
   },
   {
     "name": "yologdev/karpathy-llm-wiki",
@@ -991,7 +1073,8 @@
       "Wiki"
     ],
     "stars": 39,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "AI"
   },
   {
     "name": "MemPalace/mempalace",
@@ -1003,7 +1086,8 @@
       "Python"
     ],
     "stars": 47900,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "AI"
   },
   {
     "name": "engels74/claude-island",
@@ -1015,7 +1099,8 @@
       "macOS"
     ],
     "stars": 165,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "工具"
   },
   {
     "name": "deusyu/harness-engineering",
@@ -1027,7 +1112,8 @@
       "教程"
     ],
     "stars": 1638,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "harness"
   },
   {
     "name": "JuliusBrussee/caveman",
@@ -1039,7 +1125,8 @@
       "效率"
     ],
     "stars": 37928,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "skill"
   },
   {
     "name": "DeadWaveWave/opencove",
@@ -1050,7 +1137,8 @@
       "agent"
     ],
     "stars": 1141,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "framework"
   },
   {
     "name": "collaborator-ai/collab-public",
@@ -1061,7 +1149,8 @@
       "agent"
     ],
     "stars": 2396,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "tool"
   },
   {
     "name": "cmliu/edgetunnel",
@@ -1072,7 +1161,8 @@
       "网络"
     ],
     "stars": 31733,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "tool"
   },
   {
     "name": "afar1/fieldtheory-cli",
@@ -1083,7 +1173,8 @@
       "社交"
     ],
     "stars": 1519,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "tool"
   },
   {
     "name": "tw93/Waza",
@@ -1094,7 +1185,8 @@
       "开发"
     ],
     "stars": 3442,
-    "saveTime": "2026-04-07"
+    "saveTime": "2026-04-07",
+    "category": "skill"
   },
   {
     "name": "jonnonz1/adaptive-browser",
@@ -1105,7 +1197,8 @@
       "前端"
     ],
     "stars": 299,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "tool"
   },
   {
     "name": "santifer/career-ops",
@@ -1116,7 +1209,8 @@
       "商业"
     ],
     "stars": 36066,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "tool"
   },
   {
     "name": "drona23/claude-token-efficient",
@@ -1127,7 +1221,8 @@
       "claude-code"
     ],
     "stars": 4404,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "doc"
   },
   {
     "name": "lidangzzz/goal-driven",
@@ -1138,7 +1233,8 @@
       "agent"
     ],
     "stars": 920,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "framework"
   },
   {
     "name": "jimliu/baoyu-skills",
@@ -1149,7 +1245,8 @@
       "agent"
     ],
     "stars": 15122,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "skill"
   },
   {
     "name": "zarazhangrui/codebase-to-course",
@@ -1160,7 +1257,8 @@
       "教学"
     ],
     "stars": 3887,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "skill"
   },
   {
     "name": "slowmist/openclaw-security-practice-guide",
@@ -1171,7 +1269,8 @@
       "安全"
     ],
     "stars": 2777,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "doc"
   },
   {
     "name": "MiniMax-AI/skills",
@@ -1182,7 +1281,8 @@
       "agent"
     ],
     "stars": 10831,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "skill"
   },
   {
     "name": "wxtsky/CodeIsland",
@@ -1193,7 +1293,8 @@
       "claude-code"
     ],
     "stars": 1054,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "tool"
   },
   {
     "name": "obra/superpowers",
@@ -1204,7 +1305,8 @@
       "claude-code"
     ],
     "stars": 158934,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "framework"
   },
   {
     "name": "EveryInc/compound-engineering-plugin",
@@ -1215,7 +1317,8 @@
       "开发"
     ],
     "stars": 14721,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "skill"
   },
   {
     "name": "garrytan/gstack",
@@ -1226,7 +1329,8 @@
       "效率"
     ],
     "stars": 76458,
-    "saveTime": "2026-04-06"
+    "saveTime": "2026-04-06",
+    "category": "skill"
   },
   {
     "name": "jinchenma94/bazi-skill",
@@ -1237,7 +1341,8 @@
       "分析"
     ],
     "stars": 988,
-    "saveTime": "2026-04-05"
+    "saveTime": "2026-04-05",
+    "category": "skill"
   },
   {
     "name": "HKUDS/OpenHarness",
@@ -1248,7 +1353,8 @@
       "agent"
     ],
     "stars": 10349,
-    "saveTime": "2026-04-05"
+    "saveTime": "2026-04-05",
+    "category": "framework"
   },
   {
     "name": "addyosmani/agent-skills",
@@ -1259,7 +1365,8 @@
       "开发"
     ],
     "stars": 17553,
-    "saveTime": "2026-04-05"
+    "saveTime": "2026-04-05",
+    "category": "skill"
   },
   {
     "name": "jarrodwatts/claude-hud",
@@ -1270,7 +1377,8 @@
       "claude-code"
     ],
     "stars": 19902,
-    "saveTime": "2026-04-05"
+    "saveTime": "2026-04-05",
+    "category": "tool"
   },
   {
     "name": "10xChengTu/harness-engineering",
@@ -1281,7 +1389,8 @@
       "开发"
     ],
     "stars": 69,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "skill"
   },
   {
     "name": "VoltAgent/awesome-design-md",
@@ -1292,7 +1401,8 @@
       "前端"
     ],
     "stars": 59429,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "doc"
   },
   {
     "name": "keenthemes/reui",
@@ -1303,7 +1413,8 @@
       "前端"
     ],
     "stars": 2824,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "tool"
   },
   {
     "name": "SaladDay/cc-switch-cli",
@@ -1314,7 +1425,8 @@
       "claude-code"
     ],
     "stars": 1941,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "tool"
   },
   {
     "name": "NousResearch/hermes-agent",
@@ -1325,7 +1437,8 @@
       "agent"
     ],
     "stars": 99590,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "framework"
   },
   {
     "name": "shareAI-lab/learn-claude-code",
@@ -1336,7 +1449,8 @@
       "claude-code"
     ],
     "stars": 54641,
-    "saveTime": "2026-04-04"
+    "saveTime": "2026-04-04",
+    "category": "doc"
   },
   {
     "name": "iflytek/skillhub",
@@ -1347,7 +1461,8 @@
       "agent"
     ],
     "stars": 2668,
-    "saveTime": "2026-04-03"
+    "saveTime": "2026-04-03",
+    "category": "framework"
   },
   {
     "name": "lintsinghua/claude-code-book",
@@ -1358,7 +1473,8 @@
       "claude-code"
     ],
     "stars": 2815,
-    "saveTime": "2026-04-03"
+    "saveTime": "2026-04-03",
+    "category": "doc"
   },
   {
     "name": "skillsgate/skillsgate",
@@ -1369,7 +1485,8 @@
       "agent"
     ],
     "stars": 291,
-    "saveTime": "2026-04-03"
+    "saveTime": "2026-04-03",
+    "category": "framework"
   },
   {
     "name": "wquguru/harness-books",
@@ -1380,7 +1497,8 @@
       "agent"
     ],
     "stars": 1800,
-    "saveTime": "2026-04-02"
+    "saveTime": "2026-04-02",
+    "category": "doc"
   },
   {
     "name": "walkinglabs/learn-harness-engineering",
@@ -1391,7 +1509,8 @@
       "agent"
     ],
     "stars": 779,
-    "saveTime": "2026-04-02"
+    "saveTime": "2026-04-02",
+    "category": "doc"
   },
   {
     "name": "sugarforever/understanding-fantastic-coding-agents",
@@ -1402,7 +1521,8 @@
       "agent"
     ],
     "stars": 40,
-    "saveTime": "2026-04-02"
+    "saveTime": "2026-04-02",
+    "category": "doc"
   },
   {
     "name": "jgraph/drawio-mcp",
@@ -1413,7 +1533,8 @@
       "画图"
     ],
     "stars": 3000,
-    "saveTime": "2026-04-02"
+    "saveTime": "2026-04-02",
+    "category": "MCP"
   },
   {
     "name": "multica-ai/multica",
@@ -1424,7 +1545,8 @@
       "agent"
     ],
     "stars": 16200,
-    "saveTime": "2026-04-01"
+    "saveTime": "2026-04-01",
+    "category": "tool"
   },
   {
     "name": "helloianneo/claude-code-handbook",
@@ -1435,7 +1557,8 @@
       "claude-code"
     ],
     "stars": 134,
-    "saveTime": "2026-04-01"
+    "saveTime": "2026-04-01",
+    "category": "doc"
   },
   {
     "name": "tvytlx/ai-agent-deep-dive",
@@ -1446,7 +1569,8 @@
       "claude-code"
     ],
     "stars": 5600,
-    "saveTime": "2026-04-01"
+    "saveTime": "2026-04-01",
+    "category": "doc"
   },
   {
     "name": "shanraisshan/claude-code-best-practice",
@@ -1457,7 +1581,8 @@
       "claude-code"
     ],
     "stars": 46300,
-    "saveTime": "2026-03-31"
+    "saveTime": "2026-03-31",
+    "category": "doc"
   },
   {
     "name": "6551Team/claude-code-design-guide",
@@ -1468,7 +1593,8 @@
       "claude-code"
     ],
     "stars": 732,
-    "saveTime": "2026-03-31"
+    "saveTime": "2026-03-31",
+    "category": "doc"
   },
   {
     "name": "Panniantong/Agent-Reach",
@@ -1479,7 +1605,8 @@
       "联网"
     ],
     "stars": 17800,
-    "saveTime": "2026-03-30"
+    "saveTime": "2026-03-30",
+    "category": "skill"
   },
   {
     "name": "agrinman/tunnelto",
@@ -1490,7 +1617,8 @@
       "网络"
     ],
     "stars": 6600,
-    "saveTime": "2026-03-30"
+    "saveTime": "2026-03-30",
+    "category": "tool"
   },
   {
     "name": "phuryn/pm-skills",
@@ -1501,7 +1629,8 @@
       "管理"
     ],
     "stars": 10200,
-    "saveTime": "2026-03-30"
+    "saveTime": "2026-03-30",
+    "category": "skill"
   },
   {
     "name": "eze-is/web-access",
@@ -1512,7 +1641,8 @@
       "联网"
     ],
     "stars": 5100,
-    "saveTime": "2026-03-29"
+    "saveTime": "2026-03-29",
+    "category": "skill"
   },
   {
     "name": "pbakaus/impeccable",
@@ -1523,7 +1653,8 @@
       "设计"
     ],
     "stars": 18000,
-    "saveTime": "2026-03-29"
+    "saveTime": "2026-03-29",
+    "category": "skill"
   },
   {
     "name": "dontbesilent2025/dbskill",
@@ -1534,7 +1665,8 @@
       "分析"
     ],
     "stars": 3100,
-    "saveTime": "2026-03-29"
+    "saveTime": "2026-03-29",
+    "category": "skill"
   },
   {
     "name": "CopilotKit/shadify",
@@ -1545,7 +1677,8 @@
       "前端"
     ],
     "stars": 234,
-    "saveTime": "2026-03-29"
+    "saveTime": "2026-03-29",
+    "category": "tool"
   },
   {
     "name": "ArtemXTech/personal-os-skills",
@@ -1556,7 +1689,8 @@
       "管理"
     ],
     "stars": 424,
-    "saveTime": "2026-03-29"
+    "saveTime": "2026-03-29",
+    "category": "skill"
   },
   {
     "name": "yizhiyanhua-ai/fireworks-tech-graph",
@@ -1567,7 +1701,8 @@
       "知识"
     ],
     "stars": 3700,
-    "saveTime": "2026-04-11"
+    "saveTime": "2026-04-11",
+    "category": "图谱"
   },
   {
     "name": "heygen-com/hyperframes",
@@ -1579,6 +1714,7 @@
       "工具"
     ],
     "stars": 3400,
-    "saveTime": "2026-04-19"
+    "saveTime": "2026-04-19",
+    "category": "视频制作"
   }
 ]
