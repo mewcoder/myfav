@@ -25,7 +25,8 @@ function readJSON(file) {
 }
 
 function writeJSON(file, data) {
-  fs.writeFileSync(file, JSON.stringify(data, null, 2))
+  data.sort((left, right) => right.saveTime.localeCompare(left.saveTime))
+  fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`)
 }
 
 function isGitHubRepo(url) {
@@ -53,11 +54,13 @@ async function add(url, options = {}) {
 
   if (isRepo) {
     const name = options.name || parseGitHubName(url) || url
+    const tags = options.tags ? options.tags.split(',').map(tag => tag.trim()).filter(Boolean) : []
     const item = {
       name,
       url,
       description: options.description || name,
-      tags: options.tags ? options.tags.split(',') : [],
+      category: options.category || tags[0] || '其他',
+      tags,
       stars: parseInt(options.stars) || 0,
       saveTime: getToday()
     }
@@ -71,6 +74,7 @@ async function add(url, options = {}) {
       url,
       description: options.description || title,
       category: options.category || '其他',
+      tags: options.tags ? options.tags.split(',').map(tag => tag.trim()).filter(Boolean) : [],
       saveTime: getToday()
     }
     data.unshift(item)
