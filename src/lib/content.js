@@ -67,11 +67,11 @@ export function countBy(records, field) {
   }, {})
 }
 
-export function createJsonContext(source, data) {
-  const filenames = { sites: 'sites.json', repos: 'repos.json', articles: 'articles.json' }
-  if (!filenames[source] || !Array.isArray(data)) throw new Error('AI 数据范围必须是一个完整 JSON 文件')
+export function createCollectionContext(scope, data) {
+  const labels = { sites: '网站', repos: 'GitHub', articles: '文章' }
+  if (!labels[scope] || !Array.isArray(data)) throw new Error('AI 问答范围无效')
   const content = JSON.stringify(data)
-  return { source, filename: filenames[source], records: data.length, characters: content.length, content }
+  return { scope, label: labels[scope], records: data.length, characters: content.length, content }
 }
 
 export function articleRoute(article) {

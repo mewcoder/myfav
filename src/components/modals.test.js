@@ -24,7 +24,7 @@ vi.mock('../composables/useContent', async () => {
   const { computed, ref } = await import('vue')
   const sites = ref([{ title: 'Site', label: 'Site', type: 'site', url: 'https://site.example', description: 'site item', category: '工具', tags: [], saveTime: '2026-08-03' }])
   const repos = ref([{ name: 'owner/repo', label: 'owner/repo', type: 'repo', url: 'https://github.com/owner/repo', description: 'repo item', category: '开发', tags: ['AI'], stars: 1, saveTime: '2026-08-02' }])
-  const articles = ref([{ title: 'Article', label: 'Article', type: 'article', url: 'https://article.example', description: 'article item', category: '阅读', tags: [], saveTime: '2026-08-04', path: 'articles/2026-08/article.md' }])
+  const articles = ref([{ title: 'Article', label: 'Article', type: 'article', url: 'https://article.example', description: 'article item', category: '知识', tags: [], saveTime: '2026-08-04', path: 'articles/2026-08/article.md' }])
   return {
     useContent: () => ({
       sites,
@@ -149,39 +149,38 @@ describe('search dialog', () => {
     wrapper.unmount()
   })
 
-  it('freezes the AI source during a request and clears answers before a cross-page reopen', async () => {
+  it('uses human-named AI scopes and clears answers before a cross-page reopen', async () => {
     const { config } = useAIConfig()
     config.value = { baseUrl: 'https://api.example/v1', apiKey: 'secret', model: 'model', rememberKey: false }
     const requests = []
-    const finishRequests = []
     chatCompletion.mockImplementation((options) => {
-      const index = requests.push(options) - 1
-      return new Promise((resolve) => {
-        finishRequests.push(() => {
-          const text = index === 0 ? 'site answer' : 'repo answer'
-          options.onDelta(text)
-          resolve(text)
-        })
-      })
+      requests.push(options)
+      const text = requests.length === 1 ? 'site answer' : 'repo answer'
+      options.onDelta(text)
+      return Promise.resolve(text)
     })
     const router = await routerAt('/sites')
     const wrapper = mount(SearchOverlay, { props: { open: false }, global: { plugins: [router], provide: { openAISettings: vi.fn() } }, attachTo: document.body })
     await wrapper.setProps({ open: true })
     await wrapper.findAll('.search-mode > button')[1].trigger('click')
     await wrapper.get('input[type="search"]').setValue('有哪些？')
-    await wrapper.get('.ai-source-controls .primary-button').trigger('click')
-    expect(requests[0].messages[1].content).toContain('文件名：sites.json')
-    await wrapper.findAll('.ai-source-controls > button:not(.primary-button)')[1].trigger('click')
-    expect(wrapper.text()).toContain('完整上下文：repos.json')
-    finishRequests[0]()
+    expect(wrapper.text()).toContain('问答范围网站GitHub文章')
+    expect(wrapper.text()).toContain('基于“网站”中的 1 条收藏')
+    await wrapper.get('.ai-scope-controls .primary-button').trigger('click')
     await flushPromises()
-    expect(wrapper.text()).not.toContain('site answer')
+    expect(requests[0].messages[0].content).toContain('不要只做关键词筛选')
+    expect(requests[0].messages[1].content).toContain('https://site.example')
+    expect(requests[0].messages[1].content).not.toContain('https://github.com/owner/repo')
+    expect(wrapper.text()).toContain('AI 回答 · 网站')
+    expect(wrapper.text()).toContain('site answer')
 
-    await wrapper.get('.ai-source-controls .primary-button').trigger('click')
-    finishRequests[1]()
+    await wrapper.findAll('.ai-scope-controls > button:not(.primary-button)')[1].trigger('click')
+    expect(wrapper.text()).toContain('基于“GitHub”中的 1 条收藏')
+    await wrapper.get('.ai-scope-controls .primary-button').trigger('click')
     await flushPromises()
-    expect(requests[1].messages[1].content).toContain('文件名：repos.json')
-    expect(wrapper.text()).toContain('AI 回答 · repos.json')
+    expect(requests[1].messages[1].content).toContain('https://github.com/owner/repo')
+    expect(requests[1].messages[1].content).not.toContain('https://site.example')
+    expect(wrapper.text()).toContain('AI 回答 · GitHub')
     expect(wrapper.text()).toContain('repo answer')
 
     wrapper.get('dialog').element.close()
@@ -189,7 +188,7 @@ describe('search dialog', () => {
     await router.push('/')
     await wrapper.setProps({ open: true })
     await wrapper.findAll('.search-mode > button')[1].trigger('click')
-    expect(wrapper.text()).toContain('完整上下文：articles.json')
+    expect(wrapper.text()).toContain('基于“文章”中的 1 条收藏')
     expect(wrapper.text()).not.toContain('repo answer')
     wrapper.unmount()
   })

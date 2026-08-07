@@ -100,7 +100,7 @@ npm run prepare-pages
 
 ## AI 功能与隐私
 
-搜索层可对网站、GitHub 或文章中的一个完整 JSON 文件提问；文章助手只发送当前文章的原始 Markdown。两者都调用用户填写的 OpenAI-compatible `POST /chat/completions` 接口，不经过 MyFav 服务端。
+全局“问 AI”按用户选择的 `网站`、`GitHub` 或 `文章` 范围读取对应收藏数据，用于查找、归纳、比较和解释；界面不暴露 JSON 文件名。文章详情助手只发送当前文章的原始 Markdown。两者都调用用户填写的 OpenAI-compatible `POST /chat/completions` 接口，不经过 MyFav 服务端。
 
 - API Key 默认只保存在当前标签页的 `sessionStorage`。
 - 勾选“记住配置”后才写入 `localStorage`。

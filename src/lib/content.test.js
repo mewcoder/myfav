@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { articleRoute, createJsonContext, isSaveTimeDescending, searchRecords, validateContent } from './content'
+import { articleRoute, createCollectionContext, isSaveTimeDescending, searchRecords, validateContent } from './content'
 
 const site = { title: 'Linear', url: 'https://linear.app', description: '项目管理', category: '工具', tags: [], saveTime: '2026-08-01' }
 const repo = { name: 'owner/repo', url: 'https://github.com/owner/repo', description: '工具', category: '开发', tags: ['AI'], stars: 10, saveTime: '2026-08-01' }
@@ -22,11 +22,12 @@ describe('content contract', () => {
     expect(searchRecords(records, '', 'site')).toHaveLength(1)
   })
 
-  it('builds exactly one complete JSON context', () => {
-    const context = createJsonContext('sites', [site])
-    expect(context.filename).toBe('sites.json')
+  it('builds a human-named context for one collection type', () => {
+    const context = createCollectionContext('sites', [site])
+    expect(context.label).toBe('网站')
+    expect(context.records).toBe(1)
     expect(JSON.parse(context.content)).toEqual([site])
-    expect(() => createJsonContext('all', [site])).toThrow()
+    expect(() => createCollectionContext('all', [site])).toThrow()
   })
 
   it('derives stable article routes', () => {
