@@ -1,7 +1,6 @@
-import { renderMarkdown } from './markdown'
 import { withBase } from './url'
 
-export function createArticleLoader({ fetchImpl = fetch, render = renderMarkdown, base = import.meta.env.BASE_URL } = {}) {
+export function createArticleLoader({ fetchImpl = fetch, base = import.meta.env.BASE_URL } = {}) {
   let requestId = 0
   let controller = null
 
@@ -11,13 +10,27 @@ export function createArticleLoader({ fetchImpl = fetch, render = renderMarkdown
     const currentController = new AbortController()
     controller = currentController
 
+    const htmlPath = article.path.replace(/\.md$/, '.html')
+    const tocPath = article.path.replace(/\.md$/, '.toc.json')
+    const urls = [article.path, htmlPath, tocPath].map((path) => withBase(path, base))
+
     try {
-      const response = await fetchImpl(withBase(article.path, base), { cache: 'no-cache', signal: currentController.signal })
-      if (!response.ok) throw new Error(`本地正文缺失（${response.status}）`)
-      const markdown = await response.text()
-      const rendered = render(markdown, article.path, base)
+      const responses = await Promise.all(
+        urls.map((url) => fetchImpl(url, { cache: 'no-cache', signal: currentController.signal })),
+      )
       if (currentId !== requestId) return null
-      return { markdown, html: rendered.html, toc: rendered.toc, path: article.path }
+      const [markdown, html, tocRaw] = await Promise.all(
+        responses.map((response) => (response.ok ? response.text() : Promise.resolve(''))),
+      )
+      let toc = []
+      try {
+        toc = JSON.parse(tocRaw || '[]')
+      } catch {
+        toc = []
+      }
+      if (currentId !== requestId) return null
+      if (!html) throw new Error(`本地正文缺失（${responses[1].status}）`)
+      return { markdown, html, toc, path: article.path }
     } catch (error) {
       if (currentId !== requestId || error?.name === 'AbortError') return null
       throw error

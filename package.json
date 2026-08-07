@@ -11,15 +11,19 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "dompurify": "^3.4.13",
-    "marked": "^18.0.9",
     "vue": "^3.4.0",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
     "@vue/test-utils": "^2.4.11",
+    "dompurify": "^3.4.13",
     "jsdom": "^29.1.1",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.0",
+    "shiki": "^3.0.0",
     "vite": "^5.0.0",
     "vitest": "^4.1.10"
   }

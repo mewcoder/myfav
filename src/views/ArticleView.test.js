@@ -35,9 +35,12 @@ beforeAll(async () => {
 })
 
 beforeEach(() => {
-  vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-    ok: true,
-    text: async () => '## 第一节\n\n正文\n\n## 第二节\n\n正文',
+  vi.stubGlobal('fetch', vi.fn((url) => {
+    const href = String(url)
+    let body = '## 第一节\n\n正文\n\n## 第二节\n\n正文'
+    if (href.endsWith('.toc.json')) body = '[{"id":"a","text":"第一节","level":2},{"id":"b","text":"第二节","level":2}]'
+    if (href.endsWith('.html')) body = '<h2 id="a">第一节</h2><h2 id="b">第二节</h2>'
+    return Promise.resolve({ ok: true, text: async () => body })
   }))
 })
 
