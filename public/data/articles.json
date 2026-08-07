@@ -1,5 +1,22 @@
 [
   {
+    "title": "Anatomy of a harness: building a coding agent that can run for hours",
+    "url": "https://mastra.ai/blog/anatomy-of-a-coding-agent",
+    "description": "Mastra 团队拆解如何构建一个可持续运行数小时的编码智能体：harness 如何包裹 agent 循环，涵盖上下文压缩（compaction）、重启后存活、人机协作工具、观察式记忆、子代理与模式切换等关键设计。",
+    "category": "开发",
+    "tags": [
+      "AI",
+      "编码智能体",
+      "Agent",
+      "上下文管理",
+      "Mastra"
+    ],
+    "author": "Sam Bhagwat",
+    "published": "2026-06-05",
+    "saveTime": "2026-08-08",
+    "path": "articles/2026-08/anatomy-of-a-harness-building-a-coding-agent-that-can-run-fo.md"
+  },
+  {
     "title": "参数化 Memory 漫谈（纯干货）",
     "url": "https://mp.weixin.qq.com/s/ZTg1bEd2Vx2h7TakM7060w",
     "description": "阿里技术出品的深度长文，从头梳理参数化 Memory（记忆）的概念脉络、本质难点及其与 LLM 的关系，偏教学向，全文约 6.7 万字。",
