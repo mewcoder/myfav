@@ -81,7 +81,14 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
 .rail-tags button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
 .collection-main { min-width: 0; }
 .collection-context { border-bottom: 1px solid var(--line); }
-.mobile-category-strip { display: none; }
+.mobile-category-strip {
+  display: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile-category-strip::-webkit-scrollbar { display: none; }
 .text-state { padding: 52px 0; color: var(--muted); font-family: var(--serif); text-align: center; }
 
 .back-link { display: inline-flex; min-height: 44px; align-items: center; margin-bottom: 38px; color: var(--muted); font-size: 13px; }
