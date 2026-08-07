@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "title": "腾讯云开源Octop：全家小团队共用一个AI Agent",
+    "url": "https://mp.weixin.qq.com/s/UBev41N-QmVRhHz8qKmS1Q",
+    "description": "腾讯云开源的自托管多智能体 AI 助手平台 Octop，支持多用户、多 Agent 本地部署，可接入飞书、钉钉、QQ、企业微信、Discord 等入口。",
+    "category": "工具",
+    "tags": [
+      "微信公众号",
+      "腾讯云",
+      "Octop",
+      "Agent",
+      "自托管"
+    ],
+    "author": "卡皮的新篇章",
+    "saveTime": "2026-08-07",
+    "path": "articles/2026-08/腾讯云开源octop全家小团队共用一个ai-agent.md"
+  }
+]
