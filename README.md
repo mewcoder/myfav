@@ -79,6 +79,14 @@ npm run dev
 npm test
 ```
 
+已有收藏的分类和标签可按当前规则重新归一化：
+
+```bash
+npm run enrich-data
+```
+
+脚本只使用 JSON 中已有的标题、简介和标签，不访问外部网站；记录数量及收藏时间不会改变。
+
 生产构建与 Pages 文件准备：
 
 ```bash

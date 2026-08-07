@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "enrich-data": "node scripts/enrich-data.mjs",
     "prepare-pages": "node scripts/prepare-pages.mjs",
     "test": "vitest run"
   },
