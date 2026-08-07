@@ -1,5 +1,18 @@
 [
   {
+    "title": "Thinking orbs — Animated thinking orb component",
+    "url": "https://orbs.jakubantalik.com",
+    "description": "Dotted thought-orb loading indicators for AI and agent UIs. Nine hand-tuned states, two sizes, auto dark/light theme.",
+    "category": "开发",
+    "tags": [
+      "React",
+      "AI UI",
+      "Loading Indicator",
+      "npm"
+    ],
+    "saveTime": "2026-08-07"
+  },
+  {
     "title": "Claude Code Prompt Observatory",
     "url": "https://ccprompt.feitong.phd/",
     "description": "Claude Code Prompt 观测站",
