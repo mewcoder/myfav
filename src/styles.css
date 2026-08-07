@@ -81,14 +81,7 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
 .rail-tags button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
 .collection-main { min-width: 0; }
 .collection-context { border-bottom: 1px solid var(--line); }
-.mobile-category-strip {
-  display: none;
-  -ms-overflow-style: none;
-  overscroll-behavior-inline: contain;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-.mobile-category-strip::-webkit-scrollbar { display: none; }
+.mobile-category-strip { display: none; }
 .text-state { padding: 52px 0; color: var(--muted); font-family: var(--serif); text-align: center; }
 
 .back-link { display: inline-flex; min-height: 44px; align-items: center; margin-bottom: 38px; color: var(--muted); font-size: 13px; }
@@ -193,7 +186,7 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
   .desktop-nav { margin-left: 30px; gap: 22px; }
   .collection-layout { display: block; }
   .category-rail { display: none; }
-  .mobile-category-strip { display: flex; overflow-x: auto; border-bottom: 1px solid var(--line); gap: 24px; }
+  .mobile-category-strip { display: flex; flex-wrap: wrap; overflow: visible; border-bottom: 1px solid var(--line); column-gap: 24px; }
   .mobile-category-strip button { min-width: max-content; min-height: 48px; padding: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); }
   .mobile-category-strip button[aria-pressed="true"] { border-color: var(--accent); color: var(--ink); }
   .back-link { display: none; }
@@ -225,7 +218,7 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
   .is-article .mobile-nav { display: none; }
   .collection-layout { display: block; }
   .category-rail { display: none; }
-  .mobile-category-strip { display: flex; margin-right: -20px; overflow-x: auto; border-bottom: 1px solid var(--line); gap: 22px; }
+  .mobile-category-strip { display: flex; flex-wrap: wrap; overflow: visible; border-bottom: 1px solid var(--line); column-gap: 22px; }
   .mobile-category-strip button { min-width: max-content; min-height: 48px; padding: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); }
   .mobile-category-strip button[aria-pressed="true"] { border-color: var(--accent); color: var(--ink); }
   .collection-list--site, .collection-list--repo { display: block; }
