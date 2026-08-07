@@ -1,5 +1,20 @@
 [
   {
+    "name": "inclusionAI/Avernet",
+    "url": "https://github.com/inclusionAI/Avernet",
+    "description": "分布式 Agent 协调平台，让智能体在其中连接、协作、执行并共同进化。",
+    "category": "AI",
+    "tags": [
+      "Agent",
+      "多智能体",
+      "分布式",
+      "协调平台",
+      "GitHub"
+    ],
+    "stars": 310,
+    "saveTime": "2026-08-07"
+  },
+  {
     "name": "liaohch3/claude-tap",
     "url": "https://github.com/liaohch3/claude-tap",
     "description": "AI Coding Agent 本地流量抓取与查看",
