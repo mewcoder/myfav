@@ -5,32 +5,63 @@ const sitesPath = new URL('../public/data/sites.json', import.meta.url)
 const reposPath = new URL('../public/data/repos.json', import.meta.url)
 
 const repoCategoryOverrides = new Map([
-  ['iOfficeAI/AionUi', 'Agent 与框架'],
-  ['workany-ai/workany', 'Agent 与框架'],
-  ['InsForge/InsForge', 'AI 编程'],
-  ['yanhua1010/zero-to-ai-fullstack', '知识与学习'],
-  ['any4ai/AnyCrawl', '数据与检索'],
-  ['google-labs-code/design.md', '前端与设计'],
-  ['jgraph/drawio-mcp', '开发工具'],
+  ['iOfficeAI/AionUi', 'AI'],
+  ['workany-ai/workany', 'AI'],
+  ['InsForge/InsForge', 'AI'],
+  ['yanhua1010/zero-to-ai-fullstack', '知识'],
+  ['any4ai/AnyCrawl', '开发'],
+  ['google-labs-code/design.md', '设计'],
+  ['jgraph/drawio-mcp', '工具'],
 ])
 
-const repoCategories = new Set([
-  'AI 编程', 'Agent 与框架', 'AI 工具', 'Agent Skills',
-  '知识与学习', '数据与检索', '前端与设计', '开发工具',
-  '自动化', '安全与网络', '内容与媒体', '效率与生活',
+const collectionCategories = new Set([
+  'AI', '开发', '设计', '知识', '工具', '生活',
 ])
 
 const siteCategoryMap = new Map([
-  ['Claude Code', 'AI 编程'],
-  ['AI工具', 'AI 工具'],
-  ['AI服务', 'AI 服务'],
-  ['设计', '前端与设计'],
-  ['开发工具', '开发工具'],
-  ['知识管理', '知识与学习'],
-  ['工具', '综合工具'],
-  ['理财', '财务与消费'],
-  ['Skill', 'Agent Skills'],
-  ['阅读', '阅读'],
+  ['Claude Code', 'AI'],
+  ['AI工具', 'AI'],
+  ['AI服务', 'AI'],
+  ['AI 编程', 'AI'],
+  ['AI 工具', 'AI'],
+  ['AI 服务', 'AI'],
+  ['Agent Skills', 'AI'],
+  ['设计', '设计'],
+  ['前端与设计', '设计'],
+  ['开发工具', '开发'],
+  ['知识管理', '知识'],
+  ['知识与学习', '知识'],
+  ['阅读', '知识'],
+  ['工具', '工具'],
+  ['综合工具', '工具'],
+  ['理财', '生活'],
+  ['财务与消费', '生活'],
+  ['Skill', 'AI'],
+])
+
+const repoCategoryMap = new Map([
+  ['AI 编程', 'AI'],
+  ['Agent 与框架', 'AI'],
+  ['AI 工具', 'AI'],
+  ['Agent Skills', 'AI'],
+  ['知识与学习', '知识'],
+  ['数据与检索', '开发'],
+  ['安全与网络', '开发'],
+  ['前端与设计', '设计'],
+  ['内容与媒体', '设计'],
+  ['开发工具', '工具'],
+  ['自动化', '工具'],
+  ['效率与生活', '生活'],
+])
+
+const detailTags = new Map([
+  ['AI 编程', 'AI 编程'], ['AI 工具', 'AI 工具'], ['AI 服务', 'AI 服务'],
+  ['Agent Skills', 'Agent Skill'], ['Agent 与框架', 'Agent'],
+  ['数据与检索', '数据检索'], ['安全与网络', '安全'],
+  ['前端与设计', '前端'], ['内容与媒体', '内容创作'],
+  ['开发工具', '开发工具'], ['自动化', '自动化'],
+  ['效率与生活', '效率'], ['阅读', '阅读'],
+  ['综合工具', '实用工具'], ['财务与消费', '财务'],
 ])
 
 const tagAliases = new Map([
@@ -77,42 +108,41 @@ const normalizeTag = (tag) => {
   return tagAliases.get(value.toLowerCase()) || value
 }
 
-function buildTags(record, category, minimum = 2) {
+function buildTags(record, category, detailTag, minimum = 2) {
   const text = [record.title, record.description].filter(Boolean).join(' ')
-  const tags = (record.tags || []).map(normalizeTag)
+  const tags = [...(record.tags || []), detailTag].filter(Boolean).map(normalizeTag)
   for (const [pattern, tag] of keywordTags) {
     if (pattern.test(text)) tags.push(tag)
   }
-  const unique = [...new Set(tags.filter(Boolean))]
-  for (const fallback of [category, record.url.includes('github.com') ? '开源项目' : '网络资源']) {
+  const unique = [...new Set(tags.filter((tag) => tag && !collectionCategories.has(tag)))]
+  for (const fallback of [record.url.includes('github.com') ? '开源项目' : '网络资源']) {
     if (unique.length >= minimum) break
     if (!unique.includes(fallback)) unique.push(fallback)
   }
-  return unique.slice(0, 5)
+  return unique.slice(0, 6)
 }
 
 function repoCategory(repo) {
   const override = repoCategoryOverrides.get(repo.name)
   if (override) return override
-  if (repoCategories.has(repo.category)) return repo.category
+  if (collectionCategories.has(repo.category)) return repo.category
+  if (repoCategoryMap.has(repo.category)) return repoCategoryMap.get(repo.category)
   const original = String(repo.category || '').toLowerCase()
   const description = String(repo.description || '').toLowerCase()
   const tags = new Set((repo.tags || []).map((tag) => normalizeTag(tag).toLowerCase()))
   const hasTag = (...values) => values.some((value) => tags.has(value.toLowerCase()))
   const text = [description, ...tags].join(' ')
-  if (original === 'skill') return 'Agent Skills'
-  if (hasTag('视频', '录屏') || /(录屏|视频|字幕|提词器)/.test(description)) return '内容与媒体'
-  if (hasTag('安全', '网络') || /(安全|网络|隧道|vless|trojan)/.test(description)) return '安全与网络'
-  if (hasTag('爬虫', 'RAG', '知识图谱') || /(爬虫|crawl|serp|数据研究|知识图谱)/.test(description)) return '数据与检索'
-  if (hasTag('文档', '教程', '学习', '知识管理') || /(教程|课程|指南|handbook|wiki|书籍|学习|知识管理)/.test(description)) return '知识与学习'
-  if (hasTag('求职', '理财') || /(求职|简历|理财|资产|八字|产品经理)/.test(description)) return '效率与生活'
-  if (hasTag('自动化') || /(自动化|automation|全自动)/.test(description)) return '自动化'
-  if (hasTag('前端', '设计', 'UI') && /(前端|设计|ui|组件|html|react|next\.js|shadcn|白板|幻灯片)/.test(description)) return '前端与设计'
-  if (/(claude code|claude-code|codex|cursor|copilot|vibecoding|harness)/.test(text)) return 'AI 编程'
-  if (hasTag('Agent', '框架', 'MCP') || /(agent|智能体|框架)/.test(description)) return 'Agent 与框架'
-  if (hasTag('AI', 'LLM') || /(\bai\b|llm|ollama|模型)/.test(description)) return 'AI 工具'
-  if (hasTag('前端', '设计', 'UI')) return '前端与设计'
-  return '开发工具'
+  if (original === 'skill') return 'AI'
+  if (hasTag('视频', '录屏') || /(录屏|视频|字幕|提词器)/.test(description)) return '设计'
+  if (hasTag('安全', '网络') || /(安全|网络|隧道|vless|trojan)/.test(description)) return '开发'
+  if (hasTag('爬虫', 'RAG', '知识图谱') || /(爬虫|crawl|serp|数据研究|知识图谱)/.test(description)) return '开发'
+  if (hasTag('文档', '教程', '学习', '知识管理') || /(教程|课程|指南|handbook|wiki|书籍|学习|知识管理)/.test(description)) return '知识'
+  if (hasTag('求职', '理财') || /(求职|简历|理财|资产|八字|产品经理)/.test(description)) return '生活'
+  if (hasTag('自动化') || /(自动化|automation|全自动)/.test(description)) return '工具'
+  if (hasTag('前端', '设计', 'UI') || /(前端|设计|ui|组件|html|react|next\.js|shadcn|白板|幻灯片)/.test(description)) return '设计'
+  if (/(claude code|claude-code|codex|cursor|copilot|vibecoding|harness)/.test(text)) return 'AI'
+  if (hasTag('Agent', '框架', 'MCP', 'AI', 'LLM') || /(agent|智能体|框架|\bai\b|llm|ollama|模型)/.test(description)) return 'AI'
+  return '工具'
 }
 
 const bySaveTimeDescending = (left, right) => right.saveTime.localeCompare(left.saveTime)
@@ -124,13 +154,13 @@ const sites = JSON.parse(await readSource(sitesPath, 'public/data/sites.json'))
 const repos = JSON.parse(await readSource(reposPath, 'public/data/repos.json'))
 
 const enrichedSites = sites.map((site) => {
-  const category = siteCategoryMap.get(site.category) || site.category || '综合工具'
-  return { ...site, category, tags: buildTags(site, category) }
+  const category = collectionCategories.has(site.category) ? site.category : siteCategoryMap.get(site.category) || '工具'
+  return { ...site, category, tags: buildTags(site, category, detailTags.get(site.category)) }
 }).sort(bySaveTimeDescending)
 
 const enrichedRepos = repos.map((repo) => {
   const category = repoCategory(repo)
-  return { ...repo, category, tags: buildTags(repo, category) }
+  return { ...repo, category, tags: buildTags(repo, category, detailTags.get(repo.category)) }
 }).sort(bySaveTimeDescending)
 
 if (enrichedSites.length !== sites.length || enrichedRepos.length !== repos.length) {
