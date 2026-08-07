@@ -292,7 +292,7 @@
   },
   {
     "name": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills/",
+    "url": "https://github.com/mattpocock/skills",
     "description": "TypeScript工程师的AI Agent Skills集合",
     "tags": [
       "Agent Skill",
@@ -430,19 +430,6 @@
       "AI 工具"
     ],
     "stars": 24725,
-    "saveTime": "2026-04-27",
-    "category": "AI"
-  },
-  {
-    "name": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills",
-    "description": "Mattpocock Skills 工具集",
-    "tags": [
-      "Agent Skill",
-      "开源",
-      "效率"
-    ],
-    "stars": 24956,
     "saveTime": "2026-04-27",
     "category": "AI"
   },
