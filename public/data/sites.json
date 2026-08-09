@@ -1,5 +1,19 @@
 [
   {
+    "title": "π-agent book · 预览",
+    "url": "https://books.antinomie.org/pi",
+    "description": "π-agent 源码导读：一本介绍 pi-agent-core 的在线书，讲述这个拒绝成为框架的 agent 循环——模块即积木，组合即架构；从 prompt() 到 agent_end 的一次 prompt 全程。",
+    "category": "开发",
+    "tags": [
+      "AI",
+      "Agent",
+      "pi-agent",
+      "源码",
+      "agent循环"
+    ],
+    "saveTime": "2026-08-10"
+  },
+  {
     "title": "Thinking orbs — Animated thinking orb component",
     "url": "https://orbs.jakubantalik.com",
     "description": "Dotted thought-orb loading indicators for AI and agent UIs. Nine hand-tuned states, two sizes, auto dark/light theme.",
