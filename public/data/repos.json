@@ -1,5 +1,19 @@
 [
   {
+    "name": "microsoft/skill-recorder",
+    "url": "https://github.com/microsoft/skill-recorder",
+    "description": "微软出品的桌面应用：录制屏幕上的工作过程，借助 GitHub Copilot CLI 将操作重构为「意图 + 步骤」，自动生成可复用的 Skill 或自动化，可用于 Microsoft Scout、Copilot Cowork 或 Copilot Studio。",
+    "category": "AI",
+    "tags": [
+      "GitHub",
+      "Agent Skill",
+      "Copilot",
+      "自动化"
+    ],
+    "stars": 2774,
+    "saveTime": "2026-08-10"
+  },
+  {
     "name": "WeiminXiong/open-kimi-ppt-skill",
     "url": "https://github.com/WeiminXiong/open-kimi-ppt-skill",
     "description": "非官方 Kimi Slides Skill：让 AI Agent 直接生成可编辑的 PPTD + PPTX，并附带本地浏览器编辑器",
