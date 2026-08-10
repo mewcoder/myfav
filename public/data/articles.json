@@ -1,5 +1,23 @@
 [
   {
+    "title": "微软又开源了一款 Skill 神器",
+    "url": "https://mp.weixin.qq.com/s/vQ5nuWl7PPvUNT_Ubsa1iw",
+    "description": "微软开源了一款 Skill 神器：介绍如何通过录屏自动生成可复用的 Skill，降低为 AI 编写操作手册的门槛。文中提及 Codex 的「Record & Replay」插件，以及 Anthropic 在 Claude Cowork 中加入的类似功能。由 GitHubDaily 发布。",
+    "category": "工具",
+    "tags": [
+      "AI",
+      "Agent Skill",
+      "开源",
+      "微软",
+      "Codex",
+      "Claude",
+      "微信公众号"
+    ],
+    "author": "GitHubDaily",
+    "saveTime": "2026-08-10",
+    "path": "articles/2026-08/微软又开源了一款-skill-神器.md"
+  },
+  {
     "title": "Anatomy of a harness: building a coding agent that can run for hours",
     "url": "https://mastra.ai/blog/anatomy-of-a-coding-agent",
     "description": "Mastra 团队拆解如何构建一个可持续运行数小时的编码智能体：harness 如何包裹 agent 循环，涵盖上下文压缩（compaction）、重启后存活、人机协作工具、观察式记忆、子代理与模式切换等关键设计。",
