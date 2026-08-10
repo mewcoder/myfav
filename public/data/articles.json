@@ -1,21 +1,21 @@
 [
   {
-    "title": "微软又开源了一款 Skill 神器",
-    "url": "https://mp.weixin.qq.com/s/vQ5nuWl7PPvUNT_Ubsa1iw",
-    "description": "微软开源了一款 Skill 神器：介绍如何通过录屏自动生成可复用的 Skill，降低为 AI 编写操作手册的门槛。文中提及 Codex 的「Record & Replay」插件，以及 Anthropic 在 Claude Cowork 中加入的类似功能。由 GitHubDaily 发布。",
-    "category": "工具",
+    "title": "A deep dive into Herdr",
+    "url": "https://flaviocopes.com/herdr",
+    "description": "Flavio Copes 深入介绍 Herdr：让多个编码智能体常驻在持久化终端工作区中运行，直观展示哪些 Agent 需要关注，并通过 CLI 和 API 暴露整个系统。",
+    "category": "AI",
     "tags": [
-      "AI",
-      "Agent Skill",
-      "开源",
-      "微软",
-      "Codex",
-      "Claude",
-      "微信公众号"
+      "Herdr",
+      "Coding Agent",
+      "终端",
+      "工作区",
+      "CLI",
+      "Flavio Copes"
     ],
-    "author": "GitHubDaily",
+    "author": "Flavio Copes",
+    "published": "2026-08-10",
     "saveTime": "2026-08-10",
-    "path": "articles/2026-08/微软又开源了一款-skill-神器.md"
+    "path": "articles/2026-08/a-deep-dive-into-herdr.md"
   },
   {
     "title": "Anatomy of a harness: building a coding agent that can run for hours",
