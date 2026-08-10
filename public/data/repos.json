@@ -1,5 +1,21 @@
 [
   {
+    "name": "asuojun/claude-vision-skill",
+    "url": "https://github.com/asuojun/claude-vision-skill",
+    "description": "让 DeepSeek 等无识图能力的模型获得看图能力：核心脚本 vision.js 将图片转 base64 发给 OpenAI 兼容格式的 vision 模型（推荐阿里云百炼千问）并返回文字描述，配置后直接发图片即可自动识别，支持普通 Claude Code 项目与 cyberboss 场景。",
+    "category": "AI",
+    "tags": [
+      "GitHub",
+      "Agent Skill",
+      "Vision",
+      "识图",
+      "DeepSeek",
+      "Claude Code"
+    ],
+    "stars": 1718,
+    "saveTime": "2026-08-10"
+  },
+  {
     "name": "microsoft/skill-recorder",
     "url": "https://github.com/microsoft/skill-recorder",
     "description": "微软出品的桌面应用：录制屏幕上的工作过程，借助 GitHub Copilot CLI 将操作重构为「意图 + 步骤」，自动生成可复用的 Skill 或自动化，可用于 Microsoft Scout、Copilot Cowork 或 Copilot Studio。",
