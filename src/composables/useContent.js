@@ -5,6 +5,7 @@ import { withBase } from '../lib/url'
 const sites = ref([])
 const repos = ref([])
 const articles = ref([])
+const aiDaily = ref([])
 const loading = ref(false)
 const loaded = ref(false)
 const error = ref('')
@@ -21,12 +22,13 @@ export function useContent() {
     loading.value = true
     error.value = ''
     try {
-      const [siteData, repoData, articleData] = await Promise.all([readJson('sites'), readJson('repos'), readJson('articles')])
-      const validationErrors = validateContent({ sites: siteData, repos: repoData, articles: articleData })
+      const [siteData, repoData, articleData, aiDailyData] = await Promise.all([readJson('sites'), readJson('repos'), readJson('articles'), readJson('ai-daily')])
+      const validationErrors = validateContent({ sites: siteData, repos: repoData, articles: articleData, aiDaily: aiDailyData })
       if (validationErrors.length) throw new Error(validationErrors[0])
       sites.value = siteData
       repos.value = repoData
       articles.value = articleData
+      aiDaily.value = aiDailyData
       loaded.value = true
     } catch (reason) {
       error.value = reason instanceof Error ? reason.message : '收藏数据加载失败'
@@ -35,12 +37,13 @@ export function useContent() {
     }
   }
 
-  const records = computed(() => toUnifiedRecords({ sites: sites.value, repos: repos.value, articles: articles.value }))
+  const records = computed(() => toUnifiedRecords({ sites: sites.value, repos: repos.value, articles: articles.value, aiDaily: aiDaily.value }))
 
   return {
     sites: readonly(sites),
     repos: readonly(repos),
     articles: readonly(articles),
+    aiDaily: readonly(aiDaily),
     records,
     loading: readonly(loading),
     loaded: readonly(loaded),
