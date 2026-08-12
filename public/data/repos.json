@@ -1,5 +1,19 @@
 [
   {
+    "name": "mujingquan835/dashiai-ppt-skill",
+    "url": "https://github.com/mujingquan835/dashiai-ppt-skill",
+    "description": "大师 PPT：由 @大师的AI小灶 维护的可编辑 PPTX 生成、网页编辑与安全返工 Skill。",
+    "category": "工具",
+    "tags": [
+      "GitHub",
+      "PPT",
+      "Agent Skill",
+      "Claude"
+    ],
+    "stars": 95,
+    "saveTime": "2026-08-12"
+  },
+  {
     "name": "cathrynlavery/diagram-design",
     "url": "https://github.com/cathrynlavery/diagram-design",
     "description": "为 Claude Code 准备的 29 种编辑级图表类型，自包含 HTML + SVG 实现，无阴影、不依赖 Mermaid。",
