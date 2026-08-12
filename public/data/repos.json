@@ -1,5 +1,20 @@
 [
   {
+    "name": "NanoNets/Graft",
+    "url": "https://github.com/NanoNets/Graft",
+    "description": "为 Claude Code、Cursor、Codex、Gemini 等编码 Agent 加速提效：更快、更便宜，并带有针对代码库的上下文理解。",
+    "category": "工具",
+    "tags": [
+      "GitHub",
+      "编码 Agent",
+      "Claude Code",
+      "Cursor",
+      "上下文"
+    ],
+    "stars": 1982,
+    "saveTime": "2026-08-12"
+  },
+  {
     "name": "mujingquan835/dashiai-ppt-skill",
     "url": "https://github.com/mujingquan835/dashiai-ppt-skill",
     "description": "大师 PPT：由 @大师的AI小灶 维护的可编辑 PPTX 生成、网页编辑与安全返工 Skill。",
