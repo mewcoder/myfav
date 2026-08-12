@@ -72,6 +72,8 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
 .row-stars { color: var(--muted); font-size: 11px; white-space: nowrap; }
 
 .collection-layout { display: grid; grid-template-columns: 208px minmax(0,1fr); gap: clamp(44px,6vw,76px); }
+.ai-daily-page .collection-layout { display: block; }
+.ai-daily-page .category-rail, .ai-daily-page .mobile-category-strip { display: none; }
 .category-rail { position: sticky; top: calc(var(--header) + 26px); align-self: start; }
 .category-rail > button { display: flex; width: 100%; min-height: 38px; align-items: center; justify-content: space-between; padding: 0; background: transparent; color: var(--muted); text-align: left; }
 .category-rail > button[aria-pressed="true"] { color: var(--ink); }
