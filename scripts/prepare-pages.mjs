@@ -6,6 +6,7 @@ const root = process.cwd()
 const sourceArticles = resolve(root, 'articles')
 const dist = resolve(root, 'dist')
 const distArticles = resolve(dist, 'articles')
+const aiDailyData = resolve(root, 'public', 'data', 'ai-daily.json')
 
 await mkdir(distArticles, { recursive: true })
 if ((await stat(sourceArticles)).isDirectory()) {
@@ -34,4 +35,11 @@ for (const mdFile of mdFiles) {
 
 await copyFile(resolve(dist, 'index.html'), resolve(dist, '404.html'))
 
-console.log(`Copied root articles, rendered ${rendered} article page(s), created GitHub Pages history fallback.`)
+const dailyRecords = JSON.parse(await readFile(aiDailyData, 'utf8'))
+const dailyRoutes = [resolve(dist, 'ai-daily'), ...dailyRecords.map((entry) => resolve(dist, 'ai-daily', entry.published || entry.saveTime))]
+for (const routeDir of dailyRoutes) {
+  await mkdir(routeDir, { recursive: true })
+  await copyFile(resolve(dist, 'index.html'), resolve(routeDir, 'index.html'))
+}
+
+console.log(`Copied root articles, rendered ${rendered} article page(s), created ${dailyRoutes.length} AI daily route(s) and GitHub Pages history fallback.`)
