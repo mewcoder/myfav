@@ -1,5 +1,21 @@
 [
   {
+    "title": "Introducing Firecrawl Keyless: Search, scrape, and interact without an API key",
+    "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+    "description": "Firecrawl 发布无 Key 模式：每月 1000 次免费额度即可搜索、抓取和交互网页，无需注册账号、无需配置 API Key、无需轮换密钥。",
+    "category": "工具",
+    "tags": [
+      "Firecrawl",
+      "网页抓取",
+      "无密钥",
+      "API",
+      "博客"
+    ],
+    "author": "Eric Ciarla",
+    "saveTime": "2026-08-12",
+    "path": "articles/2026-08/introducing-firecrawl-keyless-search-scrape-and-interact-wit.md"
+  },
+  {
     "title": "A deep dive into Herdr",
     "url": "https://flaviocopes.com/herdr",
     "description": "Flavio Copes 深入介绍 Herdr：让多个编码智能体常驻在持久化终端工作区中运行，直观展示哪些 Agent 需要关注，并通过 CLI 和 API 暴露整个系统。",
