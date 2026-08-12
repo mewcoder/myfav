@@ -1,5 +1,20 @@
 [
   {
+    "name": "lidge-jun/opencodex",
+    "url": "https://github.com/lidge-jun/opencodex",
+    "description": "面向 OpenAI Codex 与 Claude Code 的通用提供商代理：可在 Codex CLI、App、SDK 和 Claude Code 中使用任意 LLM（Claude、Gemini、Grok、DeepSeek、Ollama 等）。",
+    "category": "工具",
+    "tags": [
+      "GitHub",
+      "代理",
+      "Codex",
+      "Claude Code",
+      "LLM"
+    ],
+    "stars": 9528,
+    "saveTime": "2026-08-12"
+  },
+  {
     "name": "NanoNets/Graft",
     "url": "https://github.com/NanoNets/Graft",
     "description": "为 Claude Code、Cursor、Codex、Gemini 等编码 Agent 加速提效：更快、更便宜，并带有针对代码库的上下文理解。",
