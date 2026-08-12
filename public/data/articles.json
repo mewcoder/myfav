@@ -1,5 +1,20 @@
 [
   {
+    "title": "Herdr：让 Claude Code 和 Codex 的命令行会话随时接续",
+    "url": "https://x.com/ai_super_niko/status/2087126460410859977?s=46",
+    "description": "X 帖子：Herdr 让 Claude Code 和 Codex 的命令行会话可以随时接续。",
+    "category": "工具",
+    "tags": [
+      "X",
+      "Herdr",
+      "Claude Code",
+      "Codex"
+    ],
+    "author": "Niko爱学习 (@ai_super_niko)",
+    "saveTime": "2026-08-12",
+    "path": "articles/2026-08/herdr让-claude-code-和-codex-的命令行会话随时接续.md"
+  },
+  {
     "title": "Introducing Firecrawl Keyless: Search, scrape, and interact without an API key",
     "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
     "description": "Firecrawl 发布无 Key 模式：每月 1000 次免费额度即可搜索、抓取和交互网页，无需注册账号、无需配置 API Key、无需轮换密钥。",
