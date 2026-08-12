@@ -1,5 +1,20 @@
 [
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "为 Claude Code 准备的 29 种编辑级图表类型，自包含 HTML + SVG 实现，无阴影、不依赖 Mermaid。",
+    "category": "工具",
+    "tags": [
+      "GitHub",
+      "Claude Code",
+      "图表",
+      "SVG",
+      "HTML"
+    ],
+    "stars": 8584,
+    "saveTime": "2026-08-12"
+  },
+  {
     "name": "QwenLM/Qwen-MM-Plugins",
     "url": "https://github.com/QwenLM/Qwen-MM-Plugins",
     "description": "通义千问官方多模态插件集：让任何 Agent 框架具备原生多模态能力。按能力分装为 skill + 可选 MCP server，覆盖核心视觉（动态分辨率读图/视频/文档/3D 模型、OCR、分割、ASR、视觉对话、web 搜索）、长视频记忆、音视频理解、视频编辑生成、Blender 3D 建模、FreeCAD CAD 和教育讲解视频生成等。",
