@@ -1,20 +1,5 @@
 [
   {
-    "title": "AI 日报 | 2026-08-13",
-    "url": "https://mewcoder.github.io/myfav/articles/2026-08/ai-daily-2026-08-13",
-    "description": "企业 AI 从辅助走向执行，Agent 长任务与本地多模态模型成为今日主线。",
-    "category": "AI 日报",
-    "tags": [
-      "AI",
-      "日报",
-      "行业动态"
-    ],
-    "author": "MyOS",
-    "published": "2026-08-13",
-    "saveTime": "2026-08-13",
-    "path": "articles/2026-08/ai-daily-2026-08-13.md"
-  },
-  {
     "title": "Herdr：让 Claude Code 和 Codex 的命令行会话随时接续",
     "url": "https://x.com/ai_super_niko/status/2087126460410859977?s=46",
     "description": "X 帖子：Herdr 让 Claude Code 和 Codex 的命令行会话可以随时接续。",
