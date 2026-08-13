@@ -1,5 +1,19 @@
 [
   {
+    "title": "PriceAI 卡网订阅比价",
+    "url": "https://priceai.cc/channels",
+    "description": "AI 订阅渠道比价站：汇总 ChatGPT、Claude、Gemini、Grok 等账号与订阅服务的渠道报价、库存和更新时间，可查看最低价来源。",
+    "category": "工具",
+    "tags": [
+      "AI 订阅比价",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "Grok"
+    ],
+    "saveTime": "2026-08-13"
+  },
+  {
     "title": "π-agent book · 预览",
     "url": "https://books.antinomie.org/pi",
     "description": "π-agent 源码导读：一本介绍 pi-agent-core 的在线书，讲述这个拒绝成为框架的 agent 循环——模块即积木，组合即架构；从 prompt() 到 agent_end 的一次 prompt 全程。",
