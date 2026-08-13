@@ -9,7 +9,7 @@ vi.mock('../composables/useContent', async () => {
   const sites = ref([{ title: 'Site', label: 'Site', type: 'site', url: 'https://site.example', description: 'site item', category: '工具', tags: [], saveTime: '2026-08-03' }])
   const repos = ref([{ name: 'owner/repo', label: 'owner/repo', type: 'repo', url: 'https://github.com/owner/repo', description: 'repo item', category: '开发', tags: ['AI'], stars: 1, saveTime: '2026-08-02' }])
   const articles = ref([{ title: 'Article', label: 'Article', type: 'article', url: 'https://article.example', description: 'article item', category: '知识', tags: [], saveTime: '2026-08-04', path: 'articles/2026-08/article.md' }])
-  const aiDaily = ref([{ title: 'AI 日报', label: 'AI 日报', type: 'ai-daily', url: 'https://daily.example', description: 'daily item', category: 'AI 日报', tags: ['AI'], saveTime: '2026-08-05', published: '2026-08-05', path: 'articles/2026-08/ai-daily-2026-08-05.md' }])
+const aiDaily = ref([{ title: 'AI 日报', label: 'AI 日报', type: 'ai-daily', url: 'https://daily.example', description: 'daily item', category: 'AI 日报', tags: [], saveTime: '2026-08-05', published: '2026-08-05', path: 'articles/2026-08/2026-08-05.md' }])
   return {
     useContent: () => ({
       sites,

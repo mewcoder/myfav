@@ -10,7 +10,7 @@ vi.mock('../composables/useContent', async () => {
     url: 'https://article.example',
     description: 'Description',
     category: '阅读',
-    tags: ['AI'],
+    tags: [],
     saveTime: '2026-08-07',
     path: 'articles/2026-08/article.md',
     translationPath: 'articles/2026-08/article_zh.md',
@@ -23,7 +23,7 @@ vi.mock('../composables/useContent', async () => {
     tags: ['AI'],
     saveTime: '2026-08-13',
     published: '2026-08-13',
-    path: 'articles/2026-08/ai-daily-2026-08-13.md',
+    path: 'articles/2026-08/2026-08-13.md',
   }])
   return { useContent: () => ({ articles, aiDaily, loading: ref(false) }) }
 })
@@ -73,7 +73,7 @@ describe('article responsive reading controls', () => {
     expect(wrapper.get('h1').text()).toBe('AI 日报 | 2026-08-13')
     expect(wrapper.get('.back-link').attributes('href')).toBe('/ai-daily')
     expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('ai-daily-2026-08-13.html'),
+      expect.stringContaining('2026-08-13.html'),
       expect.objectContaining({ cache: 'no-cache' }),
     )
     wrapper.unmount()

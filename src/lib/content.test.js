@@ -30,8 +30,8 @@ describe('content contract', () => {
   it('validates the standalone AI daily collection', () => {
     const daily = {
       title: 'AI 日报 | 2026-08-13', url: 'https://example.com/ai-daily/2026-08-13',
-      description: '日报', category: 'AI 日报', tags: ['AI'], saveTime: '2026-08-13',
-      published: '2026-08-13', path: 'articles/2026-08/ai-daily-2026-08-13.md',
+      description: '日报', category: 'AI 日报', tags: [], saveTime: '2026-08-13',
+      published: '2026-08-13', path: 'articles/2026-08/2026-08-13.md',
     }
     expect(validateContent({ sites: [], repos: [], articles: [], aiDaily: [daily] })).toEqual([])
     expect(validateContent({ sites: [], repos: [], articles: [], aiDaily: [{ ...daily, path: '' }] }))
