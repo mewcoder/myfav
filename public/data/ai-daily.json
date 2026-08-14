@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-14",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-14",
+    "description": "DeepSeek-V4-Pro-0813 正式权重开源、Gemini 3.7 Flash 发布、Qwen3.8 API 上线，AVA-Encoder 提出 Agent 原生视频表征",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-14",
+    "saveTime": "2026-08-14",
+    "path": "articles/2026-08/2026-08-14.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-13",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-13",
     "description": "Qwen3.8 开源权重开放、Meta Muse Glimmer 发布、QwenCloud 新嵌入模型与 Claude Code 同日更新",
