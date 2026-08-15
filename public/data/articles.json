@@ -1,5 +1,20 @@
 [
   {
+    "title": "The AI Engineering Skills Map",
+    "url": "https://x.com/AndrewYNg/status/2088302050706686198?s=46",
+    "description": "Andrew Ng 发布 AI 工程技能地图：基于 1 万+ 招聘信息和专家访谈提炼的四大核心技能（构建部署 AI 应用、软件工程基础、使用编码 Agent、主导产品构建 Shaping the build），发布于 2026-08-14。",
+    "category": "AI",
+    "tags": [
+      "X",
+      "AI 工程",
+      "技能地图",
+      "编码 Agent"
+    ],
+    "author": "Andrew Ng (@AndrewYNg)",
+    "saveTime": "2026-08-15",
+    "path": "articles/2026-08/the-ai-engineering-skills-map.md"
+  },
+  {
     "title": "Herdr：让 Claude Code 和 Codex 的命令行会话随时接续",
     "url": "https://x.com/ai_super_niko/status/2087126460410859977?s=46",
     "description": "X 帖子：Herdr 让 Claude Code 和 Codex 的命令行会话可以随时接续。",
