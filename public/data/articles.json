@@ -1,5 +1,21 @@
 [
   {
+    "title": "AI 时代我的开发工作流：从踩坑复盘到多项目并行验证",
+    "url": "https://innei.in/posts/tinkering/ai-era-dev-workflow-review-and-verify",
+    "description": "Innei 分享 AI 时代的个人开发工作流：通过 mx-space CLI 把 AI 踩坑会话自动沉淀为技术文章与 Skill（分层 SKILL.md + 富文本交互节点），并用 LobeHub /acceptance 实现多项目并行下的 UI 自动化验证与验收。",
+    "category": "开发",
+    "tags": [
+      "AI 工作流",
+      "复盘",
+      "Agent Skill",
+      "自动化验证",
+      "mx-space"
+    ],
+    "author": "Innei",
+    "saveTime": "2026-08-17",
+    "path": "articles/2026-08/ai-时代我的开发工作流从踩坑复盘到多项目并行验证.md"
+  },
+  {
     "title": "The AI Engineering Skills Map",
     "url": "https://x.com/AndrewYNg/status/2088302050706686198?s=46",
     "description": "Andrew Ng 发布 AI 工程技能地图：基于 1 万+ 招聘信息和专家访谈提炼的四大核心技能（构建部署 AI 应用、软件工程基础、使用编码 Agent、主导产品构建 Shaping the build），发布于 2026-08-14。",
