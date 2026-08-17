@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-17",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-17",
+    "description": "Meta Muse Glimmer 30B 进入 transformers 生态；Claude Code v2.1.233 发布；ToolJet / Unsloth / needle 登 GitHub Trending",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-17",
+    "saveTime": "2026-08-17",
+    "path": "articles/2026-08/2026-08-17.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-15",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-15",
     "description": "Qwen3.8-27B-FP8 开源、NVIDIA Nemotron 3 Ultra 教师模型、Claude 文本水印全球启用；holaOS/ego-lite 登 GitHub Trending",
