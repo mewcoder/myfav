@@ -27,7 +27,7 @@ describe('article loader', () => {
     const loadB = loader.load(articleB)
 
     const bUrls = [
-      '/myfav/articles/2026-08/b.md',
+      '/myfav/articles/2026-08/b.txt',
       '/myfav/articles/2026-08/b.html',
       '/myfav/articles/2026-08/b.toc.json',
     ]
@@ -42,7 +42,7 @@ describe('article loader', () => {
     })
 
     const aUrls = [
-      '/myfav/articles/2026-08/a.md',
+      '/myfav/articles/2026-08/a.txt',
       '/myfav/articles/2026-08/a.html',
       '/myfav/articles/2026-08/a.toc.json',
     ]
@@ -56,5 +56,18 @@ describe('article loader', () => {
     const fetchImpl = vi.fn(async () => ({ ok: false, status: 404, text: async () => '' }))
     const loader = createArticleLoader({ fetchImpl, base: '/myfav/' })
     await expect(loader.load({ path: 'articles/2026-08/missing.md' })).rejects.toThrow('本地正文缺失')
+  })
+
+  it('loads an explicitly selected translation path', async () => {
+    const fetchImpl = vi.fn(async (url) => response(String(url).endsWith('.toc.json') ? '[]' : '中文'))
+    const loader = createArticleLoader({ fetchImpl, base: '/myfav/' })
+    await expect(loader.load(
+      { path: 'articles/2026-08/article.md' },
+      'articles/2026-08/article_zh.md',
+    )).resolves.toMatchObject({ path: 'articles/2026-08/article_zh.md', markdown: '中文' })
+    expect(fetchImpl).toHaveBeenCalledWith(
+      '/myfav/articles/2026-08/article_zh.html',
+      expect.objectContaining({ cache: 'no-cache' }),
+    )
   })
 })

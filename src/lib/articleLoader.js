@@ -4,15 +4,16 @@ export function createArticleLoader({ fetchImpl = fetch, base = import.meta.env.
   let requestId = 0
   let controller = null
 
-  async function load(article) {
+  async function load(article, path = article.path) {
     const currentId = ++requestId
     controller?.abort()
     const currentController = new AbortController()
     controller = currentController
 
-    const htmlPath = article.path.replace(/\.md$/, '.html')
-    const tocPath = article.path.replace(/\.md$/, '.toc.json')
-    const urls = [article.path, htmlPath, tocPath].map((path) => withBase(path, base))
+    const sourcePath = path.replace(/\.md$/, '.txt')
+    const htmlPath = path.replace(/\.md$/, '.html')
+    const tocPath = path.replace(/\.md$/, '.toc.json')
+    const urls = [sourcePath, htmlPath, tocPath].map((itemPath) => withBase(itemPath, base))
 
     try {
       const responses = await Promise.all(
@@ -30,7 +31,7 @@ export function createArticleLoader({ fetchImpl = fetch, base = import.meta.env.
       }
       if (currentId !== requestId) return null
       if (!html) throw new Error(`本地正文缺失（${responses[1].status}）`)
-      return { markdown, html, toc, path: article.path }
+      return { markdown, html, toc, path }
     } catch (error) {
       if (currentId !== requestId || error?.name === 'AbortError') return null
       throw error

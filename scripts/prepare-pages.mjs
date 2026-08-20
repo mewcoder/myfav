@@ -1,4 +1,4 @@
-import { cp, copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises'
+import { cp, copyFile, mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import { join, posix, relative, resolve, sep } from 'node:path'
 import { renderArticle } from './render-article.mjs'
 
@@ -30,6 +30,12 @@ for (const mdFile of mdFiles) {
   const { html, toc } = await renderArticle(markdown, articlePath)
   await writeFile(mdFile.replace(/\.md$/, '.html'), html)
   await writeFile(mdFile.replace(/\.md$/, '.toc.json'), JSON.stringify(toc))
+  // Do not publish .md at the route path: GitHub Pages turns extensionless
+  // URLs for Markdown files into pretty-printed source pages before the Vue
+  // router can handle ?lang=zh. Keep the source available under .txt for the
+  // copy-original feature instead.
+  await copyFile(mdFile, mdFile.replace(/\.md$/, '.txt'))
+  await rm(mdFile)
   rendered += 1
 }
 
