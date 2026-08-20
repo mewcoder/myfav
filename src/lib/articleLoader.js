@@ -11,7 +11,7 @@ export function createArticleLoader({ fetchImpl = fetch, base = import.meta.env.
     controller = currentController
 
     const sourcePath = path.replace(/\.md$/, '.txt')
-    const htmlPath = path.replace(/\.md$/, '.html')
+    const htmlPath = path.replace(/\.md$/, '.rendered.html')
     const tocPath = path.replace(/\.md$/, '.toc.json')
     const urls = [sourcePath, htmlPath, tocPath].map((itemPath) => withBase(itemPath, base))
 

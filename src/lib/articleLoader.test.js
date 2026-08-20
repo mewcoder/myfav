@@ -28,7 +28,7 @@ describe('article loader', () => {
 
     const bUrls = [
       '/myfav/articles/2026-08/b.txt',
-      '/myfav/articles/2026-08/b.html',
+      '/myfav/articles/2026-08/b.rendered.html',
       '/myfav/articles/2026-08/b.toc.json',
     ]
     for (const [index, url] of bUrls.entries()) {
@@ -43,7 +43,7 @@ describe('article loader', () => {
 
     const aUrls = [
       '/myfav/articles/2026-08/a.txt',
-      '/myfav/articles/2026-08/a.html',
+      '/myfav/articles/2026-08/a.rendered.html',
       '/myfav/articles/2026-08/a.toc.json',
     ]
     for (const [index, url] of aUrls.entries()) {
@@ -66,7 +66,7 @@ describe('article loader', () => {
       'articles/2026-08/article_zh.md',
     )).resolves.toMatchObject({ path: 'articles/2026-08/article_zh.md', markdown: '中文' })
     expect(fetchImpl).toHaveBeenCalledWith(
-      '/myfav/articles/2026-08/article_zh.html',
+      '/myfav/articles/2026-08/article_zh.rendered.html',
       expect.objectContaining({ cache: 'no-cache' }),
     )
   })

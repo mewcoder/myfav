@@ -73,7 +73,7 @@ describe('article responsive reading controls', () => {
     expect(wrapper.get('h1').text()).toBe('AI 日报 | 2026-08-13')
     expect(wrapper.get('.back-link').attributes('href')).toBe('/ai-daily')
     expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('2026-08-13.html'),
+      expect.stringContaining('2026-08-13.rendered.html'),
       expect.objectContaining({ cache: 'no-cache' }),
     )
     wrapper.unmount()
@@ -134,7 +134,7 @@ describe('article responsive reading controls', () => {
     expect(router.currentRoute.value.query.lang).toBe('zh')
     expect(wrapper.findAll('.article-language-switch button')[1].attributes('aria-pressed')).toBe('true')
     expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('article_zh.html'),
+      expect.stringContaining('article_zh.rendered.html'),
       expect.objectContaining({ cache: 'no-cache' }),
     )
     wrapper.unmount()

@@ -28,7 +28,7 @@ for (const mdFile of mdFiles) {
   const markdown = await readFile(mdFile, 'utf8')
   const articlePath = posix.join('articles', relative(distArticles, mdFile).split(sep).join('/'))
   const { html, toc } = await renderArticle(markdown, articlePath)
-  await writeFile(mdFile.replace(/\.md$/, '.html'), html)
+  await writeFile(mdFile.replace(/\.md$/, '.rendered.html'), html)
   await writeFile(mdFile.replace(/\.md$/, '.toc.json'), JSON.stringify(toc))
   // Do not publish .md at the route path: GitHub Pages turns extensionless
   // URLs for Markdown files into pretty-printed source pages before the Vue
