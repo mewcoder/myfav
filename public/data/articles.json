@@ -19,21 +19,6 @@
     "translationPath": "articles/2026-08/the-holy-trinity-pi-herdr-and-opencode-go-2_zh.md"
   },
   {
-    "title": "The Holy Trinity - pi, herdr and opencode go",
-    "url": "https://x.com/TheGlobalMinima/status/2088708859133333552?s=46",
-    "description": "Aarno（@TheGlobalMinima）的 X 帖子，标题为「The Holy Trinity - pi, herdr and opencode go」——聚焦 pi、herdr、opencode go 这三件 Agent 工具构成的组合（正文为短文本/图片，抓取仅得标题）。",
-    "category": "开发",
-    "tags": [
-      "X",
-      "pi",
-      "herdr",
-      "opencode go"
-    ],
-    "author": "Aarno (@TheGlobalMinima)",
-    "saveTime": "2026-08-20",
-    "path": "articles/2026-08/the-holy-trinity-pi-herdr-and-opencode-go.md"
-  },
-  {
     "title": "腾讯开源 teamai-cli：用 Git 驱动团队AI协作，Codex 等 AI Agent 都打通了！",
     "url": "https://mp.weixin.qq.com/s/ZJb1rswEIQ-tD0vnE2cE6g",
     "description": "腾讯开源 teamai-cli：Git 驱动的团队 AI 协作基础设施，把 Claude Code、Codex、Cursor、Gemini CLI、Trae、Aider 等 20+ 款 AI 编码工具的 Skill/Rule/Doc/Hook/MCP Server 配置统一收进一个 Git 仓库，以最原生的方式分发到团队每个人本地 AI，让不同工具遵循同一套规范。",
