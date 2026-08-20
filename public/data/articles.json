@@ -1,5 +1,21 @@
 [
   {
+    "title": "腾讯开源 teamai-cli：用 Git 驱动团队AI协作，Codex 等 AI Agent 都打通了！",
+    "url": "https://mp.weixin.qq.com/s/ZJb1rswEIQ-tD0vnE2cE6g",
+    "description": "腾讯开源 teamai-cli：Git 驱动的团队 AI 协作基础设施，把 Claude Code、Codex、Cursor、Gemini CLI、Trae、Aider 等 20+ 款 AI 编码工具的 Skill/Rule/Doc/Hook/MCP Server 配置统一收进一个 Git 仓库，以最原生的方式分发到团队每个人本地 AI，让不同工具遵循同一套规范。",
+    "category": "开发",
+    "tags": [
+      "微信公众号",
+      "腾讯",
+      "团队AI协作",
+      "Git",
+      "Agent"
+    ],
+    "author": "开源星探",
+    "saveTime": "2026-08-20",
+    "path": "articles/2026-08/腾讯开源-teamai-cli用-git-驱动团队ai协作codex-等-ai-agent-都打通了.md"
+  },
+  {
     "title": "AI 时代我的开发工作流：从踩坑复盘到多项目并行验证",
     "url": "https://innei.in/posts/tinkering/ai-era-dev-workflow-review-and-verify",
     "description": "Innei 分享 AI 时代的个人开发工作流：通过 mx-space CLI 把 AI 踩坑会话自动沉淀为技术文章与 Skill（分层 SKILL.md + 富文本交互节点），并用 LobeHub /acceptance 实现多项目并行下的 UI 自动化验证与验收。",
