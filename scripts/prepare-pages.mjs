@@ -34,6 +34,10 @@ for (const mdFile of mdFiles) {
 }
 
 await copyFile(resolve(dist, 'index.html'), resolve(dist, '404.html'))
+// GitHub Pages otherwise treats root Markdown files as pretty URLs. That
+// bypasses the Vue router for /articles/... links, so ?lang=zh never reaches
+// ArticleView and the original Markdown is served instead of the translation.
+await writeFile(resolve(dist, '.nojekyll'), '')
 
 const dailyRecords = JSON.parse(await readFile(aiDailyData, 'utf8'))
 const dailyRoutes = [resolve(dist, 'ai-daily'), ...dailyRecords.map((entry) => resolve(dist, 'ai-daily', entry.published || entry.saveTime))]
