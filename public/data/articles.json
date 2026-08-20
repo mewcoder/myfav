@@ -1,6 +1,25 @@
 [
   {
     "title": "The Holy Trinity - pi, herdr and opencode go",
+    "url": "https://x.com/TheGlobalMinima/status/2088708859133333552",
+    "description": "作者 Aarno 分享当前 AI 编码工作流：Pi、Opencode Go 和 Herdr 三者配合使用。文中讨论了今年的 harness engineering 热潮，以及 LLM 从辅助补全工具转变为软件工程主导者的趋势。",
+    "category": "AI",
+    "tags": [
+      "AI",
+      "Agent",
+      "AI 编程",
+      "Harness Engineering",
+      "OpenCode Go",
+      "Herdr",
+      "X"
+    ],
+    "author": "Aarno (@TheGlobalMinima)",
+    "saveTime": "2026-08-20",
+    "path": "articles/2026-08/the-holy-trinity-pi-herdr-and-opencode-go-2.md",
+    "translationPath": "articles/2026-08/the-holy-trinity-pi-herdr-and-opencode-go-2_zh.md"
+  },
+  {
+    "title": "The Holy Trinity - pi, herdr and opencode go",
     "url": "https://x.com/TheGlobalMinima/status/2088708859133333552?s=46",
     "description": "Aarno（@TheGlobalMinima）的 X 帖子，标题为「The Holy Trinity - pi, herdr and opencode go」——聚焦 pi、herdr、opencode go 这三件 Agent 工具构成的组合（正文为短文本/图片，抓取仅得标题）。",
     "category": "开发",
