@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-20",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-20",
+    "description": "两套 Agent skills 方法论登榜（superpowers、mattpocock/skills）；自改进 Agent 脆弱性研究论文",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-20",
+    "saveTime": "2026-08-20",
+    "path": "articles/2026-08/2026-08-20.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-19",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-19",
     "description": "Agent 记忆收口：OpenViking、ai-memory 开源记忆工具；BATON 机器人长程操作论文",
