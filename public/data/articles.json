@@ -1,5 +1,22 @@
 [
   {
+    "title": "Hot Take: LLM can 'jump'",
+    "url": "https://yongzx.github.io/blog/2026/08/08/llm-can-jump",
+    "description": "回应 ICML'26 立场论文《LLMs can't jump》：主张 LLM 可通过互联知识实现科学上的“跳跃式”突破，并讨论其对 AI 安全与持续学习的启示。",
+    "category": "AI",
+    "tags": [
+      "LLM",
+      "AI 安全",
+      "持续学习",
+      "科学突破"
+    ],
+    "author": "Yong Zheng-Xin",
+    "published": "2026-08-08",
+    "saveTime": "2026-08-21",
+    "path": "articles/2026-08/hot-take-llm-can-jump.md",
+    "translationPath": "articles/2026-08/hot-take-llm-can-jump_zh.md"
+  },
+  {
     "title": "The Holy Trinity - pi, herdr and opencode go",
     "url": "https://x.com/TheGlobalMinima/status/2088708859133333552",
     "description": "作者 Aarno 分享当前 AI 编码工作流：Pi、Opencode Go 和 Herdr 三者配合使用。文中讨论了今年的 harness engineering 热潮，以及 LLM 从辅助补全工具转变为软件工程主导者的趋势。",
