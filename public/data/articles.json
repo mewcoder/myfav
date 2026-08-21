@@ -1,5 +1,23 @@
 [
   {
+    "title": "Codex as a platform: build on the open agent harness",
+    "url": "https://developers.openai.com/blog/codex-as-a-platform",
+    "description": "OpenAI 开发者博客：开源 Codex harness 作为可嵌入的 Agent 运行时，应用可通过 codex exec / Codex SDK / app-server 三层集成把 Agent 带入自有产品与工作流，并附 Relay 运维示例。",
+    "category": "开发",
+    "tags": [
+      "OpenAI",
+      "Codex",
+      "Agent",
+      "Agent Harness",
+      "MCP",
+      "开源",
+      "SDK"
+    ],
+    "saveTime": "2026-08-21",
+    "path": "articles/2026-08/codex-as-a-platform-build-on-the-open-agent-harness.md",
+    "translationPath": "articles/2026-08/codex-as-a-platform-build-on-the-open-agent-harness_zh.md"
+  },
+  {
     "title": "Hot Take: LLM can 'jump'",
     "url": "https://yongzx.github.io/blog/2026/08/08/llm-can-jump",
     "description": "回应 ICML'26 立场论文《LLMs can't jump》：主张 LLM 可通过互联知识实现科学上的“跳跃式”突破，并讨论其对 AI 安全与持续学习的启示。",
