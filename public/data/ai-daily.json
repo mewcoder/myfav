@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-21",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-21",
+    "description": "Qwen3.8-27B 上线、Google 开源 TIPS 空间感知视觉模型、Claude 蛋白质设计实测数据公布，另附 SPADE 自博弈论文与 LFM2.5-DSpark 推理加速实测。",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-21",
+    "saveTime": "2026-08-21",
+    "path": "articles/2026-08/2026-08-21.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-20",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-20",
     "description": "两套 Agent skills 方法论登榜（superpowers、mattpocock/skills）；自改进 Agent 脆弱性研究论文",
