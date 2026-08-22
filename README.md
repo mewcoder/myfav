@@ -1,5 +1,7 @@
 # MyFav
 
+英文文章可同时保存同目录的 `*_zh.md` 中文译文；文章详情页在索引提供 `translationPath` 时显示“原文 / 中文”切换，并支持用 `?lang=zh` 直接打开中文版。
+
 MyFav 是一个本地数据优先的个人收藏站。网站、GitHub 仓库和文章元信息使用 JSON 管理，文章正文与图片使用 Markdown 文件保存，站点由 Vue 3 + Vite 构建并发布到 GitHub Pages。
 
 当前仓库保留 82 个网站、136 个 GitHub 仓库；文章索引暂时为空，文章页会展示真实的空状态。
@@ -97,10 +99,6 @@ npm run prepare-pages
 ```
 
 `prepare-pages` 会把根目录 `articles/` 复制到 `dist/articles/`，并生成 `dist/404.html`，以支持 GitHub Pages history 路由回退。推送到 `main` 后，GitHub Actions 会自动执行相同步骤并发布。
-
-## AI 功能与隐私
-
-全局“问 AI”按用户选择的 `网站`、`GitHub` 或 `文章` 范围读取对应收藏数据，用于查找、归纳、比较和解释；界面不暴露 JSON 文件名。文章详情助手只发送当前文章的原始 Markdown。两者都调用用户填写的 OpenAI-compatible `POST /chat/completions` 接口，不经过 MyFav 服务端。
 
 - API Key 默认只保存在当前标签页的 `sessionStorage`。
 - 勾选“记住配置”后才写入 `localStorage`。

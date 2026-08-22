@@ -11,7 +11,7 @@
           <span>{{ entry.name }}</span><span>{{ entry.count }}</span>
         </button>
         <div v-if="topTags.length" class="rail-tags">
-          <p>热门标签</p>
+          <p>常用标签</p>
           <button v-for="tag in topTags" :key="tag" :aria-pressed="selectedTag === tag" @click="selectedTag = selectedTag === tag ? '' : tag">{{ tag }}</button>
         </div>
       </aside>
@@ -54,7 +54,7 @@ const categories = computed(() => {
 })
 const topTags = computed(() => {
   const counts = props.items.flatMap((item) => item.tags || []).reduce((all, tag) => ({ ...all, [tag]: (all[tag] || 0) + 1 }), {})
-  return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 10).map(([tag]) => tag)
+  return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([tag]) => tag)
 })
 const filtered = computed(() => props.items.filter((item) => {
   const categoryMatches = selectedCategory.value === '全部' || item.category === selectedCategory.value
