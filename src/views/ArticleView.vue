@@ -15,11 +15,13 @@
         <p class="eyebrow">{{ article.category }} · {{ article.published || article.saveTime }}</p>
         <h1>{{ article.title }}</h1>
         <p class="article-deck">{{ article.description }}</p>
-        <div v-if="article.translationPath" class="article-language-switch" role="group" aria-label="正文语言">
-          <button type="button" :aria-pressed="language === 'original'" @click="setLanguage('original')">原文</button>
-          <button type="button" :aria-pressed="language === 'zh'" @click="setLanguage('zh')">中文</button>
+        <div class="article-meta-row">
+          <p class="article-byline"><span v-if="article.author">{{ article.author }} · </span><a :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a><button class="article-copy" type="button" :disabled="!rawMarkdown" @click="copyArticle">{{ copyStatus || '复制全文' }}</button></p>
+          <div v-if="article.translationPath" class="article-language-switch" role="group" aria-label="正文语言">
+            <button type="button" :aria-pressed="language === 'original'" @click="setLanguage('original')">原文</button>
+            <button type="button" :aria-pressed="language === 'zh'" @click="setLanguage('zh')">中文</button>
+          </div>
         </div>
-        <p class="article-byline"><span v-if="article.author">{{ article.author }} · </span><a :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a><button class="article-copy" type="button" :disabled="!rawMarkdown" @click="copyArticle">{{ copyStatus || '复制全文' }}</button></p>
         <p class="article-tags"><span v-for="tag in article.tags" :key="tag">{{ tag }}</span></p>
       </header>
 

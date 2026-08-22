@@ -127,6 +127,8 @@ describe('article responsive reading controls', () => {
 
     const buttons = wrapper.findAll('.article-language-switch button')
     expect(buttons).toHaveLength(2)
+    expect(wrapper.find('.article-meta-row .article-language-switch').exists()).toBe(true)
+    expect(wrapper.find('.article-header > .article-language-switch').exists()).toBe(false)
     expect(buttons[0].attributes('aria-pressed')).toBe('true')
     await buttons[1].trigger('click')
     await flushPromises()
