@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-23",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-23",
+    "description": "Qwen3.8-27B 登陆 QwenCloud 并同批引入 GLM-5.3/kimi-k3；DeepMind 与 EVE 合作攻关持久世界 AI；HF 研究揭示头部 ASR 模型会“认题作答”。",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-23",
+    "saveTime": "2026-08-23",
+    "path": "articles/2026-08/2026-08-23.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-21",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-21",
     "description": "8/21：Qwen3.8-27B 视觉语言版与 Google TIPS 上新；LFM2.5-DSpark 让本地/端侧推理提速最高 3.2x；SPADE 把 Agent 自改进推向开放环境；Claude 把蛋白/化学实验压到分钟级。",
