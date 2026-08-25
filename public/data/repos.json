@@ -1,5 +1,21 @@
 [
   {
+    "name": "freestylefly/awesome-gpt-image-2",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "description": "GPT-Image 2 的工业级提示词引擎与模板库：530+ 案例逆向拆解、20+ 套工业级模板，并提炼成可复用 Skills，持续更新。",
+    "category": "工具",
+    "tags": [
+      "GPT Image",
+      "提示词工程",
+      "图像生成",
+      "模板库",
+      "awesome-list",
+      "GitHub"
+    ],
+    "stars": 16997,
+    "saveTime": "2026-08-25"
+  },
+  {
     "name": "lidge-jun/opencodex",
     "url": "https://github.com/lidge-jun/opencodex",
     "description": "面向 OpenAI Codex 与 Claude Code 的通用提供商代理：可在 Codex CLI、App、SDK 和 Claude Code 中使用任意 LLM（Claude、Gemini、Grok、DeepSeek、Ollama 等）。",
