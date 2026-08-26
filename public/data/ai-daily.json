@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 2026-08-26",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-26",
+    "description": "Qwen Wan3.0 视频模型全面开放；coding agent 全仓库迁移成功率仅 5.4%；DeepMind 与 EVE Online 合作探索游戏 AI。",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-26",
+    "saveTime": "2026-08-26",
+    "path": "articles/2026-08/2026-08-26.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-25",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-25",
     "description": "QwenCloud 把 Wan 3.0 全能力视频生成模型 wan3.0-video 转正式 GA；Anthropic 落地 Claude 文本水印（SynthID-Text）并将 Fable 5 生物护栏误杀率砍掉约 85%；OpenAI 的 codex 仓库登上 GitHub Trending 前列。",
