@@ -1,5 +1,19 @@
 [
   {
+    "name": "miuuyy/codex-chatgpt-web",
+    "url": "https://github.com/miuuyy/codex-chatgpt-web",
+    "description": "把 ChatGPT Web（Free/Go/Plus/Pro 订阅）桥接成 OpenAI Codex CLI 的原生模型，突破 Codex 用量限制，支持上下文/工具/流式/图片。非官方浏览器自动化方案。",
+    "category": "工具",
+    "tags": [
+      "GitHub",
+      "Codex",
+      "ChatGPT",
+      "浏览器自动化"
+    ],
+    "stars": 1691,
+    "saveTime": "2026-08-29"
+  },
+  {
     "name": "LinklyAI/best-skills",
     "url": "https://github.com/LinklyAI/best-skills",
     "description": "LinklyAI 维护的每日更新 Agent Skills 排行榜，聚合 skills.sh、ClawHub、腾讯 SkillHub、GitHub、X 等 10+ 社区的下载量、增长与社媒热度，评选 Top 100，并提供开放的 CSV 数据集。",
