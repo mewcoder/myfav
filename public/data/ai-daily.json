@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-28",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-28",
+    "description": "本周开放模型集中推进多模态、Agent 和推理降本，重点关注 GLM-5.3-Flash、Qwen3.8-Flash-Next 与 DeepSeek-V4-Flash-Vision-Exp。",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-28",
+    "saveTime": "2026-08-28",
+    "path": "articles/2026-08/2026-08-28.md"
+  },
+  {
     "title": "AI 日报 2026-08-26",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-26",
     "description": "Qwen Wan3.0 视频模型全面开放；coding agent 全仓库迁移成功率仅 5.4%；DeepMind 与 EVE Online 合作探索游戏 AI。",
