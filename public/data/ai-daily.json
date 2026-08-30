@@ -1,5 +1,16 @@
 [
   {
+    "title": "AI 日报 | 2026-08-30",
+    "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-30",
+    "description": "智谱开源 GLM-5.3-Flash 原生多模态模型；OpenAI GPT-5.6 系列预览；Apple M6/M5 Ultra 芯片发布",
+    "category": "AI 日报",
+    "tags": [],
+    "author": "MyOS",
+    "published": "2026-08-30",
+    "saveTime": "2026-08-30",
+    "path": "articles/2026-08/2026-08-30.md"
+  },
+  {
     "title": "AI 日报 | 2026-08-28",
     "url": "https://mewcoder.github.io/myfav/ai-daily/2026-08-28",
     "description": "本周开放模型集中推进多模态、Agent 和推理降本，重点关注 GLM-5.3-Flash、Qwen3.8-Flash-Next 与 DeepSeek-V4-Flash-Vision-Exp。",
