@@ -1,5 +1,20 @@
 [
   {
+    "title": "Harness Engineering: How to Build AI Agents That Don't Fall Apart",
+    "url": "https://x.com/0xwhrrari/status/2093685107534000560?s=46",
+    "description": "探讨AI Agent出错的根本原因不在模型智能，而在环境设计。",
+    "category": "AI",
+    "tags": [
+      "Agent",
+      "Harness Engineering",
+      "X"
+    ],
+    "author": "rari (@0xwhrrari)",
+    "saveTime": "2026-08-31",
+    "path": "articles/2026-08/harness-engineering-how-to-build-ai-agents-that-dont-fall-ap.md",
+    "translationPath": "articles/2026-08/harness-engineering-how-to-build-ai-agents-that-dont-fall-ap_zh.md"
+  },
+  {
     "title": "Codex as a platform: build on the open agent harness",
     "url": "https://developers.openai.com/blog/codex-as-a-platform",
     "description": "OpenAI 开发者博客：开源 Codex harness 作为可嵌入的 Agent 运行时，应用可通过 codex exec / Codex SDK / app-server 三层集成把 Agent 带入自有产品与工作流，并附 Relay 运维示例。",
