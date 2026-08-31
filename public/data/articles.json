@@ -1,5 +1,22 @@
 [
   {
+    "title": "Running a Software Factory Efficiently at Uber Scale",
+    "url": "https://x.com/UberEng/status/2093444169037762840?s=46",
+    "description": "Uber工程团队分享如何在大规模软件工厂中高效嵌入AI工具。目前超过70%的PR由本地或云端Agent完成，工程师构建了3600+个Agent Skills，日执行量超3万次，覆盖软件开发全生命周期。",
+    "category": "开发",
+    "tags": [
+      "AI",
+      "Agent",
+      "Software Factory",
+      "Uber",
+      "X"
+    ],
+    "author": "Uber Engineering (@UberEng)",
+    "saveTime": "2026-08-31",
+    "path": "articles/2026-08/running-a-software-factory-efficiently-at-uber-scale.md",
+    "translationPath": "articles/2026-08/running-a-software-factory-efficiently-at-uber-scale_zh.md"
+  },
+  {
     "title": "Harness Engineering: How to Build AI Agents That Don't Fall Apart",
     "url": "https://x.com/0xwhrrari/status/2093685107534000560?s=46",
     "description": "探讨AI Agent出错的根本原因不在模型智能，而在环境设计。",
