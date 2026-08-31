@@ -1,5 +1,20 @@
 [
   {
+    "title": "The Principles of Learning Faster.",
+    "url": "https://x.com/0xHvdes/status/2094075106096009695?s=46",
+    "description": "Hades 的 X 长文：探讨如何更快地学习——大量输入（看教程、读书）不等于有效学习，真正掌握来自动手实践与构建。",
+    "category": "知识",
+    "tags": [
+      "X",
+      "学习方法",
+      "效率"
+    ],
+    "author": "Hades (@0xHvdes)",
+    "saveTime": "2026-08-31",
+    "path": "articles/2026-08/the-principles-of-learning-faster.md",
+    "translationPath": "articles/2026-08/the-principles-of-learning-faster_zh.md"
+  },
+  {
     "title": "Running a Software Factory Efficiently at Uber Scale",
     "url": "https://x.com/UberEng/status/2093444169037762840?s=46",
     "description": "Uber工程团队分享如何在大规模软件工厂中高效嵌入AI工具。目前超过70%的PR由本地或云端Agent完成，工程师构建了3600+个Agent Skills，日执行量超3万次，覆盖软件开发全生命周期。",
