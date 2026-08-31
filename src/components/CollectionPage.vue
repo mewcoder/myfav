@@ -23,8 +23,16 @@
         <div v-if="loading" class="text-state">正在读取 {{ fileName }}…</div>
         <div v-else-if="error" class="text-state is-error">{{ error }}</div>
         <div v-else-if="!filtered.length" class="text-state">{{ emptyText }}</div>
-        <div v-else class="collection-list" :class="`collection-list--${type}`">
-          <CollectionRow v-for="item in filtered" :key="item.url" :item="{ ...item, type, label: type === 'repo' ? item.name : item.title }" />
+        <div v-else class="collection-list" :class="[`collection-list--${type}`, { 'collection-list--months': groupByMonth }]">
+          <template v-if="groupByMonth">
+            <section v-for="group in groupedByMonth" :key="group.month" class="collection-month">
+              <header class="collection-month-heading"><h2>{{ monthLabel(group.month) }}</h2><span>{{ group.items.length }}</span></header>
+              <CollectionRow v-for="item in group.items" :key="item.path || item.url || item.title" :item="{ ...item, type, label: type === 'repo' ? item.name : item.title }" />
+            </section>
+          </template>
+          <template v-else>
+            <CollectionRow v-for="item in filtered" :key="item.path || item.url || item.title" :item="{ ...item, type, label: type === 'repo' ? item.name : item.title }" />
+          </template>
         </div>
       </section>
     </div>
@@ -44,6 +52,7 @@ const props = defineProps({
   loading: Boolean,
   error: { type: String, default: '' },
   emptyText: { type: String, required: true },
+  groupByMonth: Boolean,
 })
 
 const selectedCategory = ref('全部')
@@ -61,6 +70,23 @@ const filtered = computed(() => props.items.filter((item) => {
   const tagMatches = !selectedTag.value || item.tags?.includes(selectedTag.value)
   return categoryMatches && tagMatches
 }))
+const groupedByMonth = computed(() => {
+  const groups = []
+  for (const item of filtered.value) {
+    const month = item.saveTime?.slice(0, 7) || '未知月份'
+    let group = groups.find((entry) => entry.month === month)
+    if (!group) {
+      group = { month, items: [] }
+      groups.push(group)
+    }
+    group.items.push(item)
+  }
+  return groups
+})
+const monthLabel = (month) => {
+  const [year, value] = month.split('-')
+  return value ? `${year} 年 ${Number(value)} 月` : month
+}
 
 watch(() => props.type, () => {
   selectedCategory.value = '全部'

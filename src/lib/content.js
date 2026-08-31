@@ -2,12 +2,12 @@ const requiredString = (value) => typeof value === 'string' && value.trim().leng
 const validTags = (value) => Array.isArray(value) && value.every((tag) => requiredString(tag)) && new Set(value).size === value.length
 export const isSaveTimeDescending = (records) => records.every((record, index) => index === 0 || records[index - 1].saveTime.localeCompare(record.saveTime) >= 0)
 
-export function validateContent({ sites, repos, articles, aiDaily = [] }) {
+export function validateContent({ sites, repos, articles, notes = [] }) {
   const errors = []
   if (!Array.isArray(sites)) errors.push('sites.json 顶层必须是数组')
   if (!Array.isArray(repos)) errors.push('repos.json 顶层必须是数组')
   if (!Array.isArray(articles)) errors.push('articles.json 顶层必须是数组')
-  if (!Array.isArray(aiDaily)) errors.push('ai-daily.json 顶层必须是数组')
+  if (!Array.isArray(notes)) errors.push('notes.json 顶层必须是数组')
 
   if (Array.isArray(sites)) {
     sites.forEach((site, index) => {
@@ -39,24 +39,28 @@ export function validateContent({ sites, repos, articles, aiDaily = [] }) {
     if (articles.every((article) => requiredString(article.saveTime)) && !isSaveTimeDescending(articles)) errors.push('articles.json 必须按 saveTime 倒序排列')
   }
 
-  if (Array.isArray(aiDaily)) {
-    aiDaily.forEach((entry, index) => {
-      if (![entry.title, entry.url, entry.description, entry.saveTime, entry.path].every(requiredString) || !validTags(entry.tags)) {
-        errors.push(`ai-daily.json[${index}] 字段不完整`)
+  if (Array.isArray(notes)) {
+    notes.forEach((note, index) => {
+      if (![note.title, note.description, note.category, note.saveTime, note.path].every(requiredString) || !validTags(note.tags)) {
+        errors.push(`notes.json[${index}] 字段不完整`)
+      }
+      if (requiredString(note.saveTime) && requiredString(note.path)) {
+        const month = note.path.match(/^notes\/(\d{4}-\d{2})\/[^/]+\.md$/)?.[1]
+        if (!month || month !== note.saveTime.slice(0, 7)) errors.push(`notes.json[${index}] 路径月份无效`)
       }
     })
-    if (aiDaily.every((entry) => requiredString(entry.saveTime)) && !isSaveTimeDescending(aiDaily)) errors.push('ai-daily.json 必须按 saveTime 倒序排列')
+    if (notes.every((note) => requiredString(note.saveTime)) && !isSaveTimeDescending(notes)) errors.push('notes.json 必须按 saveTime 倒序排列')
   }
 
   return errors
 }
 
-export function toUnifiedRecords({ sites = [], repos = [], articles = [], aiDaily = [] }) {
+export function toUnifiedRecords({ sites = [], repos = [], articles = [], notes = [] }) {
   return [
     ...sites.map((item) => ({ ...item, type: 'site', label: item.title })),
     ...repos.map((item) => ({ ...item, type: 'repo', label: item.name })),
     ...articles.map((item) => ({ ...item, type: 'article', label: item.title })),
-    ...aiDaily.map((item) => ({ ...item, type: 'ai-daily', label: item.title })),
+    ...notes.map((item) => ({ ...item, type: 'note', label: item.title })),
   ].sort((a, b) => b.saveTime.localeCompare(a.saveTime))
 }
 
@@ -86,12 +90,13 @@ export function articleRoute(article) {
   return match ? `/articles/${match[1]}/${match[2]}` : null
 }
 
-export function aiDailyRoute(entry) {
-  return /^\d{4}-\d{2}-\d{2}$/.test(entry.published || entry.saveTime) ? `/ai-daily/${entry.published || entry.saveTime}` : null
+export function noteRoute(note) {
+  const match = note.path.match(/^notes\/(\d{4}-\d{2})\/(.+)\.md$/)
+  return match ? `/notes/${match[1]}/${match[2]}` : null
 }
 
 export function contentRoute(record) {
-  if (record.type === 'ai-daily') return aiDailyRoute(record)
   if (record.type === 'article') return articleRoute(record)
+  if (record.type === 'note') return noteRoute(record)
   return null
 }

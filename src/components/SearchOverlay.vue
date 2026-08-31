@@ -10,7 +10,7 @@
         <p v-if="!visibleResults.length" class="text-state">没有匹配的收藏</p>
         <section v-for="group in groupedResults" :key="group.type" class="search-result-group" role="group" :aria-labelledby="`search-group-${group.type}`">
           <h3 :id="`search-group-${group.type}`">{{ group.label }}</h3>
-          <div v-for="entry in group.items" :id="`search-result-${entry.index}`" :key="`${entry.record.type}:${entry.record.url}`" class="search-result-option" :class="{ selected: activeIndex === entry.index }" role="option" :aria-selected="activeIndex === entry.index" @mouseenter="activeIndex = entry.index" @focusin="activeIndex = entry.index">
+          <div v-for="entry in group.items" :id="`search-result-${entry.index}`" :key="`${entry.record.type}:${entry.record.path || entry.record.url || entry.record.title}`" class="search-result-option" :class="{ selected: activeIndex === entry.index }" role="option" :aria-selected="activeIndex === entry.index" @mouseenter="activeIndex = entry.index" @focusin="activeIndex = entry.index">
             <CollectionRow :item="entry.record" compact @click="close" />
           </div>
         </section>
@@ -36,11 +36,11 @@ const keywordType = ref('all')
 const activeIndex = ref(-1)
 const router = useRouter()
 const { records } = useContent()
-const keywordTypes = [{ value: 'all', label: '全部' }, { value: 'site', label: '网站' }, { value: 'repo', label: 'GitHub' }, { value: 'article', label: '文章' }, { value: 'ai-daily', label: 'AI 日报' }]
+const keywordTypes = [{ value: 'all', label: '全部' }, { value: 'site', label: '网站' }, { value: 'repo', label: 'GitHub' }, { value: 'article', label: '文章' }, { value: 'note', label: '笔记' }]
 const matchedResults = computed(() => searchRecords(records.value, debouncedQuery.value, keywordType.value).slice(0, 30))
 const groupedResults = computed(() => {
-  const labels = { 'ai-daily': 'AI 日报', article: '文章', repo: 'GitHub', site: '网站' }
-  const order = keywordType.value === 'all' ? ['ai-daily', 'article', 'repo', 'site'] : [keywordType.value]
+  const labels = { article: '文章', note: '笔记', repo: 'GitHub', site: '网站' }
+  const order = keywordType.value === 'all' ? ['note', 'article', 'repo', 'site'] : [keywordType.value]
   let index = 0
   return order.map((type) => ({
     type,
@@ -89,7 +89,7 @@ function moveSelection(direction) {
 function openSelectedResult() {
   const record = visibleResults.value[activeIndex.value < 0 ? 0 : activeIndex.value]
   if (!record) return
-  if (record.type === 'article' || record.type === 'ai-daily') router.push(contentRoute(record))
+  if (record.type === 'article' || record.type === 'note') router.push(contentRoute(record))
   else window.open(record.url, '_blank', 'noopener,noreferrer')
   close()
 }

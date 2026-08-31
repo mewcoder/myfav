@@ -3,30 +3,37 @@ import { join, posix, relative, resolve, sep } from 'node:path'
 import { renderArticle } from './render-article.mjs'
 
 const root = process.cwd()
-const sourceArticles = resolve(root, 'articles')
 const dist = resolve(root, 'dist')
-const distArticles = resolve(dist, 'articles')
-const aiDailyData = resolve(root, 'public', 'data', 'ai-daily.json')
+const notesData = resolve(root, 'public', 'data', 'notes.json')
+await rm(resolve(dist, 'ai-daily'), { recursive: true, force: true })
+const contentRoots = ['articles', 'notes'].map((name) => ({
+  name,
+  source: resolve(root, name),
+  dist: resolve(dist, name),
+}))
 
-await mkdir(distArticles, { recursive: true })
-if ((await stat(sourceArticles)).isDirectory()) {
-  await cp(sourceArticles, distArticles, { recursive: true, force: true })
+for (const contentRoot of contentRoots) {
+  await mkdir(contentRoot.dist, { recursive: true })
+  const sourceInfo = await stat(contentRoot.source).catch(() => undefined)
+  if (sourceInfo?.isDirectory()) {
+    await cp(contentRoot.source, contentRoot.dist, { recursive: true, force: true })
+  }
 }
 
 const mdFiles = []
-async function walk(dir) {
+async function walk(dir, contentRoot) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const full = join(dir, entry.name)
-    if (entry.isDirectory()) await walk(full)
-    else if (entry.name.endsWith('.md')) mdFiles.push(full)
+    if (entry.isDirectory()) await walk(full, contentRoot)
+    else if (entry.name.endsWith('.md')) mdFiles.push({ file: full, contentRoot })
   }
 }
-await walk(distArticles)
+for (const contentRoot of contentRoots) await walk(contentRoot.dist, contentRoot)
 
 let rendered = 0
-for (const mdFile of mdFiles) {
+for (const { file: mdFile, contentRoot } of mdFiles) {
   const markdown = await readFile(mdFile, 'utf8')
-  const articlePath = posix.join('articles', relative(distArticles, mdFile).split(sep).join('/'))
+  const articlePath = posix.join(contentRoot.name, relative(contentRoot.dist, mdFile).split(sep).join('/'))
   const { html, toc } = await renderArticle(markdown, articlePath)
   await writeFile(mdFile.replace(/\.md$/, '.rendered.html'), html)
   await writeFile(mdFile.replace(/\.md$/, '.toc.json'), JSON.stringify(toc))
@@ -45,11 +52,11 @@ await copyFile(resolve(dist, 'index.html'), resolve(dist, '404.html'))
 // ArticleView and the original Markdown is served instead of the translation.
 await writeFile(resolve(dist, '.nojekyll'), '')
 
-const dailyRecords = JSON.parse(await readFile(aiDailyData, 'utf8'))
-const dailyRoutes = [resolve(dist, 'ai-daily'), ...dailyRecords.map((entry) => resolve(dist, 'ai-daily', entry.published || entry.saveTime))]
-for (const routeDir of dailyRoutes) {
+const noteRecords = JSON.parse(await readFile(notesData, 'utf8'))
+const noteRoutes = [resolve(dist, 'notes'), ...noteRecords.map((entry) => resolve(dist, entry.path.replace(/\.md$/, '')))]
+for (const routeDir of noteRoutes) {
   await mkdir(routeDir, { recursive: true })
   await copyFile(resolve(dist, 'index.html'), resolve(routeDir, 'index.html'))
 }
 
-console.log(`Copied root articles, rendered ${rendered} article page(s), created ${dailyRoutes.length} AI daily route(s) and GitHub Pages history fallback.`)
+console.log(`Copied root content, rendered ${rendered} Markdown page(s), created ${noteRoutes.length} note route(s) and GitHub Pages history fallback.`)

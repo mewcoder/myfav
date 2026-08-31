@@ -15,17 +15,15 @@ vi.mock('../composables/useContent', async () => {
     path: 'articles/2026-08/article.md',
     translationPath: 'articles/2026-08/article_zh.md',
   }])
-  const aiDaily = ref([{
-    title: 'AI 日报 | 2026-08-13',
-    url: 'https://daily.example',
-    description: 'Daily description',
-    category: 'AI 日报',
-    tags: ['AI'],
-    saveTime: '2026-08-13',
-    published: '2026-08-13',
-    path: 'articles/2026-08/2026-08-13.md',
+  const notes = ref([{
+    title: '可靠的 Agent',
+    description: '记录实践要点',
+    category: '开发',
+    tags: ['Agent'],
+    saveTime: '2026-08-31',
+    path: 'notes/2026-08/reliable-agent.md',
   }])
-  return { useContent: () => ({ articles, aiDaily, loading: ref(false) }) }
+  return { useContent: () => ({ articles, notes, loading: ref(false) }) }
 })
 
 let ArticleView
@@ -56,26 +54,23 @@ beforeEach(() => {
 })
 
 describe('article responsive reading controls', () => {
-  it('renders a daily briefing from the standalone route and links back to its tab', async () => {
+  it('renders a local note without an external source or Issue notes', async () => {
     const router = createRouter({
       history: createMemoryHistory(),
       routes: [
-        { path: '/ai-daily', component: { template: '<div />' } },
-        { path: '/ai-daily/:date', name: 'ai-daily-entry', component: { template: '<div />' } },
+        { path: '/notes', component: { template: '<div />' } },
+        { path: '/notes/:month/:slug', name: 'note', component: { template: '<div />' } },
       ],
     })
-    await router.push('/ai-daily/2026-08-13')
+    await router.push('/notes/2026-08/reliable-agent')
     const wrapper = mount(ArticleView, {
       global: { plugins: [router], stubs: { UtterancesNotes: true } },
     })
     await flushPromises()
 
-    expect(wrapper.get('h1').text()).toBe('AI 日报 | 2026-08-13')
-    expect(wrapper.get('.back-link').attributes('href')).toBe('/ai-daily')
-    expect(fetch).toHaveBeenCalledWith(
-      expect.stringContaining('2026-08-13.rendered.html'),
-      expect.objectContaining({ cache: 'no-cache' }),
-    )
+    expect(wrapper.get('h1').text()).toBe('可靠的 Agent')
+    expect(wrapper.get('.article-byline').text()).toContain('本地 Markdown')
+    expect(wrapper.find('.article-notes').exists()).toBe(false)
     wrapper.unmount()
   })
 

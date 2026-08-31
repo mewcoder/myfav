@@ -28,11 +28,11 @@ import { computed } from 'vue'
 import { contentRoute } from '../lib/content'
 
 const props = defineProps({ item: { type: Object, required: true }, showType: Boolean, compact: Boolean })
-const isArticle = computed(() => props.item.type === 'article' || props.item.type === 'ai-daily')
+const isArticle = computed(() => props.item.type === 'article' || props.item.type === 'note')
 const label = computed(() => props.item.label || props.item.title || props.item.name)
-const typeLabel = computed(() => ({ site: '网站', repo: 'GitHub', article: '文章', 'ai-daily': 'AI 日报' })[props.item.type])
+const typeLabel = computed(() => ({ site: '网站', repo: 'GitHub', article: '文章', note: '笔记' })[props.item.type])
 const linkProps = computed(() => isArticle.value
-  ? { to: contentRoute(props.item) || (props.item.type === 'ai-daily' ? '/ai-daily' : '/articles') }
+  ? { to: contentRoute(props.item) || '/articles' }
   : { href: props.item.url, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `打开 ${label.value}（新窗口）` })
 
 function formatStars(value) {

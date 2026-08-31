@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { aiDailyRoute, articleRoute, isSaveTimeDescending, searchRecords, validateContent } from './content'
+import { articleRoute, isSaveTimeDescending, noteRoute, searchRecords, validateContent } from './content'
 
 const site = { title: 'Linear', url: 'https://linear.app', description: '项目管理', category: '工具', tags: [], saveTime: '2026-08-01' }
 const repo = { name: 'owner/repo', url: 'https://github.com/owner/repo', description: '工具', category: '开发', tags: ['AI'], stars: 10, saveTime: '2026-08-01' }
 
 describe('content contract', () => {
-  it('validates all three arrays', () => {
+  it('validates all content collections', () => {
     expect(validateContent({ sites: [site], repos: [repo], articles: [] })).toEqual([])
     expect(validateContent({ sites: [{ ...site, tags: undefined }], repos: [repo], articles: [] })).toContain('sites.json[0] 字段不完整')
   })
@@ -24,18 +24,17 @@ describe('content contract', () => {
 
   it('derives stable article routes', () => {
     expect(articleRoute({ path: 'articles/2026-08/example.md' })).toBe('/articles/2026-08/example')
-    expect(aiDailyRoute({ published: '2026-08-13' })).toBe('/ai-daily/2026-08-13')
+    expect(noteRoute({ path: 'notes/2026-08/reliable-agent.md' })).toBe('/notes/2026-08/reliable-agent')
   })
 
-  it('validates the standalone AI daily collection', () => {
-    const daily = {
-      title: 'AI 日报 | 2026-08-13', url: 'https://example.com/ai-daily/2026-08-13',
-      description: '日报', category: 'AI 日报', tags: [], saveTime: '2026-08-13',
-      published: '2026-08-13', path: 'articles/2026-08/2026-08-13.md',
+  it('validates month-scoped notes', () => {
+    const note = {
+      title: '可靠的 Agent', description: '实践要点', category: '开发', tags: ['Agent'],
+      saveTime: '2026-08-31', path: 'notes/2026-08/reliable-agent.md',
     }
-    expect(validateContent({ sites: [], repos: [], articles: [], aiDaily: [daily] })).toEqual([])
-    expect(validateContent({ sites: [], repos: [], articles: [], aiDaily: [{ ...daily, path: '' }] }))
-      .toContain('ai-daily.json[0] 字段不完整')
+    expect(validateContent({ sites: [], repos: [], articles: [], notes: [note] })).toEqual([])
+    expect(validateContent({ sites: [], repos: [], articles: [], notes: [{ ...note, path: 'notes/2026-07/reliable-agent.md' }] }))
+      .toContain('notes.json[0] 路径月份无效')
   })
 
   it('accepts the conventional Chinese translation path and rejects other paths', () => {

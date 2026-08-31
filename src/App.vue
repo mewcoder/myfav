@@ -1,9 +1,9 @@
 <template>
-  <div class="app" :class="{ 'is-article': route.name === 'article' || route.name === 'ai-daily-entry' }">
+  <div class="app" :class="{ 'is-article': route.name === 'article' || route.name === 'note' }">
     <header class="site-header">
       <div class="header-inner">
         <RouterLink class="brand" to="/" aria-label="MyFav 首页">MyFav<span>.</span></RouterLink>
-        <nav class="desktop-nav" aria-label="主导航"><RouterLink to="/">首页</RouterLink><RouterLink to="/sites">网站</RouterLink><RouterLink to="/repos">GitHub</RouterLink><RouterLink to="/articles">文章</RouterLink><RouterLink to="/ai-daily">AI 日报</RouterLink></nav>
+        <nav class="desktop-nav" aria-label="主导航"><RouterLink to="/">首页</RouterLink><RouterLink to="/sites">网站</RouterLink><RouterLink to="/repos">GitHub</RouterLink><RouterLink to="/articles">文章</RouterLink><RouterLink to="/notes">笔记</RouterLink></nav>
         <div class="header-actions">
           <button class="header-search" type="button" aria-haspopup="dialog" @click="searchOpen = true"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg><span>搜索</span><kbd>⌘K</kbd></button>
           <button class="icon-button" type="button" :aria-label="theme === 'dark' ? '切换至浅色主题' : '切换至深色主题'" @click="toggleTheme"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"/></svg></button>
@@ -13,7 +13,7 @@
     </header>
 
     <main id="main-content" class="page-shell"><RouterView /></main>
-    <nav class="mobile-nav" aria-label="移动端主导航"><RouterLink to="/">首页</RouterLink><RouterLink to="/sites">网站</RouterLink><RouterLink to="/repos">GitHub</RouterLink><RouterLink to="/articles">文章</RouterLink><RouterLink to="/ai-daily">AI 日报</RouterLink></nav>
+    <nav class="mobile-nav" aria-label="移动端主导航"><RouterLink to="/">首页</RouterLink><RouterLink to="/sites">网站</RouterLink><RouterLink to="/repos">GitHub</RouterLink><RouterLink to="/articles">文章</RouterLink><RouterLink to="/notes">笔记</RouterLink></nav>
     <SearchOverlay :open="searchOpen" @close="searchOpen = false" />
   </div>
 </template>

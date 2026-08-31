@@ -9,14 +9,12 @@ vi.mock('../composables/useContent', async () => {
   const sites = ref([{ title: 'Site', label: 'Site', type: 'site', url: 'https://site.example', description: 'site item', category: '工具', tags: [], saveTime: '2026-08-03' }])
   const repos = ref([{ name: 'owner/repo', label: 'owner/repo', type: 'repo', url: 'https://github.com/owner/repo', description: 'repo item', category: '开发', tags: ['AI'], stars: 1, saveTime: '2026-08-02' }])
   const articles = ref([{ title: 'Article', label: 'Article', type: 'article', url: 'https://article.example', description: 'article item', category: '知识', tags: [], saveTime: '2026-08-04', path: 'articles/2026-08/article.md' }])
-const aiDaily = ref([{ title: 'AI 日报', label: 'AI 日报', type: 'ai-daily', url: 'https://daily.example', description: 'daily item', category: 'AI 日报', tags: [], saveTime: '2026-08-05', published: '2026-08-05', path: 'articles/2026-08/2026-08-05.md' }])
   return {
     useContent: () => ({
       sites,
       repos,
       articles,
-      aiDaily,
-      records: computed(() => [...aiDaily.value, ...articles.value, ...sites.value, ...repos.value]),
+      records: computed(() => [...articles.value, ...sites.value, ...repos.value]),
     }),
   }
 })
@@ -41,7 +39,6 @@ function routerAt(path = '/') {
       { path: '/sites', component: { template: '<div />' } },
       { path: '/repos', component: { template: '<div />' } },
       { path: '/articles/:month/:slug', component: { template: '<div />' } },
-      { path: '/ai-daily/:date', component: { template: '<div />' } },
     ],
   })
   return router.push(path).then(() => router)
@@ -75,7 +72,7 @@ describe('search dialog', () => {
     await input.setValue('repo')
     vi.advanceTimersByTime(149)
     await nextTick()
-    expect(wrapper.findAll('.search-result-option')).toHaveLength(4)
+    expect(wrapper.findAll('.search-result-option')).toHaveLength(3)
     vi.advanceTimersByTime(1)
     await nextTick()
     expect(wrapper.findAll('.search-result-option')).toHaveLength(1)
@@ -91,7 +88,7 @@ describe('search dialog', () => {
     expect(input.attributes('aria-activedescendant')).toBe('search-result-0')
     await input.trigger('keydown', { key: 'Enter' })
     await flushPromises()
-    expect(router.currentRoute.value.path).toBe('/ai-daily/2026-08-05')
+    expect(router.currentRoute.value.path).toBe('/articles/2026-08/article')
     expect(document.activeElement).toBe(trigger)
     wrapper.unmount()
   })

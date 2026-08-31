@@ -58,6 +58,11 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
 .section-heading span, .collection-context span { color: var(--muted); font-size: 12px; }
 .collection-list { border-top: 1px solid var(--line); }
 .collection-list--site, .collection-list--repo { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: clamp(24px,3vw,40px); }
+.collection-list--months { border-top: 0; }
+.collection-month + .collection-month { margin-top: 42px; }
+.collection-month-heading { display: flex; align-items: baseline; justify-content: space-between; padding: 18px 0 9px; border-top: 2px solid var(--ink); }
+.collection-month-heading h2 { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -.02em; }
+.collection-month-heading span { color: var(--muted); font-size: 11px; }
 .collection-row { position: relative; display: grid; min-width: 0; padding: 22px 2px 20px 0; border-bottom: 1px solid var(--line); grid-template-columns: minmax(0,1fr) auto; gap: 16px; }
 .collection-row::before { position: absolute; top: -1px; bottom: -1px; left: -14px; width: 2px; background: var(--accent); content: ""; opacity: 0; }
 .collection-row:hover::before, .collection-row:focus-within::before { opacity: 1; }
@@ -72,8 +77,6 @@ kbd { border: 1px solid var(--line); padding: 1px 5px; color: var(--muted); font
 .row-stars { color: var(--muted); font-size: 11px; white-space: nowrap; }
 
 .collection-layout { display: grid; grid-template-columns: 208px minmax(0,1fr); gap: clamp(44px,6vw,76px); }
-.ai-daily-page .collection-layout { display: block; }
-.ai-daily-page .category-rail, .ai-daily-page .mobile-category-strip { display: none; }
 .category-rail { position: sticky; top: calc(var(--header) + 26px); align-self: start; }
 .category-rail > button { display: flex; width: 100%; min-height: 38px; align-items: center; justify-content: space-between; padding: 0; background: transparent; color: var(--muted); text-align: left; }
 .category-rail > button[aria-pressed="true"] { color: var(--ink); }

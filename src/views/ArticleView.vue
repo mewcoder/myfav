@@ -1,6 +1,6 @@
 <template>
   <div class="article-page">
-    <nav class="article-reading-toolbar" aria-label="文章阅读工具">
+    <nav class="article-reading-toolbar" aria-label="内容阅读工具">
       <RouterLink :to="backPath">← {{ backLabel }}</RouterLink>
       <div>
         <button ref="tocTrigger" type="button" :disabled="toc.length < 2" aria-haspopup="dialog" @click="openTocDrawer">目录</button>
@@ -8,15 +8,15 @@
       </div>
     </nav>
     <RouterLink class="back-link" :to="backPath">← 返回{{ backLabel }}</RouterLink>
-    <div v-if="loading" class="text-state">正在加载文章…</div>
-    <div v-else-if="!article" class="text-state is-error">文章不存在或已移动。</div>
+    <div v-if="loading" class="text-state">正在加载内容…</div>
+    <div v-else-if="!article" class="text-state is-error">内容不存在或已移动。</div>
     <article v-else class="article-flow">
       <header class="article-header">
         <p class="eyebrow">{{ article.category }} · {{ article.published || article.saveTime }}</p>
         <h1>{{ article.title }}</h1>
         <p class="article-deck">{{ article.description }}</p>
         <div class="article-meta-row">
-          <p class="article-byline"><span v-if="article.author">{{ article.author }} · </span><a :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a><button class="article-copy" type="button" :disabled="!rawMarkdown" @click="copyArticle">{{ copyStatus || '复制全文' }}</button></p>
+          <p class="article-byline"><span v-if="article.author">{{ article.author }} · </span><a v-if="article.url" :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a><span v-if="isNote">本地 Markdown</span><button class="article-copy" type="button" :disabled="!rawMarkdown" @click="copyArticle">{{ copyStatus || '复制全文' }}</button></p>
           <div v-if="article.translationPath" class="article-language-switch" role="group" aria-label="正文语言">
             <button type="button" :aria-pressed="language === 'original'" @click="setLanguage('original')">原文</button>
             <button type="button" :aria-pressed="language === 'zh'" @click="setLanguage('zh')">中文</button>
@@ -34,9 +34,9 @@
         </div>
       </aside>
 
-      <div v-if="markdownError" class="text-state is-error">{{ markdownError }} <a :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></div>
+      <div v-if="markdownError" class="text-state is-error">{{ markdownError }} <a v-if="article.url" :href="article.url" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a></div>
       <div v-else class="markdown-body" v-html="renderedHtml"></div>
-      <UtterancesNotes :key="route.path" :theme="theme" :pathname="route.path" />
+      <UtterancesNotes v-if="!isNote" :key="route.path" :theme="theme" :pathname="route.path" />
     </article>
 
     <dialog ref="tocDrawer" class="toc-drawer" aria-labelledby="toc-drawer-title" @cancel.prevent="closeTocDrawer" @close="restoreTocFocus">
@@ -52,7 +52,7 @@
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useContent } from '../composables/useContent'
-import { articleRoute } from '../lib/content'
+import { articleRoute, noteRoute } from '../lib/content'
 import { createArticleLoader } from '../lib/articleLoader'
 import { useTheme } from '../composables/useTheme'
 import UtterancesNotes from '../components/UtterancesNotes.vue'
@@ -60,7 +60,7 @@ import UtterancesNotes from '../components/UtterancesNotes.vue'
 const route = useRoute()
 const router = useRouter()
 const { theme, toggleTheme } = useTheme()
-const { articles, aiDaily, loading: contentLoading } = useContent()
+const { articles, notes, loading: contentLoading } = useContent()
 const rawMarkdown = ref('')
 const renderedHtml = ref('')
 const toc = ref([])
@@ -70,11 +70,11 @@ const tocDrawer = ref(null)
 const tocTrigger = ref(null)
 const copyStatus = ref('')
 const articleLoader = createArticleLoader()
-const isDaily = computed(() => route.name === 'ai-daily-entry')
-const collection = computed(() => isDaily.value ? aiDaily.value : articles.value)
-const article = computed(() => collection.value.find((item) => isDaily.value ? item.published === route.params.date : articleRoute(item) === route.path))
-const backPath = computed(() => isDaily.value ? '/ai-daily' : '/articles')
-const backLabel = computed(() => isDaily.value ? 'AI 日报' : '文章')
+const isNote = computed(() => route.name === 'note')
+const collection = computed(() => isNote.value ? notes.value : articles.value)
+const article = computed(() => collection.value.find((item) => isNote.value ? noteRoute(item) === route.path : articleRoute(item) === route.path))
+const backPath = computed(() => isNote.value ? '/notes' : '/articles')
+const backLabel = computed(() => isNote.value ? '笔记' : '文章')
 const language = computed(() => route.query.lang === 'zh' && article.value?.translationPath ? 'zh' : 'original')
 const activeArticlePath = computed(() => language.value === 'zh' ? article.value?.translationPath : article.value?.path)
 const loading = computed(() => contentLoading.value || loadingMarkdown.value)

@@ -4,7 +4,7 @@ import SitesView from '../views/SitesView.vue'
 import ReposView from '../views/ReposView.vue'
 import ArticlesView from '../views/ArticlesView.vue'
 import ArticleView from '../views/ArticleView.vue'
-import AIDailyView from '../views/AIDailyView.vue'
+import NotesView from '../views/NotesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,8 +14,8 @@ const router = createRouter({
     { path: '/repos', name: 'repos', component: ReposView },
     { path: '/articles', name: 'articles', component: ArticlesView },
     { path: '/articles/:month/:slug', name: 'article', component: ArticleView },
-    { path: '/ai-daily', name: 'ai-daily', component: AIDailyView },
-    { path: '/ai-daily/:date', name: 'ai-daily-entry', component: ArticleView },
+    { path: '/notes', name: 'notes', component: NotesView },
+    { path: '/notes/:month/:slug', name: 'note', component: ArticleView },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
   scrollBehavior(to) {
