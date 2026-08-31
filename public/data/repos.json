@@ -1,5 +1,20 @@
 [
   {
+    "name": "warpdotdev/common-skills",
+    "url": "https://github.com/warpdotdev/common-skills",
+    "description": "Warp 终端维护的共享 Agent Skill 仓库，包含 Spec 工作流、开发流程、调研与决策等可复用 Skill",
+    "category": "工具",
+    "tags": [
+      "Agent",
+      "Agent Skill",
+      "Warp",
+      "开发工作流",
+      "GitHub"
+    ],
+    "stars": 461,
+    "saveTime": "2026-08-31"
+  },
+  {
     "name": "miuuyy/codex-chatgpt-web",
     "url": "https://github.com/miuuyy/codex-chatgpt-web",
     "description": "把 ChatGPT Web（Free/Go/Plus/Pro 订阅）桥接成 OpenAI Codex CLI 的原生模型，突破 Codex 用量限制，支持上下文/工具/流式/图片。非官方浏览器自动化方案。",
