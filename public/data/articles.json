@@ -1,5 +1,15 @@
 [
   {
+    "title": "Running a Software Factory Efficiently at Uber Scale",
+    "url": "https://www.uber.com/us/en/blog/efficient-software-factory",
+    "description": "We just published a deep dive on how we keep AI coding costs under control at Uber, even as usage keeps climbing. Since February, weekly active employees across all functions on o…",
+    "category": "工具",
+    "tags": [],
+    "saveTime": "2026-09-01",
+    "path": "articles/2026-09/running-a-software-factory-efficiently-at-uber-scale.md",
+    "translationPath": "articles/2026-09/running-a-software-factory-efficiently-at-uber-scale_zh.md"
+  },
+  {
     "title": "Harness Engineering: the skill that replaced prompt engineer…",
     "url": "https://x.com/choopyplug1/status/2088973320964215253?s=46",
     "description": "Harness Engineering: the skill that replaced prompt engineering in 2026",
