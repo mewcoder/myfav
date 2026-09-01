@@ -1,83 +1,80 @@
-文档分段 1/2：
-
-Post
+文章
 Ichigo
 @iiiichigo_chan
-驾驭工程：用六层结构构建可靠的 AI 智能体
+Harness 工程（Harness Engineering）：在6层中构建可靠的AI 智能体（Agent）
 
-更好的提示词只能改善一次回答。
+一个更好的提示词（prompt）可以改善一个回答。
 
-更好的驾驭框架能改善每一次运行。
+一个更优的运行框架（harness）能提升每次运行的效果。
 
-如果你的智能体能够推理，但仍然忘记约束、选错工具、跳过验证，或一直循环直到预算耗尽，那么问题不全在模型。
+如果你的智能体（AI Agent）能推理，却仍然会忘记约束条件、选错工具、跳过验证，或者在预算耗尽前一直循环——那么问题并不完全出在模型本身。
 
-模型周围的环境定义不够明确。
+模型周围的环境定义不充分。
 
-本指南为你提供一个实用的六层驾驭框架，可应用于编码、研究、支持或运维智能体。
+本指南为您提供一个实用的六层运行框架，可应用于编码、研究、支持或运维智能体。
 
-到本文结束时，你将拥有：
+届时你将：
 
-- 任务契约
-- 上下文编译器
-- 带权限的工具网关
-- 持久化状态
-- 证据门控
-- 追踪与恢复循环
+任务契约
+一个上下文编译器
+一个受控的工具网关
+持久化状态（state）
+证据门控
+一个trace与恢复循环
 
-不是又一个巨型提示词，而是智能体的操作系统。
+并非又一个巨型提示词，而是一个面向 Agent 的操作系统。
 
-为什么现在这很重要
+为何这至关重要
 
-2026 年 2 月，OpenAI 描述了一个内部产品，该产品由零行手工编写的代码构建而成。
+在 2026 年 2 月，OpenAI描述了一款完全由零手写代码构建的内部产品。
 
-五个月后，仓库中约有 100 万行代码和约 1500 个合并的拉取请求。OpenAI 估计，该产品的构建时间约为手工开发所需时间的十分之一。
+五个月后，该代码库已包含约一百万行代码和约 1,500 个已合并的拉取请求。OpenAI估算，该产品的构建时间约为手动开发所需时间的十分之一。
 
-有趣之处并不在于 Codex 能写代码。
+有趣的部分并非仅仅是Codex能够编写代码。
 
-而在于人类工程师在让这些代码变得有用之前，必须在 Codex 周围构建什么。
+在代码变得有用之前，人类工程师不得不围绕Codex构建的就是这个。
 
-他们早期的进展缓慢，因为环境定义不明确。智能体缺乏工具、内部结构、可观察的反馈和可执行的规则。当它失败时，有用的问题不是“我们如何让提示词听起来更有力？”而是：
+他们的早期进展缓慢，是因为环境的定义不够明确。智能体缺乏工具、内部结构、可观测的反馈以及可执行的规则。当它失败时，有价值的问题不是“我们怎样让提示词听起来更强硬？”，而是：
 
-缺少什么能力，我们如何让智能体能够理解并强制执行？
+缺失了什么能力，以及我们如何让智能体理解并强制执行它？
 
-这就是驾驭工程。
+这便是 Harness 工程（Harness Engineering）。
 
-模型提供概率推理。
+该模型提供概率推理能力。
 
-驾驭框架将这种推理转化为受控执行。
+运行框架将这一推理转化为受控执行。
 
-```plaintext
-模型
-提出下一个动作
+plaintext
+MODEL
+proposes the next action
 
-驾驭框架
-选择上下文
-授权工具
-存储状态
-收集证据
-执行限制
-从失败中恢复
-```
+HARNESS
+selects context
+authorizes tools
+stores state
+collects evidence
+enforces limits
+recovers from failure
 
 提示词是系统的一个输入。
 
-它不是系统本身。
+不是系统本身。
 
-最小可行驾驭框架
+最小可行运行框架
 
-一个有用的驾驭框架不需要二十个服务或一个多智能体集群。
+一个好用的运行框架（Harness）不需要二十个服务或一个多智能体（multi-agent）群。
 
-它需要明确处理六项工作。
+它需要明确处理六项作业。
 
-1. 将请求转化为契约
+1. 将请求转化为合约
 
-自然语言请求是灵活的。生产任务不能如此。
+自然语言请求是灵活的。生产任务则不是。
 
-在模型行动之前，驾驭框架应将请求转化为一个有界任务对象：
+在模型执行动作之前，运行框架（Harness）应将请求转换为一个有界的任务对象：
 
-```yaml
+yaml
 task_id: feature_042
-goal: 向分析仪表板添加 CSV 导出功能
+goal: Add CSV export to the analytics dashboard
 
 inputs:
  - issue.md
@@ -85,79 +82,76 @@ inputs:
  - design/export-flow.png
 
 constraints:
- - 保持公共 API 不变
- - 不更改数据库模式
- - 不添加新依赖
+ - preserve the public API
+ - do not change the database schema
+ - do not add a new dependency
 
 deliverable:
  type: pull_request
 
 done_when:
- - 测试通过
- - 类型检查通过
- - 导出的 CSV 与测试夹具匹配
- - UI 截图通过审查
+ - tests pass
+ - typecheck passes
+ - exported CSV matches the fixture
+ - UI screenshot passes review
 
 escalate_when:
- - 似乎需要更改模式
- - 同一原因导致测试连续失败三次
- - 请求的行为与现有产品规则冲突
-```
+ - schema change appears necessary
+ - tests fail three times for the same reason
+ - requested behavior conflicts with an existing product rule
 
-这可以防止静默的任务替换。
+这能防止静默的任务替换。
 
-没有契约，智能体可能会解决一个更简单的问题版本，并自信地宣布成功。
+没有明确的合同约束，Agent 可能会解决一个更简单版本的问题，并自信地宣布任务完成。
 
-契约还为驾驭框架提供了客观的评估依据。“看起来不错”不是停止条件。“所有四项检查都通过”才是。
+该契约也为运行框架（Harness）提供了客观的评估依据。"看起来不错" 不是停止条件，而 "全部四项检查通过" 才是。
 
-2. 编译上下文，而不是倾倒上下文
+2. 编译上下文而非倾倒它
 
-上下文是有限的注意力预算。
+上下文是一种有限的注意力预算。
 
-常见错误是注入一切：完整对话、每个工具结果、所有项目文档，以及一份 1000 行的指令文件。
+常见的错误是注入所有内容：完整的对话、每个工具结果（tool result）、所有项目文档，以及一份 1,000 行的指令文件。
 
-更多的上下文并不自动意味着更多的理解。
+更多上下文并不自动意味着更多理解。
 
-OpenAI 的实用规则很简单：给智能体一张地图，而不是一本手册。Anthropic 也推荐同样的总体方向：保持上下文高信号，并仅在需要时检索额外信息。
+OpenAI的实践法则很简单：给智能体一张地图，而非一本手册。Anthropic 推荐了相同的大方向：保持上下文高信噪比，并仅在需要时检索额外信息。
 
-构建一个上下文编译器，只组装当前步骤所需的内容：
+构建一个上下文编译器，仅组装当前步骤所需的内容：
 
-```typescript
+typescript
 function buildContext(task, state) {
  return [
- load("AGENTS.md"), // 小型项目地图
- load(task.relevantProductSpec), // 任务特定规则
- load(task.relevantArchitecture), // 局部边界
- summarize(state.completedSteps), // 紧凑历史
+ load("AGENTS.md"), // small project map
+ load(task.relevantProductSpec), // task-specific rules
+ load(task.relevantArchitecture), // local boundaries
+ summarize(state.completedSteps), // compact history
  state.openRisks,
  state.currentArtifacts
  ];
 }
-```
 
 使用渐进式披露：
 
-```plaintext
+plaintext
 AGENTS.md
- -> 架构索引
- -> 产品规则
- -> 任务特定指南
- -> 确切文件和证据
-```
+ -> architecture index
+ -> product rules
+ -> task-specific guide
+ -> exact files and evidence
 
-根指南告诉智能体知识在哪里。
+根指南（root guide）为智能体（Agent）指明知识所在之处。
 
-工具仅在相关内容变得相关时才检索更深层的材料。
+工具仅在相关时检索更深层次的材料。
 
-对话不应是你的数据库，系统提示词也不应是你的文件柜。
+对话不应成为你的数据库，而系统提示词（system prompt）也不应成为你的文件柜。
 
-3. 在模型和每个工具之间放置网关
+3. 在模型与每个工具之间放置一个网关
 
-模型可以请求一个动作。
+该模型可能会请求执行某个操作。
 
-驾驭框架决定该动作是否有效、被允许且安全执行。
+运行框架（Harness）会判断该操作是否有效、是否被允许以及是否可以安全执行。
 
-```typescript
+typescript
 async function handleToolRequest(request, run) {
  validateSchema(request);
 
@@ -179,45 +173,43 @@ async function handleToolRequest(request, run) {
  const result = await sandbox.execute(request);
  return normalizeObservation(result);
 }
-```
 
 每个工具都需要：
 
-- 一个明确的目的
-- 一个无歧义的架构
-- 一个受限的权限边界
-- 一个可预测的成功响应
-- 一个结构化的失败响应
-- 一个超时
+一个明确的目的
+一个无歧义的模式（schema）
+一个有范围限定的权限边界（permission boundary）
+一个可预测的成功响应
+结构化故障响应
+一个超时（timeout）
 
-工具结果应返回模型可以推理的观察结果，而不是无界的终端输出墙。
+工具结果应返回模型能够推理的观察，而非无限制的终端输出墙。
 
-```json
+json
 {
  "status": "failed",
  "tool": "run_tests",
- "reason": "2 个快照不匹配",
+ "reason": "2 snapshot mismatches",
  "evidence": [
  "artifacts/home-mobile-before.png",
  "artifacts/home-mobile-after.png"
  ],
  "retryable": true
 }
-```
 
-好的工具设计减少了模型必须猜测的决策数量。
+良好的工具设计能减少模型需要猜测的决策数量。
 
-糟糕的工具设计将每个动作变成另一个推理问题。
+糟糕的工具设计会将每一次操作都变成新的推理难题。
 
-4. 将记忆外部化为持久化状态
+4. 将记忆（memory）外化为持久化状态
 
-长时间运行的智能体最终会遇到上下文限制、崩溃、重启，或将工作移交给另一个智能体。
+长时间运行的智能体（agents）最终会触及上下文限制、崩溃、重启，或将工作移交给另一个 agent。
 
-如果关键状态只存在于转录中，运行就是脆弱的。
+如果关键状态仅存在于对话记录中，该次运行将十分脆弱。
 
-将工作状态持久化到模型之外：
+在模型之外持久化工作状态：
 
-```json
+json
 {
  "task_id": "feature_042",
  "status": "verifying",
@@ -240,34 +232,32 @@ async function handleToolRequest(request, run) {
  ],
  "next_action": "render mobile viewport"
 }
-```
 
-分别存储四种记忆：
+独立存储四种记忆：
 
-```plaintext
-事实 稳定的项目知识
-决策 此任务期间做出的选择
-状态 当前运行现在的位置
-教训 应改变未来运行的失败
-```
+plaintext
+FACTS stable project knowledge
+DECISIONS choices made during this task
+STATE where the current run is now
+LESSONS failures that should change future runs
 
 这种区分很重要。
 
-临时工具输出应在总结后消失。架构决策应在每次上下文重置后保留。反复出现的失败教训应成为规则或测试。
+临时的工具输出应在被摘要后消失。架构性决策应在每次上下文重置后得以保留。从重复发生的故障中汲取的教训，应转化为一条规则或一个测试用例。
 
-记忆不是“保存整个聊天记录”。
+记忆并非“保存整个对话”。
 
-记忆是保留继续正确所需的最小信息集。
+记忆是保留继续正确运行所需的最小信息集。
 
-5. 让证据成为完成的门槛
+5. 让证据成为完成的守门人
 
-模型产生工件。
+模型生成了一个制品。
 
-环境产生关于该工件的证据。
+环境会生成关于该制品的证据。
 
-驾驭框架决定证据是否充分。
+运行框架会判断证据是否充分。
 
-```typescript
+typescript
 async function verify(artifact, contract) {
  const evidence = await Promise.all([
  runTests(),
@@ -283,29 +273,28 @@ async function verify(artifact, contract) {
  if (canRepairLocally(failed)) return { status: "retry", failed };
  return { status: "escalate", failed };
 }
-```
 
-首先使用确定性检查：
+优先使用确定性检查：
 
-```plaintext
-代码 测试 + 类型 + 代码检查 + 依赖规则
-UI 渲染 + 截图 + 交互回放
-研究 来源覆盖 + 引用匹配 + 矛盾检查
-数据 架构 + 范围 + 新鲜度 + 对账
-支持 策略检查 + PII 检查 + 审批边界
-```
+plaintext
+text
+CODE tests + types + lint + dependency rules
+UI render + screenshot + interaction replay
+RESEARCH source coverage + citation match + contradiction check
+DATA schema + range + freshness + reconciliation
+SUPPORT policy check + PII check + approval boundary
 
-然后使用基于模型的审查器来处理需要判断的工作。
+然后，对于需要判断力的工作，使用基于模型的评审器。
 
-制作方与检查方不应拥有完全相同的激励。一个写出答案的模型仍然可以审查它，但一个拥有不同指令和全新上下文的独立验证者更难被欺骗。
+制作者与核查者不应拥有完全相同的激励机制。一个生成答案的模型仍可自行审查其输出，但配备不同指令且拥有全新上下文的独立验证者更难以被欺骗。
 
-自主性只应在证据质量同步提升时扩展。
+自主性只应在证据质量同步提升时才得以扩展。
 
-6. 记录运行过程并从确切失败中恢复
+6. 记录运行过程并从确切故障点恢复
 
-没有追踪记录，失败就变成了一个故事。
+没有 Traces，故障就成了一段无从考证的故事。
 
-有了追踪记录，它就变成了一个可复现的测试用例。
+借助 Trace，它就成了一个可复现的测试用例。
 
 记录：
 
@@ -327,7 +316,7 @@ json
  "rollback_point": "git:9cf31d2"
 }
 
-然后在重试前对失败进行分类：
+在重试前先对故障进行分类：
 
 typescript
 switch (failure.type) {
@@ -347,30 +336,30 @@ switch (failure.type) {
  escalateWithEvidence(failure);
 }
 
-不要盲目地用更情绪化的提示词重新运行相同的环境。
+不要仅仅用一个更情绪化的提示词盲目地重新运行相同的环境。
 
-修复缺失的能力，重新运行确切失败的案例，并让修复永久生效。
+修复缺失的能力，重新运行完全相同的失败案例，并使修复永久生效。
 
-最好的护栏系统会不断累积。
+最优秀的运行框架（Harness）具有复合效应。
 
-一次失败能改进每一次未来的运行。
+一次失败，改进后续每一次运行。
 
 一个实用的权限阶梯
 
-模型不应批准自己的高风险操作。
+模型不应批准其自身的风险行为。
 
-将提议、授权和执行分开：
+分离提议、授权和执行：
 
 plaintext
-模型提议
+MODEL PROPOSES
  ↓
-策略授权
+POLICY AUTHORIZES
  ↓
-工具执行
+TOOL EXECUTES
  ↓
-护栏系统记录结果
+HARNESS RECORDS THE RESULT
 
-一个简单的初始策略：
+一个简单的起始策略：
 
 yaml
 permissions:
@@ -400,19 +389,19 @@ permissions:
  - exact_targets
  - recovery_plan
 
-不要对每个任务都施加最大程度的限制。
+不要为每个任务都施加最大阻力。
 
-阅读公开文档和删除客户记录不应走相同的审批路径。
+阅读公开文档与删除客户记录，不应走同一条审批流程。
 
-让控制与后果相匹配。
+将控制与结果相匹配。
 
-最小可用的项目结构
+最小实用项目结构
 
-你可以在不使用框架的情况下构建第一个版本：
+你可以无需框架构建此项目的首个版本。
 
 plaintext
 agent-harness/
-├── AGENTS.md # 小型地图，而非百科全书
+├── AGENTS.md # small map, not an encyclopedia
 ├── contracts/
 │ └── task.schema.json
 ├── context/
@@ -433,95 +422,95 @@ agent-harness/
 └── lessons/
  └── harness-updates.md
 
-文件夹名称并不重要。
+文件夹名称无关紧要。
 
-职责分离才是关键。
+职责分离确实如此。
 
 按此顺序构建
 
-不要从多代理集群开始。
+不要从一群开始。
 
-从能证明自身工作的最小循环开始。
+从最小的、能够证明其自身工作成果的循环开始。
 
-第 1 步 — 定义“完成”
+步骤 1 — 定义“完成”
 
-编写契约和两到三个决定成功与否的检查。
+编写契约以及两到三个用于判定成功的检查点。
 
-第 2 步 — 封装一个工具
+步骤 2 — 封装一个工具
 
-为它提供模式、超时、权限规则和结构化结果。
+赋予它一个 schema、一个 timeout、一条 permission rule 以及一个结构化结果。
 
-第 3 步 — 持久化一个状态文件
+步骤 3 — 持久化状态文件
 
-存储已完成的步骤、决策、产物、未解决的风险和下一步行动。
+存储已完成步骤、决策、产物、开放风险及下一步行动。
 
-第 4 步 — 添加一条恢复路径
+步骤 4 — 添加一条恢复路径
 
-当检查失败时，返回确切的证据并允许一次有边界的修复尝试。
+当检查失败时，返回确切的证据，并允许一次有限的修复尝试。
 
-第 5 步 — 保存追踪记录
+步骤 5 — 保存 Trace
 
-记录加载了哪些上下文、运行了哪些工具、发生了什么变化、哪些检查通过以及运行停止的原因。
+记录加载的上下文、执行的工具、变更内容、通过的检查项，以及运行停止的原因。
 
-第 6 步 — 将重复失败转化为基础设施
+第 6 步 — 将反复发生的故障转化为基础设施
 
-每个反复出现的错误都应变成以下四种事物之一：
+每个重复出现的错误都应该转化为以下四种产物之一：
 
 plaintext
 text
-更清晰的地图
-更好的工具
-更严格的权限
-新的测试
+a clearer map
+a better tool
+a stricter permission
+a new test
 
-只有在这之后，你才应该增加更多的自主性、更多的工具或更多的代理。
+只有在此时，你才应该增加更多的自主性、更多的工具，或更多的智能体。
 
-护栏工程不是什么
+什么是 Harness 工程所不涵盖的
 
-它不是一份 5000 行的系统提示词。
+它不是一个 5000 行的系统提示词（System Prompt）。
 
-它不是把能连接到的每个工具都交给代理。
+并非为智能体（Agent）提供所有可连接的工具。
 
-它不是永远存储原始记录并称之为记忆。
+它不是永远存储原始转录记录并将其称为记忆。
 
-它不是为没有客观验收标准的工作添加一个审查代理。
+这并非在没有明确验收标准的工作中添加一个评审智能体。
 
-它不是反复重试直到某次随机运行看起来不错。
+直到某一次随机运行看起来不错才停止重试。
 
-它不是把人类从每个决策中移除。
+而且，这并非要将人类从每一个决策中剔除。
 
-护栏系统的存在是为了把人类注意力花在判断重要的地方，并将其余部分自动化。
+一个运行框架（Harness）的存在，是为了将人类注意力投入到需要判断力的地方，并将其余部分自动化。
 
 最重要的指标
 
-不要优化生成的令牌数、工具调用次数或启动的任务数。
+不要优化生成的Token（tokens）、发起的tool calls或已启动的任务数量。
 
-优化：
+优化目标：
 
 plaintext
-被接受的输出
+accepted outputs
 ----------------
-人工审查分钟数
+human review minutes
 
-这个比率捕捉了护栏系统应该做的事情：将模型能力转化为有用的、可审查的工作，而不在输出过程中消耗同等的人力。
+这个比率体现了运行框架（Harness）的应有之义：将模型能力转化为有用、可审查的成果，且无需在产出过程中消耗同等的人力投入。
 
 真正的转变
 
-提示词工程问的是：
+提示词工程（Prompt engineering）问道：
 
-我应该告诉模型什么？
+我该对模型说什么？
 
-上下文工程问的是：
+上下文工程（Context engineering）问道：
 
-模型现在应该知道什么？
+模型此刻应当知晓什么？
 
-护栏工程问的是：
+Harness 工程提出：
 
-什么系统能让模型行动、证明其工作、恢复并安全改进？
+什么系统能让模型执行操作、证明其工作成果、安全恢复并持续改进？
 
-模型会不断变化。
+模型将持续演进。
 
-你的护栏系统是你的操作知识不断累积的地方。
+你的 Harness 是你的运行知识得以复利增长的地方。
 
 构建契约。
 
@@ -531,11 +520,11 @@ plaintext
 
 持久化状态。
 
-要求证据。
+需要证据。
 
-将失败转化为基础设施。
+将故障转化为基础设施。
 
-这就是一个有能力的模型如何成为一个可靠的代理。
+这正是一个强大的模型转变为可靠的智能体（Agent）的路径。
 
 感谢阅读。
 
@@ -543,13 +532,13 @@ plaintext
 
 延伸阅读
 
-OpenAI — 护栏工程：在代理优先的世界中利用 Codex (https://openai.com/index/harness-engineering/)
-OpenAI — 展开 Codex 代理循环 (https://openai.com/index/unrolling-the-codex-agent-loop/)
-Anthropic — AI 代理的有效上下文工程 (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
-Anthropic — 为 AI 代理编写有效的工具 (https://www.anthropic.com/engineering/writing-tools-for-agents)
+OpenAI — 运行框架工程：在智能体优先的世界中运用Codex (https://openai.com/index/harness-engineering/)
+OpenAI — 深入解析Codex Agent 循环（agent loop） (https://openai.com/index/unrolling-the-codex-agent-loop/)
+Anthropic — 面向AI智能体的高效上下文工程 (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+Anthropic — 为AI智能体编写高效工具 (https://www.anthropic.com/engineering/writing-tools-for-agents)
 2:18 · 2026年8月30日
 1.2万
-浏览量
+视图
 6
 38
 196
@@ -557,44 +546,44 @@ Anthropic — 为 AI 代理编写有效的工具 (https://www.anthropic.com/engi
 Lunar
 @LunarResearcher
 8月29日
-模型获得了关注，但护栏系统决定了代理是否真正有效
+模型获得了关注，但运行框架决定了智能体是否真正有效工作。
 1
 261
 Dainer
 @Dainer_Jun
 20小时
-我觉得应该加一个人工审批阶段？
+我认为应该添加一个人工审批（human approval）阶段？
 69
 Routekit Shell
 @RoutekitShell
 23小时
-累积的部分对我来说是关键。失败不应该只是成为下一次运行的“更多上下文”。它应该成为适当的持久化产物：一个测试、契约、权限、状态转换、检索规则等。
+对我而言，复合积累的部分是关键。一次失败不应仅仅是下一次运行的“更多上下文”。它应成为合适的持久化制品：一个测试、一份契约、一项权限、状态转移（state transition）、一条检索规则等。
 
-当失败改变系统时，护栏系统才会变得更好 显示更多
+当故障改变展示方式时，运行框架会变得更好。
 27
 登录或注册 X
 
-看看正在发生什么，加入对话
+查看正在发生的事情并加入对话
 
-继续使用手机号
-继续使用 Apple
+继续使用手机
+继续关注苹果
 继续使用 Google
 或
 使用用户名或邮箱登录
-相关人物
+相关人员
 Ichigo
 @iiiichigo_chan
 关注
-条款
+术语
 ·
 隐私
 ·
-Cookie
+Cookies
 ·
-无障碍
+可访问性（Accessibility）
 ·
 广告信息
 ·
 更多
 © 2026 X Corp.
-扫码获取应用
+扫描获取应用

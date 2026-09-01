@@ -1,168 +1,161 @@
-帖子
+Post
 rari
 @0xwhrrari
-护栏工程：如何构建不会崩溃的 AI 代理
+Harness 工程（Harness Engineering）: 如何构建不会崩溃的AI 智能体（Agents）
 
-大多数人对失败代理的回应是修改提示词
+多数人在智能体（agent）失败时，会直接修改提示词（prompt）。
 
-然后他们更换模型
+然后他们更换了模型
 
-然后他们增加更大的上下文窗口
+接着他们增加了一个更大的上下文窗口（context window）
 
-代理仍然忘记决策
+智能体仍然会遗忘决策
 
-它仍然使用错误的工具
+它仍然在使用错误的工具。
 
-它仍然跳过验证
+它仍然跳过验证。
 
-它仍然卡在同一个循环里
+它仍然卡在同一个循环里。
 
-问题并不总是智能本身
+问题并不总是出在智能上。
 
-问题在于它周围的环境
+问题在于其周围的环境。
 
-那个环境就是护栏
+那个环境就是运行框架（harness）
 
-而设计护栏就是护栏工程
+而设计它就是 Harness 工程
 
-Anthropic 首席执行官 Dario Amodei 在解释 Claude Code 如何诞生时直接说道：
+Anthropic 首席执行官 Dario Amodei 在阐述Claude Code是如何诞生时，直言不讳地说道
 
-“当然，你需要一个界面，你需要一个护栏来使用它们。”
-我在 Substack 上发布关于 AI 代理、工作流和生产系统的实用解析，在此加入订阅。
-
+“当然，你需要一个接口，你需要一个运行框架来使用它们”
+我在 Substack 上发布关于AI智能体、工作流（workflows）和生产系统的实用拆解，点击此处订阅通讯
 模型只是推理引擎
 
-模型可以建议下一个动作
+一个模型可以建议下一步操作
 
-它无法自行创建可靠的操作环境
+它自身无法创建一个可靠的运行环境。
 
-护栏决定模型能看到什么、能接触什么、会话之间保留什么、什么算作证据，以及运行何时必须停止
+运行框架决定了模型能看到什么、能触碰什么、什么能在会话间持久化、什么算作证据，以及运行必须在何时停止。
 
-```text
-模型
-推理并提议动作
+text
+MODEL
+reasons and proposes actions
 
-护栏
-选择上下文
-暴露工具
-存储状态
-执行权限
-检查结果
-记录轨迹
-从失败中恢复
-```
+HARNESS
+selects context
+exposes tools
+stores state
+enforces permissions
+checks results
+records traces
+recovers from failure
 
-提示词是这个系统中的一个组件
+提示词是该系统内部的一个组件
 
-模型是另一个组件
+模型是另一个
 
-产品是当所有周围组件协同工作时产生的结果
+产品正是所有周边组件协同运作所诞生的成果
 
-提示词工程改进指令
+提示词工程（Prompt engineering）改进了指令
 
-护栏工程改进指令执行的条件
+Harness 工程（Harness Engineering）改善了指令执行的条件
+同一个模型可以成为一个完全不同的智能体（Agent）。
 
-同一个模型可以变成完全不同的代理
+将相同的模型置于聊天框内，它便能回答问题。
 
-把同一个模型放进聊天框，它会回答问题
+将其置于一个具备终端访问、测试、浏览器工具、项目记忆（memory）、隔离工作树以及审查循环的代码库中，它便能交付软件。
 
-把它放进一个具有终端访问、测试、浏览器工具、项目记忆、隔离工作树和审查循环的仓库中，它就能交付软件
+权重未发生变化。
 
-权重没有改变
+运行框架did
 
-改变的是护栏
+OpenAI在使用Codex构建以 Agent 为先的代码库时，也描述了相同的转变。
 
-OpenAI 在使用 Codex 构建以代理优先的代码库时描述了同样的转变
+他们的早期进展缓慢，是因为环境定义不够充分，而非模型缺乏原始能力。
 
-他们早期进展缓慢是因为环境定义不充分，而不是因为模型缺乏原始能力
+响应并非是告诉智能体要更努力尝试
 
-回应不是告诉代理更努力地尝试
+它旨在追问缺少了何种能力，并使该能力既清晰可读又可强制执行。
 
-而是询问缺少什么能力，并让该能力既清晰又可执行
+“环境规格说明不足”
 
-“环境定义不充分”
+OpenAI，Harness 工程：在智能体优先的世界中利用Codex
 
-OpenAI，《护栏工程：在以代理优先的世界中利用 Codex》
+这就是核心思想。
 
-这是核心思想
-
-当代理反复失败时，停止编辑提示词中的形容词
+当智能体反复失败时，别再调整提示词里的形容词了
 
 检查模型周围的系统
 
-生产级护栏有七项职责
-
+生产级运行框架（Harness）有七个核心职责
 1. 将请求转化为契约
 
-在代理行动之前，将请求转换为一个有边界的对象
+在 Agent 行动前，将请求转换为有界对象。
 
-```text
+text
 {
- "goal": "交付该功能",
- "inputs": ["问题", "仓库", "设计"],
- "output": "可审查的拉取请求",
- "constraints": ["不更改模式", "保留公共 API"],
- "done_when": ["测试通过", "视觉检查通过", "审查通过"]
+ "goal": "ship the feature",
+ "inputs": ["issue", "repository", "design"],
+ "output": "reviewable pull request",
+ "constraints": ["no schema changes", "preserve public API"],
+ "done_when": ["tests pass", "visual check passes", "review passes"]
 }
-```
 
-契约保护任务不被悄然重新定义
+契约可防止任务被静默重新定义
 
-没有它，代理可能完成一个不同的工作却仍然宣布成功
+没有它，智能体可能完成一项不同的任务却依然宣称成功。
 
-2. 给代理一张地图
+2. 为 Agent 提供地图
 
-代理需要项目知识
+智能体需要项目知识
 
-它们不需要每个上下文窗口中的每份文档
+它们不需要在每个上下文窗口中包含所有文档
 
-使用一个小的根指南，告诉代理去哪里查找
+使用一个小型根指南来指示 Agent 应该查找的位置。
 
-```text
+text
 AGENTS.md
- -> 架构地图
- -> 测试地图
- -> 产品规则
- -> 安全规则
- -> 任务特定指南
-```
+ -> architecture map
+ -> testing map
+ -> product rules
+ -> security rules
+ -> task-specific guides
 
-地图保留上下文
+一张地图保留上下文
 
-巨大的手册消耗上下文
+一本厚重的手册吞噬了它
 
-将详细知识放在它所管理的代码、工具或工作流附近
+将详细知识保留在其管控的代码、工具或工作流（workflow）附近
 
-仅在当前任务需要时加载它
+仅在当前任务需要时才加载它
 
 3. 在正确的环境中暴露正确的工具
 
-工具访问不是按钮列表
+工具访问不是一组按钮
 
 它是模型与现实世界之间的接口
 
-每个工具都需要明确的目的、可预测的输出、明确的失败状态和权限边界
+每个工具都需要有明确的用途、可预测的输出、显式的失败状态（state），以及一个权限边界（permission boundary）。
 
-```text
-读取文件 默认允许
-运行测试 在沙箱内允许
-写入文件 在工作区内允许
-访问网络 按任务范围限定
-部署 需要审批
-删除数据 需要审批
-```
+text
+READ FILES allowed by default
+RUN TESTS allowed inside sandbox
+WRITE FILES allowed inside workspace
+ACCESS NETWORK scoped by task
+DEPLOY requires approval
+DELETE DATA requires approval
 
-好的工具在模型有机会错误推理之前减少歧义
+好的工具能在模型有机会推理失误之前就消除歧义。
 
-坏的工具迫使模型猜测发生了什么
+糟糕的工具迫使模型猜测发生了什么
 
-4. 将记忆外部化为持久状态
+4. 将记忆外化为持久状态
 
-对话不是记录系统
+会话并非记录系统
 
-将决策、工件、失败和未决风险存储在上下文窗口之外
+将决策、产物、失败案例及潜在风险存储在上下文窗口之外
 
-```text
+text
 {
  "task_id": "task_042",
  "current_step": "verify_ui",
@@ -171,106 +164,101 @@ AGENTS.md
  "failures": ["mobile overflow at 390px"],
  "pending": ["human approval"]
 }
-```
 
-下一个会话应该继承工作状态，而不是对话的有损复述
+下一次会话应继承工作的状态，而非对对话的有损复述。
 
-这就是代理如何在上下文重置、崩溃和交接中存活下来的方式
+这就是 AI 智能体（AI Agent）在上下文重置、崩溃和交接中存活下来的方式
 
-5. 在增加自主性之前添加传感器
+5. 在添加自治能力之前先添加传感器
 
-代理无法纠正它无法观察到的东西
+智能体无法修正其无法观察到的事物。
 
-测试、代码检查器、截图、日志、指标和模式验证器将模糊的质量转化为证据
+测试、代码检查、截图、日志、指标以及模式（schema）验证器，将模糊的质量转化为可验证的证据。
 
-```text
-代码 -> 测试 + 类型检查 + 代码检查
-UI -> 渲染 + 截图 + 视觉检查
-研究 -> 来源检查 + 矛盾检查
-数据 -> 模式 + 范围 + 新鲜度检查
-```
+text
+CODE -> tests + type checks + lint
+UI -> render + screenshot + visual inspection
+RESEARCH -> source check + contradiction check
+DATA -> schema + range + freshness checks
 
-模型创建工件
+该模型创建了一个工件。
 
-环境产生关于工件的证据
+环境产生关于该构件的证据。
 
-护栏决定该证据是否足以继续
+运行框架（Harness）判断这些证据是否足以继续。
 
-6. 在模型之外执行权限
+6. 在模型之外强制执行权限
 
-模型可以推荐一个动作
+模型可以推荐一项操作。
 
-护栏必须授权它
+运行框架必须授权它
 
-```text
-模型建议 -> 策略检查 -> 工具执行
-```
+text
+MODEL SUGGESTS -> POLICY CHECKS -> TOOL EXECUTES
 
-当动作昂贵、不可逆或涉及他人时，这种分离最为重要
+这种分离在操作代价高昂、不可逆或涉及他人时最为重要。
 
-不要要求同一个概率系统去制定计划、批准风险并执行副作用
+不要让同一个概率系统既负责制定计划、批准风险，又负责执行副作用。
 
-7. 记录轨迹并在本地恢复
+7. 记录链路追踪并进行本地恢复
 
-每次运行都应留下可读的痕迹
+每次运行都应留下可读的轨迹
 
-```text
-请求
-选中的上下文
-工具调用
-状态更改
-验证结果
-重试
-成本
-最终工件
-回滚点
-```
+text
+request
+selected context
+tool calls
+state changes
+verification results
+retries
+cost
+final artifact
+rollback point
 
-没有轨迹，失败变成谜团
+没有追踪，故障便成谜
 
-有了轨迹，失败成为下一次护栏改进的输入
+通过轨迹，故障成为下一次 Harness 改进的输入
 
-指令应该成为基础设施
+指令应当成为基础设施
 
-大多数团队用散文形式保留重要规则
+大多数团队将重要规则以散文形式记录。
 
-代理阅读它们
+智能体读取它们
 
-然后最终忽略其中一条
+最终忽略了一个
 
-更强的模式是将重要规则编码两次
+更强大的模式是将重要规则编码两次。
 
-首先作为代理能理解的指导
+首先，作为指导，智能体可以理解
 
-然后作为代理无法绕过的机械检查
+那么，作为一种机械式检查，智能体无法绕过
 
-```text
-指导
-“UI 代码不得直接查询数据库”
+text
+GUIDE
+"UI code may not query the database directly"
 
-检查
-当 UI 导入仓库层时，代码检查失败
-```
+CHECK
+lint fails when UI imports the repository layer
 
-指导解释原因
+该指南解释了原因
 
-检查执行边界
+该检查强制实施边界
 
-这会将过去的失败转化为永久的系统改进
+这将一次过去的失败转化为永久性的系统改进。
 
-下一个代理不需要记住该事件
+下一个 Agent 不需要记住该事件
 
-护栏替它记住
+Harness 记忆为它
 
-循环属于护栏
+循环属于运行框架（Harness）。
 
-长期运行的工作需要迭代
+长时间运行的工作需要迭代。
 
-但“不断尝试直到成功”不是控制系统
+但“不断重试直到成功”不是一个控制系统
 
-一个有用的循环有证据、有界重试、预算和升级路径
+一个有用的循环具备证据、有限重试、预算和升级路径。
 
-```text
+text
 for (let attempt = 1; attempt <= 3; attempt += 1) {
  const artifact = await build(state)
  const evidence = await verify(artifact)
@@ -282,82 +270,77 @@ for (let attempt = 1; attempt <= 3; attempt += 1) {
 }
 
 return requestHumanReview(state)
-```
 
-模型应该决定如何修复局部差距
+模型应决定如何修复本地间隙
 
-护栏应该决定是否允许再次尝试
+运行框架应决定是否允许再次尝试。
 
-Anthropic 在长期运行代理的工作中得出了类似的结论
+Anthropic 在其关于长时间运行智能体（AI Agent）的工作中也得出了类似的结论。
 
-结构化工件在会话之间保持连续性，而独立的评估器给构建者具体的反馈，而不是让它批准自己的工作
+结构化制品在不同会话间保持连续性，而独立的评估器为构建者提供具体反馈，而非让其自我认可。
 
-“找到尽可能简单的解决方案，只在需要时增加复杂性”
+"找到最简单的解决方案，仅在需要时才增加复杂度"
 
-Anthropic，《长期运行应用开发的护栏设计》
-
-失败应该升级系统
+Anthropic，面向长期应用开发的 Harness 设计
+故障应促使系统升级
 
 大多数人修复当前输出
 
-护栏工程师修复失败类别
+运行框架工程师修复特定类别的故障。
 
-```text
-缺少上下文 -> 添加地图或检索规则
-错误的工具 -> 改进工具描述或路由
-糟糕的输出 -> 添加验证器或更强的契约
-重复循环 -> 添加重试上限和升级
-不安全的动作 -> 添加权限门
-丢失决策 -> 将其存储在持久状态中
-未知失败 -> 添加追踪和证据捕获
-```
+text
+MISSING CONTEXT -> add a map or retrieval rule
+WRONG TOOL -> improve tool description or routing
+BAD OUTPUT -> add a validator or stronger contract
+REPEATED LOOP -> add a retry cap and escalation
+UNSAFE ACTION -> add a permission gate
+LOST DECISION -> store it in durable state
+UNKNOWN FAILURE -> add tracing and evidence capture
 
-即时补丁修复一次运行
+即时补丁修复了一次运行。
 
-护栏更改改进其后的每次运行
+运行框架（Harness）的改进提升了每一次运行。
 
-这就是复利优势
+这就是复合优势。
 
-一个好的约束框架将代理的错误转化为基础设施
-
+优秀的运行框架将智能体的错误转化为基础设施
 分离大脑、双手与历史
 
-当三个组件相互分离时，可靠的代理更容易被推理和理解
+一个可靠的智能体（AI Agent）在将三个组件分离时更容易推理。
 
-```text
-大脑
-负责推理的模型
+text
+BRAIN
+the model that reasons
 
-双手
-负责行动的沙箱与工具
+HANDS
+the sandbox and tools that act
 
-历史
-所发生事件的仅追加记录
-```
+HISTORY
+the append-only record of what happened
 
-如果沙箱消亡，历史依然存在
+如果沙箱（sandbox）崩溃，历史记录依然存在。
 
-如果模型更换，工具与策略仍然可审查
+若模型发生变更，工具与策略依然保持可检查性
 
-如果任务恢复，新的会话可以从产物和轨迹中重建状态
+如果任务恢复执行，新的会话可以从制品（artifacts）和轨迹（traces）中重建状态。
 
-Anthropic 的托管代理架构通过会话、约束框架和沙箱使这种分离变得明确
+Anthropic 的托管智能体架构通过会话（session）、运行框架（harness）和沙箱（sandbox）将这种分离显式化。
 
 https://x.com/i/web/status/2041927687460024721
 
 重要的不是供应商
 
-而是架构
+这就是该架构
 
-推理引擎不应同时充当文件系统、权限系统、内存数据库和审计日志
+推理引擎不应同时充当文件系统、权限系统、记忆数据库和审计日志。
 
-为每次运行提供变更凭证
+为每次运行生成变更收据
 
-当代理完成时，不要只保留最终输出
+当智能体完成时，不要只保留最终输出。
 
-保留一份简洁的凭证，说明输出是如何产生的
+保留一份简明的生成记录，用以解释输出是如何产生的。
 
-```text
+text
 {
  "context_sources": ["issue", "repo_map", "design_spec"],
  "policy_version": "v12",
@@ -370,108 +353,104 @@ https://x.com/i/web/status/2041927687460024721
  "accepted_artifact": "pr_1842",
  "rollback_point": "commit_7f3a"
 }
-```
 
-这使得模型升级具有可比性
+这使得模型升级变得可比较。
 
-使回归问题可归因
+它使得回归可归因
 
-使审计成为可能
+这使得审计成为可能。
 
-并且防止最终答案掩盖有缺陷的过程
+它能防止最终答案掩盖了一个破裂的流程。
 
-从最小的闭环约束框架开始
+从最小的闭环运行框架（Harness）开始
 
-约束框架工程并不意味着在第一个任务之前就构建一个平台
+运行框架工程（Harness Engineering）并不意味着在首个任务之前构建一个平台。
 
-从最小的可观察、可验证、可恢复的系统开始
+从最小的可观察、可验证、可恢复的系统入手。
 
-```text
-级别 0
-提示 + 模型
+text
+LEVEL 0
+prompt + model
 
-级别 1
-项目指南 + 工具
+LEVEL 1
+project guide + tools
 
-级别 2
-结构化状态 + 测试 + 有界循环
+LEVEL 2
+structured state + tests + bounded loop
 
-级别 3
-权限 + 轨迹 + 恢复 + 人工门控
-```
+LEVEL 3
+permissions + traces + recovery + human gates
 
-只有当任务需要时，才向上提升复杂度
+仅当任务复杂度增加时才提升层级。
 
-一个简短的低风险任务可能只需要一个提示和一次审查
+一个低风险的小任务可能只需要一个提示词和一次审核。
 
-一个六小时的编码运行，可以编辑文件、访问网络并提交拉取请求，需要一个真正的约束框架
+一次持续六小时、能编辑文件、访问网络并创建拉取请求的编码运行，需要一个真正的运行框架（Harness）。
 
-约束框架应该小于它所控制的故障面
+运行框架（Harness）应小于其所控制的故障域（Failure Domain）。
 
-约束框架工程检查清单
+运行框架工程检查清单
 
-在信任代理处理真实工作之前，请确认：
+在将真实任务托付给智能体之前，先问
 
-```text
-[ ] 执行开始前是否已定义成功标准
-[ ] 代理能否在不加载全部内容的情况下找到正确的项目知识
-[ ] 每个工具是否有明确的契约和失败状态
-[ ] 执行是否与生产系统隔离
-[ ] 重要决策是否存储在对话之外
-[ ] 每次有风险的转换是否有证据
-[ ] 不可逆操作是否受审批保护
-[ ] 每个循环是否有重试上限和预算
-[ ] 运行中断后能否恢复
-[ ] 你能否解释每次工具调用和状态变更
-[ ] 失败是否会更新指南、测试、工具或策略
-[ ] 最终产物能否回滚
-```
+text
+[ ] Is success defined before execution begins
+[ ] Can the agent find the right project knowledge without loading everything
+[ ] Does every tool have a clear contract and failure state
+[ ] Is execution isolated from production systems
+[ ] Are important decisions stored outside the conversation
+[ ] Does every risky transition have evidence
+[ ] Are irreversible actions protected by approval
+[ ] Does every loop have a retry cap and budget
+[ ] Can the run resume after interruption
+[ ] Can you explain every tool call and state change
+[ ] Does failure update a guide, test, tool, or policy
+[ ] Can the final artifact be rolled back
 
-如果多个答案为否，更强的模型不会使系统更可靠
+如果几个答案是否定的，那么一个更强大的模型也无法让系统变得可靠。
 
-只会让失败更加昂贵
+它只会让失败的代价更加高昂。
 
 真正的转变
 
-提示工程告诉模型该做什么
+提示词工程（Prompt Engineering）告诉模型应该做什么
 
-上下文工程决定模型看到什么
+上下文工程（Context engineering）决定模型看到什么内容
 
-约束框架工程构建模型在其中行动的世界
+Harness 工程构建模型运行的世界。
 
-```text
-提示 -> 指令
-上下文 -> 工作视图
-约束框架 -> 操作系统
-循环 -> 局部改进
-图谱 -> 协调
-```
+text
+PROMPT -> instruction
+CONTEXT -> working view
+HARNESS -> operating system
+LOOP -> local improvement
+GRAPH -> coordination
 
-模型下个月可能就会更换
+该模型可能在下个月更换。
 
-工具、测试、状态、策略和轨迹可以持续改进
+工具、测试、状态、策略与追踪记录能够持续改进。
 
-这就是为什么持久的优势正在从提示中转移到围绕它的系统之中
+这就是为什么持久优势正从提示词（Prompt）转移到其周围的系统之中。
 
-最优秀的构建者不仅会问哪个模型最聪明
+最优秀的构建者不仅会问哪个模型最聪明，
 
-他们还会问哪种环境能让这种智能变得可靠
+他们将询问，究竟是哪种环境让这种智能变得可靠。
 
-这就是约束框架工程
+那就是 Harness 工程
 
-如果你读到了这里
+如果你读到这里了
 
 -> 订阅我的 Substack
 
 -> 加入我的 Telegram
 
--> 收藏这篇文章，以便你在构建下一个代理时使用这份清单
+-> 收藏本文，以便在构建下一个 Agent 时参考这份清单
 
--> 关注 @0xwhrrari 获取更多代理系统的实用拆解
+-> 关注 @0xwhrrari 以获取更多 Agent 系统的实用解析
 
 21:00 · 2026年8月29日
 50.3万
-浏览量
+视图
 40
 65
 486
@@ -479,45 +458,45 @@ https://x.com/i/web/status/2041927687460024721
 Olivia Parker
 @Patrici6009533
 8月29日
-相同的模型。不同的轨道。这就是全部产品。
+同一模型，不同轨道。这就是整个产品。
 1
 2
 1540
 arle
 @arle0x
 8月29日
-一如既往的精彩拆解，rari！
+一如既往地精彩拆解，rari！
 1
 1
 2221
 Yarchi
 @undefinedKi
 8月29日
-兄弟，这篇文章太炸了
+好文章，兄弟。
 1
 1
 582
 登录或注册 X
 
-看看正在发生什么，加入对话
+查看实时动态，加入讨论
 
-使用手机号继续
-使用 Apple 继续
-使用 Google 继续
-或
+继续使用手机。
+继续关注苹果公司
+通过 Google 继续
+或者
 使用用户名或邮箱登录
-相关人物
+相关人员
 rari
 @0xwhrrari
 关注
-正在流行
-条款
+当下热门
+术语
 ·
 隐私
 ·
-Cookie
+Cookies
 ·
-无障碍
+可访问性
 ·
 广告信息
 ·
