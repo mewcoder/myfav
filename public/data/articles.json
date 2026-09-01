@@ -1,5 +1,17 @@
 [
   {
+    "title": "从 Loop 到 Graph Engineering 的演进思考与实战",
+    "url": "https://mp.weixin.qq.com/s/BSCzaVPaX7W5E8vrVrVC0g",
+    "description": "阿里妹导读文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。背景之前，我写了一篇关于 Loop Engineering 的文章《Loop Engineering概念解析、思考与实践》，专门介绍了如何使用 Loop 的方式来构建那些可以自我验证、能自动循环执行的 Agent。今年7月，AI 界又双叒叕出现了新的 Agent 范式概念，叫做",
+    "category": "工具",
+    "tags": [
+      "微信公众号"
+    ],
+    "author": "千问AI平台",
+    "saveTime": "2026-09-01",
+    "path": "articles/2026-09/从-loop-到-graph-engineering-的演进思考与实战.md"
+  },
+  {
     "title": "Graph Engineering: Stop Chaining Your Agents",
     "url": "https://x.com/seeconvm/status/2088199384580108339?s=46",
     "description": "Graph Engineering: Stop Chaining Your Agents",
