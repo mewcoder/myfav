@@ -1,5 +1,16 @@
 [
   {
+    "name": "subsy/skill-cabinet",
+    "url": "https://github.com/subsy/skill-cabinet",
+    "description": "subsy/skill-cabinet",
+    "category": "工具",
+    "tags": [
+      "GitHub"
+    ],
+    "stars": 222,
+    "saveTime": "2026-09-01"
+  },
+  {
     "name": "warpdotdev/common-skills",
     "url": "https://github.com/warpdotdev/common-skills",
     "description": "Warp 终端维护的共享 Agent Skill 仓库，包含 Spec 工作流、开发流程、调研与决策等可复用 Skill",
