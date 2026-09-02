@@ -1,5 +1,16 @@
 [
   {
+    "name": "xingkongliang/skills-manager",
+    "url": "https://github.com/xingkongliang/skills-manager",
+    "description": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "category": "工具",
+    "tags": [
+      "GitHub"
+    ],
+    "stars": 4317,
+    "saveTime": "2026-09-02"
+  },
+  {
     "name": "subsy/skill-cabinet",
     "url": "https://github.com/subsy/skill-cabinet",
     "description": "subsy/skill-cabinet",
