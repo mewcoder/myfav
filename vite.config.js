@@ -21,21 +21,34 @@ function rootArticlesPlugin() {
         const relative = pathname.slice(prefix.length)
         const isOutside = (file) => file !== contentRoot.root && !file.startsWith(`${contentRoot.root}${sep}`)
 
-        // Rendered pages and TOC metadata are generated on demand in dev so
-        // development matches the build-time output of scripts/prepare-pages.mjs.
-        if (relative.endsWith('.html') || relative.endsWith('.toc.json')) {
+        // Source, rendered pages, and TOC metadata are generated or served on
+        // demand in dev so development matches the build-time output of
+        // scripts/prepare-pages.mjs. The build uses .txt, .rendered.html, and
+        // .toc.json siblings for each Markdown file.
+        const isSource = relative.endsWith('.txt')
+        const isRenderedHtml = relative.endsWith('.rendered.html')
+        const isToc = relative.endsWith('.toc.json')
+        if (isSource || isRenderedHtml || isToc) {
           try {
-            const { renderArticle } = await import('./scripts/render-article.mjs')
-            const mdRelative = relative.replace(/\.toc\.json$/, '.md').replace(/\.html$/, '.md')
+            const mdRelative = relative
+              .replace(/\.rendered\.html$/, '.md')
+              .replace(/\.toc\.json$/, '.md')
+              .replace(/\.txt$/, '.md')
             const mdFile = resolve(contentRoot.root, mdRelative)
             if (isOutside(mdFile)) return next()
             const markdown = await readFile(mdFile, 'utf8')
+            if (isSource) {
+              response.statusCode = 200
+              response.setHeader('Content-Type', 'text/markdown; charset=utf-8')
+              response.end(markdown)
+              return
+            }
+            const { renderArticle } = await import('./scripts/render-article.mjs')
             const articlePath = `${contentRoot.name}/${mdRelative.split(sep).join('/')}`
             const { html, toc } = await renderArticle(markdown, articlePath)
-            const isHtml = relative.endsWith('.html')
             response.statusCode = 200
-            response.setHeader('Content-Type', isHtml ? 'text/html; charset=utf-8' : 'application/json; charset=utf-8')
-            response.end(isHtml ? html : JSON.stringify(toc))
+            response.setHeader('Content-Type', isRenderedHtml ? 'text/html; charset=utf-8' : 'application/json; charset=utf-8')
+            response.end(isRenderedHtml ? html : JSON.stringify(toc))
           } catch {
             next()
           }
