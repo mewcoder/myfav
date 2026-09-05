@@ -1,5 +1,7 @@
 # 10 个最值得安装的 skills
 
+@ https://x.com/miles_mazy/status/2095880356818047332
+
 - [**follow-builders**](https://github.com/zarazhangrui/follow-builders)：跟踪一组 AI 研究者、创始人与工程师的动态，汇总其博客与播客内容并生成可定制的中英文资讯简报。
 
 - [**Punk Skill**](https://github.com/adrianpunk/Punk-Skill)：文章配图与封面生成工具，提供多种预设视觉风格（如纸雕、像素风），根据文章主题与平台画幅自动排版并调用生图模型制作封面。

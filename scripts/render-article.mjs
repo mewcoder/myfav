@@ -61,10 +61,26 @@ function rewriteImageSrc(src, articleDir) {
   return `${SITE_BASE}${resolved}`
 }
 
+export function stripNoteMetadata(markdown, articlePath) {
+  if (!articlePath.startsWith('notes/')) return markdown
+
+  const lines = String(markdown).split(/\r?\n/)
+  let index = 0
+  while (index < lines.length && !lines[index].trim()) index += 1
+  if (!/^#\s+\S/.test(lines[index] || '')) return markdown
+
+  index += 1
+  while (index < lines.length && !lines[index].trim()) index += 1
+  if (!/^@\s*https?:\/\/\S+$/i.test(lines[index] || '')) return markdown
+
+  lines.splice(index, 1)
+  return lines.join('\n')
+}
+
 export async function renderArticle(markdown, articlePath) {
   const highlighter = await getHighlighter()
   const md = getMarkdownIt(highlighter)
-  const rawHtml = md.render(markdown)
+  const rawHtml = md.render(stripNoteMetadata(markdown, articlePath))
 
   const purify = DOMPurify(new JSDOM('').window)
   const sanitized = purify.sanitize(rawHtml, { USE_PROFILES: { html: true }, ADD_ATTR: ['style'] })
