@@ -1,5 +1,19 @@
 [
   {
+    "title": "AI 工作流与知识整理 Skills 清单",
+    "description": "整理资讯追踪、内容生成、课程提炼、读书转技能、可视化、需求澄清和网页提取等实用 AI Skills。",
+    "category": "工具",
+    "tags": [
+      "AI Skills",
+      "Agent",
+      "知识管理",
+      "内容生产",
+      "工作流"
+    ],
+    "saveTime": "2026-09-05",
+    "path": "notes/2026-09/ai-工作流与知识整理-skills-清单.md"
+  },
+  {
     "title": "改为实时推送",
     "description": "关于将系统消息机制改为实时推送的想法",
     "category": "开发",
