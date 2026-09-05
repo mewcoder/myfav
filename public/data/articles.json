@@ -1,5 +1,22 @@
 [
   {
+    "title": "Grok Bot：永不休息的 AI 团队",
+    "url": "https://x.com/0xwhrrari/status/2095497109524934750?s=46",
+    "description": "介绍 Grok Bot 背后的 AI Agent 架构：Grok 4.6、持久化电脑操作、循环、图谱、例程与审批系统如何协同，让智能体持续完成真实工作。",
+    "category": "AI",
+    "tags": [
+      "Grok",
+      "Agent",
+      "自动化",
+      "持久化智能体",
+      "X"
+    ],
+    "author": "rari (@0xwhrrari)",
+    "saveTime": "2026-09-05",
+    "path": "articles/2026-09/grok-bot永不休息的-ai-团队.md",
+    "translationPath": "articles/2026-09/grok-bot永不休息的-ai-团队_zh.md"
+  },
+  {
     "title": "How to eval web search for AI",
     "url": "https://x.com/p0/status/2094547390909010051?s=46",
     "description": "How to eval web search for AI",
