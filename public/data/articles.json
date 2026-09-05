@@ -1,5 +1,22 @@
 [
   {
+    "title": "Grok Bot for Engineering：面向工程的 Grok Bot",
+    "url": "https://x.com/lingxi/status/2094493172516966781?s=46",
+    "description": "介绍 Grok Bot 如何作为具备独立电脑的工程实习生，管理编码 Agent、学习用户工作方式，并在用户离线、休息或开会时持续推进工程任务。",
+    "category": "开发",
+    "tags": [
+      "Grok Bot",
+      "Agent",
+      "编码 Agent",
+      "软件工程",
+      "X"
+    ],
+    "author": "Lingxi Li (@lingxi)",
+    "saveTime": "2026-09-05",
+    "path": "articles/2026-09/grok-bot-for-engineering面向工程的-grok-bot.md",
+    "translationPath": "articles/2026-09/grok-bot-for-engineering面向工程的-grok-bot_zh.md"
+  },
+  {
     "title": "Grok Bot：永不休息的 AI 团队",
     "url": "https://x.com/0xwhrrari/status/2095497109524934750?s=46",
     "description": "介绍 Grok Bot 背后的 AI Agent 架构：Grok 4.6、持久化电脑操作、循环、图谱、例程与审批系统如何协同，让智能体持续完成真实工作。",
