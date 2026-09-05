@@ -72,7 +72,14 @@ const copyStatus = ref('')
 const articleLoader = createArticleLoader()
 const isNote = computed(() => route.name === 'note')
 const collection = computed(() => isNote.value ? notes.value : articles.value)
-const article = computed(() => collection.value.find((item) => isNote.value ? noteRoute(item) === route.path : articleRoute(item) === route.path))
+const currentRoutePath = computed(() => {
+  try {
+    return decodeURI(route.path)
+  } catch {
+    return route.path
+  }
+})
+const article = computed(() => collection.value.find((item) => isNote.value ? noteRoute(item) === currentRoutePath.value : articleRoute(item) === currentRoutePath.value))
 const backPath = computed(() => isNote.value ? '/notes' : '/articles')
 const backLabel = computed(() => isNote.value ? '笔记' : '文章')
 const language = computed(() => route.query.lang === 'zh' && article.value?.translationPath ? 'zh' : 'original')

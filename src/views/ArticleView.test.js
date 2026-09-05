@@ -22,6 +22,13 @@ vi.mock('../composables/useContent', async () => {
     tags: ['Agent'],
     saveTime: '2026-08-31',
     path: 'notes/2026-08/reliable-agent.md',
+  }, {
+    title: '10 个最值得安装的 skills',
+    description: '记录实践要点',
+    category: '工具',
+    tags: ['Skills'],
+    saveTime: '2026-09-05',
+    path: 'notes/2026-09/10-个最值得安装的-skills.md',
   }])
   return { useContent: () => ({ articles, notes, loading: ref(false) }) }
 })
@@ -71,6 +78,24 @@ describe('article responsive reading controls', () => {
     expect(wrapper.get('h1').text()).toBe('可靠的 Agent')
     expect(wrapper.get('.article-byline').text()).toContain('本地 Markdown')
     expect(wrapper.find('.article-notes').exists()).toBe(false)
+    wrapper.unmount()
+  })
+
+  it('resolves a local note whose slug contains Chinese characters', async () => {
+    const router = createRouter({
+      history: createMemoryHistory(),
+      routes: [
+        { path: '/notes', component: { template: '<div />' } },
+        { path: '/notes/:month/:slug', name: 'note', component: { template: '<div />' } },
+      ],
+    })
+    await router.push('/notes/2026-09/10-%E4%B8%AA%E6%9C%80%E5%80%BC%E5%BE%97%E5%AE%89%E8%A3%85%E7%9A%84-skills')
+    const wrapper = mount(ArticleView, {
+      global: { plugins: [router], stubs: { UtterancesNotes: true } },
+    })
+    await flushPromises()
+
+    expect(wrapper.get('h1').text()).toBe('10 个最值得安装的 skills')
     wrapper.unmount()
   })
 
