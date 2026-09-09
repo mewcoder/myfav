@@ -1,5 +1,22 @@
 [
   {
+    "title": "AI是不是软件工程的银弹",
+    "url": "https://mp.weixin.qq.com/s/Ac618-ww_3z5JEjh7M-AXA",
+    "description": "文章以 Brooks 的“没有银弹”为分析框架，讨论 AI 是否真正解决了软件工程的本质困难。AI 显著降低了编码等次要困难，成为强大的生产力放大器，但尚不能替代需求理解、复杂性管理与系统设计。",
+    "category": "开发",
+    "tags": [
+      "AI",
+      "软件工程",
+      "大语言模型",
+      "生产力",
+      "Brooks",
+      "微信公众号"
+    ],
+    "author": "金码奥莉",
+    "saveTime": "2026-09-09",
+    "path": "articles/2026-09/ai是不是软件工程的银弹.md"
+  },
+  {
     "title": "Grok Bot for Engineering：面向工程的 Grok Bot",
     "url": "https://x.com/lingxi/status/2094493172516966781?s=46",
     "description": "介绍 Grok Bot 如何作为具备独立电脑的工程实习生，管理编码 Agent、学习用户工作方式，并在用户离线、休息或开会时持续推进工程任务。",
