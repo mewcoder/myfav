@@ -1,5 +1,19 @@
 [
   {
+    "title": "Real API Pricing — AI 模型真实价格与能力对比",
+    "url": "https://real-api-pricing.vercel.app",
+    "description": "一个用于比较 AI 模型与订阅方案真实成本的独立数据工具，覆盖订阅额度、模型基准成绩、价格—性能前沿和完整证据数据表。",
+    "category": "工具",
+    "tags": [
+      "AI",
+      "模型定价",
+      "价格性能",
+      "基准测试",
+      "订阅方案"
+    ],
+    "saveTime": "2026-09-10"
+  },
+  {
     "title": "fx - Tiny, open, native coding agent",
     "url": "https://fx.sh",
     "description": "fx——用 Zig 写的超轻量开源编码 Agent CLI（二进制仅约 6.4MB、冷启动 10µs、基础内存个位数 MB），模型无关、支持本地与云端推理，可嵌入大量实例；Apache-2.0，可通过 skills/plugins/MCP 扩展。",
