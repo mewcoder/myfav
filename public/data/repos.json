@@ -2,29 +2,29 @@
   {
     "name": "xingkongliang/skills-manager",
     "url": "https://github.com/xingkongliang/skills-manager",
-    "description": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "description": "管理、同步和整理AI智能体技能",
     "category": "工具",
     "tags": [
       "GitHub"
     ],
-    "stars": 4317,
+    "stars": 4670,
     "saveTime": "2026-09-02"
   },
   {
     "name": "subsy/skill-cabinet",
     "url": "https://github.com/subsy/skill-cabinet",
-    "description": "subsy/skill-cabinet",
+    "description": "AI智能体技能收藏库",
     "category": "工具",
     "tags": [
       "GitHub"
     ],
-    "stars": 222,
+    "stars": 409,
     "saveTime": "2026-09-01"
   },
   {
     "name": "warpdotdev/common-skills",
     "url": "https://github.com/warpdotdev/common-skills",
-    "description": "Warp 终端维护的共享 Agent Skill 仓库，包含 Spec 工作流、开发流程、调研与决策等可复用 Skill",
+    "description": "Warp共享Agent Skill仓库，涵盖规范、开发、调研与决策",
     "category": "工具",
     "tags": [
       "Agent",
@@ -33,13 +33,13 @@
       "开发工作流",
       "GitHub"
     ],
-    "stars": 461,
+    "stars": 570,
     "saveTime": "2026-08-31"
   },
   {
     "name": "miuuyy/codex-chatgpt-web",
     "url": "https://github.com/miuuyy/codex-chatgpt-web",
-    "description": "把 ChatGPT Web（Free/Go/Plus/Pro 订阅）桥接成 OpenAI Codex CLI 的原生模型，突破 Codex 用量限制，支持上下文/工具/流式/图片。非官方浏览器自动化方案。",
+    "description": "将ChatGPT网页接入Codex并支持上下文工具流式和图片",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -47,13 +47,13 @@
       "ChatGPT",
       "浏览器自动化"
     ],
-    "stars": 1691,
+    "stars": 6526,
     "saveTime": "2026-08-29"
   },
   {
     "name": "LinklyAI/best-skills",
     "url": "https://github.com/LinklyAI/best-skills",
-    "description": "LinklyAI 维护的每日更新 Agent Skills 排行榜，聚合 skills.sh、ClawHub、腾讯 SkillHub、GitHub、X 等 10+ 社区的下载量、增长与社媒热度，评选 Top 100，并提供开放的 CSV 数据集。",
+    "description": "每日更新Agent Skills Top 100排行榜，提供开放CSV数据",
     "category": "AI",
     "tags": [
       "Agent Skills",
@@ -62,13 +62,13 @@
       "开源",
       "GitHub"
     ],
-    "stars": 97,
+    "stars": 466,
     "saveTime": "2026-08-28"
   },
   {
     "name": "freestylefly/awesome-gpt-image-2",
     "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-    "description": "GPT-Image 2 的工业级提示词引擎与模板库：530+ 案例逆向拆解、20+ 套工业级模板，并提炼成可复用 Skills，持续更新。",
+    "description": "GPT Image提示词案例库，含工业级模板与可复用Skills",
     "category": "工具",
     "tags": [
       "GPT Image",
@@ -78,13 +78,13 @@
       "awesome-list",
       "GitHub"
     ],
-    "stars": 16997,
+    "stars": 31378,
     "saveTime": "2026-08-25"
   },
   {
     "name": "lidge-jun/opencodex",
     "url": "https://github.com/lidge-jun/opencodex",
-    "description": "面向 OpenAI Codex 与 Claude Code 的通用提供商代理：可在 Codex CLI、App、SDK 和 Claude Code 中使用任意 LLM（Claude、Gemini、Grok、DeepSeek、Ollama 等）。",
+    "description": "为Codex与Claude Code提供通用模型代理，支持多种LLM",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -93,13 +93,13 @@
       "Claude Code",
       "LLM"
     ],
-    "stars": 9528,
+    "stars": 14362,
     "saveTime": "2026-08-12"
   },
   {
-    "name": "NanoNets/Graft",
-    "url": "https://github.com/NanoNets/Graft",
-    "description": "为 Claude Code、Cursor、Codex、Gemini 等编码 Agent 加速提效：更快、更便宜，并带有针对代码库的上下文理解。",
+    "name": "trailhq/Graft",
+    "url": "https://github.com/trailhq/Graft",
+    "description": "为多种编码Agent提速降本，并提供代码库上下文理解",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -108,13 +108,13 @@
       "Cursor",
       "上下文"
     ],
-    "stars": 1982,
+    "stars": 7188,
     "saveTime": "2026-08-12"
   },
   {
     "name": "mujingquan835/dashiai-ppt-skill",
     "url": "https://github.com/mujingquan835/dashiai-ppt-skill",
-    "description": "大师 PPT：由 @大师的AI小灶 维护的可编辑 PPTX 生成、网页编辑与安全返工 Skill。",
+    "description": "可编辑PPTX生成、网页编辑与安全返工Skill",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -122,13 +122,13 @@
       "Agent Skill",
       "Claude"
     ],
-    "stars": 95,
+    "stars": 159,
     "saveTime": "2026-08-12"
   },
   {
     "name": "cathrynlavery/diagram-design",
     "url": "https://github.com/cathrynlavery/diagram-design",
-    "description": "为 Claude Code 准备的 29 种编辑级图表类型，自包含 HTML + SVG 实现，无阴影、不依赖 Mermaid。",
+    "description": "为多种编码代理提供38种编辑级HTML与SVG图表",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -137,13 +137,13 @@
       "SVG",
       "HTML"
     ],
-    "stars": 8584,
+    "stars": 38558,
     "saveTime": "2026-08-12"
   },
   {
     "name": "QwenLM/Qwen-MM-Plugins",
     "url": "https://github.com/QwenLM/Qwen-MM-Plugins",
-    "description": "通义千问官方多模态插件集：让任何 Agent 框架具备原生多模态能力。按能力分装为 skill + 可选 MCP server，覆盖核心视觉（动态分辨率读图/视频/文档/3D 模型、OCR、分割、ASR、视觉对话、web 搜索）、长视频记忆、音视频理解、视频编辑生成、Blender 3D 建模、FreeCAD CAD 和教育讲解视频生成等。",
+    "description": "让任意Agent框架具备原生多模态能力",
     "category": "AI",
     "tags": [
       "GitHub",
@@ -154,13 +154,13 @@
       "Vision",
       "音视频"
     ],
-    "stars": 838,
+    "stars": 2815,
     "saveTime": "2026-08-10"
   },
   {
     "name": "asuojun/claude-vision-skill",
     "url": "https://github.com/asuojun/claude-vision-skill",
-    "description": "让 DeepSeek 等无识图能力的模型获得看图能力：核心脚本 vision.js 将图片转 base64 发给 OpenAI 兼容格式的 vision 模型（推荐阿里云百炼千问）并返回文字描述，配置后直接发图片即可自动识别，支持普通 Claude Code 项目与 cyberboss 场景。",
+    "description": "为无视觉能力模型提供看图能力",
     "category": "AI",
     "tags": [
       "GitHub",
@@ -170,13 +170,13 @@
       "DeepSeek",
       "Claude Code"
     ],
-    "stars": 1718,
+    "stars": 2286,
     "saveTime": "2026-08-10"
   },
   {
     "name": "microsoft/skill-recorder",
     "url": "https://github.com/microsoft/skill-recorder",
-    "description": "微软出品的桌面应用：录制屏幕上的工作过程，借助 GitHub Copilot CLI 将操作重构为「意图 + 步骤」，自动生成可复用的 Skill 或自动化，可用于 Microsoft Scout、Copilot Cowork 或 Copilot Studio。",
+    "description": "录制工作过程并生成可复用Skill或自动化",
     "category": "AI",
     "tags": [
       "GitHub",
@@ -184,13 +184,13 @@
       "Copilot",
       "自动化"
     ],
-    "stars": 2774,
+    "stars": 3917,
     "saveTime": "2026-08-10"
   },
   {
     "name": "WeiminXiong/open-kimi-ppt-skill",
     "url": "https://github.com/WeiminXiong/open-kimi-ppt-skill",
-    "description": "非官方 Kimi Slides Skill：让 AI Agent 直接生成可编辑的 PPTD + PPTX，并附带本地浏览器编辑器",
+    "description": "非官方Kimi Slides Skill，生成可编辑PPTD与PPTX",
     "category": "工具",
     "tags": [
       "GitHub",
@@ -198,13 +198,13 @@
       "PPT",
       "Agent"
     ],
-    "stars": 96,
+    "stars": 93,
     "saveTime": "2026-08-08"
   },
   {
     "name": "inclusionAI/Avernet",
     "url": "https://github.com/inclusionAI/Avernet",
-    "description": "分布式 Agent 协调平台，让智能体在其中连接、协作、执行并共同进化。",
+    "description": "分布式智能体协作、执行与共同进化平台",
     "category": "AI",
     "tags": [
       "Agent",
@@ -213,66 +213,66 @@
       "协调平台",
       "GitHub"
     ],
-    "stars": 310,
+    "stars": 549,
     "saveTime": "2026-08-07"
   },
   {
     "name": "liaohch3/claude-tap",
     "url": "https://github.com/liaohch3/claude-tap",
-    "description": "AI Coding Agent 本地流量抓取与查看",
+    "description": "本地拦截查看多种Coding Agent API流量",
     "tags": [
       "Claude Code",
       "Agent",
       "数据采集",
       "AI 编程"
     ],
-    "stars": 1748,
+    "stars": 3192,
     "saveTime": "2026-06-14",
     "category": "AI"
   },
   {
     "name": "stablyai/orca",
     "url": "https://github.com/stablyai/orca",
-    "description": "下一代并行Agent IDE",
+    "description": "并行智能体开发环境，支持桌面移动端与远程运行",
     "tags": [
       "Agent",
       "开发工具",
       "IDE"
     ],
-    "stars": 4095,
+    "stars": 66908,
     "saveTime": "2026-06-03",
     "category": "AI"
   },
   {
     "name": "iOfficeAI/AionUi",
     "url": "https://github.com/iOfficeAI/AionUi",
-    "description": "多Agent协作桌面应用",
+    "description": "开源全天候多智能体协作应用，支持定制助手",
     "tags": [
       "Agent",
       "Claude Code"
     ],
-    "stars": 27103,
+    "stars": 32762,
     "saveTime": "2026-05-29",
     "category": "AI"
   },
   {
     "name": "ZhiYi-R/moon-bridge",
     "url": "https://github.com/ZhiYi-R/moon-bridge",
-    "description": "Go多协议模型路由代理",
+    "description": "Go编写的多协议模型路由与转换代理",
     "tags": [
       "LLM",
       "API 网关",
       "Go",
       "AI 工具"
     ],
-    "stars": 436,
+    "stars": 764,
     "saveTime": "2026-05-28",
     "category": "AI"
   },
   {
-    "name": "0xSero/codex-shim",
-    "url": "https://github.com/0xSero/codex-shim",
-    "description": "Codex Desktop BYOK模型本地路由代理",
+    "name": "sybil-solutions/codex-shim",
+    "url": "https://github.com/sybil-solutions/codex-shim",
+    "description": "面向Codex桌面的本地Responses API适配器",
     "tags": [
       "Agent",
       "Codex",
@@ -280,183 +280,183 @@
       "AI 编程",
       "API 网关"
     ],
-    "stars": 0,
+    "stars": 1065,
     "saveTime": "2026-05-27",
     "category": "AI"
   },
   {
     "name": "steipete/agent-scripts",
-    "url": "https://github.com/steipete/agent-scripts/tree/main/skills/skill-cleaner",
-    "description": "Skill清理优化工具",
+    "url": "https://github.com/steipete/agent-scripts",
+    "description": "跨仓库共享的智能体脚本集合",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "Agent"
     ],
-    "stars": 3586,
+    "stars": 6616,
     "saveTime": "2026-05-26",
     "category": "AI"
   },
   {
     "name": "TencentCloudBase/OpenVibeCoding",
     "url": "https://github.com/TencentCloudBase/OpenVibeCoding",
-    "description": "腾讯云开发vibecoding模板",
+    "description": "基于腾讯云开发的开放式Vibe Coding模板",
     "tags": [
       "开发工具",
       "AI 编程"
     ],
-    "stars": 60,
+    "stars": 176,
     "saveTime": "2026-05-26",
     "category": "AI"
   },
   {
     "name": "CiferaTeam/awesome-agents-team",
     "url": "https://github.com/CiferaTeam/awesome-agents-team",
-    "description": "多Agent团队协作资源",
+    "description": "多智能体团队协作资源合集",
     "tags": [
       "Agent",
       "资源合集"
     ],
-    "stars": 9,
+    "stars": 31,
     "saveTime": "2026-05-26",
     "category": "AI"
   },
   {
     "name": "rohitg00/ai-engineering-from-scratch",
     "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-    "description": "从零学AI工程",
+    "description": "从零学习、构建并交付人工智能工程",
     "tags": [
       "LLM",
       "教程"
     ],
-    "stars": 18272,
+    "stars": 54291,
     "saveTime": "2026-05-25",
     "category": "知识"
   },
   {
     "name": "gnurio/refactoring-ui-plugin",
     "url": "https://github.com/gnurio/refactoring-ui-plugin",
-    "description": "Refactoring UI设计审查技能",
+    "description": "将Refactoring UI原则转为AI设计审查技能",
     "tags": [
       "UI",
       "Agent Skill",
       "前端"
     ],
-    "stars": 94,
+    "stars": 374,
     "saveTime": "2026-05-25",
     "category": "设计"
   },
   {
     "name": "jaytel0/taste",
     "url": "https://github.com/jaytel0/taste",
-    "description": "参考图生成SKILL.md的流水线",
+    "description": "技能创建流水线",
     "tags": [
       "Agent Skill",
       "开源",
       "AI 工具"
     ],
-    "stars": 100,
+    "stars": 301,
     "saveTime": "2026-05-25",
     "category": "AI"
   },
   {
     "name": "geekjourneyx/interactive-learning",
     "url": "https://github.com/geekjourneyx/interactive-learning",
-    "description": "交互式学习路径生成与理解验证工具",
+    "description": "交互式学习工具",
     "tags": [
       "Agent Skill",
       "教程",
       "学习"
     ],
-    "stars": 0,
+    "stars": 52,
     "saveTime": "2026-05-21",
     "category": "AI"
   },
   {
     "name": "humanlayer/12-factor-agents",
     "url": "https://github.com/humanlayer/12-factor-agents",
-    "description": "构建生产级AI Agent的12因素原则指南",
+    "description": "构建生产级LLM软件的12项原则",
     "tags": [
       "Agent",
       "文档",
       "学习"
     ],
-    "stars": 0,
+    "stars": 25801,
     "saveTime": "2026-05-19",
     "category": "知识"
   },
   {
     "name": "ciembor/agent-rules-books",
     "url": "https://github.com/ciembor/agent-rules-books",
-    "description": "AI Agent规则书籍集合",
+    "description": "面向AI编程代理的规则与技能书籍指南",
     "tags": [
       "Agent",
       "Agent Skill",
       "资源合集",
       "阅读"
     ],
-    "stars": 0,
+    "stars": 2756,
     "saveTime": "2026-05-18",
     "category": "知识"
   },
   {
     "name": "wechat-article/wechat-article-exporter",
     "url": "https://github.com/wechat-article/wechat-article-exporter",
-    "description": "微信公众号文章批量下载工具",
+    "description": "在线批量下载微信公众号文章并导出数据",
     "tags": [
       "爬虫",
       "微信",
       "阅读",
       "数据检索"
     ],
-    "stars": 10100,
+    "stars": 12884,
     "saveTime": "2026-05-18",
     "category": "开发"
   },
   {
     "name": "rulyone/Simple-ReAct-Agent",
     "url": "https://github.com/rulyone/Simple-ReAct-Agent",
-    "description": "本地ReAct Agent，Ollama+Llama3.2零API Key",
+    "description": "本地ReAct智能体支持Ollama与Llama 3.2",
     "tags": [
       "Agent",
       "Ollama",
       "Python",
       "API"
     ],
-    "stars": 1,
+    "stars": 117,
     "saveTime": "2026-05-18",
     "category": "AI"
   },
   {
     "name": "nexu-io/html-anything",
     "url": "https://github.com/nexu-io/html-anything",
-    "description": "AI驱动的HTML编辑器，零API Key",
+    "description": "本地AI驱动的HTML编辑器支持多端导出",
     "tags": [
       "前端",
       "API",
       "编辑器"
     ],
-    "stars": 3148,
+    "stars": 8757,
     "saveTime": "2026-05-18",
     "category": "设计"
   },
   {
     "name": "multica-ai/andrej-karpathy-skills",
-    "url": "https://github.com/forrestchang/andrej-karpathy-skills",
-    "description": "Karpathy风格的Claude Code指南",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "description": "基于卡帕西观察改进Claude Code行为的指南",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "学习"
     ],
-    "stars": 136000,
+    "stars": 212428,
     "saveTime": "2026-05-18",
     "category": "AI"
   },
   {
     "name": "InsForge/InsForge",
     "url": "https://github.com/InsForge/InsForge",
-    "description": "AI编程后端平台，一站式DB认证存储托管",
+    "description": "面向智能体编程的一站式开源全栈后端平台",
     "tags": [
       "Agent",
       "后端",
@@ -464,196 +464,196 @@
       "部署",
       "AI 编程"
     ],
-    "stars": 0,
+    "stars": 12962,
     "saveTime": "2026-05-14",
     "category": "AI"
   },
   {
     "name": "Li-Evan/Bloom",
     "url": "https://github.com/Li-Evan/Bloom",
-    "description": "AI个人导师，2-Sigma教学法",
+    "description": "可自托管的中文优先苏格拉底式AI家教",
     "tags": [
       "学习",
       "教程"
     ],
-    "stars": 115,
+    "stars": 258,
     "saveTime": "2026-05-12",
     "category": "知识"
   },
   {
     "name": "WenyuChiou/awesome-agentic-ai-zh",
     "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-    "description": "AI智能体中文资源精选",
+    "description": "三语智能体学习路线与240余项精选资源",
     "tags": [
       "Agent",
       "中文资源",
       "资源合集"
     ],
-    "stars": 0,
+    "stars": 6784,
     "saveTime": "2026-05-08",
     "category": "AI"
   },
   {
     "name": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
-    "description": "Cursor官方插件仓库，包含团队开发工具集",
+    "description": "Cursor插件规范及官方插件集合",
     "tags": [
       "cursor",
       "AI 编辑器",
       "开发工具",
       "AI 编程"
     ],
-    "stars": 0,
+    "stars": 7472,
     "saveTime": "2026-05-08",
     "category": "AI"
   },
   {
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
-    "description": "TypeScript工程师的AI Agent Skills集合",
+    "description": "面向真实工程师的AI Agent Skills集合",
     "tags": [
       "Agent Skill",
       "Agent",
       "Claude Code",
       "TypeScript"
     ],
-    "stars": 63809,
+    "stars": 259925,
     "saveTime": "2026-05-07",
     "category": "AI"
   },
   {
     "name": "zarazhangrui/frontend-slides",
     "url": "https://github.com/zarazhangrui/frontend-slides",
-    "description": "Claude Code Skill，创建漂亮的HTML演示文稿",
+    "description": "使用编码智能体前端技能创建网页演示文稿",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "前端",
       "演示"
     ],
-    "stars": 0,
+    "stars": 29158,
     "saveTime": "2026-05-06",
     "category": "AI"
   },
   {
     "name": "yaojingang/yao-open-skills",
     "url": "https://github.com/yaojingang/yao-open-skills",
-    "description": "OpenYao 公开 Skill 合集",
+    "description": "决策商业分析教程研究与文档生成Skills合集",
     "tags": [
       "Agent Skill",
       "教程",
       "开源"
     ],
-    "stars": 408,
+    "stars": 1314,
     "saveTime": "2026-04-30",
     "category": "AI"
   },
   {
     "name": "ka-pi-ba-la/AIbijia",
     "url": "https://github.com/ka-pi-ba-la/AIbijia",
-    "description": "AI API 价格信息聚合",
+    "description": "分享便宜靠谱Token，减少信息差",
     "tags": [
       "效率",
       "API",
       "价格",
       "AI 工具"
     ],
-    "stars": 169,
+    "stars": 1661,
     "saveTime": "2026-04-29",
     "category": "AI"
   },
   {
     "name": "browserbase/skills",
     "url": "https://github.com/browserbase/skills",
-    "description": "Claude 浏览器自动化 skills",
+    "description": "Browserbase官方代理技能集合，用于访问网页",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "自动化"
     ],
-    "stars": 621,
+    "stars": 3718,
     "saveTime": "2026-04-29",
     "category": "AI"
   },
   {
     "name": "bailylu/ref-baily-life",
     "url": "https://github.com/bailylu/ref-baily-life",
-    "description": "部署在 Cloudflare 的个人推荐导航站",
+    "description": "推荐内容分享网站",
     "tags": [
       "导航",
       "Cloudflare",
       "部署",
       "开发工具"
     ],
-    "stars": 8,
+    "stars": 30,
     "saveTime": "2026-04-28",
     "category": "工具"
   },
   {
     "name": "nexu-io/open-design",
     "url": "https://github.com/nexu-io/open-design",
-    "description": "Claude Design开源替代",
+    "description": "本地优先的开源设计代理桌面应用",
     "tags": [
       "Agent Skill",
       "开源"
     ],
-    "stars": 76,
+    "stars": 95658,
     "saveTime": "2026-04-28",
     "category": "AI"
   },
   {
     "name": "Justineo/working-with-ai",
     "url": "https://github.com/Justineo/working-with-ai",
-    "description": "AI协作演示幻灯片",
+    "description": "关于与人工智能协作的演示幻灯片",
     "tags": [
       "学习",
       "前端"
     ],
-    "stars": 313,
+    "stars": 322,
     "saveTime": "2026-04-28",
     "category": "知识"
   },
   {
     "name": "vercel-labs/portless",
     "url": "https://github.com/vercel-labs/portless",
-    "description": "本地开发URL管理",
+    "description": "以稳定命名网址替代本地端口号",
     "tags": [
       "开发工具",
       "自动化"
     ],
-    "stars": 7631,
+    "stars": 12410,
     "saveTime": "2026-04-28",
     "category": "工具"
   },
   {
     "name": "plait-board/drawnix",
     "url": "https://github.com/plait-board/drawnix",
-    "description": "开源白板工具，一体化绘图",
+    "description": "开源一体化白板，支持思维导图和流程图",
     "tags": [
       "开源",
       "前端"
     ],
-    "stars": 13481,
+    "stars": 14700,
     "saveTime": "2026-04-27",
     "category": "设计"
   },
   {
     "name": "AlexsJones/llmfit",
     "url": "https://github.com/AlexsJones/llmfit",
-    "description": "检查AI模型硬件兼容性",
+    "description": "一键检测硬件可运行的模型与提供商",
     "tags": [
       "开源",
       "LLM",
       "AI 工具"
     ],
-    "stars": 24725,
+    "stars": 36116,
     "saveTime": "2026-04-27",
     "category": "AI"
   },
   {
     "name": "iamzhihuix/skills-manage",
     "url": "https://github.com/iamzhihuix/skills-manage",
-    "description": "Skills 管理工具",
+    "description": "Agent Skill 管理工具",
     "tags": [
       "Agent Skill",
       "Tauri",
@@ -666,240 +666,240 @@
   {
     "name": "ZToolsCenter/ZTools",
     "url": "https://github.com/ZToolsCenter/ZTools",
-    "description": "uTools开源实现，效率工具",
+    "description": "uTools 开源实现的跨平台应用启动器与插件平台",
     "tags": [
       "效率",
       "开源",
       "开发工具"
     ],
-    "stars": 1995,
+    "stars": 3773,
     "saveTime": "2026-04-27",
     "category": "工具"
   },
   {
     "name": "op7418/guizang-ppt-skill",
     "url": "https://github.com/op7418/guizang-ppt-skill",
-    "description": "电子杂志风网页PPT模板",
+    "description": "生成精美 HTML 幻灯片的 AI Agent Skill",
     "tags": [
       "Agent Skill",
       "教程",
       "演示"
     ],
-    "stars": 60,
+    "stars": 26135,
     "saveTime": "2026-04-26",
     "category": "AI"
   },
   {
     "name": "Russell-cell/PPT-Design-Prompt",
     "url": "https://github.com/Russell-cell/PPT-Design-Prompt",
-    "description": "PPT幻灯片图像设计提示词转换",
+    "description": "PPT 幻灯片图像设计提示词转换工具",
     "tags": [
       "开源",
       "演示",
       "前端"
     ],
-    "stars": 668,
+    "stars": 968,
     "saveTime": "2026-04-26",
     "category": "设计"
   },
   {
     "name": "enetx/surf",
     "url": "https://github.com/enetx/surf",
-    "description": "Go HTTP客户端，浏览器伪装反检测",
+    "description": "支持浏览器伪装与 HTTP/3 的 Go HTTP 客户端",
     "tags": [
       "网络",
       "爬虫",
       "安全",
       "Go"
     ],
-    "stars": 0,
+    "stars": 1821,
     "saveTime": "2026-04-26",
     "category": "开发"
   },
   {
     "name": "refactoringhq/tolaria",
     "url": "https://github.com/refactoringhq/tolaria",
-    "description": "MCP支持的桌面知识管理工具",
+    "description": "用于管理 Markdown 知识库的桌面应用",
     "tags": [
       "知识管理",
       "MCP",
       "Tauri"
     ],
-    "stars": 1146,
+    "stars": 19759,
     "saveTime": "2026-04-23",
     "category": "知识"
   },
   {
     "name": "Alishahryar1/free-claude-code",
     "url": "https://github.com/Alishahryar1/free-claude-code",
-    "description": "免费使用Claude Code的Python工具",
+    "description": "免费使用 Claude Code 等 AI 编程工具",
     "tags": [
       "Claude Code",
       "Python",
       "AI 编程"
     ],
-    "stars": 4692,
+    "stars": 54579,
     "saveTime": "2026-04-23",
     "category": "AI"
   },
   {
     "name": "origin-space/ui-experiments",
     "url": "https://github.com/origin-space/ui-experiments",
-    "description": "Origin UI/shadcn布局设计案例集",
+    "description": "基于 Origin UI 和 shadcn/ui 的开源 UI 布局实验集",
     "tags": [
       "前端",
       "UI"
     ],
-    "stars": 1375,
+    "stars": 1425,
     "saveTime": "2026-04-23",
     "category": "设计"
   },
   {
     "name": "workany-ai/workany",
     "url": "https://github.com/workany-ai/workany",
-    "description": "桌面AI Agent应用，支持MCP/Skills",
+    "description": "桌面端通用任务智能体",
     "tags": [
       "Agent",
       "MCP",
       "Agent Skill"
     ],
-    "stars": 1447,
+    "stars": 1510,
     "saveTime": "2026-04-23",
     "category": "AI"
   },
   {
     "name": "actionbook/ascent-research",
     "url": "https://github.com/actionbook/ascent-research",
-    "description": "Agent 研究 CLI 工具",
+    "description": "面向智能体的研究命令行工具",
     "tags": [
       "Agent",
       "Rust",
       "CLI"
     ],
-    "stars": 131,
+    "stars": 187,
     "saveTime": "2026-04-22",
     "category": "AI"
   },
   {
     "name": "chatfire-AI/huobao-drama",
     "url": "https://github.com/chatfire-AI/huobao-drama",
-    "description": "AI 短剧生成平台",
+    "description": "AI短剧端到端生成平台",
     "tags": [
       "视频",
       "自动化",
       "内容创作"
     ],
-    "stars": 10484,
+    "stars": 15055,
     "saveTime": "2026-04-22",
     "category": "设计"
   },
   {
     "name": "rullerzhou-afk/clawd-on-desk",
     "url": "https://github.com/rullerzhou-afk/clawd-on-desk",
-    "description": "AI coding agent 桌面宠物",
+    "description": "监控多种AI编程智能体的像素桌宠",
     "tags": [
       "Agent",
       "macOS"
     ],
-    "stars": 1547,
+    "stars": 6207,
     "saveTime": "2026-04-22",
     "category": "AI"
   },
   {
     "name": "Jason-uxui/gray-ui-csm",
     "url": "https://github.com/Jason-uxui/gray-ui-csm",
-    "description": "CSM UI Dashboard模板",
+    "description": "CSM界面仪表板模板",
     "tags": [
       "前端",
       "TypeScript",
       "UI"
     ],
-    "stars": 90,
+    "stars": 342,
     "saveTime": "2026-04-22",
     "category": "设计"
   },
   {
     "name": "h4ckf0r0day/obscura",
     "url": "https://github.com/h4ckf0r0day/obscura",
-    "description": "AI Agent 无头浏览器",
+    "description": "面向AI智能体和网页抓取的无头浏览器",
     "tags": [
       "Agent",
       "爬虫",
       "Rust",
       "数据检索"
     ],
-    "stars": 760,
+    "stars": 26811,
     "saveTime": "2026-04-22",
     "category": "开发"
   },
   {
     "name": "riverscn/intro-agentic-ai",
     "url": "https://github.com/riverscn/intro-agentic-ai",
-    "description": "Agentic AI 入门教程",
+    "description": "从神经网络到智能体的入门介绍",
     "tags": [
       "Agent",
       "教程",
       "学习"
     ],
-    "stars": 23,
+    "stars": 126,
     "saveTime": "2026-04-22",
     "category": "知识"
   },
   {
     "name": "google-labs-code/design.md",
     "url": "https://github.com/google-labs-code/design.md",
-    "description": "设计系统规范文件格式",
+    "description": "面向编码智能体的视觉身份描述规范",
     "tags": [
       "Agent",
       "前端"
     ],
-    "stars": 651,
+    "stars": 27863,
     "saveTime": "2026-04-22",
     "category": "设计"
   },
   {
-    "name": "ln-dev7/square-ui",
-    "url": "https://github.com/ln-dev7/square-ui",
-    "description": "shadcn/ui 模板集合",
+    "name": "zerostaticthemes/square-ui",
+    "url": "https://github.com/zerostaticthemes/square-ui",
+    "description": "基于shadcn/ui的开源布局与界面集合",
     "tags": [
       "前端",
       "TypeScript",
       "UI"
     ],
-    "stars": 5142,
+    "stars": 6114,
     "saveTime": "2026-04-22",
     "category": "设计"
   },
   {
     "name": "nicejade/wealth-tracker",
     "url": "https://github.com/nicejade/wealth-tracker",
-    "description": "AI个人资产分析应用",
+    "description": "记录资产状况并提供AI财务建议",
     "tags": [
       "理财",
       "效率"
     ],
-    "stars": 0,
+    "stars": 905,
     "saveTime": "2026-04-21",
     "category": "生活"
   },
   {
     "name": "Eronred/expo-agent-spinners",
     "url": "https://github.com/Eronred/expo-agent-spinners",
-    "description": "54终端风格Agent Spinner组件",
+    "description": "54款React Native与Expo终端风格加载动画",
     "tags": [
       "前端",
       "Agent",
       "动画",
       "CLI"
     ],
-    "stars": 0,
+    "stars": 312,
     "saveTime": "2026-04-21",
     "category": "设计"
   },
   {
     "name": "any4ai/AnyCrawl",
-    "url": "https://github.com/any4ai/anycrawl",
-    "description": "网站爬虫转LLM数据，SERP提取",
+    "url": "https://github.com/any4ai/AnyCrawl",
+    "description": "网站转LLM数据并提取结构化搜索结果",
     "tags": [
       "爬虫",
       "网络",
@@ -908,105 +908,105 @@
       "数据检索",
       "数据采集"
     ],
-    "stars": 2800,
+    "stars": 3453,
     "saveTime": "2026-04-20",
     "category": "开发"
   },
   {
     "name": "smallnest/autoresearch",
     "url": "https://github.com/smallnest/autoresearch",
-    "description": "多Agent轮转审核全自动开发",
+    "description": "面向软件开发的自动化研究工具",
     "tags": [
       "自动化",
       "Agent",
       "开发工具"
     ],
-    "stars": 10,
+    "stars": 570,
     "saveTime": "2026-04-19",
     "category": "工具"
   },
   {
     "name": "ZeroZ-lab/cc-design",
     "url": "https://github.com/ZeroZ-lab/cc-design",
-    "description": "Claude Code设计技能，创建HTML原型",
+    "description": "面向AI代理的高保真HTML设计原型指导技能",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "前端"
     ],
-    "stars": 0,
+    "stars": 831,
     "saveTime": "2026-04-19",
     "category": "AI"
   },
   {
     "name": "browser-use/video-use",
     "url": "https://github.com/browser-use/video-use",
-    "description": "Claude Code视频编辑技能",
+    "description": "借助代码代理编辑视频的工具",
     "tags": [
       "Agent Skill",
       "视频",
       "Claude Code"
     ],
-    "stars": 1257,
+    "stars": 24703,
     "saveTime": "2026-04-19",
     "category": "AI"
   },
   {
     "name": "elder-plinius/CL4R1T4S",
     "url": "https://github.com/elder-plinius/CL4R1T4S",
-    "description": "AI系统提示词泄露合集",
+    "description": "多种AI系统提示词泄露与透明度资料库",
     "tags": [
       "安全",
       "开源"
     ],
-    "stars": 15244,
+    "stars": 49612,
     "saveTime": "2026-04-19",
     "category": "开发"
   },
   {
     "name": "tmoroney/auto-subs",
     "url": "https://github.com/tmoroney/auto-subs",
-    "description": "AI字幕生成工具",
+    "description": "连接达芬奇、Premiere和AE的本地字幕生成工具",
     "tags": [
       "视频",
       "内容创作"
     ],
-    "stars": 3159,
+    "stars": 4178,
     "saveTime": "2026-04-19",
     "category": "设计"
   },
   {
     "name": "firecrawl/web-agent",
     "url": "https://github.com/firecrawl/web-agent",
-    "description": "Web数据研究Agent框架",
+    "description": "面向结构化网络研究的开源数据Agent",
     "tags": [
       "Agent",
       "框架",
       "langchain",
       "数据检索"
     ],
-    "stars": 205,
+    "stars": 1223,
     "saveTime": "2026-04-19",
     "category": "开发"
   },
   {
     "name": "heygen-com/hyperframes",
     "url": "https://github.com/heygen-com/hyperframes",
-    "description": "HTML转视频，面向Agent",
+    "description": "用HTML渲染视频的Agent工具",
     "tags": [
       "视频",
       "Agent",
       "前端",
       "内容创作"
     ],
-    "stars": 3400,
+    "stars": 49056,
     "saveTime": "2026-04-19",
     "category": "设计"
   },
   {
     "name": "f/textream",
     "url": "https://github.com/f/textream",
-    "description": "macOS免费提词器，实时语音追踪",
+    "description": "支持实时语音高亮的macOS提词器",
     "tags": [
       "录屏",
       "macOS",
@@ -1014,131 +1014,131 @@
       "视频",
       "内容创作"
     ],
-    "stars": 2839,
+    "stars": 3737,
     "saveTime": "2026-04-18",
     "category": "设计"
   },
   {
     "name": "langchain-ai/agents-from-scratch",
     "url": "https://github.com/langchain-ai/agents-from-scratch",
-    "description": "从零构建Agent教程",
+    "description": "从零构建具备记忆和人工介入的邮件助手",
     "tags": [
       "langchain",
       "Agent",
       "教程",
       "学习"
     ],
-    "stars": 1729,
+    "stars": 2216,
     "saveTime": "2026-04-17",
     "category": "知识"
   },
   {
     "name": "loks666/get_jobs",
     "url": "https://github.com/loks666/get_jobs",
-    "description": "AI找工作自动投简历脚本",
+    "description": "支持多平台自动投递简历的求职助手",
     "tags": [
       "求职",
       "自动化",
       "效率"
     ],
-    "stars": 6630,
+    "stars": 8365,
     "saveTime": "2026-04-17",
     "category": "生活"
   },
   {
     "name": "davebcn87/pi-autoresearch",
     "url": "https://github.com/davebcn87/pi-autoresearch",
-    "description": "pi自主实验循环扩展",
+    "description": "面向pi的自主实验循环扩展",
     "tags": [
       "Agent",
       "效率",
       "测试"
     ],
-    "stars": 5815,
+    "stars": 8040,
     "saveTime": "2026-04-16",
     "category": "AI"
   },
   {
-    "name": "lukilabs/craft-agents-oss",
-    "url": "https://github.com/lukilabs/craft-agents-oss",
-    "description": "Agent框架，支持多模型",
+    "name": "craft-ai-agents/craft-agents-oss",
+    "url": "https://github.com/craft-ai-agents/craft-agents-oss",
+    "description": "支持多模型的Agent框架",
     "tags": [
       "Agent",
       "框架",
       "MCP",
       "LLM"
     ],
-    "stars": 4376,
+    "stars": 7175,
     "saveTime": "2026-04-15",
     "category": "AI"
   },
   {
     "name": "firecrawl/open-lovable",
     "url": "https://github.com/firecrawl/open-lovable",
-    "description": "克隆网站转React应用",
+    "description": "几秒内将网站克隆重建为现代React应用",
     "tags": [
       "前端",
       "React"
     ],
-    "stars": 25600,
+    "stars": 28397,
     "saveTime": "2026-04-15",
     "category": "设计"
   },
   {
     "name": "Cocoon-AI/architecture-diagram-generator",
     "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
-    "description": "生成架构图的Claude技能",
+    "description": "生成深色主题系统架构图并导出HTML/SVG文件",
     "tags": [
       "Agent Skill",
       "图表",
       "Claude Code"
     ],
-    "stars": 3641,
+    "stars": 7248,
     "saveTime": "2026-04-14",
     "category": "AI"
   },
   {
     "name": "stevibe/BenchLocal",
     "url": "https://github.com/stevibe/BenchLocal",
-    "description": "LLM基准测试桌面应用",
+    "description": "在真实任务中测试并横向比较LLM",
     "tags": [
       "LLM",
       "测试",
       "AI 工具"
     ],
-    "stars": 132,
+    "stars": 422,
     "saveTime": "2026-04-14",
     "category": "AI"
   },
   {
     "name": "eternityspring/article-tools",
     "url": "https://github.com/eternityspring/article-tools",
-    "description": "文章处理工具集",
+    "description": "提供封面制作及X、微信公众号排版工具",
     "tags": [
       "效率",
       "阅读",
       "开发工具"
     ],
-    "stars": 122,
+    "stars": 810,
     "saveTime": "2026-04-13",
     "category": "工具"
   },
   {
     "name": "hexiecs/talk-normal",
     "url": "https://github.com/hexiecs/talk-normal",
-    "description": "对话规范化Skill，让AI更自然",
+    "description": "用系统提示词让LLM像普通人一样对话",
     "tags": [
       "Agent Skill",
       "学习"
     ],
-    "stars": 1223,
+    "stars": 1839,
     "saveTime": "2026-04-12",
     "category": "AI"
   },
   {
     "name": "ZeroZ-lab/gmdiagram",
     "url": "https://github.com/ZeroZ-lab/gmdiagram",
-    "description": "Claude Code/Codex图表生成插件",
+    "description": "Claude Code与Codex图表生成插件",
     "tags": [
       "Agent Skill",
       "图表",
@@ -1152,20 +1152,20 @@
   {
     "name": "haydenbleasel/ultracite",
     "url": "https://github.com/haydenbleasel/ultracite",
-    "description": "零配置ESLint/Biome/Oxlint预设",
+    "description": "零配置的代码检查与格式化工具",
     "tags": [
       "开发工具",
       "Agent Skill",
       "AI 工具"
     ],
-    "stars": 2894,
+    "stars": 3262,
     "saveTime": "2026-04-12",
     "category": "AI"
   },
   {
     "name": "MinsiAI/ai-website-cloner-template",
     "url": "https://github.com/MinsiAI/ai-website-cloner-template",
-    "description": "AI一键克隆网站到Next.js",
+    "description": "用AI编程代理通过一条命令克隆网站",
     "tags": [
       "前端",
       "Claude Code"
@@ -1177,7 +1177,7 @@
   {
     "name": "lzhgus/Capso",
     "url": "https://github.com/lzhgus/Capso",
-    "description": "macOS截图录屏，CleanShot X开源替代",
+    "description": "macOS原生截图与录屏工具，开源替代CleanShot X",
     "tags": [
       "录屏",
       "macOS",
@@ -1185,151 +1185,151 @@
       "视频",
       "内容创作"
     ],
-    "stars": 491,
+    "stars": 1319,
     "saveTime": "2026-04-11",
     "category": "设计"
   },
   {
     "name": "yizhiyanhua-ai/fireworks-tech-graph",
     "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
-    "description": "烟花技术图谱",
+    "description": "用自然语言生成SVG和PNG技术图表，支持UML",
     "tags": [
       "知识图谱",
       "数据检索"
     ],
-    "stars": 3700,
+    "stars": 11355,
     "saveTime": "2026-04-11",
     "category": "开发"
   },
   {
     "name": "alexpate/awesome-design-systems",
     "url": "https://github.com/alexpate/awesome-design-systems",
-    "description": "设计系统资源大全",
+    "description": "精选优秀设计系统资源合集",
     "tags": [
       "前端",
       "开源"
     ],
-    "stars": 23628,
+    "stars": 25922,
     "saveTime": "2026-04-10",
     "category": "设计"
   },
   {
     "name": "garrytan/gbrain",
     "url": "https://github.com/garrytan/gbrain",
-    "description": "OpenClaw Brain知识系统",
+    "description": "OpenClaw与Hermes智能体大脑",
     "tags": [
       "Agent",
       "Agent Skill",
       "开源",
       "知识管理"
     ],
-    "stars": 9176,
+    "stars": 29842,
     "saveTime": "2026-04-10",
     "category": "AI"
   },
   {
     "name": "CapSoftware/Cap",
     "url": "https://github.com/CapSoftware/Cap",
-    "description": "开源录屏，Loom替代",
+    "description": "开源的Loom替代方案，支持可分享屏幕录制",
     "tags": [
       "录屏",
       "开源",
       "视频",
       "内容创作"
     ],
-    "stars": 18220,
+    "stars": 22123,
     "saveTime": "2026-04-10",
     "category": "设计"
   },
   {
     "name": "yanhua1010/zero-to-ai-fullstack",
     "url": "https://github.com/yanhua1010/zero-to-ai-fullstack",
-    "description": "Java工程师AI全栈学习路径",
+    "description": "Java后端工程师公开学习AI全栈技术",
     "tags": [
       "RAG",
       "教程",
       "Python",
       "学习"
     ],
-    "stars": 147,
+    "stars": 156,
     "saveTime": "2026-04-09",
     "category": "知识"
   },
   {
     "name": "gunnargray-dev/unicode-animations",
     "url": "https://github.com/gunnargray-dev/unicode-animations",
-    "description": "Unicode动画库",
+    "description": "原始帧数据形式的Unicode加载动画",
     "tags": [
       "前端",
       "动画"
     ],
-    "stars": 462,
+    "stars": 578,
     "saveTime": "2026-04-08",
     "category": "设计"
   },
   {
-    "name": "leonxlnx/taste-skill",
-    "url": "https://github.com/leonxlnx/taste-skill",
-    "description": "AI前端设计skills",
+    "name": "Leonxlnx/taste-skill",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "description": "帮助AI生成更有品味、避免千篇一律的内容",
     "tags": [
       "前端",
       "Agent Skill"
     ],
-    "stars": 10005,
+    "stars": 86352,
     "saveTime": "2026-04-08",
     "category": "设计"
   },
   {
     "name": "siddharthvaddem/openscreen",
     "url": "https://github.com/siddharthvaddem/openscreen",
-    "description": "开源录屏演示工具",
+    "description": "开源免费且无水印的演示制作工具",
     "tags": [
       "录屏",
       "视频",
       "开源",
       "内容创作"
     ],
-    "stars": 31109,
+    "stars": 39925,
     "saveTime": "2026-04-08",
     "category": "设计"
   },
   {
     "name": "Ataraxy-Labs/opensessions",
-    "url": "https://github.com/ataraxy-labs/opensessions",
-    "description": "终端会话管理器",
+    "url": "https://github.com/Ataraxy-Labs/opensessions",
+    "description": "面向编程代理的tmux侧边栏会话工具",
     "tags": [
       "终端",
       "TypeScript",
       "CLI",
       "开发工具"
     ],
-    "stars": 948,
+    "stars": 1226,
     "saveTime": "2026-04-07",
     "category": "工具"
   },
   {
-    "name": "yologdev/karpathy-llm-wiki",
-    "url": "https://github.com/yologdev/karpathy-llm-wiki",
-    "description": "Karpathy LLM Wiki",
+    "name": "yologdev/yopedia",
+    "url": "https://github.com/yologdev/yopedia",
+    "description": "面向人类与代理读写的Wiki",
     "tags": [
       "LLM",
       "Wiki",
       "学习"
     ],
-    "stars": 39,
+    "stars": 69,
     "saveTime": "2026-04-07",
     "category": "知识"
   },
   {
     "name": "MemPalace/mempalace",
     "url": "https://github.com/MemPalace/mempalace",
-    "description": "AI记忆系统，评分最高",
+    "description": "免费开源的AI记忆系统",
     "tags": [
       "Agent",
       "Python",
       "知识管理"
     ],
-    "stars": 47900,
+    "stars": 59010,
     "saveTime": "2026-04-07",
     "category": "AI"
   },
@@ -1349,337 +1349,337 @@
   {
     "name": "deusyu/harness-engineering",
     "url": "https://github.com/deusyu/harness-engineering",
-    "description": "Harness Engineering学习指南",
+    "description": "从概念到实践的Harness Engineering学习指南",
     "tags": [
       "harness",
       "Claude Code",
       "教程",
       "学习"
     ],
-    "stars": 1638,
+    "stars": 5886,
     "saveTime": "2026-04-07",
     "category": "知识"
   },
   {
     "name": "JuliusBrussee/caveman",
     "url": "https://github.com/JuliusBrussee/caveman",
-    "description": "穴居人Token效率skill",
+    "description": "通过穴居人式交流为Claude Code节省65% Token",
     "tags": [
       "Agent Skill",
       "Claude Code",
       "效率"
     ],
-    "stars": 37928,
+    "stars": 105076,
     "saveTime": "2026-04-07",
     "category": "AI"
   },
   {
     "name": "DeadWaveWave/opencove",
     "url": "https://github.com/DeadWaveWave/opencove",
-    "description": "Agent 无限画布工作空间",
+    "description": "面向代理、任务与知识研究的无限画布工作空间",
     "tags": [
       "框架",
       "Agent"
     ],
-    "stars": 1141,
+    "stars": 1587,
     "saveTime": "2026-04-07",
     "category": "AI"
   },
   {
-    "name": "collaborator-ai/collab-public",
-    "url": "https://github.com/collaborator-ai/collab-public",
-    "description": "Agent 协作创作平台",
+    "name": "collabs-inc/collab-public",
+    "url": "https://github.com/collabs-inc/collab-public",
+    "description": "支持智能体协作创作的平台",
     "tags": [
       "Agent",
       "开源项目"
     ],
-    "stars": 2396,
+    "stars": 2941,
     "saveTime": "2026-04-07",
     "category": "AI"
   },
   {
     "name": "cmliu/edgetunnel",
     "url": "https://github.com/cmliu/edgetunnel",
-    "description": "VLESS/Trojan 多功能面板",
+    "description": "VLESS、Trojan与SS多功能面板",
     "tags": [
       "网络",
       "安全"
     ],
-    "stars": 31733,
+    "stars": 45408,
     "saveTime": "2026-04-07",
     "category": "开发"
   },
   {
     "name": "afar1/fieldtheory-cli",
     "url": "https://github.com/afar1/fieldtheory-cli",
-    "description": "X/Twitter 书签同步 CLI",
+    "description": "管理书签、库、命令及智能体工作流的CLI",
     "tags": [
       "社交",
       "CLI",
       "开发工具"
     ],
-    "stars": 1519,
+    "stars": 2019,
     "saveTime": "2026-04-07",
     "category": "工具"
   },
   {
     "name": "tw93/Waza",
     "url": "https://github.com/tw93/Waza",
-    "description": "工程师习惯技能",
+    "description": "将工程习惯转化为Claude可运行的技能",
     "tags": [
       "Agent Skill",
       "开发工具"
     ],
-    "stars": 3442,
+    "stars": 6999,
     "saveTime": "2026-04-07",
     "category": "AI"
   },
   {
     "name": "jonnonz1/adaptive-browser",
     "url": "https://github.com/jonnonz1/adaptive-browser",
-    "description": "从 API 规范和用户偏好构建 UI 的自适应浏览器",
+    "description": "根据API规范和偏好构建界面的自适应浏览器",
     "tags": [
       "前端",
       "API",
       "UI"
     ],
-    "stars": 299,
+    "stars": 343,
     "saveTime": "2026-04-06",
     "category": "设计"
   },
   {
-    "name": "santifer/career-ops",
-    "url": "https://github.com/santifer/career-ops",
-    "description": "AI 求职搜索系统",
+    "name": "career-ops-hq/career-ops",
+    "url": "https://github.com/career-ops-hq/career-ops",
+    "description": "本地运行的AI求职搜索、评估与申请管理工具",
     "tags": [
       "商业",
       "搜索",
       "求职",
       "效率"
     ],
-    "stars": 36066,
+    "stars": 71302,
     "saveTime": "2026-04-06",
     "category": "生活"
   },
   {
     "name": "drona23/claude-token-efficient",
     "url": "https://github.com/drona23/claude-token-efficient",
-    "description": "Claude Token 效率优化",
+    "description": "通过CLAUDE.md减少Claude重型流程输出",
     "tags": [
       "文档",
       "Claude Code"
     ],
-    "stars": 4404,
+    "stars": 6027,
     "saveTime": "2026-04-06",
     "category": "知识"
   },
   {
     "name": "lidangzzz/goal-driven",
     "url": "https://github.com/lidangzzz/goal-driven",
-    "description": "运行 100 小时的多 Agent 系统",
+    "description": "可持续运行约100小时的多智能体问题求解系统",
     "tags": [
       "框架",
       "Agent"
     ],
-    "stars": 920,
+    "stars": 1641,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
-    "name": "jimliu/baoyu-skills",
-    "url": "https://github.com/jimliu/baoyu-skills",
-    "description": "Agent Skills 合集",
+    "name": "JimLiu/baoyu-skills",
+    "url": "https://github.com/JimLiu/baoyu-skills",
+    "description": "Agent Skills 技能合集",
     "tags": [
       "Agent Skill",
       "Agent"
     ],
-    "stars": 15122,
+    "stars": 25844,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "zarazhangrui/codebase-to-course",
     "url": "https://github.com/zarazhangrui/codebase-to-course",
-    "description": "代码库转交互教程",
+    "description": "将代码库转为交互式单页教程",
     "tags": [
       "Agent Skill",
       "学习"
     ],
-    "stars": 3887,
+    "stars": 5546,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "slowmist/openclaw-security-practice-guide",
     "url": "https://github.com/slowmist/openclaw-security-practice-guide",
-    "description": "OpenClaw 安全实践指南",
+    "description": "面向 OpenClaw Agent 的安全实践指南",
     "tags": [
       "文档",
       "安全",
       "学习"
     ],
-    "stars": 2777,
+    "stars": 2855,
     "saveTime": "2026-04-06",
     "category": "开发"
   },
   {
     "name": "MiniMax-AI/skills",
     "url": "https://github.com/MiniMax-AI/skills",
-    "description": "MiniMax Agent Skills",
+    "description": "MiniMax 的 Agent Skills 集合",
     "tags": [
       "Agent Skill",
       "Agent"
     ],
-    "stars": 10831,
+    "stars": 13546,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "wxtsky/CodeIsland",
     "url": "https://github.com/wxtsky/CodeIsland",
-    "description": "macOS 刘海 AI Agent 状态面板",
+    "description": "macOS 刘海 AI 编程状态面板",
     "tags": [
       "Claude Code",
       "Agent",
       "macOS",
       "AI 编程"
     ],
-    "stars": 1054,
+    "stars": 2388,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
-    "description": "AI 编码 Agent 工作流框架，137k stars",
+    "description": "Agent 技能框架与软件开发方法论",
     "tags": [
       "框架",
       "Claude Code",
       "Agent",
       "AI 编程"
     ],
-    "stars": 158934,
+    "stars": 285458,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "EveryInc/compound-engineering-plugin",
     "url": "https://github.com/EveryInc/compound-engineering-plugin",
-    "description": "Office Compound Engineering plugin",
+    "description": "Claude Code 等工具的复合工程插件",
     "tags": [
       "Agent Skill",
       "开发工具"
     ],
-    "stars": 14721,
+    "stars": 25030,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "garrytan/gstack",
     "url": "https://github.com/garrytan/gstack",
-    "description": "Garry Tan 的 Claude Code 配置，23 个工具",
+    "description": "包含23个角色工具的 Claude Code 配置",
     "tags": [
       "Agent Skill",
       "效率",
       "Claude Code"
     ],
-    "stars": 76458,
+    "stars": 132643,
     "saveTime": "2026-04-06",
     "category": "AI"
   },
   {
     "name": "jinchenma94/bazi-skill",
     "url": "https://github.com/jinchenma94/bazi-skill",
-    "description": "四柱八字命理分析 Skill",
+    "description": "四柱八字命理分析技能",
     "tags": [
       "Agent Skill",
       "分析"
     ],
-    "stars": 988,
+    "stars": 3018,
     "saveTime": "2026-04-05",
     "category": "AI"
   },
   {
     "name": "HKUDS/OpenHarness",
     "url": "https://github.com/HKUDS/OpenHarness",
-    "description": "OpenHarness: Open Agent Harness",
+    "description": "开放式智能体工具箱，内置个人智能体",
     "tags": [
       "框架",
       "Agent",
       "AI 编程"
     ],
-    "stars": 10349,
+    "stars": 15724,
     "saveTime": "2026-04-05",
     "category": "AI"
   },
   {
     "name": "addyosmani/agent-skills",
     "url": "https://github.com/addyosmani/agent-skills",
-    "description": "Production-grade engineering skills for AI coding agents",
+    "description": "面向AI编程智能体的生产级工程技能",
     "tags": [
       "Agent Skill",
       "开发工具",
       "Agent"
     ],
-    "stars": 17553,
+    "stars": 93594,
     "saveTime": "2026-04-05",
     "category": "AI"
   },
   {
     "name": "jarrodwatts/claude-hud",
     "url": "https://github.com/jarrodwatts/claude-hud",
-    "description": "Claude Code 插件，显示上下文、工具、Agent 状态",
+    "description": "显示Claude Code上下文、工具、智能体和待办进度",
     "tags": [
       "Claude Code",
       "Agent",
       "AI 编程"
     ],
-    "stars": 19902,
+    "stars": 27931,
     "saveTime": "2026-04-05",
     "category": "AI"
   },
   {
     "name": "10xChengTu/harness-engineering",
     "url": "https://github.com/10xChengTu/harness-engineering",
-    "description": "Harness 工程 Agent Skill",
+    "description": "为AI智能体优化代码库的Harness工程技能",
     "tags": [
       "Agent Skill",
       "开发工具",
       "Agent"
     ],
-    "stars": 69,
+    "stars": 99,
     "saveTime": "2026-04-04",
     "category": "AI"
   },
   {
     "name": "VoltAgent/awesome-design-md",
     "url": "https://github.com/VoltAgent/awesome-design-md",
-    "description": "DESIGN.md 文件合集，AI 生成一致 UI",
+    "description": "热门品牌设计系统DESIGN.md分析合集",
     "tags": [
       "文档",
       "前端",
       "UI"
     ],
-    "stars": 59429,
+    "stars": 115451,
     "saveTime": "2026-04-04",
     "category": "知识"
   },
   {
     "name": "keenthemes/reui",
     "url": "https://github.com/keenthemes/reui",
-    "description": "1000+shadcn 组件库，68 类别",
+    "description": "设计导向的shadcn界面模式合集",
     "tags": [
       "前端",
       "UI"
     ],
-    "stars": 2824,
+    "stars": 3476,
     "saveTime": "2026-04-04",
     "category": "设计"
   },
   {
     "name": "SaladDay/cc-switch-cli",
     "url": "https://github.com/SaladDay/cc-switch-cli",
-    "description": "Claude Code/Codex 技能管理 CLI",
+    "description": "跨平台CLI助手，整合Claude、Codex与Gemini",
     "tags": [
       "Claude Code",
       "Codex",
@@ -1687,286 +1687,286 @@
       "CLI",
       "AI 编程"
     ],
-    "stars": 1941,
+    "stars": 5042,
     "saveTime": "2026-04-04",
     "category": "AI"
   },
   {
     "name": "NousResearch/hermes-agent",
-    "url": "https://github.com/nousresearch/hermes-agent",
-    "description": "随你成长的 Agent 框架",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "description": "陪你共同成长的智能体",
     "tags": [
       "框架",
       "Agent"
     ],
-    "stars": 99590,
+    "stars": 244671,
     "saveTime": "2026-04-04",
     "category": "AI"
   },
   {
     "name": "shareAI-lab/learn-claude-code",
     "url": "https://github.com/shareAI-lab/learn-claude-code",
-    "description": "从 0 到 1 学习 Agent harness",
+    "description": "从零构建类Claude Code的智能体执行框架",
     "tags": [
       "文档",
       "Claude Code",
       "Agent",
       "学习"
     ],
-    "stars": 54641,
+    "stars": 76580,
     "saveTime": "2026-04-04",
     "category": "知识"
   },
   {
     "name": "iflytek/skillhub",
     "url": "https://github.com/iflytek/skillhub",
-    "description": "企业级开源 Agent 技能注册中心",
+    "description": "面向企业的自托管开源智能体技能注册中心",
     "tags": [
       "框架",
       "Agent",
       "Agent Skill",
       "开源"
     ],
-    "stars": 2668,
+    "stars": 5085,
     "saveTime": "2026-04-03",
     "category": "AI"
   },
   {
     "name": "lintsinghua/claude-code-book",
     "url": "https://github.com/lintsinghua/claude-code-book",
-    "description": "Claude Code 架构深度剖析",
+    "description": "深度解析Claude Code架构与智能体Harness",
     "tags": [
       "文档",
       "Claude Code"
     ],
-    "stars": 2815,
+    "stars": 4226,
     "saveTime": "2026-04-03",
     "category": "知识"
   },
   {
     "name": "skillsgate/skillsgate",
     "url": "https://github.com/skillsgate/skillsgate",
-    "description": "管理 91k+ AI Agent Skills",
+    "description": "管理91k+智能体技能",
     "tags": [
       "框架",
       "Agent",
       "Agent Skill"
     ],
-    "stars": 291,
+    "stars": 1248,
     "saveTime": "2026-04-03",
     "category": "AI"
   },
   {
     "name": "wquguru/harness-books",
     "url": "https://github.com/wquguru/harness-books",
-    "description": "Harness Engineering 系列书籍",
+    "description": "探讨Claude Code与Codex的Harness工程设计哲学",
     "tags": [
       "文档",
       "Agent",
       "阅读"
     ],
-    "stars": 1800,
+    "stars": 3088,
     "saveTime": "2026-04-02",
     "category": "知识"
   },
   {
     "name": "walkinglabs/learn-harness-engineering",
     "url": "https://github.com/walkinglabs/learn-harness-engineering",
-    "description": "Harness 工程实践课程",
+    "description": "从零开始学习Harness工程",
     "tags": [
       "文档",
       "Agent",
       "学习"
     ],
-    "stars": 779,
+    "stars": 15105,
     "saveTime": "2026-04-02",
     "category": "知识"
   },
   {
     "name": "sugarforever/understanding-fantastic-coding-agents",
     "url": "https://github.com/sugarforever/understanding-fantastic-coding-agents",
-    "description": "AI 编程 Agent 深度分析",
+    "description": "AI编程智能体深度分析",
     "tags": [
       "文档",
       "Agent"
     ],
-    "stars": 40,
+    "stars": 46,
     "saveTime": "2026-04-02",
     "category": "知识"
   },
   {
     "name": "jgraph/drawio-mcp",
     "url": "https://github.com/jgraph/drawio-mcp",
-    "description": "draw.io MCP 服务器",
+    "description": "为 draw.io 提供 MCP 服务",
     "tags": [
       "MCP",
       "图表",
       "开发工具"
     ],
-    "stars": 3000,
+    "stars": 5389,
     "saveTime": "2026-04-02",
     "category": "工具"
   },
   {
     "name": "multica-ai/multica",
     "url": "https://github.com/multica-ai/multica",
-    "description": "AI 原生项目管理，Agent 即队友",
+    "description": "开源且可自托管的人机协作团队平台",
     "tags": [
       "Agent",
       "开源项目"
     ],
-    "stars": 16200,
+    "stars": 49619,
     "saveTime": "2026-04-01",
     "category": "AI"
   },
   {
     "name": "helloianneo/claude-code-handbook",
     "url": "https://github.com/helloianneo/claude-code-handbook",
-    "description": "Claude Code 高阶指南，8 章 +3 附录",
+    "description": "Claude Code 高阶使用指南与原理研究",
     "tags": [
       "文档",
       "Claude Code",
       "学习"
     ],
-    "stars": 134,
+    "stars": 210,
     "saveTime": "2026-04-01",
     "category": "知识"
   },
   {
     "name": "tvytlx/ai-agent-deep-dive",
     "url": "https://github.com/tvytlx/ai-agent-deep-dive",
-    "description": "Claude Code 源码深度研究报告",
+    "description": "AI Agent 源码深度研究报告",
     "tags": [
       "文档",
       "Claude Code"
     ],
-    "stars": 5600,
+    "stars": 5826,
     "saveTime": "2026-04-01",
     "category": "知识"
   },
   {
     "name": "shanraisshan/claude-code-best-practice",
     "url": "https://github.com/shanraisshan/claude-code-best-practice",
-    "description": "Claude Code 最佳实践指南",
+    "description": "从氛围编程走向智能体工程的实践指南",
     "tags": [
       "文档",
       "Claude Code",
       "学习"
     ],
-    "stars": 46300,
+    "stars": 65847,
     "saveTime": "2026-03-31",
     "category": "知识"
   },
   {
     "name": "6551Team/claude-code-design-guide",
     "url": "https://github.com/6551Team/claude-code-design-guide",
-    "description": "Claude Code 设计指南",
+    "description": "面向开发者的 Claude Code 设计与实现深度解析",
     "tags": [
       "文档",
       "Claude Code",
       "学习"
     ],
-    "stars": 732,
+    "stars": 879,
     "saveTime": "2026-03-31",
     "category": "知识"
   },
   {
     "name": "Panniantong/Agent-Reach",
     "url": "https://github.com/Panniantong/Agent-Reach",
-    "description": "Agent 互联网能力工具",
+    "description": "让 AI Agent 通过单一 CLI 访问多平台内容",
     "tags": [
       "Agent Skill",
       "联网",
       "Agent"
     ],
-    "stars": 17800,
+    "stars": 79509,
     "saveTime": "2026-03-30",
     "category": "AI"
   },
   {
     "name": "agrinman/tunnelto",
     "url": "https://github.com/agrinman/tunnelto",
-    "description": "Rust 隧道工具，暴露本地服务到公网",
+    "description": "通过公网地址暴露本地 Web 服务的 Rust 隧道工具",
     "tags": [
       "网络",
       "Rust",
       "安全"
     ],
-    "stars": 6600,
+    "stars": 7066,
     "saveTime": "2026-03-30",
     "category": "开发"
   },
   {
     "name": "phuryn/pm-skills",
     "url": "https://github.com/phuryn/pm-skills",
-    "description": "产品经理 AI 技能库",
+    "description": "覆盖产品全流程的AI技能与插件市场",
     "tags": [
       "Agent Skill",
       "管理"
     ],
-    "stars": 10200,
+    "stars": 26228,
     "saveTime": "2026-03-30",
     "category": "AI"
   },
   {
     "name": "eze-is/web-access",
     "url": "https://github.com/eze-is/web-access",
-    "description": "Claude Code 联网 skill",
+    "description": "为Claude Code提供分层联网与浏览器调度",
     "tags": [
       "Agent Skill",
       "联网",
       "Claude Code"
     ],
-    "stars": 5100,
+    "stars": 8908,
     "saveTime": "2026-03-29",
     "category": "AI"
   },
   {
     "name": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
-    "description": "AI 前端设计语言 skill",
+    "description": "提升AI工具设计能力的设计语言",
     "tags": [
       "Agent Skill",
       "前端"
     ],
-    "stars": 18000,
+    "stars": 67392,
     "saveTime": "2026-03-29",
     "category": "AI"
   },
   {
     "name": "dontbesilent2025/dbskill",
     "url": "https://github.com/dontbesilent2025/dbskill",
-    "description": "商业诊断 Claude 技能",
+    "description": "用于商业诊断的Claude技能集合",
     "tags": [
       "Agent Skill",
       "分析"
     ],
-    "stars": 3100,
+    "stars": 10077,
     "saveTime": "2026-03-29",
     "category": "AI"
   },
   {
     "name": "CopilotKit/shadify",
     "url": "https://github.com/CopilotKit/shadify",
-    "description": "AI 生成 Shadcn 组件",
+    "description": "流式生成AI驱动的Shadcn组件",
     "tags": [
       "前端",
       "UI"
     ],
-    "stars": 234,
+    "stars": 268,
     "saveTime": "2026-03-29",
     "category": "设计"
   },
   {
     "name": "ArtemXTech/personal-os-skills",
     "url": "https://github.com/ArtemXTech/personal-os-skills",
-    "description": "Claude Code Obsidian 技能",
+    "description": "用于Obsidian的Claude Code技能",
     "tags": [
       "Agent Skill",
       "管理",
       "Claude Code"
     ],
-    "stars": 424,
+    "stars": 532,
     "saveTime": "2026-03-29",
     "category": "AI"
   }
