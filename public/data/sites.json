@@ -1,9 +1,22 @@
 [
   {
+    "title": "88查",
+    "url": "https://88cha.com/search",
+    "description": "企业信息查询与风险核查平台，支持工商、司法、招投标、知识产权、税务等企业数据查询，并提供 AI 企业背调与 AI 搜索功能。",
+    "category": "工具",
+    "tags": [
+      "企业信息查询",
+      "企业背调",
+      "风险查询",
+      "AI搜索"
+    ],
+    "saveTime": "2026-09-15"
+  },
+  {
     "title": "Real API Pricing — AI 模型真实价格与能力对比",
     "url": "https://real-api-pricing.vercel.app",
-    "description": "一个用于比较 AI 模型与订阅方案真实成本的独立数据工具，覆盖订阅额度、模型基准成绩、价格—性能前沿和完整证据数据表。",
-    "category": "工具",
+    "description": "比较模型价格性能与订阅成本",
+    "category": "AI",
     "tags": [
       "AI",
       "模型定价",
@@ -16,7 +29,7 @@
   {
     "title": "fx - Tiny, open, native coding agent",
     "url": "https://fx.sh",
-    "description": "fx——用 Zig 写的超轻量开源编码 Agent CLI（二进制仅约 6.4MB、冷启动 10µs、基础内存个位数 MB），模型无关、支持本地与云端推理，可嵌入大量实例；Apache-2.0，可通过 skills/plugins/MCP 扩展。",
+    "description": "轻量开源编码代理命令行工具",
     "category": "开发",
     "tags": [
       "编码 Agent",
@@ -29,7 +42,7 @@
   {
     "title": "PriceAI 卡网订阅比价",
     "url": "https://priceai.cc/channels",
-    "description": "AI 订阅渠道比价站：汇总 ChatGPT、Claude、Gemini、Grok 等账号与订阅服务的渠道报价、库存和更新时间，可查看最低价来源。",
+    "description": "比较人工智能订阅渠道价格",
     "category": "工具",
     "tags": [
       "AI 订阅比价",
@@ -43,8 +56,8 @@
   {
     "title": "π-agent book · 预览",
     "url": "https://books.antinomie.org/pi",
-    "description": "π-agent 源码导读：一本介绍 pi-agent-core 的在线书，讲述这个拒绝成为框架的 agent 循环——模块即积木，组合即架构；从 prompt() 到 agent_end 的一次 prompt 全程。",
-    "category": "开发",
+    "description": "介绍代理循环与源码架构的在线书籍",
+    "category": "知识",
     "tags": [
       "AI",
       "Agent",
@@ -57,8 +70,8 @@
   {
     "title": "Thinking orbs — Animated thinking orb component",
     "url": "https://orbs.jakubantalik.com",
-    "description": "Dotted thought-orb loading indicators for AI and agent UIs. Nine hand-tuned states, two sizes, auto dark/light theme.",
-    "category": "开发",
+    "description": "提供人工智能界面的动态思考指示器",
+    "category": "设计",
     "tags": [
       "React",
       "AI UI",
@@ -70,7 +83,7 @@
   {
     "title": "Claude Code Prompt Observatory",
     "url": "https://ccprompt.feitong.phd/",
-    "description": "Claude Code Prompt 观测站",
+    "description": "观察编码助手提示词的变化",
     "category": "AI",
     "saveTime": "2026-06-14",
     "tags": [
@@ -81,7 +94,7 @@
   {
     "title": "Phistory",
     "url": "https://phistory.cc/",
-    "description": "Agent CLI System Prompt 变更历史查看",
+    "description": "查看代理命令行系统提示词变更历史",
     "category": "AI",
     "saveTime": "2026-06-14",
     "tags": [
@@ -93,7 +106,7 @@
   {
     "title": "Sandbank",
     "url": "https://sandbank.dev/cloud",
-    "description": "AI Agent统一沙箱SDK",
+    "description": "为人工智能代理提供统一沙箱开发包",
     "category": "AI",
     "saveTime": "2026-05-28",
     "tags": [
@@ -104,8 +117,8 @@
   {
     "title": "Gamma",
     "url": "https://gamma.app",
-    "description": "AI设计伙伴，轻松制作演示文稿和网站",
-    "category": "设计",
+    "description": "利用人工智能制作演示文稿和网站",
+    "category": "AI",
     "saveTime": "2026-05-19",
     "tags": [
       "演示",
@@ -115,7 +128,7 @@
   {
     "title": "MTCGAME",
     "url": "https://www.mtcgame.com/",
-    "description": "全球数字游戏商店",
+    "description": "提供全球数字游戏商品交易服务",
     "category": "工具",
     "saveTime": "2026-05-16",
     "tags": [
@@ -127,7 +140,7 @@
   {
     "title": "FreeModel",
     "url": "https://freemodel.dev/",
-    "description": "免费AI API服务，注册送额度，兼容OpenAI接口",
+    "description": "提供免费额度并兼容OpenAI接口",
     "category": "AI",
     "saveTime": "2026-05-13",
     "tags": [
@@ -139,7 +152,7 @@
   {
     "title": "WiseETF",
     "url": "https://www.wise-etf.com/active",
-    "description": "美股ETF/QDII基金追踪工具",
+    "description": "追踪美股ETF与QDII基金行情",
     "category": "生活",
     "saveTime": "2026-05-06",
     "tags": [
@@ -151,7 +164,7 @@
   {
     "title": "Refero Styles",
     "url": "https://styles.refero.design/",
-    "description": "设计参考资源库",
+    "description": "收集网页界面与视觉风格参考",
     "category": "设计",
     "saveTime": "2026-05-05",
     "tags": [
@@ -162,7 +175,7 @@
   {
     "title": "Query.Domains",
     "url": "https://query.domains/zh-hans",
-    "description": "批量域名可用性检查工具",
+    "description": "批量查询域名注册可用性",
     "category": "工具",
     "saveTime": "2026-04-29",
     "tags": [
@@ -174,7 +187,7 @@
   {
     "title": "Superhuman AI Airtable",
     "url": "https://airtable.com/apppaprA2GXXxBSjs/shrjsPiubnIHIqTwH/tblCm6yevfjitvoCh/viwKzKHKKqd5d5bk8",
-    "description": "AI 相关资源表格",
+    "description": "整理人工智能工具与资源的表格",
     "category": "AI",
     "saveTime": "2026-04-29",
     "tags": [
@@ -185,7 +198,7 @@
   {
     "title": "Chat SDK",
     "url": "https://chat-sdk.dev/",
-    "description": "跨平台聊天机器人 SDK",
+    "description": "用于构建聊天应用的开发工具包",
     "category": "开发",
     "saveTime": "2026-04-29",
     "tags": [
@@ -196,7 +209,7 @@
   {
     "title": "GPTHub",
     "url": "https://gptllmhub.com/",
-    "description": "GPT API 中转站与账号",
+    "description": "提供GPT接口中转与账号服务",
     "category": "AI",
     "saveTime": "2026-04-29",
     "tags": [
@@ -209,7 +222,7 @@
   {
     "title": "Transitions.dev",
     "url": "https://transitions.dev/",
-    "description": "可复制粘贴的 Web 过渡动画集合",
+    "description": "提供可复制的网页过渡动画",
     "category": "设计",
     "saveTime": "2026-04-29",
     "tags": [
@@ -221,7 +234,7 @@
   {
     "title": "现代工程手绘风格Slides生成器",
     "url": "https://youmind.com/skills/x6ux3YCCI2qtaT",
-    "description": "生成苹果特斯拉风格手稿",
+    "description": "生成工程主题手绘风格演示文稿",
     "category": "设计",
     "saveTime": "2026-04-27",
     "tags": [
@@ -233,7 +246,7 @@
   {
     "title": "CS146S: The Modern Software Developer",
     "url": "https://themodernsoftware.dev/",
-    "description": "Stanford AI编码策略课程",
+    "description": "斯坦福软件开发与人工智能课程",
     "category": "知识",
     "saveTime": "2026-04-27",
     "tags": [
@@ -244,7 +257,7 @@
   {
     "title": "TokenNav",
     "url": "https://tokennav.cc/",
-    "description": "AI API中转站导航",
+    "description": "汇总人工智能接口中转服务",
     "category": "AI",
     "saveTime": "2026-04-27",
     "tags": [
@@ -256,8 +269,8 @@
   {
     "title": "Aibijia",
     "url": "https://aibijia.org/",
-    "description": "AI订阅比价平台",
-    "category": "AI",
+    "description": "比较人工智能服务订阅价格",
+    "category": "工具",
     "saveTime": "2026-04-26",
     "tags": [
       "价格",
@@ -267,7 +280,7 @@
   {
     "title": "Web3chirou",
     "url": "http://web3chirou.com/",
-    "description": "Web3空投撸毛工具站",
+    "description": "提供Web3空投项目与操作工具",
     "category": "工具",
     "saveTime": "2026-04-26",
     "tags": [
@@ -279,7 +292,7 @@
   {
     "title": "Loading UI",
     "url": "https://loading-ui.com/",
-    "description": "加载动画组件库",
+    "description": "提供网页加载动画与界面组件",
     "category": "设计",
     "saveTime": "2026-04-26",
     "tags": [
@@ -291,7 +304,7 @@
   {
     "title": "GetCheapAI",
     "url": "https://www.getcheapai.com/zh-cn",
-    "description": "AI模型价格查询对比",
+    "description": "查询并比较人工智能模型价格",
     "category": "AI",
     "saveTime": "2026-04-25",
     "tags": [
@@ -303,7 +316,7 @@
   {
     "title": "XAI XAPI",
     "url": "https://manage-xai.ainaibahub.com/",
-    "description": "xAI API管理平台",
+    "description": "提供xAI接口管理服务",
     "category": "AI",
     "saveTime": "2026-04-21",
     "tags": [
@@ -314,7 +327,7 @@
   {
     "title": "海搜",
     "url": "https://haisou.cc/",
-    "description": "搜索引擎",
+    "description": "提供综合网页搜索服务",
     "category": "工具",
     "saveTime": "2026-04-21",
     "tags": [
@@ -326,7 +339,7 @@
   {
     "title": "XSCT.ai",
     "url": "https://xsct.ai",
-    "description": "AI模型评测对比",
+    "description": "用于比较人工智能模型表现",
     "category": "AI",
     "saveTime": "2026-04-21",
     "tags": [
@@ -337,8 +350,8 @@
   {
     "title": "Datawhale",
     "url": "https://m.datawhale.cn/learn?learnPage=1",
-    "description": "AI学习平台",
-    "category": "AI",
+    "description": "提供人工智能相关课程学习",
+    "category": "知识",
     "saveTime": "2026-04-19",
     "tags": [
       "学习",
@@ -348,7 +361,7 @@
   {
     "title": "Loucer Storefront",
     "url": "https://shop.loucer.cn/",
-    "description": "codex订阅卡、接码、邮箱账号",
+    "description": "销售编程助手订阅卡及账号服务",
     "category": "AI",
     "saveTime": "2026-04-19",
     "tags": [
@@ -359,7 +372,7 @@
   {
     "title": "vSakuraStore (9.PLUS)",
     "url": "https://9.plus/shop/C0RVQEQD",
-    "description": "GPT Plus/Pro订阅卡",
+    "description": "提供GPT Plus和Pro订阅卡",
     "category": "AI",
     "saveTime": "2026-04-19",
     "tags": [
@@ -370,7 +383,7 @@
   {
     "title": "ChatGPTai铺 (链动小铺)",
     "url": "https://pay.ldxp.cn/shop/DK1WNXMR",
-    "description": "GPT Plus/Pro订阅卡",
+    "description": "提供GPT Plus和Pro订阅卡",
     "category": "AI",
     "saveTime": "2026-04-19",
     "tags": [
@@ -381,7 +394,7 @@
   {
     "title": "stagewise",
     "url": "https://stagewise.io/",
-    "description": "内置coding agent的开发者浏览器",
+    "description": "内置编程代理的开发者浏览器",
     "category": "开发",
     "saveTime": "2026-04-18",
     "tags": [
@@ -392,7 +405,7 @@
   {
     "title": "Awesome GitHub Copilot",
     "url": "https://awesome-copilot.github.com/",
-    "description": "Copilot资源汇总",
+    "description": "汇总 GitHub Copilot 相关资源",
     "category": "AI",
     "saveTime": "2026-04-17",
     "tags": [
@@ -403,7 +416,7 @@
   {
     "title": "小云搜索",
     "url": "https://dash.yunso.net/",
-    "description": "网盘搜索引擎",
+    "description": "用于搜索网盘中的公开资源",
     "category": "工具",
     "saveTime": "2026-04-16",
     "tags": [
@@ -415,7 +428,7 @@
   {
     "title": "Diode",
     "url": "https://www.withdiode.com/",
-    "description": "浏览器硬件模拟工具",
+    "description": "用于模拟浏览器硬件环境",
     "category": "开发",
     "saveTime": "2026-04-15",
     "tags": [
@@ -426,7 +439,7 @@
   {
     "title": "Harness Engineering推文",
     "url": "https://x.com/intuitiveml/status/2043545596699750791",
-    "description": "AI-first工程实践洞察",
+    "description": "介绍 AI 优先的软件工程实践",
     "category": "开发",
     "saveTime": "2026-04-13",
     "tags": [
@@ -437,7 +450,7 @@
   {
     "title": "教育优惠导航",
     "url": "https://nav.edumails.cn/",
-    "description": "学生教育优惠项目导航",
+    "description": "汇总面向学生的教育优惠项目",
     "category": "工具",
     "saveTime": "2026-04-13",
     "tags": [
@@ -449,7 +462,7 @@
   {
     "title": "Claude IP检测",
     "url": "https://ip.net.coffee/claude/",
-    "description": "Claude AI IP风险检测",
+    "description": "检测 Claude 访问 IP 的风险等级",
     "category": "AI",
     "saveTime": "2026-04-13",
     "tags": [
@@ -461,7 +474,7 @@
   {
     "title": "Spell",
     "url": "https://spell.sh/",
-    "description": "高质量React组件库",
+    "description": "提供可复用的 React 界面组件",
     "category": "开发",
     "saveTime": "2026-04-13",
     "tags": [
@@ -473,7 +486,7 @@
   {
     "title": "CCTest",
     "url": "https://cctest.ai/",
-    "description": "Claude API Key安全检测",
+    "description": "检测Claude API密钥的安全风险",
     "category": "AI",
     "saveTime": "2026-04-13",
     "tags": [
@@ -485,7 +498,7 @@
   {
     "title": "AI Ping",
     "url": "https://www.aiping.cn",
-    "description": "AI相关工具网站",
+    "description": "汇集各类人工智能相关工具",
     "category": "AI",
     "saveTime": "2026-04-13",
     "tags": [
@@ -496,8 +509,8 @@
   {
     "title": "Best of JS",
     "url": "https://bestofjs.org/",
-    "description": "Web开源项目趋势发现",
-    "category": "知识",
+    "description": "发现热门JavaScript开源项目",
+    "category": "开发",
     "saveTime": "2026-04-11",
     "tags": [
       "开源",
@@ -507,7 +520,7 @@
   {
     "title": "Coolify",
     "url": "https://coolify.io/",
-    "description": "开源自托管部署平台",
+    "description": "用于自托管应用的开源部署平台",
     "category": "开发",
     "saveTime": "2026-04-11",
     "tags": [
@@ -519,7 +532,7 @@
   {
     "title": "Dokploy",
     "url": "https://dokploy.com/",
-    "description": "开源应用部署平台",
+    "description": "用于部署应用的开源管理平台",
     "category": "开发",
     "saveTime": "2026-04-11",
     "tags": [
@@ -531,7 +544,7 @@
   {
     "title": "App Store 全球最低价",
     "url": "http://appstoreprice.org/zh",
-    "description": "全球各区价格对比省钱",
+    "description": "比较不同地区App Store商品价格",
     "category": "工具",
     "saveTime": "2026-04-10",
     "tags": [
@@ -543,8 +556,8 @@
   {
     "title": "Claude Code from Source",
     "url": "https://claude-code-from-source.com/",
-    "description": "深入解析架构与设计模式",
-    "category": "AI",
+    "description": "解析代码助手的架构与设计模式",
+    "category": "知识",
     "saveTime": "2026-04-10",
     "tags": [
       "Claude Code",
@@ -554,8 +567,8 @@
   {
     "title": "getdesign.md",
     "url": "https://getdesign.md/",
-    "description": "DESIGN.md合集，AI构建匹配UI",
-    "category": "AI",
+    "description": "收集帮助生成界面的设计规范",
+    "category": "设计",
     "saveTime": "2026-04-09",
     "tags": [
       "UI",
@@ -565,7 +578,7 @@
   {
     "title": "TinyShip",
     "url": "https://tinyship.cn/",
-    "description": "现代化全栈SaaS开发平台",
+    "description": "提供现代化全栈SaaS开发能力",
     "category": "开发",
     "saveTime": "2026-04-09",
     "tags": [
@@ -576,7 +589,7 @@
   {
     "title": "Blueprinter",
     "url": "https://skills.sh/yofine/skills/blueprinter",
-    "description": "技术风格图表生成Skill",
+    "description": "生成技术风格图表的智能技能",
     "category": "AI",
     "saveTime": "2026-04-08",
     "tags": [
@@ -587,7 +600,7 @@
   {
     "title": "bestblogs.dev",
     "url": "https://www.bestblogs.dev/",
-    "description": "技术文章聚合，AI摘要评分辅助阅读",
+    "description": "聚合技术文章并提供摘要评分",
     "category": "知识",
     "saveTime": "2026-04-08",
     "tags": [
@@ -598,7 +611,7 @@
   {
     "title": "Coding Plan 对比工具",
     "url": "https://z4crk6mg95.coze.site/",
-    "description": "国内AI平台套餐对比",
+    "description": "比较国内AI平台套餐与价格",
     "category": "AI",
     "saveTime": "2026-04-08",
     "tags": [
@@ -609,7 +622,7 @@
   {
     "title": "Milkdown",
     "url": "https://milkdown.dev/",
-    "description": "插件驱动的无头编辑器",
+    "description": "插件驱动的无头Markdown编辑器",
     "category": "开发",
     "saveTime": "2026-04-08",
     "tags": [
@@ -620,7 +633,7 @@
   {
     "title": "cchistory",
     "url": "https://cchistory.mariozechner.at/",
-    "description": "Claude Code版本历史",
+    "description": "记录Claude Code版本更新历史",
     "category": "AI",
     "saveTime": "2026-04-06",
     "tags": [
@@ -631,7 +644,7 @@
   {
     "title": "What Can I Run",
     "url": "https://www.whatcani.run/",
-    "description": "根据硬件推荐本地可运行的AI模型",
+    "description": "按硬件推荐可本地运行的模型",
     "category": "AI",
     "saveTime": "2026-04-06",
     "tags": [
@@ -642,7 +655,7 @@
   {
     "title": "Can I Run AI",
     "url": "https://www.canirun.ai/",
-    "description": "AI模型硬件兼容性检查",
+    "description": "检查硬件与模型的兼容性",
     "category": "AI",
     "saveTime": "2026-04-06",
     "tags": [
@@ -653,7 +666,7 @@
   {
     "title": "IPPure",
     "url": "https://ippure.com/",
-    "description": "IP地址纯净度检测",
+    "description": "检测IP地址的纯净度与风险",
     "category": "工具",
     "saveTime": "2026-04-05",
     "tags": [
@@ -665,7 +678,7 @@
   {
     "title": "Learn Anything",
     "url": "https://learn-anything.xyz",
-    "description": "知识地图，发现学习路径",
+    "description": "通过知识地图规划学习路径",
     "category": "知识",
     "saveTime": "2026-04-04",
     "tags": [
@@ -676,7 +689,7 @@
   {
     "title": "AI SDK Agents",
     "url": "https://www.aisdkagents.com/",
-    "description": "108个Agent模式，Vercel AI SDK v6",
+    "description": "收录Vercel AI SDK智能代理模式",
     "category": "AI",
     "saveTime": "2026-04-04",
     "tags": [
@@ -687,8 +700,8 @@
   {
     "title": "Cult UI - Terminal Animation",
     "url": "https://www.cult-ui.com/docs/components/terminal-animation",
-    "description": "终端动画组件，shadcn/ui风格",
-    "category": "工具",
+    "description": "提供终端动画界面组件文档",
+    "category": "设计",
     "saveTime": "2026-04-04",
     "tags": [
       "UI",
@@ -700,8 +713,8 @@
   {
     "title": "魔方简历",
     "url": "https://magicv.art/zh",
-    "description": "AI驱动简历编辑器",
-    "category": "工具",
+    "description": "使用人工智能编辑优化求职简历",
+    "category": "AI",
     "saveTime": "2026-04-04",
     "tags": [
       "编辑器",
@@ -712,8 +725,8 @@
   {
     "title": "PMFrame.works",
     "url": "http://pmframe.works/",
-    "description": "100个产品设计框架，产品全链路工具集",
-    "category": "工具",
+    "description": "汇集产品设计框架与全流程方法",
+    "category": "设计",
     "saveTime": "2026-04-04",
     "tags": [
       "综合工具",
@@ -723,7 +736,7 @@
   {
     "title": "MockAddress",
     "url": "https://mockaddress.com/",
-    "description": "美国免税州地址生成器",
+    "description": "生成美国免税州虚拟地址",
     "category": "工具",
     "saveTime": "2026-04-04",
     "tags": [
@@ -735,7 +748,7 @@
   {
     "title": "Duomi",
     "url": "https://ai.duomi.uk",
-    "description": "AI API网关服务",
+    "description": "提供人工智能接口统一接入服务",
     "category": "AI",
     "saveTime": "2026-04-03",
     "tags": [
@@ -747,7 +760,7 @@
   {
     "title": "XueDingToken",
     "url": "https://xuedingtoken.com/home",
-    "description": "AI API 网关服务",
+    "description": "提供人工智能接口网关服务",
     "category": "AI",
     "saveTime": "2026-04-03",
     "tags": [
@@ -759,8 +772,8 @@
   {
     "title": "Claude Code 全面解析",
     "url": "https://jocular-treacle-8737c3.netlify.app",
-    "description": "Agent循环、50+工具交互式解析",
-    "category": "AI",
+    "description": "交互式解析智能代理循环与工具调用",
+    "category": "知识",
     "saveTime": "2026-04-03",
     "tags": [
       "Claude Code",
@@ -771,8 +784,8 @@
   {
     "title": "驾驭工程 — AI 编码技术栈",
     "url": "https://zhanghandong.github.io/harness-engineering-from-cc-to-ai-coding/",
-    "description": "Claude Code 架构深度解析",
-    "category": "AI",
+    "description": "深度解析人工智能编码技术栈与架构",
+    "category": "知识",
     "saveTime": "2026-04-02",
     "tags": [
       "Claude Code",
@@ -782,7 +795,7 @@
   {
     "title": "Lovable",
     "url": "https://lovable.dev",
-    "description": "AI 应用构建平台",
+    "description": "使用人工智能构建应用程序",
     "category": "AI",
     "saveTime": "2026-04-02",
     "tags": [
@@ -793,7 +806,7 @@
   {
     "title": "ZenMux",
     "url": "https://zenmux.ai/",
-    "description": "AI API 统一网关平台",
+    "description": "提供多种人工智能接口的统一网关",
     "category": "AI",
     "saveTime": "2026-04-02",
     "tags": [
@@ -805,7 +818,7 @@
   {
     "title": "Ai Go Code",
     "url": "https://www.aigocode.com",
-    "description": "AI编程工作台",
+    "description": "面向编程任务的人工智能工作台",
     "category": "AI",
     "saveTime": "2026-04-02",
     "tags": [
@@ -816,7 +829,7 @@
   {
     "title": "PackyAPI",
     "url": "https://www.packyapi.com",
-    "description": "AI API聚合平台",
+    "description": "聚合多种人工智能接口的服务平台",
     "category": "AI",
     "saveTime": "2026-04-02",
     "tags": [
@@ -827,7 +840,7 @@
   {
     "title": "Dragon",
     "url": "https://dragoncode.codes/",
-    "description": "企业级API中转服务",
+    "description": "提供企业级接口转发与中转服务",
     "category": "AI",
     "saveTime": "2026-04-01",
     "tags": [
@@ -840,7 +853,7 @@
   {
     "title": "众创网络",
     "url": "https://www.zhongchuangwl.com/",
-    "description": "资源搜索大全，各类杂志",
+    "description": "提供杂志等资源的综合搜索服务",
     "category": "工具",
     "saveTime": "2026-04-01",
     "tags": [
@@ -852,7 +865,7 @@
   {
     "title": "ZLibrary镜像",
     "url": "https://zh.chl101.ru/",
-    "description": "免费电子书下载网站",
+    "description": "提供电子书检索与下载服务",
     "category": "知识",
     "saveTime": "2026-04-01",
     "tags": [
@@ -863,7 +876,7 @@
   {
     "title": "DDS Hub",
     "url": "https://www.ddshub.cc/",
-    "description": "AI API Gateway中转服务",
+    "description": "提供人工智能接口中转服务",
     "category": "AI",
     "saveTime": "2026-04-01",
     "tags": [
@@ -875,7 +888,7 @@
   {
     "title": "Claude Code Unpacked",
     "url": "https://ccunpacked.dev/",
-    "description": "Claude Code源码交互式解析",
+    "description": "交互式解析Claude Code源代码",
     "category": "AI",
     "saveTime": "2026-04-01",
     "tags": [
@@ -886,8 +899,8 @@
   {
     "title": "Help AIO",
     "url": "https://www.helpaio.com/",
-    "description": "AI导航中转评测比价",
-    "category": "AI",
+    "description": "提供人工智能服务导航评测与比价",
+    "category": "工具",
     "saveTime": "2026-03-31",
     "tags": [
       "价格",
@@ -898,7 +911,7 @@
   {
     "title": "微信 Markdown 编辑器",
     "url": "https://md.doocs.org/",
-    "description": "微信公众号排版工具",
+    "description": "用于微信公众号文章排版编辑",
     "category": "工具",
     "saveTime": "2026-03-31",
     "tags": [
@@ -910,7 +923,7 @@
   {
     "title": "Cubence",
     "url": "https://cubence.com/",
-    "description": "Claude Code/Codex网关服务",
+    "description": "提供Claude Code与Codex网关服务",
     "category": "AI",
     "saveTime": "2026-03-31",
     "tags": [
@@ -923,8 +936,8 @@
   {
     "title": "Learn Claude Code",
     "url": "https://claude.nagdy.me/",
-    "description": "Claude Code互动学习教程",
-    "category": "AI",
+    "description": "提供Claude Code互动学习教程",
+    "category": "知识",
     "saveTime": "2026-03-31",
     "tags": [
       "Claude Code",
@@ -935,7 +948,7 @@
   {
     "title": "小鱼速读",
     "url": "https://m.xysudu.com",
-    "description": "书籍速读，精选内容速览",
+    "description": "提供书籍速读内容与精选摘要",
     "category": "知识",
     "saveTime": "2026-03-31",
     "tags": [
@@ -946,7 +959,7 @@
   {
     "title": "禾维 AI",
     "url": "https://hvoy.ai/",
-    "description": "检测API中转站真假",
+    "description": "检测人工智能接口中转站的真实性",
     "category": "AI",
     "saveTime": "2026-03-30",
     "tags": [
@@ -959,8 +972,8 @@
   {
     "title": "Claude Code Cheat Sheet",
     "url": "https://cc.storyfox.cz/",
-    "description": "Claude Code快捷键速查表",
-    "category": "AI",
+    "description": "提供 Claude Code 快捷键速查资料",
+    "category": "知识",
     "saveTime": "2026-03-29",
     "tags": [
       "Claude Code",
@@ -970,7 +983,7 @@
   {
     "title": "Ship0",
     "url": "https://ship0.ai/",
-    "description": "AI一键生成部署网站",
+    "description": "使用人工智能生成并部署网站",
     "category": "AI",
     "saveTime": "2026-03-29",
     "tags": [
@@ -981,7 +994,7 @@
   {
     "title": "RelayPulse",
     "url": "https://relaypulse.top/",
-    "description": "API中转服务监测平台",
+    "description": "监测接口中转服务的运行状态",
     "category": "AI",
     "saveTime": "2026-03-29",
     "tags": [
@@ -993,7 +1006,7 @@
   {
     "title": "Goodbooks",
     "url": "https://goodbooks.io/",
-    "description": "成功人士推荐书单",
+    "description": "汇集成功人士推荐的书籍清单",
     "category": "知识",
     "saveTime": "2026-03-29",
     "tags": [
@@ -1004,7 +1017,7 @@
   {
     "title": "Aiberm",
     "url": "https://aiberm.com/",
-    "description": "折扣AI API服务",
+    "description": "提供折扣人工智能接口服务",
     "category": "AI",
     "saveTime": "2026-03-29",
     "tags": [
