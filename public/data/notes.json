@@ -1,5 +1,13 @@
 [
   {
+    "title": "placeholder-for-delete-test-abc123",
+    "description": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "category": "知识",
+    "tags": [],
+    "saveTime": "2026-10-06",
+    "path": "notes/2026-10/placeholder-for-delete-test-abc123.md"
+  },
+  {
     "title": "test-title",
     "description": "test",
     "category": "知识",
