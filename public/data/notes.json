@@ -1,5 +1,17 @@
 [
   {
+    "title": "📈 A股行情报告（定时推送）",
+    "description": "2026-10-19 开盘行情：大华股份、海康威视均低开",
+    "category": "知识",
+    "tags": [
+      "A股",
+      "行情",
+      "定时任务"
+    ],
+    "saveTime": "2026-10-19",
+    "path": "notes/2026-10/a股行情报告定时推送-3.md"
+  },
+  {
     "title": "list",
     "description": "list",
     "category": "知识",
